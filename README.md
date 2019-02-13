@@ -1,7 +1,7 @@
-Название проекта
+NIBK
 ================
 
-Верстка расположена по адресу []()
+Верстка расположена по адресу [https://nibk.proverstka.com.ua](https://nibk.proverstka.com.ua)
 
 Все комментарии вроде "InstanceBegin, InstanceBeginEditable, InstanceEndEditable" из кода при программировании убирать! Такие комментарии оставляет шаблонизатор dreamweaver.
 
