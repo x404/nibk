@@ -4,7 +4,7 @@
 		position: relative;
 		z-index: 2;
 	}
-	.carousel{
+	.center-carousel{
 		display: flex;
 		position: absolute;
 		z-index: 1;
@@ -12,7 +12,7 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		&__inner{
+		.carousel__inner{
 			height: 100%;
 			width: 100%;
 			// width: 1002px;
@@ -98,6 +98,8 @@
 				line-height: 1.2;
 			}
 		}
+
+
 	}
 	// =/main
 
@@ -119,4 +121,157 @@
 			text-transform: uppercase;
 		}
 	}
+	// =/about
+
+
+
+	.interesting,
+	.lastnews{
+		.title{
+			// width: 10rem;
+			font-family: "Officina Serif Black C";
+			font-size: 5rem;
+			line-height: 1;
+			text-align: center;
+		}
+
+		.carousel{
+			text-align: center;
+			width: 25rem;
+			a{
+				text-decoration: none;
+				color: $color1;
+				&:hover{
+					color: $color4;
+				}
+			}
+
+			&__pic{
+				margin-top: 2.5rem;
+				img{
+					margin-left: auto;
+					margin-right: auto;
+					transition: transform .3s
+				}
+			}
+			&__title{
+				font-size: 2rem;
+				font-family: "Officina Serif Black C";
+				text-transform: uppercase;
+				margin-top: 1.5rem;
+			}
+		}
+
+		.carousel-nav{
+			display: flex;
+			justify-content: center;
+			margin-top: 2rem;
+		}
+		.slick{
+			&-arrow{
+				background: none;
+				border-radius: 50%;
+				cursor: pointer;
+				display: block;
+				height: 40px;
+				margin: 0 3px;
+				padding: 0;
+				transition: background-color .3s;
+				width: 40px;
+
+				line{
+					transition: stroke .3s;
+					stroke-width: 2px;
+				}
+			}
+		}
+
+	}
+	.interesting{
+		.title{
+			color: $color3
+		}
+		.slick{
+			&-arrow{
+				border: 1px solid $color4;
+
+				line{
+					stroke: $color4;
+				}
+				&:hover{
+					background-color: $color4;
+					line{
+						stroke: $color2
+					}
+				}		
+			}
+		}
+		.carousel{
+			a:hover{
+				img{
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+	.lastnews{
+		padding-right: 5rem;
+		a{
+			display: block;
+			&:hover{
+				.carousel__pic{
+					&:after{
+						border-color: $color2
+					}
+				}
+			}			
+		}
+		.title{
+			color: $color4
+		}
+		.slick{
+			&-arrow{
+				border: 1px solid $color2;
+				line{
+					stroke: $color2;
+				}
+				&:hover{
+					background-color: $color4;
+					border-color: $color4;
+				}
+			}
+		}
+		.carousel{
+			&__pic{
+				position: relative;
+				$s: 200px;
+				width: $s;
+				height: $s;
+				margin-left: auto;
+				margin-right: auto;
+				z-index: 2;
+				&:after{
+					@extend .before;
+					transition: border-color .3s;
+					border-color: $color4;
+					width: 125px;
+					height: 125px;
+					border-radius: 0 125px 0 0;
+					border-top: 25px solid $color4;
+					border-right: 25px solid $color4;
+				    right: -24px;
+				    top: -25px;
+				    z-index: -1;
+				}
+				img{
+					border-radius: 50%
+				}
+			}
+		}
+	}
+}
+
+.rotate90{
+	display: block;
+	transform: rotate(-90deg);
 }
