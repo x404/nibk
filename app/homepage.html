@@ -108,15 +108,29 @@
 
 		<!-- =main -->
 		<div class="main">
-			Пароль отправляется серверу в «открытом» виде — он шифруется известным алгоритмом на известном ключе. При использовании простого логина, пароль пользователя может быть перехвачен и дешифрирован.
+			<div class="content">
+				<div class="d-flex justify-content-between">
+					<div class="interesting">
+						<p class="title rotate90">DID YOU KNOW?</p>
+					</div>
+					<div class="about text-center">
+						<p class="title">One stop of <br> all brakes</p>
+						<p class="cifr">5643</p>
+						<p>NIBK produces</p>
+					</div>
+					<div class="lastnews">
+						<p class="title rotate90">NEWS</p>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- =/main -->
 
 		<!-- =footer -->
 		<footer class="footer">
 			<div class="container">
-				<div class="d-flex justify-content-between">
-					<div class="copyright">
+				<div class="d-flex justify-content-between align-items-center">
+					<div class="copyright copyright-gray">
 						Copyright © 2003-2018 JNBK Corporation. All Rights Reserved
 					</div>
 					<div class="lang">
@@ -141,12 +155,8 @@ $(document).ready(function(){
 
 $(window).on('mousemove', function(e) {
     var xpos=e.clientX;
-    	// left= change*20;
-    // $('#home-carousel .slick-current img').css('top',((0+(ypos/50))+"px"));
-    $('#home-carousel .slick-current img').css('right',(( -10+(xpos/70))+"px"));
-                   
+    $('#home-carousel .slick-current img').css('right',(( -10+(xpos/70))+"px"));                  
   });
-
 });
 </script>
 </script>

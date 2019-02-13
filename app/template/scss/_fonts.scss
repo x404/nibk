@@ -1,8 +1,28 @@
 @font-face {
-    font-family: 'OfficinaSerifBlackSCC';
-    src: url('../fonts/OfficinaSerifBlackSCC/officinaserifblackscc.woff2') format('woff2'),
-         url('../fonts/OfficinaSerifBlackSCC/officinaserifblackscc.woff') format('woff');
+	font-family: 'OfficinaSerifBlackSCC';
+	src: url('../fonts/OfficinaSerifBlackSCC/officinaserifblackscc.woff2') format('woff2'),
+	     url('../fonts/OfficinaSerifBlackSCC/officinaserifblackscc.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Officina Serif Book C';
+    src: url('../fonts/OfficinaSerifBookC/officinaserifbookc.woff2') format('woff2'),
+         url('../fonts/OfficinaSerifBookC/officinaserifbookc.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+
+
+
+@font-face {
+    font-family: 'OfficinaSerifBlackC';
+    src: url('../fonts/OfficinaSerifBlackC/officinaserifblackc.woff2') format('woff2'),
+         url('../fonts/OfficinaSerifBlackC/officinaserifblackc.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
