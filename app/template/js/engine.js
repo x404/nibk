@@ -1,5 +1,17 @@
 $(document).ready(function(){
 
+	$('#home-carousel').slick({
+		dots: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 500000,
+		arrows : false,
+		fade: true,
+        infinite : true
+        // adaptiveHeight: true
+        // variableWidth: true
+	});	
 
 	// mobile-menu
 	$('#navbar').each(function(){

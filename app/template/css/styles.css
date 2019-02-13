@@ -3437,7 +3437,7 @@ h3 {
   .tdu:hover {
     text-decoration: none; }
 
-.before {
+.before, .homepage .carousel__inner .el-dots:before, .homepage .carousel__inner .el-dots:after {
   content: "";
   display: block;
   position: absolute; }
@@ -3500,7 +3500,7 @@ h3 {
         margin-right: 0; }
   .header__left {
     margin-top: 4rem;
-    width: calc(50% - 320px); }
+    width: calc(50% - 350px); }
     .header__left .navmenu a:before {
       color: #000;
       border-bottom: 3px solid #f26722; }
@@ -3547,6 +3547,59 @@ h3 {
 .cl-effect-11-inv a:hover::before,
 .cl-effect-11-inv a:focus::before {
   max-width: 0; }
+
+.homepage .header,
+.homepage .footer {
+  position: relative;
+  z-index: 2; }
+
+.homepage .carousel {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  .homepage .carousel__inner {
+    height: 100%;
+    width: 100%;
+    margin: auto; }
+    .homepage .carousel__inner .pic {
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+      position: relative;
+      width: 1002px; }
+    .homepage .carousel__inner .el-dots {
+      background: url(../images/slider-dots.png) no-repeat center;
+      height: 920px;
+      width: 924px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+      .homepage .carousel__inner .el-dots:before, .homepage .carousel__inner .el-dots:after {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); }
+      .homepage .carousel__inner .el-dots:before {
+        background: url(../images/slider-el.png) no-repeat center;
+        width: 575px;
+        height: 575px; }
+      .homepage .carousel__inner .el-dots:after {
+        background: #fff;
+        border-radius: 50%;
+        width: 367px;
+        height: 367px; }
+  .homepage .carousel .slick-track {
+    height: 100%; }
+  .homepage .carousel .slick-slide .pic {
+    height: 100vh; }
+  .homepage .carousel .slick-slide img {
+    position: relative;
+    width: 100%; }
 
 /* =mobile-menu
 ---------------------------*/

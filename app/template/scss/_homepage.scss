@@ -1,0 +1,78 @@
+.homepage{
+	.header,
+	.footer{
+		position: relative;
+		z-index: 2;
+	}
+	.carousel{
+		display: flex;
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		&__inner{
+			height: 100%;
+			width: 100%;
+			// width: 1002px;
+			margin: auto;
+
+			$w: 1002px;
+
+			.pic{
+				border-radius: 50%;
+				margin-left: auto;
+				margin-right: auto;
+				overflow: hidden;
+				position: relative;
+				width: $w;
+			}
+
+			.el-dots{
+				background: url(../images/slider-dots.png) no-repeat center;
+				height: 920px;				
+				width: 924px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				&:before,
+				&:after
+				{
+					@extend .before;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+				}
+
+				&:before{					
+					background: url(../images/slider-el.png) no-repeat center;
+					width: 575px;
+					height: 575px;
+				}
+				&:after{
+					background: $color2;
+					border-radius: 50%;
+					width: 367px;
+					height: 367px;
+				}
+			}
+		}
+
+		.slick-track{
+			height: 100%;
+		}
+		.slick-slide{
+			.pic{
+				height: 100vh;
+			}
+			img{
+				// margin: 0 auto;
+				// height: 100%;
+				position: relative;
+				width: 100%;
+			}
+		}
+	}
+}

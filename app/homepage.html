@@ -84,6 +84,28 @@
 		</header>
 		<!-- =/header -->
 
+
+		<div class="carousel">
+			<div class="carousel__inner">
+				<div id="home-carousel">
+					<div>
+						<div class="pic">
+							<img src="images/slider-1.jpg" alt="">
+							<div class="el-dots"></div>
+							<div class="el-circle"></div>
+						</div>
+					</div>
+					<div>
+						<div class="pic">
+							<img src="images/slider-2.jpg" alt="">
+							<div class="el-dots"></div>
+							<div class="el-circle"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- =main -->
 		<div class="main">
 			Пароль отправляется серверу в «открытом» виде — он шифруется известным алгоритмом на известном ключе. При использовании простого логина, пароль пользователя может быть перехвачен и дешифрирован.
@@ -113,5 +135,20 @@
 <div id="outdated"></div>
 <script type="text/javascript" src="/template/js/slick.min.js"></script>
 <script src="/template/js/engine.js"></script>
+
+<script>
+$(document).ready(function(){
+
+$(window).on('mousemove', function(e) {
+    var xpos=e.clientX;
+    	// left= change*20;
+    // $('#home-carousel .slick-current img').css('top',((0+(ypos/50))+"px"));
+    $('#home-carousel .slick-current img').css('right',(( -10+(xpos/70))+"px"));
+                   
+  });
+
+});
+</script>
+</script>
 </body>
 </html>
