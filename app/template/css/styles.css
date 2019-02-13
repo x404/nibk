@@ -297,6 +297,12 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-family: 'OfficinaSerifBlackSCC';
+  src: url("../fonts/OfficinaSerifBlackSCC/officinaserifblackscc.woff2") format("woff2"), url("../fonts/OfficinaSerifBlackSCC/officinaserifblackscc.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 *,
 *::before,
 *::after {
@@ -3472,29 +3478,36 @@ h3 {
     font-size: 1.6rem;
     height: 5rem;
     border-radius: 5rem;
-    padding: 0 2.5rem; }
+    padding: 0 3rem;
+    letter-spacing: .1rem; }
 
 /* =header
 ---------------------------*/
 .header {
   padding-left: 5rem;
-  padding-right: 5rem;
-  padding-top: 5rem; }
+  padding-right: 3rem;
+  padding-top: 1rem;
+  font-family: 'OfficinaSerifBlackSCC'; }
   .header .navmenu {
     font-size: 2rem;
-    margin-top: .5rem; }
+    margin-top: .4rem;
+    letter-spacing: .25rem; }
     .header .navmenu a {
       color: #000; }
     .header .navmenu li {
-      margin-right: 6.2rem; }
+      margin-right: 5.8rem; }
       .header .navmenu li:last-child {
         margin-right: 0; }
   .header__left {
+    margin-top: 4rem;
     width: calc(50% - 320px); }
     .header__left .navmenu a:before {
       color: #000;
       border-bottom: 3px solid #f26722; }
+  .header__center img {
+    display: block; }
   .header__right {
+    margin-top: 4rem;
     width: calc(50% - 320px); }
     .header__right .navmenu a:before {
       color: #fff;
