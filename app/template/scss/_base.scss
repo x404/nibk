@@ -29,6 +29,7 @@ html {
 body{
 	@include font-size(1.4);
 	font-display: swap;
+	font-family: 'Officina Serif Book C';
 	// height: 100vh;
 }
 
@@ -48,6 +49,11 @@ input::-moz-focus-inner{
 	padding: 0;
 }
 
+
+.d-grid{
+	display: flex;
+}
+
 .main-grid{
 	height: 100%;
 	display: flex;
@@ -59,6 +65,9 @@ input::-moz-focus-inner{
 
 
 @supports (display:grid) {
+	.d-grid{
+		display: grid;
+	}
 	.main-grid{
 		height: auto;
 		min-height: 100vh;
@@ -283,7 +292,7 @@ h3{font-size:1.6rem}
 
 .footer{
 	padding-bottom: 3.5rem;
-	font-family: "Officina Serif Book C";
+	// font-family: "Officina Serif Book C";
 	.container{
 		max-width: 1920px !important; 
 		padding-left: 5px;
@@ -299,9 +308,9 @@ h3{font-size:1.6rem}
 	}
 
 	.lang{
-		font-size: 1.5rem;
-		display: flex;
 		align-items: center;
+		display: flex;
+		font-size: 1.5rem;
 		margin-right: 4rem;
 		a, span{
 			color: $color2;
