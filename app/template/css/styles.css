@@ -3440,7 +3440,7 @@ h3 {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .homepage .center-carousel .carousel__inner .el-dots:before, .homepage .center-carousel .carousel__inner .el-dots:after, .homepage .lastnews .carousel__pic:after {
+.before, .homepage .center-carousel .carousel__inner .pic:after, .homepage .center-carousel .carousel__inner .pic:before, .homepage .lastnews .carousel__pic:after {
   content: "";
   display: block;
   position: absolute; }
@@ -3528,15 +3528,20 @@ h3 {
   clip: rect(0 0 0 0); }
 
 /* Effect 11: text fill based on Lea Verou's animation http://dabblet.com/gist/6046779 */
+.cl-effect-11 a,
 .cl-effect-11-inv a {
-  color: #713a97 !important;
   position: relative;
   text-shadow: none;
   white-space: nowrap; }
+  .cl-effect-11 a:hover,
   .cl-effect-11-inv a:hover {
     text-decoration: none; }
+  .cl-effect-11 a:before,
   .cl-effect-11-inv a:before {
     max-width: 100%; }
+
+.cl-effect-11-inv a {
+  color: #713a97 !important; }
 
 .cl-effect-11-inv a::before {
   color: #000;
@@ -3547,8 +3552,9 @@ h3 {
   transition: max-width 0.5s;
   will-change: auto; }
 
-.cl-effect-11-inv a:hover::before,
-.cl-effect-11-inv a:focus::before {
+.cl-effect-11 a:focus:before, .cl-effect-11 a:hover:before,
+.cl-effect-11-inv a:focus:before,
+.cl-effect-11-inv a:hover:before {
   max-width: 0; }
 
 .footer {
@@ -3608,49 +3614,61 @@ h3 {
       overflow: hidden;
       position: relative;
       width: 1002px; }
-    .homepage .center-carousel .carousel__inner .el-dots {
-      background: url(../images/slider-dots.png) no-repeat center;
-      height: 920px;
-      width: 924px;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%); }
-      .homepage .center-carousel .carousel__inner .el-dots:before, .homepage .center-carousel .carousel__inner .el-dots:after {
+      .homepage .center-carousel .carousel__inner .pic:after {
+        background: #fff;
+        border-radius: 50%;
+        max-height: 367px;
+        max-width: 367px;
+        width: 40%;
+        height: 40%;
+        z-index: 2; }
+      .homepage .center-carousel .carousel__inner .pic:after, .homepage .center-carousel .carousel__inner .pic:before {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%); }
-      .homepage .center-carousel .carousel__inner .el-dots:before {
+      .homepage .center-carousel .carousel__inner .pic:before {
         background: url(../images/slider-el.png) no-repeat center;
-        width: 575px;
-        height: 575px; }
-      .homepage .center-carousel .carousel__inner .el-dots:after {
-        background: #fff;
-        border-radius: 50%;
-        width: 367px;
-        height: 367px; }
+        background-size: contain;
+        width: 62%;
+        height: 62%;
+        max-width: 575px;
+        max-height: 575px;
+        z-index: 1; }
+    .homepage .center-carousel .carousel__inner .el-dots {
+      background: url(../images/slider-dots.png) no-repeat center;
+      height: 920px;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 924px; }
   .homepage .center-carousel .slick-track {
     height: 100%; }
   .homepage .center-carousel .slick-slide .pic {
     height: 100vh; }
   .homepage .center-carousel .slick-slide img {
     position: relative;
-    width: 100%; }
+    max-width: 100%;
+    width: auto;
+    height: 100%; }
 
 .homepage .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  margin-top: -9rem; }
   .homepage .main .center {
+    margin-top: 13rem;
+    margin-right: 4rem;
     font-size: 2rem; }
     .homepage .main .center .title {
       color: #f26722;
       font-family: "Officina Serif Black C";
       font-size: 10rem;
       text-transform: uppercase;
-      line-height: 1.2; }
+      line-height: .9; }
     .homepage .main .center .cifr {
       color: #713a97;
       font-family: "Officina Serif Black C";
@@ -3659,7 +3677,7 @@ h3 {
 
 .homepage .about {
   margin-top: 10rem;
-  grid-template-columns: 1fr 250px 1fr 240px 1fr;
+  grid-template-columns: 1fr 250px 1fr 240px 292px;
   grid-column-gap: 1.5rem;
   padding: 0 16rem; }
   .homepage .about__cell {
@@ -3739,11 +3757,13 @@ h3 {
     .homepage .interesting .slick-arrow:hover line {
       stroke: #fff; }
 
-.homepage .interesting .carousel a:hover img {
-  transform: scale(1.1); }
+.homepage .interesting .carousel {
+  margin-left: -3rem; }
+  .homepage .interesting .carousel a:hover img {
+    transform: scale(1.1); }
 
 .homepage .lastnews {
-  padding-right: 5rem; }
+  padding-right: 0; }
   .homepage .lastnews a {
     display: block; }
     .homepage .lastnews a:hover .carousel__pic:after {

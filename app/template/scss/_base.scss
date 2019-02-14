@@ -255,9 +255,9 @@ h3{font-size:1.6rem}
 
 
 /* Effect 11: text fill based on Lea Verou's animation http://dabblet.com/gist/6046779 */
+.cl-effect-11,
 .cl-effect-11-inv{
 	a {
-		color: $color4 !important;		
 		position: relative;
 		text-shadow: none;
 		white-space: nowrap;
@@ -270,8 +270,16 @@ h3{font-size:1.6rem}
 	}
 } 
 
-.cl-effect-11-inv a::before {
-	
+.cl-effect-11-inv{
+	a{
+		color: $color4 !important;		
+		
+	}
+}
+
+
+
+.cl-effect-11-inv a::before {	
 	color: $color1;
 	content: attr(data-hover);
 	left: 0;
@@ -281,9 +289,18 @@ h3{font-size:1.6rem}
 	will-change: auto; 
 }
 
-.cl-effect-11-inv a:hover::before,
-.cl-effect-11-inv a:focus::before {
-	max-width: 0;
+
+
+.cl-effect-11,
+.cl-effect-11-inv{
+	a{
+		&:focus,
+		&:hover{
+			&:before {
+				max-width: 0;
+			}
+		}
+	}
 }
 
 

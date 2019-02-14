@@ -27,18 +27,19 @@
 				overflow: hidden;
 				position: relative;
 				width: $w;
-			}
 
-			.el-dots{
-				background: url(../images/slider-dots.png) no-repeat center;
-				height: 920px;				
-				width: 924px;
-				position: absolute;
-				left: 50%;
-				top: 50%;
-				transform: translate(-50%, -50%);
-				&:before,
-				&:after
+				&:after{
+					background: $color2;
+					border-radius: 50%;
+					max-height: 367px;
+					max-width: 367px;
+					$s: 40%;
+					width: $s;
+					height: $s;
+					z-index: 2;
+				}		
+				&:after,
+				&:before
 				{
 					@extend .before;
 					left: 50%;
@@ -48,15 +49,24 @@
 
 				&:before{					
 					background: url(../images/slider-el.png) no-repeat center;
-					width: 575px;
-					height: 575px;
+					background-size: contain;
+					$s: 62%;
+					width: $s;
+					height: $s;
+					max-width: 575px;
+					max-height: 575px;
+					z-index: 1;
 				}
-				&:after{
-					background: $color2;
-					border-radius: 50%;
-					width: 367px;
-					height: 367px;
-				}
+			}
+
+			.el-dots{
+				background: url(../images/slider-dots.png) no-repeat center;
+				height: 920px;				
+				left: 50%;
+				position: absolute;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				width: 924px;
 			}
 		}
 
@@ -69,7 +79,9 @@
 			}
 			img{
 				position: relative;
-				width: 100%;
+				max-width: 100%;
+				width: auto;
+				height: 100%;
 			}
 		}
 	}
@@ -82,14 +94,17 @@
 		justify-content: center;
 		position: relative;
 		z-index: 2;
+		margin-top: -9rem;
 		.center{
+			margin-top: 13rem;
+			margin-right: 4rem;
 			font-size: 2rem;
 			.title{
 				color: $color3;
 				font-family: "Officina Serif Black C";
 				font-size: 10rem;
 				text-transform: uppercase;
-				line-height: 1.2;
+				line-height: .9;
 			}
 			.cifr{
 				color: $color4;
@@ -106,7 +121,7 @@
 	// =about
 	.about{
 		margin-top: 10rem;
-		grid-template-columns: 1fr 250px 1fr 240px 1fr;
+		grid-template-columns: 1fr 250px 1fr 240px 292px;
 		grid-column-gap: 1.5rem;
 		padding: 0 16rem;
 		&__cell{
@@ -207,6 +222,7 @@
 			}
 		}
 		.carousel{
+			margin-left: -3rem;
 			a:hover{
 				img{
 					transform: scale(1.1);
@@ -215,7 +231,7 @@
 		}
 	}
 	.lastnews{
-		padding-right: 5rem;
+		padding-right: 0;
 		a{
 			display: block;
 			&:hover{
