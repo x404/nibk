@@ -60,3 +60,32 @@ $(document).ready(function(){
 		init();
 	});	
 });
+
+
+
+document.querySelector('#modal-menu .close-modal').addEventListener('click', function(e){
+	this.closest('.open').classList.remove('open');
+	document.querySelector('.body').classList.remove('m-modal-open');
+}, false);
+
+$(document).on('click', '.extra-toggle', function(e){
+	if (window.innerWidth > 650) {
+		var modal = $(this).data('popup');
+		$('#' + modal).addClass('open');
+	} else{
+		// for mobile menu
+		document.querySelector('.apanel').classList.add('open');
+	}
+});
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    var isEscape = false;
+    if ("key" in evt) {
+        isEscape = (evt.key == "Escape" || evt.key == "Esc");
+    } else {
+        isEscape = (evt.keyCode == 27);
+    }
+    if (isEscape && document.querySelector('.modal-menu').classList.contains('open')) {
+    	document.querySelector('.modal-menu.open').classList.remove('open');
+    }
+};

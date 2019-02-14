@@ -188,8 +188,8 @@ h3{font-size:1.6rem}
 	padding-left: 5rem;
 	padding-right: 3rem;
 	padding-top: 1rem;
-	font-family: 'OfficinaSerifBlackSCC';
-
+	font-family: "Officina Serif Black SCC";
+	
 	.navmenu{
 		font-size: 2rem;
 		margin-top: .4rem;
@@ -302,6 +302,35 @@ h3{font-size:1.6rem}
 		}
 	}
 }
+
+.close-modal,
+.close-menu{
+	cursor: pointer;
+	background: none !important;
+	border: none;
+	svg{
+		@include transition-param(transform)
+	}
+	line{
+		stroke:#fff;
+		stroke-width:5
+	}
+	&:hover{
+		svg{
+			@include rotation(90deg)
+		}
+	}	
+}
+
+
+.close-modal{
+	position: absolute;
+	right: 15px;
+	top: 20px;
+	z-index: 99;
+}
+
+
 
 
 

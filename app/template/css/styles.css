@@ -298,7 +298,7 @@ template {
   display: none; }
 
 @font-face {
-  font-family: 'OfficinaSerifBlackSCC';
+  font-family: 'Officina Serif Black SCC';
   src: url("../fonts/OfficinaSerifBlackSCC/officinaserifblackscc.woff2") format("woff2"), url("../fonts/OfficinaSerifBlackSCC/officinaserifblackscc.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
@@ -3310,11 +3310,20 @@ a.text-dark:hover, a.text-dark:focus {
 .webp .homepage {
   background-image: url(../images/bg/homepage.webp); }
 
-.homepage {
-  background-image: url(../images/bg/homepage.webp);
+.webp .modal-menu {
+  background-image: url(../images/bg/modal-menu.webp); }
+
+.homepage,
+.modal-menu {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
+
+.homepage {
+  background-image: url(../images/bg/homepage.jpg); }
+
+.modal-menu {
+  background-image: url(../images/bg/modal-menu.jpg); }
 
 .container {
   margin-right: auto;
@@ -3430,17 +3439,19 @@ h2 {
 h3 {
   font-size: 1.6rem; }
 
-.tdn {
+.tdn, .modal-menu .menu dd a {
   text-decoration: none; }
-  .tdn:hover {
+  .tdn:hover, .modal-menu .menu dd a:hover {
     text-decoration: underline; }
 
-.tdu {
+.tdu, .modal-menu .menu a, .modal-menu .contacts .cell__mail .email {
   text-decoration: underline; }
-  .tdu:hover {
+  .tdu:hover, .modal-menu .menu a:hover, .modal-menu .contacts .cell__mail .email:hover {
     text-decoration: none; }
 
-.before, .homepage .center-carousel .carousel__inner .pic:after, .homepage .center-carousel .carousel__inner .pic:before, .homepage .lastnews .carousel__pic:after {
+.before, .homepage .center-carousel .carousel__inner .pic:after, .homepage .center-carousel .carousel__inner .pic:before, .homepage .lastnews .carousel__pic:after, .modal-menu .menu dd a:before, .icon-balloon:before,
+.icon-tel:before,
+.icon-mail:before {
   content: "";
   display: block;
   position: absolute; }
@@ -3490,7 +3501,7 @@ h3 {
   padding-left: 5rem;
   padding-right: 3rem;
   padding-top: 1rem;
-  font-family: 'OfficinaSerifBlackSCC'; }
+  font-family: "Officina Serif Black SCC"; }
   .header .navmenu {
     font-size: 2rem;
     margin-top: .4rem;
@@ -3556,6 +3567,31 @@ h3 {
 .cl-effect-11-inv a:focus:before,
 .cl-effect-11-inv a:hover:before {
   max-width: 0; }
+
+.close-modal,
+.close-menu {
+  cursor: pointer;
+  background: none !important;
+  border: none; }
+  .close-modal svg,
+  .close-menu svg {
+    -webkit-transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out; }
+  .close-modal line,
+  .close-menu line {
+    stroke: #fff;
+    stroke-width: 5; }
+  .close-modal:hover svg,
+  .close-menu:hover svg {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
+
+.close-modal {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  z-index: 99; }
 
 .footer {
   padding-bottom: 3.5rem; }
@@ -4039,6 +4075,155 @@ h3 {
 
 .slick-arrow.slick-hidden {
   display: none; }
+
+.modal-menu {
+  background-color: #fff;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  padding: 0 0 10rem;
+  position: fixed;
+  top: 0;
+  transform: translateY(-100%);
+  transition: .5s all;
+  width: 100%;
+  z-index: -1;
+  color: #fff; }
+  .modal-menu a {
+    color: #fff; }
+  .modal-menu .inner {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0; }
+  .modal-menu .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; }
+    .modal-menu .container > div {
+      flex: 1 0 50%; }
+    @media (min-width: 1650px) {
+      .modal-menu .container {
+        max-width: 1600px; } }
+  .modal-menu .close-modal {
+    left: 5.2rem;
+    top: 5.7rem; }
+  .modal-menu .row {
+    flex-wrap: nowrap; }
+  .modal-menu .menu {
+    font-family: "Officina Serif Black C";
+    padding-top: 12.5rem;
+    width: 100%;
+    position: relative;
+    text-transform: uppercase; }
+    .modal-menu .menu a {
+      color: #fff;
+      font-size: 1.7rem;
+      font-weight: 100;
+      transition: color .3s; }
+    .modal-menu .menu .title,
+    .modal-menu .menu dt {
+      font-family: "Officina Serif Black SCC";
+      color: #000;
+      font-size: 3rem;
+      position: relative;
+      margin-bottom: -20px;
+      font-weight: 700;
+      letter-spacing: .1em; }
+      .modal-menu .menu .title a,
+      .modal-menu .menu dt a {
+        font-size: inherit;
+        font-weight: inherit; }
+        .modal-menu .menu .title a:hover,
+        .modal-menu .menu dt a:hover {
+          color: #713a97; }
+    .modal-menu .menu .title-mb {
+      margin-bottom: 4.5rem; }
+    .modal-menu .menu dl {
+      padding-right: 8rem; }
+    .modal-menu .menu dd {
+      margin: 3.8rem 0;
+      position: relative; }
+      .modal-menu .menu dd a {
+        display: inline-block;
+        line-height: 1.2;
+        text-decoration: none;
+        position: relative;
+        padding-left: 21px; }
+        .modal-menu .menu dd a:before {
+          background-color: #fff;
+          border-radius: 50%;
+          height: 11px;
+          left: 0;
+          top: 5px;
+          transition: background-color .3s;
+          width: 11px; }
+        .modal-menu .menu dd a:hover {
+          color: #713a97;
+          text-decoration: none; }
+          .modal-menu .menu dd a:hover:before {
+            background-color: #713a97; }
+  .modal-menu.open {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 9999; }
+  .modal-menu .contacts {
+    font-family: "Officina Serif Book C"; }
+    .modal-menu .contacts .title {
+      font-size: 6rem;
+      font-family: "Officina Serif Black C";
+      margin-bottom: 2rem; }
+    .modal-menu .contacts .d-grid {
+      grid-template-columns: repeat(3, minmax(min-content, max-content)); }
+    .modal-menu .contacts .cell__geo {
+      font-size: 2.4rem; }
+    .modal-menu .contacts .cell__tel {
+      font-size: 3.5rem; }
+      .modal-menu .contacts .cell__tel .tel:hover {
+        text-decoration: none; }
+    .modal-menu .contacts .cell__mail {
+      font-size: 3rem; }
+
+.icon-balloon,
+.icon-tel,
+.icon-mail {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: 90px; }
+  .icon-balloon:before,
+  .icon-tel:before,
+  .icon-mail:before {
+    left: 0;
+    top: 0; }
+
+.icon-balloon {
+  padding-left: 104px; }
+  .icon-balloon:before {
+    background-image: url(../images/sprite.png);
+    background-position: -90px 0px;
+    width: 67px;
+    height: 89px; }
+
+.icon-tel {
+  padding-left: 93px; }
+  .icon-tel:before {
+    background-image: url(../images/sprite.png);
+    background-position: -157px 0px;
+    width: 52px;
+    height: 90px; }
+
+.icon-mail {
+  padding-left: 112px; }
+  .icon-mail:before {
+    background-image: url(../images/sprite.png);
+    background-position: 0px 0px;
+    width: 90px;
+    height: 90px; }
 
 /* =mobile-menu
 ---------------------------*/

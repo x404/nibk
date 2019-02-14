@@ -1,0 +1,198 @@
+// modal menu
+.modal-menu
+{
+	background-color: #fff;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	padding: 0 0 10rem;
+	position: fixed;
+	top: 0;
+	transform: translateY(-100%);
+	transition: .5s all;
+	width: 100%;
+	z-index: -1;
+	color: $color2;
+	a{
+		color: $color2;		
+	}
+	.inner{
+		bottom: 0;
+		height: 100%;
+		left: 0;
+		overflow: auto;
+		position: fixed;
+		right: 0;
+		top: 0;
+	}
+
+	.container{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+
+		& > div{
+			flex: 1 0 50%;
+		}
+		@media (min-width: 1650px){
+			max-width: 1600px
+		}
+	}
+
+	.close-modal{
+		left: 5.2rem;
+		top: 5.7rem;
+	}
+	.row{
+		flex-wrap: nowrap;
+	}
+	.menu{
+		font-family: "Officina Serif Black C";
+		padding-top: 12.5rem;
+		width: 100%;
+		position: relative;
+		text-transform: uppercase;
+		a{
+			@extend .tdu;
+			color: $color2;
+			font-size: 1.7rem;
+			font-weight: 100;
+			transition: color .3s;
+		}
+
+		.title,
+		dt{
+			font-family: "Officina Serif Black SCC";
+			color: $color1;
+			font-size: 3rem;
+			position: relative;
+			margin-bottom: -20px;
+			font-weight: 700;
+			letter-spacing: .1em;
+			a{
+				font-size: inherit;
+				font-weight: inherit;
+				&:hover{
+					color: $color4;
+				}
+			}
+		}
+
+		.title{
+			&-mb{
+				margin-bottom: 4.5rem;
+			}
+		}
+
+		dl{
+			padding-right: 8rem;
+		}
+		dd{
+			margin: 3.8rem 0;
+			position: relative;
+
+			a{
+				display: inline-block;
+				@extend .tdn;
+				line-height: 1.2;
+				text-decoration: none;
+				position: relative;
+				padding-left: 21px;
+				&:before{
+					@extend .before;
+					background-color: $color2;
+					border-radius: 50%;
+					height: 11px;
+					left: 0;
+					top: 5px;
+					transition: background-color .3s;
+					width: 11px;
+				}
+				&:hover{
+					color: $color4;
+					text-decoration: none;
+					&:before{
+						background-color: $color4;
+					}
+				}
+			}
+		}
+	}
+
+
+	&.open{
+		transform: translateY(0);
+		opacity: 1;
+		z-index: 9999;
+	}
+
+	.contacts{
+		font-family: "Officina Serif Book C";
+		.title{
+			font-size: 6rem;
+			font-family: "Officina Serif Black C";
+			margin-bottom: 2rem;
+		}
+		.d-grid{
+			grid-template-columns: repeat(3, minmax(min-content, max-content))
+		}
+		.cell{
+			&__geo{
+				font-size: 2.4rem;				
+			}
+			&__tel{
+				font-size: 3.5rem;
+				.tel{
+					&:hover{
+						text-decoration: none;
+					}
+				}
+			}
+			&__mail{
+				font-size: 3rem;
+				.email{
+					@extend .tdu;
+				}				
+			}
+		}
+	}
+
+}
+
+.icon-balloon,
+.icon-tel,
+.icon-mail
+{
+	display: flex;
+	align-items: center;
+	position: relative;
+	min-height: 90px;
+	&:before{
+		@extend .before;
+		left: 0;
+		top: 0;
+	}
+}
+
+.icon-balloon{
+	padding-left: 104px;
+	&:before{
+		@include sprite($icon-balloon);
+	}
+}
+
+.icon-tel{
+	padding-left: 93px;
+	&:before{
+		@include sprite($icon-tel);
+	}
+}
+
+
+.icon-mail{
+	padding-left: 112px;	
+	&:before{
+		@include sprite($icon-mail);
+	}
+}

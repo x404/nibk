@@ -2,12 +2,25 @@
 	.homepage{
 		background-image: url(../images/bg/homepage.webp);
 	}
+
+	.modal-menu{
+		background-image: url(../images/bg/modal-menu.webp);
+	}
+}
+
+.homepage,
+.modal-menu
+{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 
 .homepage{
-	background-image: url(../images/bg/homepage.webp);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+	background-image: url(../images/bg/homepage.jpg);
+}
+
+.modal-menu{
+	background-image: url(../images/bg/modal-menu.jpg);
 }
