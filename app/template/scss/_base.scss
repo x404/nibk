@@ -189,7 +189,7 @@ h3{font-size:1.6rem}
 	padding-right: 3rem;
 	padding-top: 1rem;
 	font-family: "Officina Serif Black SCC";
-	
+
 	.navmenu{
 		font-size: 2rem;
 		margin-top: .4rem;
@@ -379,5 +379,76 @@ h3{font-size:1.6rem}
 			padding-top: .5rem;
 			text-align: center;
 		}
+	}
+}
+
+
+#modal-callback{
+	background: rgba(242, 103, 34, .98);
+	.inner{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+
+	.title{
+		font-family: "Officina Serif Black C";
+		font-size: 10rem;
+		line-height: 1.4;
+	}
+	.subtitle{
+		font-size: 1.8rem;
+	}
+	.form{
+		font-family: "Officina Serif Black C";
+		margin-top: 4rem;
+		.col{
+			flex-grow: 0			
+		}
+
+		.input-field{
+			color: $color2;				
+			input.form-control{
+				background: none;
+				border-bottom-color: $color2;
+				color: currentColor;
+				font-size: 1.7rem;
+				height: 3.6rem;
+				width: 36rem;
+				letter-spacing: .15rem
+			}
+			label{
+				color: currentColor;
+			}
+		}
+		.textarea-field{
+			margin-top: 4.2rem;
+			.form-control{
+				background: none;
+				color: $color2;
+			}
+		}
+	}
+
+	textarea{
+		width: 100%;
+		display: block;
+	}
+
+	.bottom{
+		margin-top: 3.4em;
+	}
+
+	.btn-submit{
+		border-radius: 6rem;
+		display: block;
+		font-family: "Officina Serif Black C";
+		font-size: 2rem;
+		height: 6rem;
+		letter-spacing: .1rem;
+		margin-left: 3.5rem;
+		padding: 0 3rem;
 	}
 }
