@@ -43,7 +43,7 @@
 			<div class="d-flex justify-content-between">
 				<div class="header__left">
 					<div class="d-flex">
-						<button type="button" class="extra-toggle" data-popup="modal-menu" aria-label="Show / hide menu">
+						<button type="button" class="extra-toggle" data-popup="modal" data-target="#modal-menu" aria-label="Show / hide menu">
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
@@ -70,7 +70,7 @@
 								<li><a href="contacts.html" title="" data-hover="Contact us">Contact us</a></li>
 							</ul>
 						</div>
-						<button class="btn btn-purple btn-callback" data-toggle="modal" data-target="#modal-callback">Call back</button>
+						<button class="btn btn-purple btn-callback" data-popup="modal" data-target="#modal-callback">Call back</button>
 					</div>
 				</div>
 			</div>
@@ -225,7 +225,7 @@
 
 
 <!-- =modal menu -->
-<div class="modal-menu" id="modal-menu" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="genmodal modal-menu" id="modal-menu" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="inner" role="document">
 		<div class="container">
 			<div class="row">
@@ -234,7 +234,7 @@
 						<dl>
 							<dt><a href="#" title="">COMPANY</a></dt>
 							<dd><a href="#" title="">About Us</a></dd>
-							<dd><a href="#" title="">Materials and Test Reports</a></dd>
+							<dd><a href="#" title="">Materials and <br>Test Reports</a></dd>
 							<dd><a href="#" title="">News & Expos</a></dd>
 						</dl>
 					</div>
@@ -302,6 +302,68 @@
 	</div>
 </div>
 <!-- =/modal menu -->
+
+
+<div class="genmodal modal-callback" id="modal-callback" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="inner" role="document">
+		<div class="container">
+			<p class="title text-center">Ask Us</p>
+			<p class="subtitle text-center">We will respond to your message within 24 hours. <br>We thank you for your contiuned support of our NiBK products.</p>
+
+				<form action="#" method="post" class="form form-ask">
+					<fieldset>
+						<div class="row">
+							<div class="col">
+								<div class="select-wrapper">
+									<select name="country" class="country" id="selectcountry">
+										<option value="">Country</option>
+										<option value="Autstralia">Autstralia</option>
+										<option value="Albania">Albania</option>
+										<option value="Angola">Angola</option>
+										<option value="Armenia">Armenia</option>
+										<option value="Russia">Russia</option>
+										<option value="Spain">Spain</option>
+										<option value="Japan">Japan</option>
+										<option value="USA">USA</option>
+										<option value="Ukraine">Ukraine</option>
+										<option value="New zeland">New zeland</option>
+									</select>
+								</div>
+							</div>
+							<div class="col">
+								<div class="input-field">
+									<label for="name" class="name-field">Your Name</label>
+									<label for="name" class="helper-field helper-field-name">Your Name</label>
+									<input type="email" id="name" name="name" class="form-control required" value="">
+								</div>
+							</div>
+							<div class="col">
+								<div class="input-field">
+									<label for="email" class="name-field">Your e-mail</label>
+									<label for="email" class="helper-field helper-field-name">Your e-mail</label>
+									<input type="email" id="email" name="email" class="form-control email required" value="">
+								</div>
+							</div>
+						</div>
+
+						<div class="input-field textarea-field">
+							<label for="msg" class="name-field">Your Enquiry</label>
+							<label for="msg" class="helper-field helper-field-msg">Your Enquiry</label>
+							<textarea id="msg" name="msg" class="form-control textarea required"></textarea>
+						</div>
+						<input type="submit" class="btn btn-purple btn-submit" value="Continue" />
+					</fieldset>
+				</form>	
+
+		</div>
+		<button type="button" data-dismiss="modal" class="close-modal" aria-label="Close">
+			<svg width="28" height="28">
+				<line x1="0" y1="0" x2="28" y2="28"/>
+				<line x1="28" y1="0" x2="0" y2="28"/>
+			</svg>
+		</button>		
+	</div>	
+</div>
 
 
 <div id="outdated"></div>

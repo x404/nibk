@@ -4076,7 +4076,8 @@ h3 {
 .slick-arrow.slick-hidden {
   display: none; }
 
-.modal-menu {
+.modal-menu,
+.modal-callback {
   background-color: #fff;
   height: 100%;
   left: 0;
@@ -4089,104 +4090,112 @@ h3 {
   width: 100%;
   z-index: -1;
   color: #fff; }
-  .modal-menu a {
-    color: #fff; }
-  .modal-menu .inner {
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    overflow: auto;
-    position: fixed;
-    right: 0;
-    top: 0; }
-  .modal-menu .container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 100vh; }
-    .modal-menu .container > div {
-      flex: 1 0 50%; }
-    @media (min-width: 1650px) {
-      .modal-menu .container {
-        max-width: 1600px; } }
-  .modal-menu .close-modal {
-    left: 5.2rem;
-    top: 5.7rem; }
-  .modal-menu .row {
-    flex-wrap: nowrap; }
-  .modal-menu .menu {
-    font-family: "Officina Serif Black C";
-    padding-top: 12.5rem;
-    width: 100%;
-    position: relative;
-    text-transform: uppercase; }
-    .modal-menu .menu a {
-      color: #fff;
-      font-size: 1.7rem;
-      font-weight: 100;
-      transition: color .3s; }
-    .modal-menu .menu .title,
-    .modal-menu .menu dt {
-      font-family: "Officina Serif Black SCC";
-      color: #000;
-      font-size: 3rem;
-      position: relative;
-      margin-bottom: -20px;
-      font-weight: 700;
-      letter-spacing: .1em; }
-      .modal-menu .menu .title a,
-      .modal-menu .menu dt a {
-        font-size: inherit;
-        font-weight: inherit; }
-        .modal-menu .menu .title a:hover,
-        .modal-menu .menu dt a:hover {
-          color: #713a97; }
-    .modal-menu .menu .title-mb {
-      margin-bottom: 4.5rem; }
-    .modal-menu .menu dl {
-      padding-right: 8rem; }
-    .modal-menu .menu dd {
-      margin: 3.8rem 0;
-      position: relative; }
-      .modal-menu .menu dd a {
-        display: inline-block;
-        line-height: 1.2;
-        text-decoration: none;
-        position: relative;
-        padding-left: 21px; }
-        .modal-menu .menu dd a:before {
-          background-color: #fff;
-          border-radius: 50%;
-          height: 11px;
-          left: 0;
-          top: 5px;
-          transition: background-color .3s;
-          width: 11px; }
-        .modal-menu .menu dd a:hover {
-          color: #713a97;
-          text-decoration: none; }
-          .modal-menu .menu dd a:hover:before {
-            background-color: #713a97; }
-  .modal-menu.open {
+  .modal-menu.open,
+  .modal-callback.open {
     transform: translateY(0);
     opacity: 1;
     z-index: 9999; }
-  .modal-menu .contacts {
-    font-family: "Officina Serif Book C"; }
-    .modal-menu .contacts .title {
-      font-size: 6rem;
-      font-family: "Officina Serif Black C";
-      margin-bottom: 2rem; }
-    .modal-menu .contacts .d-grid {
-      grid-template-columns: repeat(3, minmax(min-content, max-content)); }
-    .modal-menu .contacts .cell__geo {
-      font-size: 2.4rem; }
-    .modal-menu .contacts .cell__tel {
-      font-size: 3.5rem; }
-      .modal-menu .contacts .cell__tel .tel:hover {
+
+.modal-menu a {
+  color: #fff; }
+
+.modal-menu .inner {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0; }
+
+.modal-menu .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; }
+  .modal-menu .container > div {
+    flex: 1 0 50%; }
+  @media (min-width: 1650px) {
+    .modal-menu .container {
+      max-width: 1600px; } }
+
+.modal-menu .close-modal {
+  left: 5.2rem;
+  top: 5.7rem; }
+
+.modal-menu .row {
+  flex-wrap: nowrap; }
+
+.modal-menu .menu {
+  font-family: "Officina Serif Black C";
+  padding-top: 12.5rem;
+  width: 100%;
+  position: relative;
+  text-transform: uppercase; }
+  .modal-menu .menu a {
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 100;
+    transition: color .3s; }
+  .modal-menu .menu .title,
+  .modal-menu .menu dt {
+    font-family: "Officina Serif Black SCC";
+    color: #000;
+    font-size: 3rem;
+    position: relative;
+    margin-bottom: -20px;
+    font-weight: 700;
+    letter-spacing: .1em; }
+    .modal-menu .menu .title a,
+    .modal-menu .menu dt a {
+      font-size: inherit;
+      font-weight: inherit; }
+      .modal-menu .menu .title a:hover,
+      .modal-menu .menu dt a:hover {
+        color: #713a97; }
+  .modal-menu .menu .title-mb {
+    margin-bottom: 4.5rem; }
+  .modal-menu .menu dl {
+    padding-right: 8rem; }
+  .modal-menu .menu dd {
+    margin: 3.8rem 0;
+    position: relative; }
+    .modal-menu .menu dd a {
+      display: inline-block;
+      line-height: 1.2;
+      text-decoration: none;
+      position: relative;
+      padding-left: 21px; }
+      .modal-menu .menu dd a:before {
+        background-color: #fff;
+        border-radius: 50%;
+        height: 11px;
+        left: 0;
+        top: 5px;
+        transition: background-color .3s;
+        width: 11px; }
+      .modal-menu .menu dd a:hover {
+        color: #713a97;
         text-decoration: none; }
-    .modal-menu .contacts .cell__mail {
-      font-size: 3rem; }
+        .modal-menu .menu dd a:hover:before {
+          background-color: #713a97; }
+
+.modal-menu .contacts {
+  font-family: "Officina Serif Book C"; }
+  .modal-menu .contacts .title {
+    font-size: 6rem;
+    font-family: "Officina Serif Black C";
+    margin-bottom: 2rem; }
+  .modal-menu .contacts .d-grid {
+    grid-template-columns: repeat(3, minmax(min-content, max-content)); }
+  .modal-menu .contacts .cell__geo {
+    font-size: 2.4rem; }
+  .modal-menu .contacts .cell__tel {
+    font-size: 3.5rem; }
+    .modal-menu .contacts .cell__tel .tel:hover {
+      text-decoration: none; }
+  .modal-menu .contacts .cell__mail {
+    font-size: 3rem; }
 
 .icon-balloon,
 .icon-tel,

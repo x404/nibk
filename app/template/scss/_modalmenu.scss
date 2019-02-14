@@ -1,5 +1,6 @@
 // modal menu
-.modal-menu
+.modal-menu,
+.modal-callback
 {
 	background-color: #fff;
 	height: 100%;
@@ -13,6 +14,15 @@
 	width: 100%;
 	z-index: -1;
 	color: $color2;
+	&.open{
+		transform: translateY(0);
+		opacity: 1;
+		z-index: 9999;
+	}
+}
+
+
+.modal-menu{
 	a{
 		color: $color2;		
 	}
@@ -121,11 +131,7 @@
 	}
 
 
-	&.open{
-		transform: translateY(0);
-		opacity: 1;
-		z-index: 9999;
-	}
+
 
 	.contacts{
 		font-family: "Officina Serif Book C";
