@@ -230,14 +230,22 @@
 <script src="/template/js/engine.js"></script>
 
 <script>
-$(document).ready(function(){
+	window.addEventListener("mousemove",onmousemove, false)
+	function onmousemove(e){
+		let xpos=e.clientX;
+		document.querySelector('#home-carousel .slick-current img').style.right = ( -20+(xpos/70))+"px" 
+	};
 
-$(window).on('mousemove', function(e) {
-    var xpos=e.clientX;
-    $('#home-carousel .slick-current img').css('right',(( -10+(xpos/70))+"px"));                  
-  });
-});
-</script>
+
+	resize();
+	window.onresize = resize;
+
+	function resize() {
+		let hwin = window.innerHeight;
+		[].forEach.call( document.querySelectorAll('.center-carousel .carousel__inner .pic'), function(el, i){
+			el.style.width = hwin+"px"
+		}) 
+	}
 </script>
 </body>
 </html>
