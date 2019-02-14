@@ -63,20 +63,30 @@ $(document).ready(function(){
 
 
 
-document.querySelector('#modal-menu .close-modal').addEventListener('click', function(e){
-	this.closest('.open').classList.remove('open');
-	document.querySelector('.body').classList.remove('m-modal-open');
-}, false);
-
-$(document).on('click', '.extra-toggle', function(e){
-	if (window.innerWidth > 650) {
-		var modal = $(this).data('popup');
-		$('#' + modal).addClass('open');
-	} else{
-		// for mobile menu
-		document.querySelector('.apanel').classList.add('open');
-	}
+// MODAL MENU
+[].forEach.call(document.querySelectorAll('.genmodal .close-modal'),function(el,i){
+	el.addEventListener('click', function(e){
+		document.querySelector('.genmodal.open').setAttribute('aria-hidden', 'true');
+		document.querySelector('.genmodal.open').classList.remove('open');
+	})
 });
+
+// $(document).on('click', '.extra-toggle', function(e){
+[].forEach.call(document.querySelectorAll('[data-popup="modal"]'),function(el,i){
+	el.addEventListener('click', function(e){
+		if (window.innerWidth > 650) {
+			var modal = this.dataset.target;
+			document.querySelector(modal).classList.add('open');
+			document.querySelector(modal).setAttribute('aria-hidden', 'false');
+		} else{
+			// for mobile menu
+			document.querySelector('.apanel').classList.add('open');
+		}
+	})
+});
+
+
+// GENERAL EVENT - ONKEYDOWN
 document.onkeydown = function(evt) {
     evt = evt || window.event;
     var isEscape = false;
@@ -85,7 +95,9 @@ document.onkeydown = function(evt) {
     } else {
         isEscape = (evt.keyCode == 27);
     }
-    if (isEscape && document.querySelector('.modal-menu').classList.contains('open')) {
-    	document.querySelector('.modal-menu.open').classList.remove('open');
+    // if (isEscape && document.querySelector('.genmodal.open').classList.contains('open')) {
+    if (isEscape && document.querySelector('.genmodal.open')) {
+    	document.querySelector('.genmodal.open').setAttribute('aria-hidden', 'true');
+    	document.querySelector('.genmodal.open').classList.remove('open');
     }
 };
