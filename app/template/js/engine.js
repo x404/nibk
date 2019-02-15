@@ -44,7 +44,7 @@ $(document).ready(function(){
 		autoplaySpeed: 500000,
 		arrows : true,
         infinite : true,
-        appendArrows: '.interesting .carousel-nav'
+        appendArrows: '.content .interesting .carousel-nav'
 	});	
 
 	$('#news-carousel').slick({
@@ -57,7 +57,34 @@ $(document).ready(function(){
 		autoplaySpeed: 500000,
 		arrows : true,
         infinite : true,
-        appendArrows: '.lastnews .carousel-nav'
+        appendArrows: '.content .lastnews .carousel-nav'
+	});	
+
+
+	$('#dyk-md-carousel').slick({
+		prevArrow:'<button class="slick-arrow slick-prev" aria-label="Previous" type="button"><svg width="12" height="22"><line x1="12" y1="0" x2="0" y2="12"/><line x1="-2" y1="9" x2="12" y2="22"/></svg></button>',
+		nextArrow:'<button class="slick-arrow slick-next" aria-label="Next" type="button"><svg width="12" height="22"><line x1="0" y1="0" x2="12" y2="12"/><line x1="14" y1="10" x2="-2" y2="22"/></svg></button>',
+		dots: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 500000,
+		arrows : true,
+        infinite : true,
+        appendArrows: '.info-md .interesting .carousel-nav'
+	});	
+
+	$('#news-md-carousel').slick({
+		prevArrow:'<button class="slick-arrow slick-prev" aria-label="Previous" type="button"><svg width="12" height="22"><line x1="12" y1="0" x2="0" y2="12"/><line x1="-2" y1="9" x2="12" y2="22"/></svg></button>',
+		nextArrow:'<button class="slick-arrow slick-next" aria-label="Next" type="button"><svg width="12" height="22"><line x1="0" y1="0" x2="12" y2="12"/><line x1="14" y1="10" x2="-2" y2="22"/></svg></button>',
+		dots: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 500000,
+		arrows : true,
+        infinite : true,
+        appendArrows: '.info-md .lastnews .carousel-nav'
 	});		
 
 	// mobile-menu

@@ -5,7 +5,6 @@ $color_2: #0563bf;
 /* =mobile-menu
 ---------------------------*/
 .show-sm,
-.navbar-toggle,
 .close-menu{
 	display: none;
 }
@@ -15,7 +14,6 @@ $color_2: #0563bf;
 
 /* =mobile-menu
 ---------------------------*/
-.navbar-toggle,
 .close-menu{
 	display: none;
 }
@@ -76,26 +74,6 @@ $color_2: #0563bf;
 	.show-sm{
 		display: block;
 		text-align: left;
-	}
-	.navbar-toggle{
-		background-color:$color_2;
-		border: none;
-		cursor: pointer;
-		display: block;
-		height: 70px;
-		right: 0;
-		position: fixed;
-		text-align: center;
-		top: 0;
-		width: 70px;
-		z-index: 99;
-		.icon-bar{
-			background-color: $color_1;
-			display: block;
-			height: 2px;
-			margin: 8px auto;
-			width: 30px;
-		}
 	}
 
 

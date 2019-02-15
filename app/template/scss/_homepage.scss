@@ -111,10 +111,9 @@
 				font-family: "Officina Serif Black C";
 				font-size: 7rem;
 				line-height: 1.2;
+				letter-spacing: .3rem
 			}
 		}
-
-
 	}
 	// =/main
 
@@ -139,7 +138,12 @@
 	// =/about
 
 
+	.info-md{
+		display: none;
+	}
 
+	.content{
+	}
 	.interesting,
 	.lastnews{
 		.title{
@@ -283,6 +287,51 @@
 					border-radius: 50%
 				}
 			}
+		}
+	}
+
+	.info-md{
+		margin: 4.7rem 0 1.5rem;
+		.interesting,
+		.lastnews{
+			.carousel{
+				&__title{
+					font-size: 1.7rem;
+					color: $color2;
+				}
+			}
+		}
+		.interesting{
+			.carousel{
+				&__pic{
+					margin-top: .5rem;
+					img{
+						max-width: 18rem;						
+					}
+				}
+			}
+		}
+		.lastnews{
+			.carousel{
+				&__pic{
+					height: auto;
+					width: 200px;
+					img{	
+						max-width: 150px;
+						max-height: 150px;
+					}
+					&:after{
+						$s: 90px;
+						width: $s;
+						height: $s;
+						border-radius: 0 $s 0 0;
+						border-top-width: 17px;
+						border-right-width: 17px;
+						right: 9px;
+						top: -16px;
+					}
+				}
+			}			
 		}
 	}
 }
