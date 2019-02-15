@@ -52,6 +52,32 @@
 
 
 @media (max-width: 1500px){
+	// modalmenu
+	.modal-menu{
+		.menu{
+			.title,
+			dt{
+				font-size: 2.8rem;
+			}
+		}
+		.contacts .title{
+			font-size: 5rem;
+		}
+		.contacts .cell{
+			&__geo{
+				font-size: 2.2rem;
+			}
+			&__tel{
+				font-size: 3.2rem;
+			}
+			&__mail{
+				font-size: 3rem;
+			}
+
+		}
+	}
+	
+	// header
 	.header{
 		padding-left: 3rem;
 		padding-right: 3rem;
@@ -73,6 +99,20 @@
 	.header{
 		&__center img{
 			width: 270px;
+		}
+	}
+
+	.modal-menu{
+		.container{
+			.col-join{
+				flex-grow: 1;
+				.d-flex{
+					display: block !important;
+				}
+				.title{
+					margin-bottom: 1rem;
+				}
+			}
 		}
 	}
 }
@@ -100,6 +140,23 @@
 	.extra-toggle{
 		margin-right: 1rem;
 	}
+
+
+	#modal-callback{
+		.container{
+			max-width: 1000px
+		}
+		.title{
+			font-size: 7rem;
+		}
+		.subtitle{
+			font-size: 1.6rem;
+		}
+		.form .input-field input.form-control,
+		.select-wrapper{
+			width: 28rem;
+		}
+	}
 }
 
 @media (max-width: 1250px){
@@ -112,6 +169,52 @@
 
 		&__right{
 			margin-top: 4.4rem;
+		}
+	}
+
+
+	// modalmenu
+	.modal-menu{
+		.menu{
+			.title,
+			dt{
+				font-size: 2.6rem;				
+			}
+		}
+		.contacts .title{
+			font-size: 4.8rem;
+		}
+		.contacts .cell{
+			&:before{
+			}
+			&__geo{
+				font-size: 2rem;
+			}
+			&__tel{
+				font-size: 3rem;
+			}
+			&__mail{
+				font-size: 2.8rem;
+			}
+		}
+
+		.icon-balloon{
+			padding-left: 70px;
+			&:before{
+				transform: scale(0.7)				
+			}
+		}
+		.icon-tel{
+			padding-left: 60px;
+			&:before{
+				transform: scale(0.7)				
+			}
+		}
+		.icon-mail{
+			padding-left: 85px;
+			&:before{
+				transform: scale(0.7)				
+			}
 		}
 	}
 
@@ -144,7 +247,105 @@
 	.header__center img{
 		width: 230px;
 	}
+
+
+	// modalmenu
+	.modal-menu{
+		.close-modal{
+			left: 3rem;
+			top: 3rem;
+		}
+
+		.menu{
+			padding-top: 9rem;
+			.title,
+			dt{
+				font-size: 2.6rem;
+				margin-bottom: 1rem;
+			}
+			dl{
+				padding-right: 5rem;
+			}
+			dd{
+				margin: 2rem 0;
+			}
+		}
+		.contacts .title{
+			font-size: 4.5rem;
+		}
+		.contacts .cell{
+			&:before{
+			}
+			&__geo{
+				font-size: 2rem;
+			}
+			&__tel{
+				font-size: 2.5rem;
+			}
+			&__mail{
+				font-size: 2.5rem;
+			}
+		}
+
+		.icon-balloon{
+			padding-left: 70px;
+			&:before{
+				transform: scale(0.55)				
+			}
+		}
+		.icon-tel{
+			padding-left: 60px;
+			&:before{
+				transform: scale(0.55)				
+			}
+		}
+		.icon-mail{
+			padding-left: 85px;
+			&:before{
+				transform: scale(0.55)				
+			}
+		}
+	}
+
+
+
 }
+
+
+@media (max-width: 1100px){
+	.modal-menu .container{
+		max-width: 95%
+	}
+}
+
+@media (max-width: 1024px){
+	#modal-callback{
+		.container{
+			max-width: 90%
+		}
+		.title{
+			font-size: 6rem;
+		}
+		.subtitle{
+			font-size: 1.5rem;
+		}
+		.form .input-field input.form-control,
+		.select-wrapper{
+			width: 28rem;
+		}
+	}
+
+	.modal-menu .menu {
+		.title,
+		dt{
+			font-size: 2.4rem;
+		}
+		dl{
+			padding-right: 2rem;
+		}
+	}
+}
+
 
 
 @media (max-width: 991px){
