@@ -136,11 +136,18 @@ h3{font-size:1.6rem}
 }
 
 
+.extra-toggle-wrapper{
+	.extra-title{
+		display: none;
+	}
+}
+
 .extra-toggle{
 	background: none;
 	border-radius: 50%;
 	border: 1px solid $color2;
 	cursor: pointer;
+	flex-shrink: 0; 
 	margin-right: 6rem;
 	height: 5rem;
 	width: 5rem;
@@ -178,8 +185,9 @@ h3{font-size:1.6rem}
 		font-size: 1.6rem;
 		height: 5rem;
 		border-radius: 5rem;
-		padding: 0 3rem;
-		letter-spacing: .1rem
+		// padding: 0 3rem;
+		letter-spacing: .1rem;
+		width: 150px;
 	}
 }
 /* =header
