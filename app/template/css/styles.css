@@ -3651,7 +3651,7 @@ h3 {
         border-bottom-color: #fff;
         color: currentColor;
         font-size: 1.7rem;
-        height: 3.6rem;
+        height: 3rem;
         width: 36rem;
         letter-spacing: .15rem; }
       #modal-callback .form .input-field label {
@@ -3659,8 +3659,13 @@ h3 {
     #modal-callback .form .textarea-field {
       margin-top: 4.2rem; }
       #modal-callback .form .textarea-field .form-control {
+        font-size: 1.7rem;
+        letter-spacing: .15rem;
         background: none;
-        color: #fff; }
+        background: url("data:image/gif;base64,R0lGODlhAQAeAIABAP///wAAACH5BAEAAAEALAAAAAABAB4AAAIFjI+pC1AAOw==");
+        color: #fff;
+        height: 64px;
+        line-height: 1.8; }
   #modal-callback textarea {
     width: 100%;
     display: block; }
@@ -4298,7 +4303,7 @@ h3 {
     overflow: hidden;
     position: absolute;
     text-overflow: ellipsis;
-    top: -2px;
+    top: -9px;
     transform-origin: left top 0;
     transform: translate3d(0, 9px, 0px);
     transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
@@ -4308,13 +4313,14 @@ h3 {
     opacity: 0;
     color: #3a3a3a; }
   .input-field .form-control {
-    border: none;
+    border: none; }
+  .input-field input.form-control {
     border-bottom: 2px solid #3a3a3a; }
-    .input-field .form-control:focus, .input-field .form-control:active {
+    .input-field input.form-control:focus, .input-field input.form-control:active {
       border-bottom-color: #030303; }
 
 .textarea-field label {
-  top: -10px; }
+  top: -px; }
 
 .is-focused label {
   -webkit-transform: translate3d(0, -16px, 0) scale(0.8);

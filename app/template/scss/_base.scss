@@ -415,7 +415,7 @@ h3{font-size:1.6rem}
 				border-bottom-color: $color2;
 				color: currentColor;
 				font-size: 1.7rem;
-				height: 3.6rem;
+				height: 3rem;
 				width: 36rem;
 				letter-spacing: .15rem
 			}
@@ -426,8 +426,16 @@ h3{font-size:1.6rem}
 		.textarea-field{
 			margin-top: 4.2rem;
 			.form-control{
+				font-size: 1.7rem;
+				letter-spacing: .15rem;
 				background: none;
+				// background: url('../images/textarea-w.gif') repeat;
+				// background:url("data:image/gif;base64,R0lGODlhASAeIIABIP///yAgICH5BAEgIAEgLCAgICABIB4gIAIFjI+pC1AgOw") repeat left top;
+				background: url('data:image/gif;base64,R0lGODlhAQAeAIABAP///wAAACH5BAEAAAEALAAAAAABAB4AAAIFjI+pC1AAOw==');
 				color: $color2;
+				height: 64px;
+				line-height: 1.8;
+				// resize: none
 			}
 		}
 	}

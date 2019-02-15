@@ -15,7 +15,7 @@
 		overflow: hidden;
 		position: absolute;
 		text-overflow: ellipsis;
-		top: -2px;
+		top: -9px;
 		transform-origin: left top 0;
 		transform: translate3d(0, 9px, 0px);
 		transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
@@ -33,6 +33,9 @@
 
 	.form-control{
 		border: none;
+	}
+
+	input.form-control{
 		border-bottom: 2px solid $color9;
 
 		&:focus,
@@ -40,12 +43,13 @@
 		{
 			border-bottom-color: $color6
 		}
+
 	}
 
 }
 .textarea-field{
 	label{
-		top: -10px;
+		top: -px;
 	}
 }
 
