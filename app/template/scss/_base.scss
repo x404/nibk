@@ -137,8 +137,15 @@ h3{font-size:1.6rem}
 
 
 .extra-toggle-wrapper{
+	margin-right: 6rem;
 	.extra-title{
 		display: none;
+	}
+	&:hover{
+		.extra-toggle{
+			background-color: $color3;
+			border-color: $color3;			
+		}
 	}
 }
 
@@ -148,7 +155,6 @@ h3{font-size:1.6rem}
 	border: 1px solid $color2;
 	cursor: pointer;
 	flex-shrink: 0; 
-	margin-right: 6rem;
 	height: 5rem;
 	width: 5rem;
 	transition: .3s;
@@ -161,8 +167,7 @@ h3{font-size:1.6rem}
 		width: 22px;
 	}	
 	&:hover{
-		background-color: $color3;
-		border-color: $color3;
+
 	}
 }
 

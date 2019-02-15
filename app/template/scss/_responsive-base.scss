@@ -35,7 +35,7 @@
 		}
 	}
 
-	.extra-toggle{
+	.extra-toggle-wrapper{
 		margin-right: 3.5rem;
 	}
 
@@ -86,13 +86,15 @@
 
 
 	.extra-toggle-wrapper{
+		cursor: pointer;
+	}
+	.extra-toggle-inner{
 		display: flex;
 		align-items: center;
 		font-size: 1.8rem;
 		.extra-title{
 			display: block;
 			border-bottom: 3px solid $color3;
-			cursor: default;
 		}
 	}
 	.extra-toggle{
@@ -129,6 +131,21 @@
 		}
 	}
 }
+
+@media (max-width: 1180px){
+	.header{
+		&__left{
+			margin-top: 2rem;
+		}
+		&__right{
+			margin-top: 2.5rem;
+		}
+	}
+	.header__center img{
+		width: 230px;
+	}
+}
+
 
 @media (max-width: 991px){
 }

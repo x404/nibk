@@ -3456,8 +3456,13 @@ h3 {
   display: block;
   position: absolute; }
 
-.extra-toggle-wrapper .extra-title {
-  display: none; }
+.extra-toggle-wrapper {
+  margin-right: 6rem; }
+  .extra-toggle-wrapper .extra-title {
+    display: none; }
+  .extra-toggle-wrapper:hover .extra-toggle {
+    background-color: #f26722;
+    border-color: #f26722; }
 
 .extra-toggle {
   background: none;
@@ -3465,7 +3470,6 @@ h3 {
   border: 1px solid #fff;
   cursor: pointer;
   flex-shrink: 0;
-  margin-right: 6rem;
   height: 5rem;
   width: 5rem;
   transition: .3s; }
@@ -3476,9 +3480,6 @@ h3 {
     height: 2px;
     margin: 6px auto;
     width: 22px; }
-  .extra-toggle:hover {
-    background-color: #f26722;
-    border-color: #f26722; }
 
 .btn {
   cursor: pointer;
@@ -4571,7 +4572,7 @@ h3 {
       margin-right: 4rem; }
     .header__left, .header__right {
       width: 500px; }
-  .extra-toggle {
+  .extra-toggle-wrapper {
     margin-right: 3.5rem; }
   .btn-callback {
     width: 135px; }
@@ -4595,13 +4596,14 @@ h3 {
   .header .nav {
     display: none !important; }
   .extra-toggle-wrapper {
+    cursor: pointer; }
+  .extra-toggle-inner {
     display: flex;
     align-items: center;
     font-size: 1.8rem; }
-    .extra-toggle-wrapper .extra-title {
+    .extra-toggle-inner .extra-title {
       display: block;
-      border-bottom: 3px solid #f26722;
-      cursor: default; }
+      border-bottom: 3px solid #f26722; }
   .extra-toggle {
     margin-right: 1rem; } }
 
@@ -4619,6 +4621,14 @@ h3 {
     padding-left: 2rem; }
   .footer .lang {
     margin-right: 0; } }
+
+@media (max-width: 1180px) {
+  .header__left {
+    margin-top: 2rem; }
+  .header__right {
+    margin-top: 2.5rem; }
+  .header__center img {
+    width: 230px; } }
 
 @media (max-width: 1750px) {
   .homepage .interesting .title,
@@ -4702,11 +4712,32 @@ h3 {
     width: 20rem; }
   .homepage .lastnews .carousel__pic {
     height: auto;
-    margin-bottom: 2rem; } }
-
-@media (max-width: 1400px) {
+    margin-bottom: 2rem; }
   .homepage .about {
     grid-template-columns: 1fr 250px 1fr 240px 180px; } }
+
+@media (max-width: 1280px) {
+  .homepage .main .content {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  .homepage .interesting .carousel__title,
+  .homepage .lastnews .carousel__title {
+    padding-left: 1rem;
+    padding-right: 1rem; } }
+
+@media (max-width: 1280px) and (max-height: 650px) {
+  .homepage .main .center {
+    margin-top: -3rem;
+    font-size: 1.4rem; }
+    .homepage .main .center .title {
+      font-size: 4.6rem; }
+    .homepage .main .center .cifr {
+      font-size: 3.5rem; } }
+
+@media (max-width: 1260px) {
+  .homepage .center-carousel .slick-slide .pic {
+    height: 765px;
+    width: 765px !important; } }
 
 @media (max-width: 1250px) {
   .homepage .main {
@@ -4731,3 +4762,47 @@ h3 {
     margin-top: 11.5rem; }
   .homepage .footer {
     margin-top: 3rem; } }
+
+@media (max-width: 1180px) {
+  .homepage .center-carousel .slick-slide .pic {
+    height: 650px;
+    width: 650px !important; }
+  .homepage .interesting .title,
+  .homepage .lastnews .title {
+    font-size: 2.7rem; }
+  .homepage .main .center {
+    font-size: 1.8rem;
+    margin-top: -4rem; }
+    .homepage .main .center .title {
+      font-size: 6rem; }
+    .homepage .main .center .cifr {
+      font-size: 5rem; }
+  .homepage .about {
+    margin-top: 2rem;
+    grid-template-columns: repeat(5, 1fr); } }
+
+@media (max-width: 1050px) {
+  .homepage .interesting .carousel {
+    width: 160px; }
+    .homepage .interesting .carousel__pic {
+      margin-top: 1rem; }
+  .homepage .lastnews .carousel {
+    width: 192px; }
+    .homepage .lastnews .carousel__title {
+      padding-left: 1rem;
+      padding-right: 1rem; }
+  .homepage .interesting,
+  .homepage .lastnews {
+    margin-top: 0; }
+    .homepage .interesting .carousel__title,
+    .homepage .lastnews .carousel__title {
+      color: #fff;
+      padding-left: .5rem;
+      padding-right: .5rem; }
+  .homepage .main .center {
+    margin-left: 3rem;
+    margin-top: 3rem; }
+  .homepage .about__title {
+    font-size: 1.5rem; }
+  .homepage .footer {
+    margin-top: 1rem; } }
