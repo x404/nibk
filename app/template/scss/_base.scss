@@ -385,6 +385,10 @@ h3{font-size:1.6rem}
 
 #modal-callback{
 	background: rgba(242, 103, 34, .98);
+	.container{
+		max-width: 1300px;
+		position: relative;
+	}
 	.inner{
 		height: 100%;
 		display: flex;
@@ -392,20 +396,29 @@ h3{font-size:1.6rem}
 		justify-content: center;
 	}
 
-
 	.title{
 		font-family: "Officina Serif Black C";
 		font-size: 10rem;
-		line-height: 1.4;
+		line-height: 1.2;
+		text-transform: uppercase;
 	}
 	.subtitle{
 		font-size: 1.8rem;
+		margin-top: 0rem;
 	}
 	.form{
 		font-family: "Officina Serif Black C";
-		margin-top: 4rem;
+		margin-top: 1rem;
 		.col{
-			flex-grow: 0			
+			flex-grow: 0;
+			width: 360px;		
+		}
+
+		.textarea-field,
+		.input-field{
+			.form-control{
+				letter-spacing: .25rem				
+			}
 		}
 
 		.input-field{
@@ -415,9 +428,8 @@ h3{font-size:1.6rem}
 				border-bottom-color: $color2;
 				color: currentColor;
 				font-size: 1.7rem;
-				height: 3rem;
-				width: 36rem;
-				letter-spacing: .15rem
+				height: 3.5rem;
+				width: 34rem;
 			}
 			label{
 				color: currentColor;
@@ -428,16 +440,27 @@ h3{font-size:1.6rem}
 			.form-control{
 				font-size: 1.7rem;
 				letter-spacing: .15rem;
-				background: none;
-				// background: url('../images/textarea-w.gif') repeat;
-				// background:url("data:image/gif;base64,R0lGODlhASAeIIABIP///yAgICH5BAEgIAEgLCAgICABIB4gIAIFjI+pC1AgOw") repeat left top;
 				background: url('data:image/gif;base64,R0lGODlhAQAeAIABAP///wAAACH5BAEAAAEALAAAAAABAB4AAAIFjI+pC1AAOw==');
 				color: $color2;
 				height: 64px;
 				line-height: 1.8;
-				// resize: none
 			}
 		}
+	}
+
+	.select-wrapper{
+		margin-top: 3.2rem;
+		width: 34rem;
+	}
+
+	.selectize-input input{
+		color: $color2;
+		@include placeholder(#fff)
+	}
+
+	.selectize-control.single .selectize-input:after, .ms-choice div:after{
+		top: 4px;
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAA1ElEQVQoU42QuwoCMRBFN+jHWYlrqZbWgqAoFmIp2lhrZaOoX+LrJyx8/IMQzyyTJWbXR+Aym+zk5N4x1tphFEU11DDGnKh/Le5VaZyhvmHT5GOBrigGdPhFUcCaviIqGbnAYYcyRQ9U/gaiN6ZnpQBxv0kgCupRx+pIQOfQkQco8K9Oz056Ukjg6KbR9t4jMgOJIHfEwdb9e4MoqEudoLtGO+KgogCZgThIARknOdEunM3RwJtBEsFfGSceyA1bjp55Dj7G8V8gxoh9G7WIsAwduP0LcSNRozzkawQAAAAASUVORK5CYII=')
 	}
 
 	textarea{
@@ -446,7 +469,7 @@ h3{font-size:1.6rem}
 	}
 
 	.bottom{
-		margin-top: 3.4em;
+		margin-top: 3rem;
 	}
 
 	.btn-submit{
@@ -458,5 +481,9 @@ h3{font-size:1.6rem}
 		letter-spacing: .1rem;
 		margin-left: 3.5rem;
 		padding: 0 3rem;
+	}
+
+	.close-modal{
+		top: -5rem;
 	}
 }

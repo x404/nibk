@@ -3628,6 +3628,9 @@ h3 {
 
 #modal-callback {
   background: rgba(242, 103, 34, 0.98); }
+  #modal-callback .container {
+    max-width: 1300px;
+    position: relative; }
   #modal-callback .inner {
     height: 100%;
     display: flex;
@@ -3636,14 +3639,20 @@ h3 {
   #modal-callback .title {
     font-family: "Officina Serif Black C";
     font-size: 10rem;
-    line-height: 1.4; }
+    line-height: 1.2;
+    text-transform: uppercase; }
   #modal-callback .subtitle {
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    margin-top: 0rem; }
   #modal-callback .form {
     font-family: "Officina Serif Black C";
-    margin-top: 4rem; }
+    margin-top: 1rem; }
     #modal-callback .form .col {
-      flex-grow: 0; }
+      flex-grow: 0;
+      width: 360px; }
+    #modal-callback .form .textarea-field .form-control,
+    #modal-callback .form .input-field .form-control {
+      letter-spacing: .25rem; }
     #modal-callback .form .input-field {
       color: #fff; }
       #modal-callback .form .input-field input.form-control {
@@ -3651,9 +3660,8 @@ h3 {
         border-bottom-color: #fff;
         color: currentColor;
         font-size: 1.7rem;
-        height: 3rem;
-        width: 36rem;
-        letter-spacing: .15rem; }
+        height: 3.5rem;
+        width: 34rem; }
       #modal-callback .form .input-field label {
         color: currentColor; }
     #modal-callback .form .textarea-field {
@@ -3661,16 +3669,35 @@ h3 {
       #modal-callback .form .textarea-field .form-control {
         font-size: 1.7rem;
         letter-spacing: .15rem;
-        background: none;
         background: url("data:image/gif;base64,R0lGODlhAQAeAIABAP///wAAACH5BAEAAAEALAAAAAABAB4AAAIFjI+pC1AAOw==");
         color: #fff;
         height: 64px;
         line-height: 1.8; }
+  #modal-callback .select-wrapper {
+    margin-top: 3.2rem;
+    width: 34rem; }
+  #modal-callback .selectize-input input {
+    color: #fff; }
+    #modal-callback .selectize-input input::-webkit-input-placeholder {
+      color: #fff; }
+    #modal-callback .selectize-input input::-moz-placeholder {
+      color: #fff; }
+    #modal-callback .selectize-input input:-ms-input-placeholder {
+      color: #fff; }
+    #modal-callback .selectize-input input:focus::-webkit-input-placeholder {
+      transition: line-height 0.5s ease; }
+    #modal-callback .selectize-input input:focus::-moz-placeholder {
+      transition: line-height 0.5s ease; }
+    #modal-callback .selectize-input input:focus:-ms-input-placeholder {
+      transition: line-height 0.5s ease; }
+  #modal-callback .selectize-control.single .selectize-input:after, #modal-callback .ms-choice div:after {
+    top: 4px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAA1ElEQVQoU42QuwoCMRBFN+jHWYlrqZbWgqAoFmIp2lhrZaOoX+LrJyx8/IMQzyyTJWbXR+Aym+zk5N4x1tphFEU11DDGnKh/Le5VaZyhvmHT5GOBrigGdPhFUcCaviIqGbnAYYcyRQ9U/gaiN6ZnpQBxv0kgCupRx+pIQOfQkQco8K9Oz056Ukjg6KbR9t4jMgOJIHfEwdb9e4MoqEudoLtGO+KgogCZgThIARknOdEunM3RwJtBEsFfGSceyA1bjp55Dj7G8V8gxoh9G7WIsAwduP0LcSNRozzkawQAAAAASUVORK5CYII="); }
   #modal-callback textarea {
     width: 100%;
     display: block; }
   #modal-callback .bottom {
-    margin-top: 3.4em; }
+    margin-top: 3rem; }
   #modal-callback .btn-submit {
     border-radius: 6rem;
     display: block;
@@ -3680,6 +3707,8 @@ h3 {
     letter-spacing: .1rem;
     margin-left: 3.5rem;
     padding: 0 3rem; }
+  #modal-callback .close-modal {
+    top: -5rem; }
 
 .homepage .header,
 .homepage .footer {

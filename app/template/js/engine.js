@@ -81,6 +81,8 @@ $(document).ready(function(){
 			};
 		init();
 	});	
+
+	$('select.country').selectize();
 });
 
 
