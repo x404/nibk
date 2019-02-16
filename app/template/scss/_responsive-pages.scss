@@ -397,3 +397,11 @@
 		}
 	}
 }
+
+
+@media (max-width: 680px) {
+	.homepage .center-carousel .slick-slide .pic{
+		width: 550px !important;
+		height: 550px;
+	}
+}

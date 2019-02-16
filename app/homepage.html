@@ -427,6 +427,43 @@
 </div>
 
 
+ <!-- =apanel -->
+<div class="apanel" id="apanel">
+	<div class="apanel__inner">
+		<!-- =close -->
+		<button type="button" data-dismiss="modal" class="close-menu" aria-label="Close">
+			<svg width="28" height="28">
+				<line x1="0" y1="0" x2="28" y2="28"/>
+				<line x1="28" y1="0" x2="0" y2="28"/>
+			</svg>
+		</button>				
+		<!-- =/close -->
+
+		<!-- =body -->
+		<div class="apanel__body">
+			<div class="top">
+				<div class="logo">
+					<img src="/template/images/logo-sm.png" alt="" />
+				</div>
+				<button class="btn btn-purple btn-callback" data-popup="modal" data-target="#modal-callback">Call back</button>
+			</div>
+			<div class="page">
+				<div class="nav">
+					<ul>
+						<li><a href="#.html" data-name="company">COMPANY</a></li>
+						<li><a href="#.html" data-name="products">PRODUCTS</a></li>
+						<li><a href="products.html" title="">CATALOGUE</a></li>
+						<li><a href="know.html" title="">DID YOU KNOW?</a></li>
+						<li><a href="contacts.html" title="">CONTACT US</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- =/body -->
+	</div>
+</div>
+<!-- =/apanel -->
+
 <div id="outdated"></div>
 
 <script type="text/javascript" src="/template/js/slick.min.js"></script>
@@ -435,8 +472,10 @@
 <script>
 	window.addEventListener("mousemove",onmousemove, false)
 	function onmousemove(e){
-		let xpos=e.clientX;
-		document.querySelector('#home-carousel .slick-current img').style.right = ( -10+(xpos/70))+"px" 
+		if (window.innerWidth > 767) {
+			let xpos=e.clientX;
+			document.querySelector('#home-carousel .slick-current img').style.right = ( -10+(xpos/70))+"px";
+		}
 	};
 
 

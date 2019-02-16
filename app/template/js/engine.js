@@ -125,14 +125,16 @@ $(document).ready(function(){
 // $(document).on('click', '.extra-toggle', function(e){
 [].forEach.call(document.querySelectorAll('[data-popup="modal"]'),function(el,i){
 	el.addEventListener('click', function(e){
-		if (window.innerWidth > 650) {
-			var modal = this.dataset.target;
-			document.querySelector(modal).classList.add('open');
-			document.querySelector(modal).setAttribute('aria-hidden', 'false');
+		let modal = this.dataset.target;
+		if (window.innerWidth < 650 && modal=='#modal-menu') {
+			modal = '#apanel';
 		} else{
 			// for mobile menu
-			document.querySelector('.apanel').classList.add('open');
+			// document.querySelector('.apanel').classList.add('open');
 		}
+
+		document.querySelector(modal).classList.add('open');
+		document.querySelector(modal).setAttribute('aria-hidden', 'false');
 	})
 });
 
@@ -152,3 +154,11 @@ document.onkeydown = function(evt) {
     	document.querySelector('.genmodal.open').classList.remove('open');
     }
 };
+
+
+// closemenu and back button of modal menu
+document.querySelector('.apanel .close-menu').addEventListener("click", function(){
+	document.querySelector('.apanel.open').classList.remove('open');
+}, false);
+
+// =/mobile menu
