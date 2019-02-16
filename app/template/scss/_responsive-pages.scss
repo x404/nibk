@@ -399,9 +399,280 @@
 }
 
 
-@media (max-width: 680px) {
-	.homepage .center-carousel .slick-slide .pic{
-		width: 550px !important;
-		height: 550px;
+@media (max-width: 700px) {
+	.homepage{
+		.center-carousel .slick-slide .pic{
+			width: 480px !important;
+			height: 480px;
+		}
+		.main{
+			.center{
+				font-size: 1.4rem;
+				.title{
+					font-size: 3.5rem;
+				}
+				.cifr{
+					font-size: 3rem;
+				}
+			}
+		}
 	}
+}
+
+
+@media (max-width: 650px) {
+	.homepage{
+		.about{
+			justify-content: flex-start !important;
+			&__cell{
+				margin-bottom: 2rem;
+				padding-left: 0 !important;
+				padding-right: 0 !important;
+				width: 50%;
+			}
+
+			&__icon{
+				flex-shrink: 0;
+				text-align: center;
+				width: 8rem;
+				img{
+					filter: brightness(10);
+				}
+			}
+			&__title{
+				font-size: 1.4rem;
+			}
+		}
+		.info-md{
+			background: #242526;
+			padding: 3rem 0 0rem;
+			margin-top: 1rem;
+			margin-bottom: 0;
+		}
+
+		.footer{
+			background: #242526;
+			margin-top: 0;
+			padding-top: 3rem;
+			text-align: center;
+			.d-flex{
+				display: block !important;
+			}
+			.copyright{
+				color: #939090;
+			}
+			.lang{
+				margin: 1rem 0;
+				justify-content: center;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 600px) {
+	.homepage{
+		.interesting,
+		.lastnews{
+			.carousel{
+				width: 20rem;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.title{
+				font-size: 2.4rem;
+			}			
+		}
+
+		.info-md{
+			.interesting,
+			.lastnews{
+				.carousel__title{
+					font-size: 1.5rem;
+				}
+			}
+			.lastnews{
+				.carousel{
+					margin-top: 1rem;
+				}
+				.carousel__pic{
+					img {
+					    max-width: 120px;
+					    max-height: 120px
+					}
+					&:after {
+						$s: 75px;
+					    width: $s;
+					    height: $s;
+					    border-radius: 0 $s 0 0;
+					    border-top-width: 14px;
+					    border-right-width: 14px;
+					    right: 27px;  
+					    top: -15px
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 550px) {
+	.homepage{
+		.main{
+			.center{
+				margin-top: 7rem;
+			}
+		}
+		.center-carousel .slick-slide .pic{
+			width: 400px !important;
+			height: 400px;
+		}
+	}
+}
+
+
+
+@media (max-width: 500px) {
+	.homepage{
+		.about{
+			&__cell{
+				&:last-child{
+					width: 100%;
+				}
+			}
+
+			&__icon{
+				flex-shrink: 0;
+				text-align: center;
+				width: 8rem;
+				img{
+					filter: brightness(10);
+				}
+			}
+			&__title{
+				font-size: 1.4rem;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 450px) {
+	.homepage{
+		.main .center{
+			margin-top: 5rem;
+			.nibk{
+				display: none;
+			}
+			.cifr{
+				display: none;
+			}
+		}
+
+		.about{
+			margin-top: 5rem;
+			display: block !important;
+			&__cell{
+				width: 100% !important;
+			}
+		}
+
+		.center-carousel .slick-slide .pic{
+			width: 300px !important;
+			height: 300px;
+		}
+		.header__center img{
+			width: 120px;
+		}
+
+		.info-md{
+			.interesting,
+			.lastnews{
+				.carousel{
+					width: 17rem;
+				}
+			}			
+			.interesting .carousel__pic img{
+				max-width: 15rem
+			}
+			.lastnews .carousel__pic{
+				left: -10px;
+				width: 19.5rem;
+				img{
+					max-width: 115px;
+					max-height: 115px;
+				}
+			}
+		}
+	}
+}
+
+
+
+@media (max-width: 380px) {
+	.homepage{
+		.center-carousel .slick-slide .pic{
+			width: 255px !important;
+			height: 255px;
+		}
+		.main .center{
+			margin-top: 4rem;
+			.title{
+				font-size: 3rem;
+			}
+		}
+
+		.about{
+			margin-top: 4rem;
+			&__icon{
+				transform: scale(.75)
+			}
+		}
+
+		.header__center img{
+			width: 90px;
+		}
+
+		.info-md{
+			.interesting,
+			.lastnews{
+				.title{
+					font-size: 2rem;
+				}
+				.carousel{
+					width: 16rem;
+				}
+			}			
+			.interesting .carousel__pic img{
+				max-width: 13rem
+			}
+			.interesting{
+				.title{
+					padding-left: 1rem;
+					padding-right: 1rem;
+				}
+			}
+
+
+			.lastnews{
+				.carousel__pic{
+					img {
+					    max-width: 100px;
+					    max-height: 100px
+					}
+					&:after {
+						$s: 60px;
+					    width: $s;
+					    height: $s;
+					    border-radius: 0 $s 0 0;
+					    border-top-width: 11px;
+					    border-right-width: 11px;
+					    right: 37px;  
+					    top: -11px
+					}
+				}
+			}
+		}
+	}	
 }

@@ -346,6 +346,29 @@
 
 
 
+@media (max-width: 991px){
+	.main-grid{
+		display: block !important;
+	}
+	.btn-callback{
+		margin-right: 0;
+	}
+
+	#modal-callback{
+		.container{
+			max-width: 95%
+		}
+		.title{
+			font-size: 5.6rem;
+		}
+		.form .input-field input.form-control,
+		.select-wrapper{
+			width: 25rem;
+		}
+	}
+}
+
+
 @media (max-width: 900px){
 	// modalmenu
 	.modal-menu{
@@ -419,6 +442,13 @@
 			width: 50%;
 		}
 	}
+
+	#modal-callback{
+		.form .input-field input.form-control,
+		.select-wrapper{
+			width: 22rem;
+		}
+	}
 }
 
 
@@ -436,11 +466,146 @@
 	}
 }
 
+
+@media (max-width: 767px){
+	.header{
+		&__left,
+		&__right
+		{
+			width: 110px;
+		}
+	}
+
+	#modal-callback{
+		.row{
+			display: block !important;
+		}
+		.form{
+			.col{
+				width: 100%;
+			}
+		}
+		.form .input-field input.form-control,
+		.select-wrapper{
+			width: 100%;
+		}
+	}
+}
+
+
+
+@media (max-width: 700px){
+	.header{
+		&__center{
+			img{
+				width: 150px;
+			}
+		}
+		&__left{
+			margin-top: .8rem;
+		}
+		&__right{
+			margin-top: 1rem;
+		}
+	}
+}
+
+
+
 @media (max-width: 650px){
+	.apanel .top .btn-callback{
+
+	}
 	.modal-menu{
 		display: none !important;
 	}
 }
 
-@media (max-width: 545px){
+@media (max-width: 550px){
+	.header__center img{
+		width: 140px;
+	}
+	.header__left{
+		margin-top: 0;
+	}
+	.header__right{
+		margin-top: 0;
+	}
+}
+
+
+@media (max-width: 500px) {
+	.extra-toggle-inner{
+		font-size: 1.6rem;
+	}
+
+	#modal-callback .bottom{
+		display: block !important;
+		text-align: center;
+		.btn-submit{
+			margin: 2rem auto 0;
+		}
+	}
+
+}
+
+@media (max-width: 450px) {
+	.extra-toggle-inner .extra-title{
+		display: none;
+	}
+
+	.btn-callback{
+		font-size: 1.3rem;
+	}
+
+
+	#modal-callback{
+		.title{
+			font-size: 5rem;
+		}
+	}
+}
+
+
+@media (max-width: 380px) {
+	#modal-callback{
+		.container{
+			max-width: 100%
+		}
+		.title{
+			font-size: 4.6rem;
+		}
+		.bottom .btn-submit{
+			height: 5rem;
+			font-size: 1.6rem;
+		}
+		.selectize-dropdown, .selectize-input, .selectize-input input{
+			font-size: 1.6rem;
+		}
+	}
+
+	.input-field{
+		label{
+			font-size: 1.5rem;
+		}
+		.name-field{
+			font-size: 1.8rem;
+		}
+	}
+}
+
+
+
+@media (max-width: 350px) {
+	.header{
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.apanel__body{
+		padding-left: .8rem;
+		padding-right: .8rem;
+	}
+	.btn-callback{
+		width: 9rem;
+	}
 }
