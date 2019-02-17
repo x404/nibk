@@ -11,8 +11,25 @@
 		&-products{
 			background-image: url(../images/bg/i_bg-1.webp);			
 		}
+
+		&-brakepads{
+			background-image: url(../images/bg/i_bg-2.webp);			
+		}
+	}
+
+	.inner-products{
+		.block-2{
+			background: url(../images/bg/sport-oriented-formulas.webp) center top no-repeat;
+		}
+		.block-3{
+			background: url(../images/bg/heavy-duty-formulas.webp) center top no-repeat;
+		}
 	}
 }
+
+
+
+
 
 .homepage,
 .inner,
@@ -36,5 +53,16 @@
 .inner{
 	&-products{
 		background-image: url(../images/bg/i_bg-1.jpg);
+		.block-2{
+			background: url(../images/bg/sport-oriented-formulas.png) center top no-repeat;
+			min-height: 820px;
+		}
+		.block-3{
+			background: url(../images/bg/heavy-duty-formulas.png) center top no-repeat;
+			min-height: 655px;
+		}
+	}
+	&-brakepads{
+		background-image: url(../images/bg/i_bg-2.jpg);			
 	}
 }

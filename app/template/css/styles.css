@@ -3240,6 +3240,15 @@ a.text-dark:hover, a.text-dark:focus {
 .webp .inner-products {
   background-image: url(../images/bg/i_bg-1.webp); }
 
+.webp .inner-brakepads {
+  background-image: url(../images/bg/i_bg-2.webp); }
+
+.webp .inner-products .block-2 {
+  background: url(../images/bg/sport-oriented-formulas.webp) center top no-repeat; }
+
+.webp .inner-products .block-3 {
+  background: url(../images/bg/heavy-duty-formulas.webp) center top no-repeat; }
+
 .homepage,
 .inner,
 .modal-menu {
@@ -3255,6 +3264,15 @@ a.text-dark:hover, a.text-dark:focus {
 
 .inner-products {
   background-image: url(../images/bg/i_bg-1.jpg); }
+  .inner-products .block-2 {
+    background: url(../images/bg/sport-oriented-formulas.png) center top no-repeat;
+    min-height: 820px; }
+  .inner-products .block-3 {
+    background: url(../images/bg/heavy-duty-formulas.png) center top no-repeat;
+    min-height: 655px; }
+
+.inner-brakepads {
+  background-image: url(../images/bg/i_bg-2.jpg); }
 
 .container {
   margin-right: auto;
@@ -3562,6 +3580,11 @@ h3 {
       padding-bottom: .5rem;
       padding-top: .5rem;
       text-align: center; }
+  .footer-lgray .copyright,
+  .footer-lgray .lang a,
+  .footer-lgray .lang .current {
+    color: #aaa9a9;
+    border-color: #aaa9a9; }
 
 #modal-callback {
   background: rgba(242, 103, 34, 0.98); }
@@ -4457,6 +4480,24 @@ h3 {
         .product__menu ul li.active a, .product__menu ul li.active span {
           color: #fff;
           text-decoration: none; }
+  .product__submenu {
+    font-size: 2rem;
+    font-family: 'Officina Serif Black C';
+    margin-bottom: 2rem;
+    text-transform: uppercase; }
+    .product__submenu ul {
+      display: flex;
+      justify-content: center; }
+    .product__submenu li {
+      margin: 0 1.5rem; }
+      .product__submenu li.active {
+        color: #f26722; }
+        .product__submenu li.active a, .product__submenu li.active span {
+          color: currentColor; }
+          .product__submenu li.active a:hover, .product__submenu li.active span:hover {
+            text-decoration: none; }
+      .product__submenu li a:hover {
+        color: #000; }
   .product__text {
     color: #fff;
     font-size: 2rem;
@@ -4504,6 +4545,54 @@ h3 {
       .product__rubrics .rubric__pic:after {
         background: linear-gradient(to right, #713a97 50%, transparent 50%);
         opacity: 0; }
+
+.inner-brakepads .footer {
+  padding: 0;
+  margin-top: -58px; }
+
+.inner-products .main {
+  font-size: 2rem; }
+  .inner-products .main img {
+    margin: 3rem 0; }
+
+.inner-products h1 {
+  font-size: 8rem;
+  font-family: 'Officina Serif Black C';
+  color: #f26722;
+  text-align: center; }
+
+.inner-products h2.title {
+  line-height: 1.1;
+  font-family: 'Officina Serif Black C';
+  font-size: 4.5rem;
+  margin-bottom: 1.5rem; }
+
+.inner-products .text h2.title {
+  color: #000; }
+
+.inner-products .text-white {
+  color: #fff; }
+  .inner-products .text-white h2.title {
+    color: #fff; }
+
+.inner-products .block-1 {
+  padding: 3.7rem 0 2rem; }
+  .inner-products .block-1 .text {
+    padding-left: 7rem;
+    padding-bottom: 5rem; }
+
+.inner-products .block-2 {
+  margin-bottom: -94px; }
+  .inner-products .block-2 .text {
+    padding-right: 4rem; }
+
+.inner-products .block-3 .text {
+  padding-left: 7rem; }
+
+.vcenter-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 /* =mobile-menu
 ---------------------------*/

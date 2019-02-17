@@ -1,5 +1,4 @@
 .product{
-
 	/* =menu
 	---------------------------*/
 	&__menu{
@@ -24,6 +23,34 @@
 						color: $color2;
 						text-decoration: none;
 					}
+				}
+			}
+		}
+	}
+
+	&__submenu{
+		font-size: 2rem;
+		font-family: 'Officina Serif Black C';
+		margin-bottom: 2rem;
+		text-transform: uppercase;
+		ul{
+			display: flex;
+			justify-content: center;
+		}
+		li{
+			margin: 0 1.5rem;
+			&.active{
+				color: $color3;
+				a, span{
+					color: currentColor;
+					&:hover{
+						text-decoration: none;
+					}
+				}
+			}
+			a{
+				&:hover{
+					color: $color1;
 				}
 			}
 		}
@@ -108,4 +135,77 @@
 			}
 		}
 	}
+}
+
+
+.inner{
+	&-brakepads
+	{
+		.footer{
+			padding: 0;
+			margin-top: -58px;
+		}
+	}
+	&-products{
+		.main{
+			font-size: 2rem;
+			img{
+				margin: 3rem 0;
+			}
+		}
+		h1{
+			font-size: 8rem;
+			font-family: 'Officina Serif Black C';
+			color: $color3;
+			text-align: center;
+		}
+
+		h2.title{
+			line-height: 1.1;
+			font-family: 'Officina Serif Black C';
+			font-size: 4.5rem;
+			margin-bottom: 1.5rem;
+		}
+
+		.text{
+			h2.title{
+				color: $color1;				
+			}
+			&-white{
+				color: $color2;
+				h2.title{
+					color: $color2;
+				}
+			}
+		}
+		
+
+		.block-1{
+			padding: 3.7rem 0 2rem;
+			.text{
+				padding-left: 7rem;
+				padding-bottom: 5rem;
+			}
+		}
+
+		.block-2{
+			margin-bottom: -94px;
+			.text{
+				padding-right: 4rem;
+			}
+		}
+
+		.block-3{
+			.text{
+				padding-left: 7rem;
+			}			
+		}
+	}
+}
+
+
+.vcenter-block{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
 }
