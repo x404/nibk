@@ -1,5 +1,10 @@
 .inner{
 	.header{
+		padding-top: 0;
+		&__left,
+		&__right{
+			margin-top: 5rem;
+		}
 		.navmenu li{
 			&.active{
 				a, span{

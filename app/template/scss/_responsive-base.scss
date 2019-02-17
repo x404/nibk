@@ -262,7 +262,8 @@
 }
 
 @media (max-width: 1180px){
-	.header{
+	.header,
+	.inner .header{
 		&__left{
 			margin-top: 2rem;
 		}
@@ -453,6 +454,12 @@
 	.footer{
 		padding-bottom: 1rem;
 	}
+
+	.inner{
+		.footer{
+			padding-bottom: 1rem;
+		}
+	}
 }
 
 
@@ -479,7 +486,8 @@
 
 
 @media (max-width: 800px){
-	.header{
+	.header,
+	.inner .header{
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
@@ -494,7 +502,8 @@
 
 
 @media (max-width: 767px){
-	.header{
+	.header,
+	.inner .header{
 		&__left,
 		&__right
 		{
@@ -551,11 +560,20 @@
 	.header__center img{
 		width: 140px;
 	}
-	.header__left{
-		margin-top: 0;
+	.header{
+		&__left,
+		&__right
+		{
+			margin-top: 0;
+		}
 	}
-	.header__right{
-		margin-top: 0;
+
+	.inner .header{
+		&__left,
+		&__right
+		{
+			margin-top: 1rem;
+		}
 	}
 }
 
@@ -594,6 +612,16 @@
 
 
 @media (max-width: 380px) {
+	.header,
+	.inner .header
+	{
+		&__right{
+			width: auto;
+		}
+		&__center{
+			margin-left: -2rem;
+		}
+	}
 	#modal-callback{
 		.container{
 			max-width: 100%
@@ -623,7 +651,8 @@
 
 
 @media (max-width: 350px) {
-	.header{
+	.header,
+	.inner .header{
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
