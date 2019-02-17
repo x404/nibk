@@ -20,6 +20,19 @@
 	}
 
 	.footer{
+		padding-top: 6rem;
 		padding-bottom: 1.5rem;
+		.copyright{
+			padding-left: 4.5rem;
+		}
+		.lang{
+			margin-right: 3rem;
+		}
+	}
+
+	@media (min-width: 1400px){
+		.container{
+			max-width: 83%;
+		}
 	}
 }
