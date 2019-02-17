@@ -6,9 +6,16 @@
 	.modal-menu{
 		background-image: url(../images/bg/modal-menu.webp);
 	}
+
+	.inner{
+		&-products{
+			background-image: url(../images/bg/i_bg-1.webp);			
+		}
+	}
 }
 
 .homepage,
+.inner,
 .modal-menu
 {
 	background-repeat: no-repeat;
@@ -23,4 +30,11 @@
 
 .modal-menu{
 	background-image: url(../images/bg/modal-menu.jpg);
+}
+
+
+.inner{
+	&-products{
+		background-image: url(../images/bg/i_bg-1.jpg);
+	}
 }

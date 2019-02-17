@@ -3313,7 +3313,11 @@ a.text-dark:hover, a.text-dark:focus {
 .webp .modal-menu {
   background-image: url(../images/bg/modal-menu.webp); }
 
+.webp .inner-products {
+  background-image: url(../images/bg/i_bg-1.webp); }
+
 .homepage,
+.inner,
 .modal-menu {
   background-repeat: no-repeat;
   background-position: center;
@@ -3324,6 +3328,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 .modal-menu {
   background-image: url(../images/bg/modal-menu.jpg); }
+
+.inner-products {
+  background-image: url(../images/bg/i_bg-1.jpg); }
 
 .container {
   margin-right: auto;
@@ -3605,6 +3612,7 @@ h3 {
     padding-left: 5px;
     padding-right: 5px; }
   .footer .copyright {
+    color: #fff;
     font-size: 1.5rem;
     padding-left: 5rem; }
     .footer .copyright-gray {
@@ -4473,6 +4481,19 @@ h3 {
   font-family: "Officina Serif Book C";
   opacity: 1; }
 
+.inner .header .navmenu li.active a, .inner .header .navmenu li.active span {
+  color: #fff; }
+  .inner .header .navmenu li.active a:before, .inner .header .navmenu li.active span:before {
+    color: #fff;
+    border-bottom-color: #fff; }
+
+.inner .header .navmenu li a:before {
+  border-bottom-color: #f26722;
+  color: #000; }
+
+.inner .footer {
+  padding-bottom: 1.5rem; }
+
 /* =mobile-menu
 ---------------------------*/
 .show-sm,
@@ -4698,6 +4719,11 @@ h3 {
 ::-ms-clear {
   display: none; }
 
+@media (max-height: 600px) {
+  .modal-menu .container {
+    min-height: 100vh;
+    height: auto; } }
+
 @media (max-width: 1750px) {
   .header {
     padding-right: 5rem; }
@@ -4778,6 +4804,14 @@ h3 {
   #modal-callback .form .input-field input.form-control,
   #modal-callback .select-wrapper {
     width: 28rem; } }
+
+@media (max-width: 1366px) and (max-height: 768px) {
+  .modal-menu .menu {
+    padding-top: 5rem; } }
+
+@media (max-width: 1280px) and (max-height: 800px) {
+  .modal-menu .menu {
+    padding-top: 9rem; } }
 
 @media (max-width: 1250px) {
   .header__left, .header__right {

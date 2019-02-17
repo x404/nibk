@@ -1,0 +1,25 @@
+.inner{
+	.header{
+		.navmenu li{
+			&.active{
+				a, span{
+					color: $color2;
+					&:before{
+						color: $color2;
+						border-bottom-color: $color2;
+					}
+				}
+			}
+			a{
+				&:before{
+					border-bottom-color: $color3;
+					color: $color1;
+				}
+			}
+		}
+	}
+
+	.footer{
+		padding-bottom: 1.5rem;
+	}
+}
