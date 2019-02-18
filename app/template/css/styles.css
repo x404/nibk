@@ -3258,6 +3258,14 @@ a.text-dark:hover, a.text-dark:focus {
 .webp .inner-subproducts .block-6 {
   background: url(../images/bg/brake-linings.webp) center top no-repeat; }
 
+.webp .inner-subproducts .block-8 {
+  background: url(../images/bg/standart-rotor.webp) center top no-repeat;
+  min-height: 810px; }
+
+.webp .inner-subproducts .block-9 {
+  background: url(../images/bg/drilled-rotor.webp) center top no-repeat;
+  min-height: 800px; }
+
 .homepage,
 .inner,
 .modal-menu {
@@ -3294,11 +3302,23 @@ a.text-dark:hover, a.text-dark:focus {
   background: url(../images/bg/brake-linings.png) center top no-repeat;
   min-height: 630px; }
 
+.inner-subproducts .block-8 {
+  background: url(../images/bg/standart-rotor.png) center top no-repeat;
+  min-height: 810px; }
+
+.inner-subproducts .block-9 {
+  background: url(../images/bg/drilled-rotor.png) center top no-repeat;
+  min-height: 800px; }
+
 .inner-brakepads {
   background-image: url(../images/bg/i_bg-2.jpg); }
 
 .inner-shoes {
   background: #cad0d8; }
+
+.inner-discrotor {
+  background-color: #dce2e9;
+  background-image: url(../images/bg/i_bg-2.jpg); }
 
 .container {
   margin-right: auto;
@@ -3426,7 +3446,7 @@ h3 {
 
 .before, .homepage .center-carousel .carousel__inner .pic:after, .homepage .center-carousel .carousel__inner .pic:before, .homepage .lastnews .carousel__pic:after, .apanel__body:before, .modal-menu .menu dd a:before, .icon-balloon:before,
 .icon-tel:before,
-.icon-mail:before, .product__rubrics .rubric__pic:before, .product__rubrics .rubric__pic:after {
+.icon-mail:before, .product__rubrics .rubric__pic:before, .product__rubrics .rubric__pic:after, .inner-subproducts .text ul li:before {
   content: "";
   display: block;
   position: absolute; }
@@ -4588,7 +4608,8 @@ h3 {
   font-family: 'Officina Serif Black C';
   color: #f26722;
   line-height: 1.2;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
 
 .inner-subproducts h2.title {
   line-height: 1.1;
@@ -4604,6 +4625,24 @@ h3 {
   .inner-subproducts .text-white h2.title {
     color: #fff; }
 
+.inner-subproducts .text p {
+  margin: 1.5rem 0; }
+
+.inner-subproducts .text ul {
+  margin-bottom: 3rem; }
+  .inner-subproducts .text ul li {
+    margin: .7rem 0;
+    line-height: 1.2;
+    position: relative;
+    padding-left: 2.7rem; }
+    .inner-subproducts .text ul li:before {
+      background: #fff;
+      border-radius: 50%;
+      height: 13px;
+      width: 13px;
+      top: 5px;
+      left: 0; }
+
 .inner-subproducts .block-1 {
   padding: 5.5rem 0 2rem; }
   .inner-subproducts .block-1 .text {
@@ -4618,7 +4657,10 @@ h3 {
 .inner-subproducts .block-3 .text {
   padding-left: 7rem; }
 
-.inner-shoes .arc {
+.inner-subproducts .block-7 .text {
+  padding-bottom: 13rem; }
+
+.inner-shoes .arc, .inner-discrotor .arc {
   margin-top: -95px; }
 
 .inner-shoes h1 {
@@ -5665,7 +5707,9 @@ h3 {
     padding-left: 0 !important;
     padding-right: 0 !important;
     padding-bottom: 1rem !important;
-    text-align: justify; } }
+    text-align: justify; }
+  .inner-subproducts .block-7 {
+    padding-bottom: 10rem; } }
 
 @media (max-width: 450px) {
   .homepage .main .center {
