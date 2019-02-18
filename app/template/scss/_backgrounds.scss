@@ -24,6 +24,18 @@
 		.block-3{
 			background: url(../images/bg/heavy-duty-formulas.webp) center top no-repeat;
 		}
+
+
+		// shoes and linings
+		.block-4{
+			background: url(../images/bg/brake-shoe-cars.webp) center top no-repeat;
+		}
+		.block-5{
+			background: url(../images/bg/brake-shoe-trucks.webp) center top no-repeat;
+		}
+		.block-6{
+			background: url(../images/bg/brake-linings.webp) center top no-repeat;
+		}
 	}
 }
 
@@ -63,8 +75,25 @@
 			background: url(../images/bg/heavy-duty-formulas.png) center top no-repeat;
 			min-height: 655px;
 		}
+
+		// shoes and linings
+		.block-4{
+			background: url(../images/bg/brake-shoe-cars.png) center top no-repeat;
+			min-height: 600px;
+		}
+		.block-5{
+			background: url(../images/bg/brake-shoe-trucks.png) center top no-repeat;
+			min-height: 670px;
+		}
+		.block-6{
+			background: url(../images/bg/brake-linings.png) center top no-repeat;
+			min-height: 630px;
+		}
 	}
 	&-brakepads{
 		background-image: url(../images/bg/i_bg-2.jpg);			
+	}
+	&-shoes{
+		background: #cad0d8;
 	}
 }

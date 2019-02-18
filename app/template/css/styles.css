@@ -3249,6 +3249,15 @@ a.text-dark:hover, a.text-dark:focus {
 .webp .inner-subproducts .block-3 {
   background: url(../images/bg/heavy-duty-formulas.webp) center top no-repeat; }
 
+.webp .inner-subproducts .block-4 {
+  background: url(../images/bg/brake-shoe-cars.webp) center top no-repeat; }
+
+.webp .inner-subproducts .block-5 {
+  background: url(../images/bg/brake-shoe-trucks.webp) center top no-repeat; }
+
+.webp .inner-subproducts .block-6 {
+  background: url(../images/bg/brake-linings.webp) center top no-repeat; }
+
 .homepage,
 .inner,
 .modal-menu {
@@ -3273,8 +3282,23 @@ a.text-dark:hover, a.text-dark:focus {
   background: url(../images/bg/heavy-duty-formulas.png) center top no-repeat;
   min-height: 655px; }
 
+.inner-subproducts .block-4 {
+  background: url(../images/bg/brake-shoe-cars.png) center top no-repeat;
+  min-height: 600px; }
+
+.inner-subproducts .block-5 {
+  background: url(../images/bg/brake-shoe-trucks.png) center top no-repeat;
+  min-height: 670px; }
+
+.inner-subproducts .block-6 {
+  background: url(../images/bg/brake-linings.png) center top no-repeat;
+  min-height: 630px; }
+
 .inner-brakepads {
   background-image: url(../images/bg/i_bg-2.jpg); }
+
+.inner-shoes {
+  background: #cad0d8; }
 
 .container {
   margin-right: auto;
@@ -4593,6 +4617,15 @@ h3 {
 
 .inner-subproducts .block-3 .text {
   padding-left: 7rem; }
+
+.inner-shoes .arc {
+  margin-top: -95px; }
+
+.inner-shoes h1 {
+  padding-bottom: 13rem; }
+
+.inner-shoes .block-4 .row {
+  margin-top: -4rem; }
 
 .vcenter-block {
   display: flex;
