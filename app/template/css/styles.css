@@ -3243,10 +3243,10 @@ a.text-dark:hover, a.text-dark:focus {
 .webp .inner-brakepads {
   background-image: url(../images/bg/i_bg-2.webp); }
 
-.webp .inner-products .block-2 {
+.webp .inner-subproducts .block-2 {
   background: url(../images/bg/sport-oriented-formulas.webp) center top no-repeat; }
 
-.webp .inner-products .block-3 {
+.webp .inner-subproducts .block-3 {
   background: url(../images/bg/heavy-duty-formulas.webp) center top no-repeat; }
 
 .homepage,
@@ -3264,12 +3264,14 @@ a.text-dark:hover, a.text-dark:focus {
 
 .inner-products {
   background-image: url(../images/bg/i_bg-1.jpg); }
-  .inner-products .block-2 {
-    background: url(../images/bg/sport-oriented-formulas.png) center top no-repeat;
-    min-height: 820px; }
-  .inner-products .block-3 {
-    background: url(../images/bg/heavy-duty-formulas.png) center top no-repeat;
-    min-height: 655px; }
+
+.inner-subproducts .block-2 {
+  background: url(../images/bg/sport-oriented-formulas.png) center top no-repeat;
+  min-height: 820px; }
+
+.inner-subproducts .block-3 {
+  background: url(../images/bg/heavy-duty-formulas.png) center top no-repeat;
+  min-height: 655px; }
 
 .inner-brakepads {
   background-image: url(../images/bg/i_bg-2.jpg); }
@@ -4483,7 +4485,7 @@ h3 {
   .product__submenu {
     font-size: 2rem;
     font-family: 'Officina Serif Black C';
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     text-transform: uppercase; }
     .product__submenu ul {
       display: flex;
@@ -4546,47 +4548,50 @@ h3 {
         background: linear-gradient(to right, #713a97 50%, transparent 50%);
         opacity: 0; }
 
-.inner-brakepads .footer {
+.inner-subproducts .footer {
   padding: 0;
   margin-top: -58px; }
 
-.inner-products .main {
+.inner-subproducts .main {
   font-size: 2rem; }
-  .inner-products .main img {
-    margin: 3rem 0; }
+  .inner-subproducts .main img {
+    margin: 3rem 0;
+    max-width: 100%;
+    height: auto; }
 
-.inner-products h1 {
+.inner-subproducts h1 {
   font-size: 8rem;
   font-family: 'Officina Serif Black C';
   color: #f26722;
+  line-height: 1.2;
   text-align: center; }
 
-.inner-products h2.title {
+.inner-subproducts h2.title {
   line-height: 1.1;
   font-family: 'Officina Serif Black C';
   font-size: 4.5rem;
   margin-bottom: 1.5rem; }
 
-.inner-products .text h2.title {
+.inner-subproducts .text h2.title {
   color: #000; }
 
-.inner-products .text-white {
+.inner-subproducts .text-white {
   color: #fff; }
-  .inner-products .text-white h2.title {
+  .inner-subproducts .text-white h2.title {
     color: #fff; }
 
-.inner-products .block-1 {
-  padding: 3.7rem 0 2rem; }
-  .inner-products .block-1 .text {
+.inner-subproducts .block-1 {
+  padding: 5.5rem 0 2rem; }
+  .inner-subproducts .block-1 .text {
     padding-left: 7rem;
     padding-bottom: 5rem; }
 
-.inner-products .block-2 {
+.inner-subproducts .block-2 {
   margin-bottom: -94px; }
-  .inner-products .block-2 .text {
+  .inner-subproducts .block-2 .text {
     padding-right: 4rem; }
 
-.inner-products .block-3 .text {
+.inner-subproducts .block-3 .text {
   padding-left: 7rem; }
 
 .vcenter-block {
@@ -5124,7 +5129,11 @@ h3 {
     display: block !important;
     text-align: center; }
     #modal-callback .bottom .btn-submit {
-      margin: 2rem auto 0; } }
+      margin: 2rem auto 0; }
+  .header,
+  .inner .header {
+    padding-left: 1rem;
+    padding-right: 1rem; } }
 
 @media (max-width: 450px) {
   .extra-toggle-inner .extra-title {
@@ -5194,7 +5203,11 @@ h3 {
   .inner .product__rubrics img {
     max-width: 100%; }
   .inner .product__rubrics .rubric__title {
-    font-size: 3.8rem; } }
+    font-size: 3.8rem; }
+  .inner-subproducts h1 {
+    font-size: 7rem; }
+  .inner-subproducts .text h2.title {
+    font-size: 4rem; } }
 
 @media (max-width: 1450px) {
   .homepage .main .center {
@@ -5336,7 +5349,13 @@ h3 {
     font-size: 3.2rem; }
   .inner .product__rubrics .rubric__pic:after, .inner .product__rubrics .rubric__pic:before {
     height: 250px;
-    width: 250px; } }
+    width: 250px; }
+  .inner-subproducts h1 {
+    font-size: 6rem; }
+  .inner-subproducts .main {
+    font-size: 1.8rem; }
+  .inner-subproducts .text h2.title {
+    font-size: 3rem; } }
 
 @media (max-width: 1180px) {
   .homepage .center-carousel .slick-slide .pic {
@@ -5420,7 +5439,15 @@ h3 {
     min-height: 26rem; }
     .inner .product__rubrics .rubric__pic:after, .inner .product__rubrics .rubric__pic:before {
       height: 180px;
-      width: 180px; } }
+      width: 180px; }
+  .inner-subproducts h1 {
+    font-size: 5rem; }
+  .inner-subproducts .main {
+    font-size: 1.7rem; }
+  .inner-subproducts .text h2.title {
+    font-size: 2.6rem; }
+  .inner-subproducts .block-1 .text {
+    padding-left: 3rem; } }
 
 @media (max-width: 950px) {
   .inner .product__rubrics .row {
@@ -5457,7 +5484,25 @@ h3 {
     display: block; }
   .inner .product__rubrics .rubric__pic:after, .inner .product__rubrics .rubric__pic:before {
     height: 250px;
-    width: 250px; } }
+    width: 250px; }
+  .inner-subproducts h1 {
+    font-size: 4rem; }
+  .inner-subproducts .arc {
+    background-size: cover !important;
+    background-position: center bottom !important;
+    min-height: 0;
+    padding-bottom: 12rem; }
+    .inner-subproducts .arc imt {
+      margin-top: 2rem; }
+  .inner-subproducts .text {
+    padding-right: 0 !important; }
+    .inner-subproducts .text h2.title {
+      font-size: 2.2rem;
+      text-align: center; }
+  .inner-subproducts .block-1 {
+    padding-top: 2rem; }
+  .product__submenu {
+    font-size: 1.8rem; } }
 
 @media (max-width: 700px) {
   .homepage .center-carousel .slick-slide .pic {
@@ -5513,7 +5558,9 @@ h3 {
       text-align: center; }
     .inner .footer .lang {
       margin: 1rem 0;
-      justify-content: center; } }
+      justify-content: center; }
+  .inner-subproducts .footer {
+    margin-top: -100px; } }
 
 @media (max-width: 600px) {
   .homepage .interesting .carousel,
@@ -5573,7 +5620,19 @@ h3 {
     .homepage .about__icon img {
       filter: brightness(10); }
   .homepage .about__title {
-    font-size: 1.4rem; } }
+    font-size: 1.4rem; }
+  .product__submenu {
+    margin-top: 2rem; }
+    .product__submenu ul {
+      display: block;
+      text-align: center; }
+  .inner-subproducts h1 {
+    font-size: 3.6rem; }
+  .inner-subproducts .text {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 1rem !important;
+    text-align: justify; } }
 
 @media (max-width: 450px) {
   .homepage .main .center {
@@ -5602,7 +5661,9 @@ h3 {
     width: 19.5rem; }
     .homepage .info-md .lastnews .carousel__pic img {
       max-width: 115px;
-      max-height: 115px; } }
+      max-height: 115px; }
+  .inner-subproducts .text {
+    padding-bottom: 2rem !important; } }
 
 @media (max-width: 380px) {
   .homepage .center-carousel .slick-slide .pic {
@@ -5648,4 +5709,9 @@ h3 {
       min-height: 32rem; }
     .inner .product__rubrics .rubric__pic:after, .inner .product__rubrics .rubric__pic:before {
       height: 180px;
-      width: 180px; } }
+      width: 180px; }
+  .inner-subproducts .footer {
+    margin-top: -120px; }
+    .inner-subproducts .footer .copyright {
+      padding-left: 1rem;
+      padding-right: 1rem; } }

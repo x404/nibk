@@ -31,7 +31,7 @@
 	&__submenu{
 		font-size: 2rem;
 		font-family: 'Officina Serif Black C';
-		margin-bottom: 2rem;
+		margin-bottom: 3rem;
 		text-transform: uppercase;
 		ul{
 			display: flex;
@@ -139,24 +139,24 @@
 
 
 .inner{
-	&-brakepads
-	{
+	&-subproducts{
 		.footer{
 			padding: 0;
 			margin-top: -58px;
 		}
-	}
-	&-products{
 		.main{
 			font-size: 2rem;
 			img{
 				margin: 3rem 0;
+				max-width: 100%;
+				height: auto;
 			}
 		}
 		h1{
 			font-size: 8rem;
 			font-family: 'Officina Serif Black C';
 			color: $color3;
+			line-height: 1.2;
 			text-align: center;
 		}
 
@@ -181,7 +181,7 @@
 		
 
 		.block-1{
-			padding: 3.7rem 0 2rem;
+			padding: 5.5rem 0 2rem;
 			.text{
 				padding-left: 7rem;
 				padding-bottom: 5rem;

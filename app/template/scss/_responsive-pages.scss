@@ -58,7 +58,17 @@
 					}
 				}
 			}
+		}
 
+		&-subproducts{
+			h1{
+				font-size: 7rem;
+			}
+			.text{
+				h2.title{
+					font-size: 4rem;
+				}
+			}
 		}
 	}
 }
@@ -327,7 +337,24 @@
 				}
 			}
 		}
+		&-subproducts{
+			h1{
+				font-size: 6rem;
+			}
+			.main{
+				font-size: 1.8rem;
+			}
+			.text{
+				h2.title{
+					font-size: 3rem;
+				}
+			}
+		}
 	}
+}
+
+@media (max-width: 1200px) {
+
 }
 
 
@@ -492,6 +519,27 @@
 				}
 			}
 		}
+
+		&-subproducts{
+			h1{
+				font-size: 5rem;
+			}
+
+			.main{
+				font-size: 1.7rem;
+			}
+
+			.text{
+				h2.title{
+					font-size: 2.6rem;
+				}
+			}
+			.block-1{
+				.text{
+					padding-left: 3rem;
+				}
+			}
+		}
 	}
 }
 
@@ -574,6 +622,37 @@
 				}
 			}
 		}
+
+		&-subproducts{
+			h1{
+				font-size: 4rem;
+			}
+
+			.arc{
+				background-size: cover !important;
+				background-position: center bottom !important;
+				// margin-bottom: 0 !important;
+				min-height: 0;
+				padding-bottom: 12rem;
+				imt{
+					margin-top: 2rem;
+				}
+			}
+			.text{
+				padding-right: 0 !important;
+				h2.title{
+					font-size: 2.2rem;
+					text-align: center;
+				}
+			}
+			.block-1{
+				padding-top: 2rem;
+			}
+
+		}
+	}
+	.product__submenu{
+		font-size: 1.8rem;
 	}
 }
 
@@ -663,6 +742,13 @@
 				justify-content: center;
 			}
 		}		
+
+		// subproducts
+		&-subproducts{
+			.footer{
+				margin-top: -100px;				
+			}
+		}
 	}
 }
 
@@ -793,6 +879,30 @@
 			}
 		}
 	}
+
+	.product__submenu{
+		margin-top: 2rem;
+		ul{
+			display: block;
+			text-align: center;
+		}
+	}
+
+	.inner-subproducts{
+		h1{
+			font-size: 3.6rem;
+		}
+
+		.text{
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+			padding-bottom: 1rem !important;
+			text-align: justify;
+		}
+
+
+	}
+
 }
 
 
@@ -842,6 +952,12 @@
 					max-height: 115px;
 				}
 			}
+		}
+	}
+
+	.inner-subproducts{
+		.text{
+			padding-bottom: 2rem !important;
 		}
 	}
 }
@@ -916,14 +1032,6 @@
 
 
 	.inner{
-		// .product__menu{
-		// 	font-size: 2.4rem;
-		// 	ul{
-		// 		li{
-		// 			margin: 0 1.1rem;
-		// 		}
-		// 	}
-		// }
 		.product__rubrics{
 			margin-top: 1.5rem;
 			img{
@@ -943,5 +1051,16 @@
 				}
 			}
 		}
+
+		&-subproducts{
+			.footer{
+				.copyright{
+					padding-left: 1rem;
+					padding-right: 1rem;
+				}
+				margin-top: -120px;				
+			}
+		}
+
 	}
 }

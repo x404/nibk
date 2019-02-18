@@ -591,6 +591,12 @@
 		}
 	}
 
+	.header, 
+	.inner .header{
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
 }
 
 @media (max-width: 450px) {
@@ -608,6 +614,8 @@
 			font-size: 5rem;
 		}
 	}
+
+
 }
 
 

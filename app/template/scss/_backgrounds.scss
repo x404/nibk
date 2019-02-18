@@ -17,7 +17,7 @@
 		}
 	}
 
-	.inner-products{
+	.inner-subproducts{
 		.block-2{
 			background: url(../images/bg/sport-oriented-formulas.webp) center top no-repeat;
 		}
@@ -53,6 +53,8 @@
 .inner{
 	&-products{
 		background-image: url(../images/bg/i_bg-1.jpg);
+	}
+	&-subproducts{
 		.block-2{
 			background: url(../images/bg/sport-oriented-formulas.png) center top no-repeat;
 			min-height: 820px;
