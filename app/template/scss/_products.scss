@@ -26,6 +26,16 @@
 				}
 			}
 		}
+
+		&-orange{
+			ul{
+				li.active{
+					a, span{
+						color: $color3;
+					}					
+				}
+			}
+		}
 	}
 
 	&__submenu{
@@ -44,6 +54,7 @@
 				a, span{
 					color: currentColor;
 					&:hover{
+						color: $color3 !important;
 						text-decoration: none;
 					}
 				}
@@ -140,6 +151,17 @@
 
 .inner{
 	&-subproducts{
+		.header{
+			.navmenu li.active{
+				a, span{
+					color: $color3 !important;
+					&:before{
+						display: none;
+						border-bottom-color: rgba(0,0,0,0);
+					}
+				}
+			}
+		}
 		.footer{
 			padding: 0;
 			margin-top: -58px;
@@ -257,3 +279,75 @@
 	flex-direction: column;
 	justify-content: center;	
 }
+
+
+
+
+
+/* =NEW PRODUCTS
+---------------------------*/
+.inner-newproducts{
+	.deadline{
+		color: $color12;
+		font-family: 'Officina Serif Black C';
+		font-size: 2rem;
+		margin: 1rem 0;
+		text-align: center;
+	}
+
+	.more{
+		cursor: pointer;
+		margin-top: 3.8rem;
+	}
+}
+
+.listproducts{
+	grid-template-columns: repeat(5, 30rem);
+	grid-row-gap: 3.5rem;
+	margin-top: 3rem;
+	.product{
+		&__item{
+			background: $color2;
+			box-shadow: 0 0 2rem rgba(0,0,0,.15);
+			text-align: center;
+		}
+		&__link{
+			display: block;
+			padding: 2rem 4rem;
+			border-bottom: 1rem solid $color3;
+			&:hover{
+				text-decoration: none;
+				color: $color1;
+				border-bottom-color: $color4;
+				.product{
+					&__title{
+						color: $color4;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		&__pic{
+			min-height: 24rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img{
+				max-width: 100%
+			}
+		}
+		&__title{
+			font-family: 'Officina Serif Black C';
+			font-size: 3rem;
+			text-decoration: underline; 
+			transition: color .3s;
+		}
+		&__date{
+			font-family: 'Officina Serif Book C';
+		}
+	}
+}
+/* =/NEW PRODUCTS
+---------------------------*/
+
+

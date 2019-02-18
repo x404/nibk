@@ -15,6 +15,10 @@
 		&-brakepads{
 			background-image: url(../images/bg/i_bg-2.webp);			
 		}
+
+		&-newproducts{
+			background-image: url(../images/bg/new-products.webp);			
+		}
 	}
 
 	.inner-subproducts{
@@ -119,5 +123,8 @@
 	&-discrotor{
 		background-color: #dce2e9;
 		background-image: url(../images/bg/i_bg-2.jpg);			
+	}
+	&-newproducts{
+		background-image: url(../images/bg/new-products.jpg);			
 	}
 }

@@ -190,9 +190,33 @@ h3{font-size:1.6rem}
 		font-size: 1.6rem;
 		height: 5rem;
 		border-radius: 5rem;
-		// padding: 0 3rem;
 		letter-spacing: .1rem;
 		width: 150px;
+	}
+	&-more{
+		background-color: $color3;
+		border: none;
+		color: $color2;
+		cursor: pointer;
+		display: block;
+		font-family: 'Officina Serif Black C';
+		font-size: 2rem;
+		padding: 3rem 0;
+		text-align: center;
+		width: 100%;
+		transition: background-color .3s;
+		span{
+			position: relative;
+			&:before{
+				@extend .before;
+				@include sprite($icon-arrow);
+				left: -21px;
+				top: 4px;
+			}
+		}
+		&:hover{
+			background-color: $color4;
+		}
 	}
 }
 /* =header
@@ -391,6 +415,15 @@ h3{font-size:1.6rem}
 			padding-bottom: .5rem;
 			padding-top: .5rem;
 			text-align: center;
+		}
+	}
+
+	&-gray2{
+		.copyright,
+		.lang a,
+		.lang .current{
+			color: #6a6a6a;
+			border-color: #6a6a6a
 		}
 	}
 

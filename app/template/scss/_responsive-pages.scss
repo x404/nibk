@@ -1,3 +1,10 @@
+@media (max-width: 1850px){
+	.listproducts{
+		grid-template-columns: repeat(4, 30rem);
+	}
+}
+
+
 @media (max-width: 1750px){
 	.homepage{
 		.interesting,
@@ -70,6 +77,10 @@
 				}
 			}
 		}
+	}
+
+	.listproducts{
+		grid-template-columns: repeat(4, 28rem);
 	}
 }
 
@@ -266,6 +277,8 @@
 		width: 765px !important;
 	}
 
+
+
 }
 
 
@@ -348,6 +361,16 @@
 				h2.title{
 					font-size: 3rem;
 				}
+			}
+		}
+	}
+
+
+	.listproducts{
+		grid-template-columns: repeat(4, 23rem);
+		.product{
+			&__title{
+				font-size: 2.6rem;
 			}
 		}
 	}
@@ -541,6 +564,27 @@
 			}
 		}
 	}
+
+
+
+	// listproducts
+	.listproducts{
+		display: flex;
+		justify-content: space-around !important;
+		flex-wrap: wrap;
+		.product{
+			&__item{
+				margin-bottom: 3rem;
+				width: 280px;
+			}
+			&__title{
+				font-size: 2.4rem;
+			}
+			&__link{
+				padding: 1rem 1rem;
+			}
+		}
+	}
 }
 
 
@@ -631,7 +675,6 @@
 			.arc{
 				background-size: cover !important;
 				background-position: center bottom !important;
-				// margin-bottom: 0 !important;
 				min-height: 0;
 				padding-bottom: 12rem;
 				imt{
@@ -653,6 +696,24 @@
 	}
 	.product__submenu{
 		font-size: 1.8rem;
+	}
+
+
+	// listproducts
+	.listproducts{
+		justify-content: space-between !important;
+		.product{
+			&__item{
+				margin-bottom: 3rem;
+				width: 24rem;
+			}
+			&__title{
+				font-size: 2.2rem;
+			}
+		}
+	}
+	.btn-more{
+		padding: 2rem 0;
 	}
 }
 
@@ -748,6 +809,12 @@
 			.footer{
 				margin-top: -100px;				
 			}
+		}
+
+		// newproducts
+		&-newproducts .more{
+			margin-top: 2rem;
+			margin-bottom: 3rem;
 		}
 	}
 }
@@ -850,6 +917,22 @@
 				li{
 					margin: 1rem 0;
 				}
+			}
+		}
+	}
+
+
+	// listproducts
+	.listproducts{
+		display: block;
+		.product{
+			&__item{
+				margin-left: auto;
+				margin-right: auto;
+				width: 24rem;
+			}
+			&__title{
+				font-size: 2.2rem;
 			}
 		}
 	}
@@ -961,6 +1044,13 @@
 		.text{
 			padding-bottom: 2rem !important;
 		}
+	}
+
+
+	.btn-more{
+		font-size: 1.8rem;
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
 	}
 }
 
