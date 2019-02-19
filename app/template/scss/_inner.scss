@@ -1,3 +1,10 @@
+.vcenter-block{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
+}
+
+
 .inner{
 	.header{
 		padding-top: 0;
@@ -63,3 +70,144 @@
 }
 
 
+
+
+
+.main{
+	.btn-back{
+		margin-top: 1rem;
+	}
+	.maintext{
+		font-size: 2rem;
+		.wrapper-back{
+			flex-shrink: 0;
+			width: 160px;
+		}
+		.innertext{
+			padding-left: 160px;
+		}
+		h1, h2, h3, h4, h5, h6{
+			font-family: 'Officina Serif Black C';
+			line-height: 1.1;
+		}
+		h1{
+			font-size: 5rem;
+			margin-bottom: 4rem;
+			text-align: left;
+		}
+		h2{
+			color: $color1;
+			font-size: 4.5rem;
+			margin-bottom: 2rem;
+		}
+		h3{
+			font-size: 4rem;
+		}
+		h4{
+			font-size: 3.5rem;
+		}
+		h6{
+			font-size: 2.2rem;
+		}
+		img{
+			margin: 1rem;
+			max-width: 100%;
+			height: auto;
+		}
+
+		.row{
+			margin-bottom: 7rem;
+		}
+	}
+}
+
+.side-panel{
+	.title{
+		color: $color3;
+		font-family: 'Officina Serif Black C';
+		font-size: 4rem;
+		line-height: 1.2;
+		margin-bottom: 1rem;
+		margin-top: 1rem;
+		text-transform: uppercase;
+	}
+	.widget{
+		font-family: "Officina Serif Black C";
+		margin-bottom: 5rem;
+	}
+
+	.popular-posts{
+		font-size: 1.7rem;
+		text-transform: uppercase;
+		ul{
+			width: 22rem;
+			li{
+				border-bottom: 1px solid #cfcfcf;
+				line-height: 1.2;
+				margin: 1rem 0;
+				padding: 2.5rem 0;
+				&:last-child{
+					border-bottom: none;
+				}
+				a{
+					&:hover{
+						color: $color3;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+.mb10{
+	margin-bottom: 1rem;
+}
+
+.mb20{
+	margin-bottom: 2rem;
+}
+
+blockquote{
+	background:linear-gradient(to right, #883c80 50%, #713a97 50%);
+	background-size: 10px 100%;
+	font-size: 2rem;
+	color: $color2;
+	line-height: 1.4;
+	font-family: "Officina Serif Black C";
+	padding: 6rem 2.6rem 3rem 5.5rem;
+	position: relative;
+	&:before{
+		@extend .before;
+		background: url(../images/quote.png) no-repeat top left;
+		left: 16px;
+		top: 23px;
+		width: 57px;
+		height: 27px;
+	}
+	&:after{
+		@extend .before;
+		border-top: 10px solid $color3;
+		bottom: -3px;
+		left: 0;
+		transform: skewY(-1deg);
+		width: 100%;
+	}
+
+	@media (max-width: 1250px){
+		&:after{
+			transform: skewY(-.4deg);			
+		}
+	}
+}
+
+
+
+.justifyleft {text-align:left !important; }
+.justifyright {text-align:right !important; }
+.justifycenter {text-align: center !important; }
+.justifyfull {text-align:justify !important; }
+
+img.justifyleft, table.justifyleft {float:left; margin-right:20px;margin-bottom:5px;}
+img.justifyright, table.justifyright {float:right; margin-left:20px;margin-bottom:5px;}
+img.justifycenter, table.justifycenter { display: block; margin-left: auto; margin-right: auto;}

@@ -141,7 +141,8 @@
 
 	&-articles{
 		background-image: url(../images/bg/did-you-know.jpg);
-		background-size: none;
+		background-size: auto;
+		background-position: center top;
 		background-color: #cdd3db;
 	}
 }

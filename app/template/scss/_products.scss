@@ -274,13 +274,18 @@
 }
 
 
-.vcenter-block{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;	
+.inner-article .main{
+	@media (min-width: 1250px) and (max-width: 1850px){
+		.col-xl-7{
+			flex: 0 0 65%;
+			max-width: 65%
+		}
+		.col-xl-2{
+			flex: 0 0 25%;
+			max-width: 25%
+		}
+	}
 }
-
-
 
 
 
