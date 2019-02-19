@@ -3249,6 +3249,9 @@ a.text-dark:hover, a.text-dark:focus {
 .webp .inner-testreports {
   background-image: url(../images/bg/test-reports.webp); }
 
+.webp .inner-articles {
+  background-image: url(../images/bg/did-you-know.webp); }
+
 .webp .inner-subproducts .block-2 {
   background: url(../images/bg/sport-oriented-formulas.webp) center top no-repeat; }
 
@@ -3332,6 +3335,11 @@ a.text-dark:hover, a.text-dark:focus {
 .inner-testreports {
   background-color: #c4c4c4;
   background-image: url(../images/bg/test-reports.jpg); }
+
+.inner-articles {
+  background-image: url(../images/bg/did-you-know.jpg);
+  background-size: none;
+  background-color: #cdd3db; }
 
 .container {
   margin-right: auto;
@@ -4779,7 +4787,8 @@ h3 {
 ---------------------------*/
 /* =TEST REPORTS
 ---------------------------*/
-.inner-testreports h1 {
+.inner-testreports h1,
+.inner-articles h1 {
   color: #f26722;
   font-size: 10rem;
   line-height: 1.2;
@@ -4787,24 +4796,41 @@ h3 {
   text-transform: uppercase;
   font-family: 'Officina Serif Black C'; }
 
-.listtestreports {
-  grid-template-columns: repeat(3, 1fr);
+.listarticles {
+  grid-template-columns: repeat(3, minmax(300px, 480px));
   grid-row-gap: 3rem;
-  margin-bottom: 2rem; }
-  .listtestreports .report__item {
+  margin-bottom: 2rem;
+  margin-top: 2rem; }
+  .listarticles .report__item {
     text-align: center; }
-  .listtestreports .report__link:hover {
-    text-decoration: none; }
-  .listtestreports .report__pic {
+  .listarticles .report__link {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+    .listarticles .report__link:hover {
+      text-decoration: none;
+      color: #000; }
+      .listarticles .report__link:hover .report__title {
+        color: #f26722; }
+      .listarticles .report__link:hover .report__pic img {
+        transform: scale(1.1); }
+  .listarticles .report__pic {
     min-height: 32rem;
     display: flex;
     justify-content: center;
     align-items: flex-end; }
-    .listtestreports .report__pic img {
+    .listarticles .report__pic img {
+      transition: transform .3s;
       max-width: 100%; }
-  .listtestreports .report__title {
+  .listarticles .report__title {
     font-family: 'Officina Serif Black C';
     font-size: 3rem;
+    line-height: 1.2;
+    margin-top: 2rem;
+    transition: color .3s; }
+  .listarticles .report__intro {
+    color: #4a4a4a;
+    font-size: 2rem;
     margin-top: 2rem; }
 
 /* =/TEST REPORTS
@@ -5576,10 +5602,17 @@ h3 {
     grid-template-columns: repeat(4, 23rem); }
     .listproducts .product__title {
       font-size: 2.6rem; }
-  .inner-testreports h1 {
+  .inner-testreports h1,
+  .inner-articles h1 {
     font-size: 8rem; }
-  .listtestreports .report__title {
-    font-size: 2.6rem; } }
+  .listarticles .report__pic {
+    min-height: 30rem; }
+    .listarticles .report__pic img {
+      max-width: 80%; }
+  .listarticles .report__title {
+    font-size: 2.6rem; }
+  .listarticles .report__intro {
+    font-size: 1.8rem; } }
 
 @media (max-width: 1180px) {
   .homepage .center-carousel .slick-slide .pic {
@@ -5683,19 +5716,20 @@ h3 {
       font-size: 2.4rem; }
     .listproducts .product__link {
       padding: 1rem 1rem; }
-  .inner-testreports h1 {
+  .inner-testreports h1,
+  .inner-articles h1 {
     font-size: 6rem; }
-  .listtestreports {
+  .listarticles {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start !important; }
-    .listtestreports .report__item {
+    .listarticles .report__item {
       padding-left: 1rem;
       padding-right: 1rem;
       width: 50%; }
-      .listtestreports .report__item img {
+      .listarticles .report__item img {
         max-width: 90%; }
-    .listtestreports .report__title {
+    .listarticles .report__title {
       font-size: 2.4rem; } }
 
 @media (max-width: 950px) {
@@ -5760,7 +5794,9 @@ h3 {
     .listproducts .product__title {
       font-size: 2.2rem; }
   .btn-more {
-    padding: 2rem 0; } }
+    padding: 2rem 0; }
+  .listarticles .report__pic {
+    min-height: 28rem; } }
 
 @media (max-width: 700px) {
   .homepage .center-carousel .slick-slide .pic {
@@ -5858,22 +5894,25 @@ h3 {
     .inner .product__rubrics .rubric__pic:after, .inner .product__rubrics .rubric__pic:before {
       height: 220px;
       width: 220px; }
-  .inner-testreports h1 {
+  .inner-testreports h1,
+  .inner-articles h1 {
     font-size: 5rem; }
-  .listtestreports {
+  .listarticles {
     display: block; }
-    .listtestreports .report__item {
+    .listarticles .report__item {
       margin: 3rem 0;
       padding-left: 1rem;
       padding-right: 1rem;
       width: 100%; }
-      .listtestreports .report__item img {
+      .listarticles .report__item img {
         max-width: 90%; }
-    .listtestreports .report__pic {
+    .listarticles .report__pic {
       min-height: 0; }
-    .listtestreports .report__title {
+    .listarticles .report__title {
       font-size: 2rem;
-      margin-top: 1.5rem; } }
+      margin-top: 1.5rem; }
+    .listarticles .report__intro {
+      font-size: 1.6rem; } }
 
 @media (max-width: 550px) {
   .homepage .main .center {

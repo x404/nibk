@@ -1,5 +1,6 @@
 @media (max-width: 1850px){
-	.listproducts{
+	.listproducts
+	{
 		grid-template-columns: repeat(4, 30rem);
 	}
 }
@@ -79,7 +80,8 @@
 		}
 	}
 
-	.listproducts{
+	.listproducts
+	{
 		grid-template-columns: repeat(4, 28rem);
 	}
 }
@@ -366,7 +368,8 @@
 	}
 
 
-	.listproducts{
+	.listproducts
+	{
 		grid-template-columns: repeat(4, 23rem);
 		.product{
 			&__title{
@@ -377,18 +380,27 @@
 
 
 	// test reports
-	.inner-testreports{
+	.inner-testreports,
+	.inner-articles
+	{
 		h1{
 			font-size: 8rem;
 		}
 	}
-	.listtestreports{
+	.listarticles
+	{
 		.report{
-			&__item{
-
+			&__pic{
+				min-height: 30rem;
+				img{
+					max-width: 80%
+				}
 			}
 			&__title{
 				font-size: 2.6rem;
+			}
+			&__intro{
+				font-size: 1.8rem;
 			}
 		}
 	}
@@ -586,7 +598,8 @@
 
 
 	// listproducts
-	.listproducts{
+	.listproducts
+	{
 		display: flex;
 		justify-content: space-around !important;
 		flex-wrap: wrap;
@@ -605,12 +618,15 @@
 	}
 
 	// test reports
-	.inner-testreports{
+	.inner-testreports,
+	.inner-articles
+	{
 		h1{
 			font-size: 6rem;
 		}
 	}
-	.listtestreports{
+	.listarticles
+	{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: flex-start !important;
@@ -626,6 +642,7 @@
 			&__title{
 				font-size: 2.4rem;	
 			}
+
 		}
 	}
 }
@@ -734,7 +751,6 @@
 			.block-1{
 				padding-top: 2rem;
 			}
-
 		}
 	}
 	.product__submenu{
@@ -743,7 +759,8 @@
 
 
 	// listproducts
-	.listproducts{
+	.listproducts
+	{
 		justify-content: space-between !important;
 		.product{
 			&__item{
@@ -757,6 +774,12 @@
 	}
 	.btn-more{
 		padding: 2rem 0;
+	}
+
+	.listarticles{
+		.report__pic{
+			min-height: 28rem
+		}
 	}
 }
 
@@ -930,12 +953,15 @@
 	}
 
 	// test reports
-	.inner-testreports{
+	.inner-testreports,
+	.inner-articles
+	{
 		h1{
 			font-size: 5rem;
 		}
 	}
-	.listtestreports{
+	.listarticles
+	{
 		display: block;
 		.report{
 			&__item{
@@ -953,6 +979,10 @@
 			&__title{
 				font-size: 2rem;	
 				margin-top: 1.5rem;
+			}
+
+			&__intro{
+				font-size: 1.6rem;
 			}
 		}
 	}
@@ -986,7 +1016,8 @@
 
 
 	// listproducts
-	.listproducts{
+	.listproducts
+	{
 		display: block;
 		.product{
 			&__item{
@@ -1215,6 +1246,5 @@
 				margin-top: -120px;				
 			}
 		}
-
 	}
 }

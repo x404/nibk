@@ -22,6 +22,9 @@
 		&-testreports{
 			background-image: url(../images/bg/test-reports.webp);
 		}
+		&-articles{
+			background-image: url(../images/bg/did-you-know.webp);
+		}
 	}
 
 	.inner-subproducts{
@@ -134,5 +137,11 @@
 	&-testreports{
 		background-color: #c4c4c4; 
 		background-image: url(../images/bg/test-reports.jpg);		
+	}
+
+	&-articles{
+		background-image: url(../images/bg/did-you-know.jpg);
+		background-size: none;
+		background-color: #cdd3db;
 	}
 }
