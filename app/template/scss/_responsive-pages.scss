@@ -374,6 +374,24 @@
 			}
 		}
 	}
+
+
+	// test reports
+	.inner-testreports{
+		h1{
+			font-size: 8rem;
+		}
+	}
+	.listtestreports{
+		.report{
+			&__item{
+
+			}
+			&__title{
+				font-size: 2.6rem;
+			}
+		}
+	}
 }
 
 @media (max-width: 1200px) {
@@ -582,6 +600,31 @@
 			}
 			&__link{
 				padding: 1rem 1rem;
+			}
+		}
+	}
+
+	// test reports
+	.inner-testreports{
+		h1{
+			font-size: 6rem;
+		}
+	}
+	.listtestreports{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start !important;
+		.report{
+			&__item{
+				padding-left: 1rem;
+				padding-right: 1rem;
+				width: 50%;
+				img{
+					max-width: 90%
+				}
+			}
+			&__title{
+				font-size: 2.4rem;	
 			}
 		}
 	}
@@ -869,14 +912,6 @@
 
 @media (max-width: 575px) {
 	.inner{
-		// .product__menu{
-		// 	font-size: 2.4rem;
-		// 	ul{
-		// 		li{
-		// 			margin: 0 1.1rem;
-		// 		}
-		// 	}
-		// }
 		.product__rubrics{
 			margin-left: 0;
 			margin-right: 0;
@@ -890,6 +925,34 @@
 					height: $s;
 					width: $s;
 				}
+			}
+		}
+	}
+
+	// test reports
+	.inner-testreports{
+		h1{
+			font-size: 5rem;
+		}
+	}
+	.listtestreports{
+		display: block;
+		.report{
+			&__item{
+				margin: 3rem 0;
+				padding-left: 1rem;
+				padding-right: 1rem;
+				width: 100%;
+				img{
+					max-width: 90%
+				}
+			}
+			&__pic{
+				min-height: 0;
+			}
+			&__title{
+				font-size: 2rem;	
+				margin-top: 1.5rem;
 			}
 		}
 	}
@@ -1045,7 +1108,6 @@
 			padding-bottom: 2rem !important;
 		}
 	}
-
 
 	.btn-more{
 		font-size: 1.8rem;

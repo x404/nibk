@@ -350,4 +350,50 @@
 /* =/NEW PRODUCTS
 ---------------------------*/
 
+/* =TEST REPORTS
+---------------------------*/
+.inner-testreports{
+	h1{
+		color: $color3;
+		font-size: 10rem;
+		line-height: 1.2;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: 'Officina Serif Black C';
+	}
+}
+
+.listtestreports{
+	grid-template-columns: repeat(3, 1fr);
+	grid-row-gap: 3rem;
+	margin-bottom: 2rem;
+
+	.report{
+		&__item{
+			text-align: center;
+		}
+		&__link{
+			&:hover{
+				text-decoration: none;
+			}
+		}
+		&__pic{
+			min-height: 32rem;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			img{
+				max-width: 100%
+			}
+		}
+
+		&__title{
+			font-family: 'Officina Serif Black C';
+			font-size: 3rem;
+			margin-top: 2rem;
+		}
+	}
+}
+/* =/TEST REPORTS
+---------------------------*/
 

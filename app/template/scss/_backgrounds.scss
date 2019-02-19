@@ -19,6 +19,9 @@
 		&-newproducts{
 			background-image: url(../images/bg/new-products.webp);			
 		}
+		&-testreports{
+			background-image: url(../images/bg/test-reports.webp);
+		}
 	}
 
 	.inner-subproducts{
@@ -126,5 +129,10 @@
 	}
 	&-newproducts{
 		background-image: url(../images/bg/new-products.jpg);			
+	}
+
+	&-testreports{
+		background-color: #c4c4c4; 
+		background-image: url(../images/bg/test-reports.jpg);		
 	}
 }

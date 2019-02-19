@@ -8,10 +8,18 @@
 		.navmenu li{
 			&.active{
 				a, span{
-					color: $color2;
+					color: $color3 !important;
 					&:before{
-						color: $color2;
-						border-bottom-color: $color2;
+						display: none;
+						// color: $color2;
+						// border-bottom-color: $color2;
+						// color: $color3;
+						// border-bottom-color: transparent;
+					}
+					&:hover{
+						&:before{
+							color: $color3;
+						}
 					}
 				}
 			}
@@ -19,6 +27,18 @@
 				&:before{
 					border-bottom-color: $color3;
 					color: $color1;
+				}
+			}
+		}
+	}
+
+	&-products{
+		.header{
+			.navmenu li{
+				&.active{
+					a, span{
+						color: $color2 !important;
+					}
 				}
 			}
 		}

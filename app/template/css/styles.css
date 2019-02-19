@@ -3246,6 +3246,9 @@ a.text-dark:hover, a.text-dark:focus {
 .webp .inner-newproducts {
   background-image: url(../images/bg/new-products.webp); }
 
+.webp .inner-testreports {
+  background-image: url(../images/bg/test-reports.webp); }
+
 .webp .inner-subproducts .block-2 {
   background: url(../images/bg/sport-oriented-formulas.webp) center top no-repeat; }
 
@@ -3325,6 +3328,10 @@ a.text-dark:hover, a.text-dark:focus {
 
 .inner-newproducts {
   background-image: url(../images/bg/new-products.jpg); }
+
+.inner-testreports {
+  background-color: #c4c4c4;
+  background-image: url(../images/bg/test-reports.jpg); }
 
 .container {
   margin-right: auto;
@@ -4513,13 +4520,17 @@ h3 {
   .inner .header__left, .inner .header__right {
     margin-top: 5rem; }
   .inner .header .navmenu li.active a, .inner .header .navmenu li.active span {
-    color: #fff; }
+    color: #f26722 !important; }
     .inner .header .navmenu li.active a:before, .inner .header .navmenu li.active span:before {
-      color: #fff;
-      border-bottom-color: #fff; }
+      display: none; }
+    .inner .header .navmenu li.active a:hover:before, .inner .header .navmenu li.active span:hover:before {
+      color: #f26722; }
   .inner .header .navmenu li a:before {
     border-bottom-color: #f26722;
     color: #000; }
+
+.inner-products .header .navmenu li.active a, .inner-products .header .navmenu li.active span {
+  color: #fff !important; }
 
 .inner .footer {
   padding-top: 6rem;
@@ -4765,6 +4776,38 @@ h3 {
     font-family: 'Officina Serif Book C'; }
 
 /* =/NEW PRODUCTS
+---------------------------*/
+/* =TEST REPORTS
+---------------------------*/
+.inner-testreports h1 {
+  color: #f26722;
+  font-size: 10rem;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Officina Serif Black C'; }
+
+.listtestreports {
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 3rem;
+  margin-bottom: 2rem; }
+  .listtestreports .report__item {
+    text-align: center; }
+  .listtestreports .report__link:hover {
+    text-decoration: none; }
+  .listtestreports .report__pic {
+    min-height: 32rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+    .listtestreports .report__pic img {
+      max-width: 100%; }
+  .listtestreports .report__title {
+    font-family: 'Officina Serif Black C';
+    font-size: 3rem;
+    margin-top: 2rem; }
+
+/* =/TEST REPORTS
 ---------------------------*/
 /* =mobile-menu
 ---------------------------*/
@@ -5532,7 +5575,11 @@ h3 {
   .listproducts {
     grid-template-columns: repeat(4, 23rem); }
     .listproducts .product__title {
-      font-size: 2.6rem; } }
+      font-size: 2.6rem; }
+  .inner-testreports h1 {
+    font-size: 8rem; }
+  .listtestreports .report__title {
+    font-size: 2.6rem; } }
 
 @media (max-width: 1180px) {
   .homepage .center-carousel .slick-slide .pic {
@@ -5635,7 +5682,21 @@ h3 {
     .listproducts .product__title {
       font-size: 2.4rem; }
     .listproducts .product__link {
-      padding: 1rem 1rem; } }
+      padding: 1rem 1rem; }
+  .inner-testreports h1 {
+    font-size: 6rem; }
+  .listtestreports {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start !important; }
+    .listtestreports .report__item {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      width: 50%; }
+      .listtestreports .report__item img {
+        max-width: 90%; }
+    .listtestreports .report__title {
+      font-size: 2.4rem; } }
 
 @media (max-width: 950px) {
   .inner .product__rubrics .row {
@@ -5796,7 +5857,23 @@ h3 {
       max-width: 350px; }
     .inner .product__rubrics .rubric__pic:after, .inner .product__rubrics .rubric__pic:before {
       height: 220px;
-      width: 220px; } }
+      width: 220px; }
+  .inner-testreports h1 {
+    font-size: 5rem; }
+  .listtestreports {
+    display: block; }
+    .listtestreports .report__item {
+      margin: 3rem 0;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      width: 100%; }
+      .listtestreports .report__item img {
+        max-width: 90%; }
+    .listtestreports .report__pic {
+      min-height: 0; }
+    .listtestreports .report__title {
+      font-size: 2rem;
+      margin-top: 1.5rem; } }
 
 @media (max-width: 550px) {
   .homepage .main .center {
