@@ -1,0 +1,43 @@
+.contactus,
+.mailus{
+	h1, .title{
+		font-size: 10rem;
+		color: $color3;
+		font-family: "Officina Serif Black C";
+		text-transform: uppercase;
+		text-align: center;
+		line-height: 1.1;
+	}
+
+	.subtitle{
+		color: $color14;
+		line-height: 1.4;
+	}
+}
+
+.contactus{
+	.tel{
+		&:hover{
+			color: currentColor;
+		}
+	}
+	.email{
+		color: $color3;
+	}
+	.subtitle{
+		font-family: "Officina Serif Black C";	
+		font-size: 6rem;
+	}
+
+	.contacts{
+		margin-top: 3rem;
+	}
+}
+
+.mailus{
+	margin-top: 10rem;
+	.subtitle{
+		margin-top: 1rem;
+		font-size: 1.8rem;
+	}
+}

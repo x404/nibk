@@ -84,8 +84,65 @@
 	{
 		grid-template-columns: repeat(4, 28rem);
 	}
+
+	.contactus,
+	.mailus{
+		h1, .title{
+			font-size: 8rem;
+		}
+
+		.form .input-field input.form-control,
+		.select-wrapper{
+			width: 28rem;
+		}
+	}
+	.contactus{
+		.subtitle{
+			font-size: 4rem;	
+		}
+	}
+	.mailus{
+		margin-top: 7rem;
+	}
+
+	.icon-balloon2{
+		padding-left: 80px;
+		&:before{
+			transform: scale(.8)
+		}
+	}
+	.icon-tel2{
+		padding-left: 70px;
+		&:before{
+			transform: scale(.8)
+		}
+	}
+	.icon-mail2{
+		padding-left: 90px;
+		&:before{
+			transform: scale(.8)
+		}
+	}
 }
 
+
+@media (max-width: 1500px){
+	.contactus{
+		.contacts{
+			.cell{
+				&__mail{
+					font-size: 2.6rem;
+				}
+				&__tel{
+					font-size: 3rem;
+				}
+				&__geo{
+					font-size: 2.2rem;
+				}
+			}
+		}
+	}
+}
 
 
 @media (max-width: 1450px){
@@ -278,9 +335,6 @@
 		height: 765px;
 		width: 765px !important;
 	}
-
-
-
 }
 
 
@@ -442,6 +496,46 @@
 			font-size: 3.6rem;
 		}
 	}
+
+
+
+	// contacts
+	.contactus,
+	.mailus{
+		h1, .title{
+			font-size: 6rem;
+		}
+	}
+	.contactus{
+		.subtitle{
+			font-size: 3.4rem;
+		}
+	}
+
+	.icon-balloon2,
+	.icon-tel2,
+	.icon-mail2{
+		margin-top: 1.5rem;
+		padding-top: 100px;
+		text-align: center;
+		justify-content: center;
+		&:before{
+			left: 50%;
+			transform: scale(.8) translateX(-50%);
+		}
+	}
+
+	.icon-balloon2{
+		padding-left: 0;
+	}
+	.icon-tel2{
+		padding-left: 0;
+	}
+	.icon-mail2{
+		padding-left: 0;
+	}
+
+
 }
 
 @media (max-width: 1200px) {
@@ -720,6 +814,63 @@
 	.side-panel .popular-posts ul{
 		width: auto;
 	}
+
+	// contacts
+	.contactus,
+	.mailus{
+		h1, .title{
+			font-size: 5.4rem;
+		}
+	}
+	.contactus{
+		.subtitle{
+			font-size: 3rem;
+		}
+	}
+
+	.contactus{
+		.contacts{
+			.cell{
+				&__mail{
+					font-size: 2.2rem;
+				}
+				&__tel{
+					font-size: 2.2rem;
+				}
+				&__geo{
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+
+	.mailus{
+		.form{
+			.col{
+				width: 100%;				
+			}
+			.select-wrapper{
+				width: 100%				
+			}
+			.input-field{
+				input.form-control{
+					width: 100%;	
+				}
+			}
+		}
+	}
+
+	.icon-balloon2,
+	.icon-tel2,
+	.icon-mail2{
+		margin-top: 1.5rem;
+		padding-top: 100px;
+		text-align: center;
+		justify-content: center;
+		&:before{
+			transform: scale(.75) translateX(-50%)
+		}
+	}
 }
 
 
@@ -858,12 +1009,48 @@
 	}
 
 
-	// article
-	.main{
-		.maintext{
 
+	// contacts
+	.contactus,
+	.mailus{
+		h1, .title{
+			font-size: 4.8rem;
 		}
 	}
+	.contactus{
+		.subtitle{
+			font-size: 2.5rem;
+		}
+	}
+
+	.mailus{
+		.bottom{
+			text-align: center;
+			.btn{
+				margin-left: auto;
+				margin-right: auto;	
+				margin-top: 2rem;
+			}
+		}
+	}
+
+	.contactus{
+		margin-top: 2rem;
+		.contacts{
+			.cell{
+				&__mail{
+					font-size: 2.2rem;
+				}
+				&__tel{
+					font-size: 2.2rem;
+				}
+				&__geo{
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+
 }
 
 
@@ -1290,6 +1477,35 @@
 		font-size: 1.8rem;
 		padding-top: 1.5rem;
 		padding-bottom: 1.5rem;
+	}
+
+
+	.contactus{
+		h1,
+		.title{
+			font-size: 4.5rem;
+		}
+		.subtitle{
+			font-size: 2.2rem;
+		}
+		.contacts{
+			margin-top: 1rem;
+			.cell{
+				&__mail{
+					font-size: 2rem;
+				}
+				&__tel{
+					font-size: 2rem;
+				}
+				&__geo{
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+
+	.mailus{
+		margin-bottom: 4rem;
 	}
 }
 

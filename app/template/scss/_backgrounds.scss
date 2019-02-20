@@ -25,6 +25,9 @@
 		&-articles{
 			background-image: url(../images/bg/did-you-know.webp);
 		}
+		&-contacts{
+			background-image: url(../images/bg/contacts.webp);
+		}
 	}
 
 	.inner-subproducts{
@@ -144,5 +147,8 @@
 		background-size: auto;
 		background-position: center top;
 		background-color: #cdd3db;
+	}
+	&-contacts{
+		background-image: url(../images/bg/contacts.jpg);
 	}
 }

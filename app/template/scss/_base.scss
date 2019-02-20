@@ -186,6 +186,14 @@ h3{font-size:1.6rem}
 			background-color: $color5;
 		}
 	}
+
+	&-orange{
+		background-color: $color3;
+		color: $color2;
+		&:hover{
+			background-color: $color5;
+		}
+	}
 	&-callback{
 		font-size: 1.6rem;
 		height: 5rem;
@@ -468,107 +476,63 @@ h3{font-size:1.6rem}
 }
 
 
-#modal-callback{
-	background: rgba(242, 103, 34, .98);
-	.container{
-		max-width: 1300px;
-		position: relative;
-	}
-	.inner{
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
 
-	.title{
-		font-family: "Officina Serif Black C";
-		font-size: 10rem;
-		line-height: 1.2;
-		text-transform: uppercase;
+.icon-balloon,
+.icon-balloon2,
+.icon-tel,
+.icon-tel2,
+.icon-mail,
+.icon-mail2
+{
+	display: flex;
+	align-items: center;
+	position: relative;
+	min-height: 90px;
+	&:before{
+		@extend .before;
+		left: 0;
+		top: 0;
 	}
-	.subtitle{
-		font-size: 1.8rem;
-		margin-top: 0rem;
+}
+
+.icon-balloon,
+.icon-balloon2{
+	padding-left: 104px;
+	&:before{
+		@include sprite($icon-balloon);
 	}
-	.form{
-		font-family: "Officina Serif Black C";
-		margin-top: 1rem;
-		.col{
-			flex-grow: 0;
-			width: 360px;		
-		}
+}
 
-		.textarea-field,
-		.input-field{
-			.form-control{
-				letter-spacing: .25rem				
-			}
-		}
-
-		.input-field{
-			color: $color2;				
-			input.form-control{
-				background: none;
-				border-bottom-color: $color2;
-				color: currentColor;
-				font-size: 1.7rem;
-				height: 3.5rem;
-				width: 34rem;
-			}
-			label{
-				color: currentColor;
-			}
-		}
-		.textarea-field{
-			margin-top: 4.2rem;
-			.form-control{
-				font-size: 1.7rem;
-				letter-spacing: .15rem;
-				background: url('data:image/gif;base64,R0lGODlhAQAeAIABAP///wAAACH5BAEAAAEALAAAAAABAB4AAAIFjI+pC1AAOw==');
-				color: $color2;
-				height: 64px;
-				line-height: 1.8;
-			}
-		}
+.icon-balloon2{
+	&:before{
+		@include sprite($icon-balloon2);
 	}
+}
 
-	.select-wrapper{
-		margin-top: 3.2rem;
-		width: 34rem;
+.icon-tel,
+.icon-tel2{
+	padding-left: 93px;
+	&:before{
+		@include sprite($icon-tel);
 	}
-
-	.selectize-input input{
-		color: $color2;
-		@include placeholder(#fff)
+}
+.icon-tel2{
+	&:before{
+		@include sprite($icon-tel2);
 	}
+}
 
-	.selectize-control.single .selectize-input:after, .ms-choice div:after{
-		top: 4px;
-		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAA1ElEQVQoU42QuwoCMRBFN+jHWYlrqZbWgqAoFmIp2lhrZaOoX+LrJyx8/IMQzyyTJWbXR+Aym+zk5N4x1tphFEU11DDGnKh/Le5VaZyhvmHT5GOBrigGdPhFUcCaviIqGbnAYYcyRQ9U/gaiN6ZnpQBxv0kgCupRx+pIQOfQkQco8K9Oz056Ukjg6KbR9t4jMgOJIHfEwdb9e4MoqEudoLtGO+KgogCZgThIARknOdEunM3RwJtBEsFfGSceyA1bjp55Dj7G8V8gxoh9G7WIsAwduP0LcSNRozzkawQAAAAASUVORK5CYII=')
+
+.icon-mail,
+.icon-mail2{
+	padding-left: 112px;	
+	&:before{
+		@include sprite($icon-mail);
 	}
+}
 
-	textarea{
-		width: 100%;
-		display: block;
-	}
-
-	.bottom{
-		margin-top: 3rem;
-	}
-
-	.btn-submit{
-		border-radius: 6rem;
-		display: block;
-		font-family: "Officina Serif Black C";
-		font-size: 2rem;
-		height: 6rem;
-		letter-spacing: .1rem;
-		margin-left: 3.5rem;
-		padding: 0 3rem;
-	}
-
-	.close-modal{
-		top: -5rem;
+.icon-mail2{
+	&:before{
+		@include sprite($icon-mail2);
 	}
 }
