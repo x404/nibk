@@ -27,3 +27,12 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'bender';
+    src: url('../fonts/bender.woff2') format('woff2'),
+         url('../fonts/bender.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

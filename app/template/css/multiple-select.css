@@ -33,7 +33,9 @@
   cursor: default; }
 
 .ms-choice > span {
+  font-family: "Officina Serif Black C";
   position: absolute;
+  font-size: 1.5rem;
   top: 0;
   left: 0;
   right: 20px;
@@ -115,7 +117,8 @@
 
 .ms-drop ul {
   color: #2f2f2f;
-  font-size: 14px;
+  font-family: 'bender';
+  font-size: 1.4rem;
   overflow: auto;
   margin: 0;
   padding: 5px 0 30px; }
@@ -128,8 +131,10 @@
   padding-left: 16px !important;
   padding-right: 16px;
   margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  min-height: 35px; }
+  margin-bottom: 0 !important; }
+  .ms-drop ul > li label {
+    display: block;
+    min-height: 35px; }
   .ms-drop ul > li:before {
     display: none !important; }
 
@@ -186,11 +191,11 @@
   border: 2px solid #7f8184; }
 
 .checkbox-tab .ms-drop li label input:checked + span:before {
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAzklEQVQokZXRu05CQRSF4c+DHTRWROxseABuj2CrlGpvZ2IBgYaKxkDBA9DitfBW2lv5HDR2VhaakEnmmJMTILDK2bP/rH9m5/vicIBTnOPT5mljgl6COap4QXMLwC0O8BUgU3RQwesGoBPMkESD9yQOxqEWynhCbQ3gBoUIuBdpaa4zjd7QWqJwFwHh/R7TQZK7GBp1sY9nNOL5cUYhAB6yS4V+fS9f+QM/cfEIxfgLocFZtkGa3RXuQe0PIwzxuwqwDpKqlXCFy7zCf7AAbK4ka4fqFc0AAAAASUVORK5CYII=");
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAANCAYAAACgu+4kAAAAjUlEQVQokWP8//8/AxlAjoGB4SkDA8NfJjI0T2ZgYHgIxfwMIBeQgOf8RwW6lGieA/Y+mZrn////nxnZAJv///8H4tA8H5dmmAE2aJJEa4YZ4IdFEVGakb2Arvg2MZrRAxHdEIKascXCBlI0YzOA/////2+hmmcS0gzC2PICGwMDgwQDA8MjgomagYEBAD19HxkTqPmyAAAAAElFTkSuQmCC");
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #ed1d24;
-  border-color: #ed1d24; }
+  background-color: #f26722;
+  border-color: #f26722; }
 
 .checkbox-tab .ms-drop li:hover span:before {
   border-color: #fff !important; }
@@ -229,8 +234,8 @@
   top: 7px; }
 
 .radio-tab .ms-drop li label input:checked + span:before {
-  background-color: #ed1d24;
-  border-color: #ed1d24; }
+  background-color: #f26722;
+  border-color: #f26722; }
 
 .radio-tab .ms-drop li:hover span:before {
   border-color: #fff !important; }
@@ -241,4 +246,4 @@
     padding: 7px 0; }
   .ms-drop li:hover {
     color: #fff;
-    background: #ed1d24; }
+    background: #713a97; }
