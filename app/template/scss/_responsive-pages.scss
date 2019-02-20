@@ -6,6 +6,21 @@
 }
 
 
+@media (max-width: 1800px){
+	.catalog-page{
+		.search-result-table{
+			th,
+			tr td{
+				padding-left: 1rem !important;
+			}
+			th{
+				padding-right: 1rem;
+			}
+		} 
+	}
+}
+
+
 @media (max-width: 1750px){
 	.homepage{
 		.interesting,
@@ -123,6 +138,28 @@
 			transform: scale(.8)
 		}
 	}
+
+	.catalog-page{
+		.search-title{
+			font-size: 3rem;
+		}
+		.col-xl-8{
+			flex-basis: 100%;
+			max-width: 100%;
+			margin-left: 0;
+		}
+
+		.search-result-table{
+			th,
+			tr td{
+				padding-left: 2rem !important;
+			}
+			th{
+				padding-right: 1rem;
+			}
+		}
+	}
+
 }
 
 
@@ -536,6 +573,41 @@
 	}
 
 
+
+	.catalog-page {	
+		.tabs{
+			padding: 0;
+		}
+		#brand_tab,
+		#class_tab,
+		#model_tab
+		{
+			width: 14rem;
+		}
+
+		#year_tab{
+			width: 7rem;
+		}
+
+		#engine_tab{
+			width: 10rem;
+		}	
+
+		#body_tab{
+			width: 14rem;
+		}
+
+		.search-result-table{
+			th,
+			tr td{
+				padding-left: 1rem !important;
+			}
+			th{
+				font-size: 1.5rem;
+				padding-right: 1rem;
+			}
+		}
+	}
 }
 
 @media (max-width: 1200px) {
@@ -871,6 +943,68 @@
 			transform: scale(.75) translateX(-50%)
 		}
 	}
+
+	// catalog
+	.catalog-page {	
+		.menu{
+			font-size: 6rem;
+		}
+		.nav{
+			$h: 5rem;
+			font-size: 2.5rem;
+			border-radius: $h;
+			height: $h;
+			&-item{
+				height: calc(5rem - 4px) ;
+			}
+			&-link{
+				padding-top: .6rem;
+				padding-bottom: .6rem;
+				&.active{
+					border-radius: $h;
+				}
+			}
+		}
+		.tab-content{
+			.d-flex{
+				flex-wrap: wrap;
+			}
+		}
+		#brand_tab,
+		#class_tab,
+		#model_tab
+		{
+			margin-bottom: 1rem;
+			width: 31%;
+		}
+
+		#year_tab{
+			width: 26%;
+		}
+
+		#engine_tab{
+			width: 26%;
+		}	
+
+		#body_tab{
+			width: 26%;
+		}
+
+		.ms-drop{
+			width: 100%;
+		}
+
+		.search-result-table{
+			td{
+				padding-left: 1.5rem;
+			}
+			th{
+				white-space: normal;
+				padding-right: .5rem;
+			}
+		}
+	}
+
 }
 
 
@@ -1051,6 +1185,110 @@
 		}
 	}
 
+
+	.catalog-page{
+		.nav{
+			$h: 4.5rem;
+			font-size: 2.2rem;
+			border-radius: $h;
+			height: $h;
+			&-item{
+				height: calc(5rem - 4px) ;
+			}
+			&-link{
+				padding-top: .6rem;
+				padding-bottom: .6rem;
+				&.active{
+					border-radius: $h;
+				}
+			}
+		}
+
+		.menu{
+			font-size: 4.6rem;
+			ul{
+				li{
+					margin: 0 1.5rem;
+				}
+			}
+		}
+		.search-result-table{
+			box-shadow: none !important;
+			background: none !important;
+			border-collapse: separate;
+			&-inner{
+				display: none;
+			}
+			th{
+				display: none !important;
+			}
+			tr{
+				border-top: 2px solid #9a9d9e;
+			    display: block;
+			    margin-bottom: 0;
+			    position: relative;
+			    &:nth-child(even) td{
+			    	background: #f5f5f5;
+			    }
+			    &:first-child{
+			    	margin-bottom: 0;
+			    }
+				&.model-title{
+					border-top: none !important;
+					td{
+						padding-left: 1.5rem !important;
+						text-align: left !important;
+						margin-top: -3px !important;
+						position: relative;
+					}
+				}
+			}
+			td{
+				background: #fff;
+				display: block !important;
+				padding-left: 0 !important;
+				padding-right: 1.5rem !important;
+				text-align: right !important;
+				min-height: 47px;
+				&:before{
+					content: attr(data-title);
+					float: left;
+					font-weight: 700;
+					padding-left: 15px;
+				}
+
+				a{
+					margin: 0 !important;
+					& + a{
+						margin-top: .5rem !important;
+					}
+				}
+			}
+		}
+
+		#brand_tab,
+		#class_tab,
+		#model_tab,
+		#year_tab,
+		#engine_tab,
+		#body_tab
+		{
+			margin-bottom: 3rem;
+			width: 100%;
+			.ms-drop{
+				width: 100%;
+			}
+		}
+
+		#application-search{
+			.btn{
+				margin: 1rem auto 2rem;
+				text-align: center;
+				width: 150px;
+				display: block;
+			}
+		}
+	}
 }
 
 
@@ -1342,6 +1580,25 @@
 			}
 		}
 	}
+
+
+	.catalog-page{
+		.nav{
+			$h: 4rem;
+			font-size: 2rem;
+			border-radius: $h;
+			height: $h;
+			&-item{
+				height: calc(4rem - 4px) ;
+			}
+			&-link{
+				padding: .4rem 3rem .5rem;
+				&.active{
+					border-radius: $h;
+				}
+			}
+		}
+	}
 }
 
 
@@ -1507,6 +1764,35 @@
 	.mailus{
 		margin-bottom: 4rem;
 	}
+
+
+	.catalog-page{
+		.tabs{
+			margin-top: 1rem;
+		}
+		.menu{
+			margin-top: 2rem;
+		}
+		.nav{
+			display: block;
+			$h: 4rem;
+			border: none;
+			font-size: 2rem;
+			border-radius: $h;
+			height: auto;
+			text-align: center;
+			&-item{
+				margin: .5rem 0;
+			}
+			&-link{
+				padding: .4rem 3.5rem .5rem;
+				text-align: center;
+				display: block;
+				width: 20rem;
+			}
+		}
+	}
+
 }
 
 

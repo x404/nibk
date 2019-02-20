@@ -5,6 +5,25 @@
 	}
 }
 
+@media (max-width: 1900px){
+	.header{
+		&__left,
+		&__right{
+			width: calc(50% - 300px)
+		}
+	}
+}
+
+@media (max-width: 1800px){
+	.header{
+		&__left,
+		&__right{
+			width: calc(50% - 260px)
+		}
+	}
+}
+
+
 @media (max-width: 1750px){
 	.header{
 		padding-right: 5rem;

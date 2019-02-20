@@ -5293,7 +5293,9 @@ img.justifycenter, table.justifycenter {
   .catalog-page .nav-item {
     margin-bottom: 0;
     padding-left: 0;
-    height: 5.6rem; }
+    height: 5.6rem;
+    display: flex;
+    align-items: center; }
     .catalog-page .nav-item:before {
       display: none; }
   .catalog-page .nav-link {
@@ -5308,7 +5310,7 @@ img.justifycenter, table.justifycenter {
       border-radius: 6rem;
       color: #fff;
       position: relative;
-      top: -2px; }
+      top: -1px; }
 
 .catalog-page #brand_tab,
 .catalog-page #class_tab,
@@ -5363,7 +5365,7 @@ img.justifycenter, table.justifycenter {
     .catalog-page .search-result-table th {
       font-size: 1.7rem;
       font-family: "Officina Serif Black C";
-      padding: 2.8rem 3.5rem 1.8rem 3rem;
+      padding: 2.8rem 2.5rem 1.8rem 3rem;
       text-transform: uppercase;
       vertical-align: middle;
       white-space: nowrap;
@@ -6087,6 +6089,14 @@ img.justifycenter, table.justifycenter {
     min-height: 100vh;
     height: auto; } }
 
+@media (max-width: 1900px) {
+  .header__left, .header__right {
+    width: calc(50% - 300px); } }
+
+@media (max-width: 1800px) {
+  .header__left, .header__right {
+    width: calc(50% - 260px); } }
+
 @media (max-width: 1750px) {
   .header {
     padding-right: 5rem; }
@@ -6437,6 +6447,13 @@ img.justifycenter, table.justifycenter {
   .listproducts {
     grid-template-columns: repeat(4, 30rem); } }
 
+@media (max-width: 1800px) {
+  .catalog-page .search-result-table th,
+  .catalog-page .search-result-table tr td {
+    padding-left: 1rem !important; }
+  .catalog-page .search-result-table th {
+    padding-right: 1rem; } }
+
 @media (max-width: 1750px) {
   .homepage .interesting .title,
   .homepage .lastnews .title {
@@ -6496,7 +6513,18 @@ img.justifycenter, table.justifycenter {
   .icon-mail2 {
     padding-left: 90px; }
     .icon-mail2:before {
-      transform: scale(0.8); } }
+      transform: scale(0.8); }
+  .catalog-page .search-title {
+    font-size: 3rem; }
+  .catalog-page .col-xl-8 {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-left: 0; }
+  .catalog-page .search-result-table th,
+  .catalog-page .search-result-table tr td {
+    padding-left: 2rem !important; }
+  .catalog-page .search-result-table th {
+    padding-right: 1rem; } }
 
 @media (max-width: 1500px) {
   .contactus .contacts .cell__mail {
@@ -6710,7 +6738,25 @@ img.justifycenter, table.justifycenter {
   .icon-tel2 {
     padding-left: 0; }
   .icon-mail2 {
-    padding-left: 0; } }
+    padding-left: 0; }
+  .catalog-page .tabs {
+    padding: 0; }
+  .catalog-page #brand_tab,
+  .catalog-page #class_tab,
+  .catalog-page #model_tab {
+    width: 14rem; }
+  .catalog-page #year_tab {
+    width: 7rem; }
+  .catalog-page #engine_tab {
+    width: 10rem; }
+  .catalog-page #body_tab {
+    width: 14rem; }
+  .catalog-page .search-result-table th,
+  .catalog-page .search-result-table tr td {
+    padding-left: 1rem !important; }
+  .catalog-page .search-result-table th {
+    font-size: 1.5rem;
+    padding-right: 1rem; } }
 
 @media (max-width: 1180px) {
   .homepage .center-carousel .slick-slide .pic {
@@ -6876,7 +6922,40 @@ img.justifycenter, table.justifycenter {
     .icon-balloon2:before,
     .icon-tel2:before,
     .icon-mail2:before {
-      transform: scale(0.75) translateX(-50%); } }
+      transform: scale(0.75) translateX(-50%); }
+  .catalog-page .menu {
+    font-size: 6rem; }
+  .catalog-page .nav {
+    font-size: 2.5rem;
+    border-radius: 5rem;
+    height: 5rem; }
+    .catalog-page .nav-item {
+      height: calc(5rem - 4px); }
+    .catalog-page .nav-link {
+      padding-top: .6rem;
+      padding-bottom: .6rem; }
+      .catalog-page .nav-link.active {
+        border-radius: 5rem; }
+  .catalog-page .tab-content .d-flex {
+    flex-wrap: wrap; }
+  .catalog-page #brand_tab,
+  .catalog-page #class_tab,
+  .catalog-page #model_tab {
+    margin-bottom: 1rem;
+    width: 31%; }
+  .catalog-page #year_tab {
+    width: 26%; }
+  .catalog-page #engine_tab {
+    width: 26%; }
+  .catalog-page #body_tab {
+    width: 26%; }
+  .catalog-page .ms-drop {
+    width: 100%; }
+  .catalog-page .search-result-table td {
+    padding-left: 1.5rem; }
+  .catalog-page .search-result-table th {
+    white-space: normal;
+    padding-right: .5rem; } }
 
 @media (max-width: 950px) {
   .inner .product__rubrics .row {
@@ -6962,7 +7041,82 @@ img.justifycenter, table.justifycenter {
     .contactus .contacts .cell__tel {
       font-size: 2.2rem; }
     .contactus .contacts .cell__geo {
-      font-size: 2rem; } }
+      font-size: 2rem; }
+  .catalog-page .nav {
+    font-size: 2.2rem;
+    border-radius: 4.5rem;
+    height: 4.5rem; }
+    .catalog-page .nav-item {
+      height: calc(5rem - 4px); }
+    .catalog-page .nav-link {
+      padding-top: .6rem;
+      padding-bottom: .6rem; }
+      .catalog-page .nav-link.active {
+        border-radius: 4.5rem; }
+  .catalog-page .menu {
+    font-size: 4.6rem; }
+    .catalog-page .menu ul li {
+      margin: 0 1.5rem; }
+  .catalog-page .search-result-table {
+    box-shadow: none !important;
+    background: none !important;
+    border-collapse: separate; }
+    .catalog-page .search-result-table-inner {
+      display: none; }
+    .catalog-page .search-result-table th {
+      display: none !important; }
+    .catalog-page .search-result-table tr {
+      border-top: 2px solid #9a9d9e;
+      display: block;
+      margin-bottom: 0;
+      position: relative; }
+      .catalog-page .search-result-table tr:nth-child(even) td {
+        background: #f5f5f5; }
+      .catalog-page .search-result-table tr:first-child {
+        margin-bottom: 0; }
+      .catalog-page .search-result-table tr.model-title {
+        border-top: none !important; }
+        .catalog-page .search-result-table tr.model-title td {
+          padding-left: 1.5rem !important;
+          text-align: left !important;
+          margin-top: -3px !important;
+          position: relative; }
+    .catalog-page .search-result-table td {
+      background: #fff;
+      display: block !important;
+      padding-left: 0 !important;
+      padding-right: 1.5rem !important;
+      text-align: right !important;
+      min-height: 47px; }
+      .catalog-page .search-result-table td:before {
+        content: attr(data-title);
+        float: left;
+        font-weight: 700;
+        padding-left: 15px; }
+      .catalog-page .search-result-table td a {
+        margin: 0 !important; }
+        .catalog-page .search-result-table td a + a {
+          margin-top: .5rem !important; }
+  .catalog-page #brand_tab,
+  .catalog-page #class_tab,
+  .catalog-page #model_tab,
+  .catalog-page #year_tab,
+  .catalog-page #engine_tab,
+  .catalog-page #body_tab {
+    margin-bottom: 3rem;
+    width: 100%; }
+    .catalog-page #brand_tab .ms-drop,
+    .catalog-page #class_tab .ms-drop,
+    .catalog-page #model_tab .ms-drop,
+    .catalog-page #year_tab .ms-drop,
+    .catalog-page #engine_tab .ms-drop,
+    .catalog-page #body_tab .ms-drop {
+      width: 100%; }
+  .catalog-page #application-search .btn {
+    margin: 1rem auto 2rem;
+    text-align: center;
+    width: 150px;
+    display: block; } }
 
 @media (max-width: 700px) {
   .homepage .center-carousel .slick-slide .pic {
@@ -7120,7 +7274,17 @@ img.justifycenter, table.justifycenter {
       margin-right: auto;
       width: 24rem; }
     .listproducts .product__title {
-      font-size: 2.2rem; } }
+      font-size: 2.2rem; }
+  .catalog-page .nav {
+    font-size: 2rem;
+    border-radius: 4rem;
+    height: 4rem; }
+    .catalog-page .nav-item {
+      height: calc(4rem - 4px); }
+    .catalog-page .nav-link {
+      padding: .4rem 3rem .5rem; }
+      .catalog-page .nav-link.active {
+        border-radius: 4rem; } }
 
 @media (max-width: 500px) {
   .homepage .about__cell:last-child {
@@ -7206,7 +7370,25 @@ img.justifycenter, table.justifycenter {
     .contactus .contacts .cell__geo {
       font-size: 2rem; }
   .mailus {
-    margin-bottom: 4rem; } }
+    margin-bottom: 4rem; }
+  .catalog-page .tabs {
+    margin-top: 1rem; }
+  .catalog-page .menu {
+    margin-top: 2rem; }
+  .catalog-page .nav {
+    display: block;
+    border: none;
+    font-size: 2rem;
+    border-radius: 4rem;
+    height: auto;
+    text-align: center; }
+    .catalog-page .nav-item {
+      margin: .5rem 0; }
+    .catalog-page .nav-link {
+      padding: .4rem 3.5rem .5rem;
+      text-align: center;
+      display: block;
+      width: 20rem; } }
 
 @media (max-width: 380px) {
   .homepage .center-carousel .slick-slide .pic {
