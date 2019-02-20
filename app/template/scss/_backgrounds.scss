@@ -28,6 +28,9 @@
 		&-contacts{
 			background-image: url(../images/bg/contacts.webp);
 		}
+		&-catalog{
+			background-image: url(../images/bg/catalog.webp);		
+		}
 	}
 
 	.inner-subproducts{
@@ -150,5 +153,10 @@
 	}
 	&-contacts{
 		background-image: url(../images/bg/contacts.jpg);
+	}
+	&-catalog{
+		background-image: url(../images/bg/catalog.jpg);		
+		background-color: #cfd5dd;
+		background-size: auto;
 	}
 }

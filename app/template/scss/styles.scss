@@ -19,6 +19,7 @@
 @import "bootstrap/transitions";	
 @import "bootstrap/tables";
 @import "bootstrap/modal";
+@import "bootstrap/nav";
 // @import "card";
 @import "bootstrap/button-group";
 @import "bootstrap/utilities";
@@ -42,9 +43,11 @@
 @import 'inner';
 @import 'products';
 @import 'contacts';
+@import 'catalog';
+@import 'multiple-select';
 // @import 'nav';
 // @import 'transitions';
 @import 'mobmenu'; 
-@import 'browsers';
+@import 'browsers'; 
 @import 'responsive-base';
 @import 'responsive-pages';
