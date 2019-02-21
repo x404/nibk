@@ -323,7 +323,7 @@
 
 
 
-.inner .main .detail{
+.main .detail{
 	background: $color2;
 	padding: 3rem 4rem;
 
@@ -351,6 +351,10 @@
 		border-bottom: 2px solid #d6d6d6;
 		padding-bottom: 1.7rem;
 		margin-bottom: 0;
+		&:last-child{
+			border-bottom: none;
+			padding-bottom: 0;
+		}
 	}
 	&__head{
 		// background: #f0f0f0;
@@ -518,6 +522,9 @@
 		}
 		.textarea-field{
 			margin-top: 2rem;
+			.form-control{
+				width: 100%;
+			}
 		}
 	}
 

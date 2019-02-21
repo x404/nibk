@@ -160,6 +160,9 @@
 		}
 	}
 
+	#modal-feedback .close-modal{
+		right: -20px;
+	}
 }
 
 
@@ -337,6 +340,12 @@
 			}
 			.cifr{
 				font-size: 3.5rem;
+			}
+		}
+
+		#modal-feedback{
+			.close-modal{
+				top: 0;
 			}
 		}
 	}
@@ -608,6 +617,21 @@
 			}
 		}
 	}
+
+
+	.inner .main{
+		.detail__characteristics{
+			margin-left: 0;
+		}
+		.detail{
+			padding-left: 3rem;
+			padding-right: 3rem;
+		}
+		.detail__body .column{
+			padding-right: 2rem;
+		}
+	}
+
 }
 
 @media (max-width: 1200px) {
@@ -1003,6 +1027,22 @@
 				padding-right: .5rem;
 			}
 		}
+		.search-result{
+			&-top{
+				.btn{
+					margin-left: auto;
+					margin-right: auto;
+				}
+				.search-title{
+					margin-bottom: 1rem;
+					text-align: center;
+				}
+			}
+		}
+	}
+	
+	.inner .main .detail__body .column{
+		padding-right: 0;
 	}
 
 }
@@ -1030,6 +1070,18 @@
 	}
 }
 
+
+
+@media (max-width: 850px) {
+	#modal-feedback{
+		.modal-dialog{
+			width: 90%;
+		}
+		.close-modal{
+			right: 0;
+		}
+	}
+}
 
 
 
@@ -1193,7 +1245,7 @@
 			border-radius: $h;
 			height: $h;
 			&-item{
-				height: calc(5rem - 4px) ;
+				height: calc(4.5rem - 4px) ;
 			}
 			&-link{
 				padding-top: .6rem;
@@ -1282,10 +1334,58 @@
 
 		#application-search{
 			.btn{
+				display: block;
 				margin: 1rem auto 2rem;
 				text-align: center;
 				width: 150px;
-				display: block;
+			}
+		}
+
+		.detail__gallery{
+			margin-left: auto;
+			margin-right: auto !important;
+			.fotorama__nav-wrap{
+				margin-top: 2rem;
+			}
+		}
+
+		.search-result{
+			margin-top: 0;
+			&-top{
+				margin-top: 0;
+			}
+		}
+		.table-grid td {
+		    width: 100%!important;
+		}
+		.btn-order{
+			font-size: 1.8rem;
+			height: 4.5rem;
+		}
+	}
+
+	#modal-feedback{
+		.title{
+			font-size: 4.4rem;
+		}
+		.form{
+			.input-field{
+				input.form-control{
+					width: 100%	;
+				}
+			}
+			.textarea-field{
+			}
+			.bottom{
+				text-align: center;
+				.btn{
+					margin-left: auto;
+					margin-right: auto;
+					margin-top: 2rem;
+					font-size: 1.8rem;
+					height: 5.5rem;
+					border-radius: 5.5rem;
+				}
 			}
 		}
 	}
@@ -1425,6 +1525,17 @@
 			margin-bottom: 3rem;
 		}
 	}
+
+	.catalog-page .search-result-top{
+		.search-title{
+			font-size: 2.8rem;
+		}
+		.btn{
+			font-size: 1.5rem;
+			height: 4.5rem;
+			width: 70%;
+		}
+	}
 }
 
 
@@ -1534,6 +1645,21 @@
 		.maintext{
 			text-align: justify;
 			font-size: 1.8rem;
+		}
+	}
+
+	#modal-feedback{
+		.close-modal{
+			top: 10px;
+		}
+		.modal-dialog{
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.title{
+			margin-top: 2.5rem;
+			line-height: 1.2;
+			font-size: 3.6rem;
 		}
 	}
 }
@@ -1792,7 +1918,6 @@
 			}
 		}
 	}
-
 }
 
 
@@ -1895,4 +2020,9 @@
 			}
 		}
 	}
+
+	.catalog-page .search-result-top .btn{
+		width: 85%;
+	}
+
 }
