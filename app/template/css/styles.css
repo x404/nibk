@@ -3421,8 +3421,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 .inner-catalog {
   background-image: url(../images/bg/catalog.jpg);
-  background-color: #cfd5dd;
-  background-size: auto; }
+  background-color: #c8ced6;
+  background-size: auto;
+  background-position: center top; }
 
 .container {
   margin-right: auto;
@@ -5334,7 +5335,7 @@ img.justifycenter, table.justifycenter {
   margin-top: 2.4rem; }
   .catalog-page .search-result-top {
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 5.5rem;
     padding-bottom: 1rem; }
     .catalog-page .search-result-top .btn {
       background: none;
@@ -5411,6 +5412,29 @@ img.justifycenter, table.justifycenter {
   font-family: "Officina Serif Black C";
   text-transform: uppercase; }
 
+.catalog-page .fotorama__thumb {
+  background-color: #fff;
+  display: flex; }
+  .catalog-page .fotorama__thumb img {
+    margin: auto;
+    width: auto !important;
+    height: auto !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: block; }
+
+.catalog-page .btn-order {
+  font-size: 2rem;
+  font-family: "Officina Serif Black C";
+  height: 5rem;
+  border-radius: 5rem;
+  margin-top: 1.5rem;
+  width: 21rem; }
+  .catalog-page .btn-order:hover {
+    background-color: #f26722;
+    color: #fff;
+    text-decoration: none; }
+
 .nicescroll-cursors {
   border-radius: 7px !important;
   border: none !important;
@@ -5428,20 +5452,24 @@ img.justifycenter, table.justifycenter {
   background: #fff;
   padding: 3rem 4rem; }
   .inner .main .detail__specification {
-    padding-bottom: 3rem; }
+    border-bottom: 2px solid #d6d6d6;
+    padding-bottom: 1.5rem; }
   .inner .main .detail__gallery {
     flex-shrink: 0;
     margin-right: 3rem;
     width: 235px; }
     .inner .main .detail__gallery .fotorama__nav-wrap {
-      margin-top: 2rem; }
+      margin-top: 7rem; }
   .inner .main .detail__characteristics {
-    flex-grow: 1; }
+    flex-grow: 1;
+    margin-left: 2rem; }
   .inner .main .detail__plate {
-    margin-bottom: 1rem; }
+    border-bottom: 2px solid #d6d6d6;
+    padding-bottom: 1.7rem;
+    margin-bottom: 0; }
   .inner .main .detail__head {
     font-family: "Officina Serif Black C";
-    padding: .8rem 1.8rem;
+    padding: 1.8rem 1.8rem 0 0;
     align-items: center; }
     .inner .main .detail__head p {
       font-size: 1.4rem;
@@ -5456,21 +5484,22 @@ img.justifycenter, table.justifycenter {
     .inner .main .detail__head .box-title {
       color: #000;
       font-size: 2rem;
-      font-weight: 700;
-      margin-right: 2rem !important; }
+      margin-right: 2rem !important;
+      letter-spacing: .2rem; }
   .inner .main .detail__body {
     font-family: Bender;
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    margin-top: .5rem; }
     .inner .main .detail__body .column {
       flex-grow: 1;
-      padding-left: 1.8rem;
+      padding-left: 0;
       padding-right: 6rem; }
       .inner .main .detail__body .column:last-child {
         padding-right: 0; }
       .inner .main .detail__body .column .str {
         display: flex;
         justify-content: space-between;
-        margin-top: 1.5rem; }
+        margin-top: 1rem; }
       .inner .main .detail__body .column .param-title {
         padding-right: 7rem; }
 

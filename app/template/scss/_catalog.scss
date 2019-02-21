@@ -162,7 +162,7 @@
 			margin-top: 2.4rem;
 			&-top{
 				align-items: center;
-				margin-top: 3rem;
+				margin-top: 5.5rem;
 				padding-bottom: 1rem;
 				.btn{
 					background: none;
@@ -275,6 +275,34 @@
 			text-transform: uppercase;
 		}
 	}
+
+	.fotorama__thumb{
+		background-color: #fff;
+		display: flex;
+		img{
+			margin: auto;
+			width: auto !important;
+			height: auto !important;
+			top: 0 !important;
+			left: 0 !important;
+			display: block;
+		}
+	}
+
+	.btn-order{
+		font-size: 2rem;
+		font-family: "Officina Serif Black C";
+		$h: 5rem;
+		height: $h;
+		border-radius: $h;
+		margin-top: 1.5rem;
+		width: 21rem;
+		&:hover{
+			background-color: $color3;
+			color: $color2;
+			text-decoration: none;
+		}
+	}
 }
 
 
@@ -300,7 +328,8 @@
 	padding: 3rem 4rem;
 
 	&__specification{
-		padding-bottom: 3rem;
+		border-bottom: 2px solid #d6d6d6;
+		padding-bottom: 1.5rem;
 	}
 
 	&__gallery{
@@ -309,21 +338,24 @@
 		width: 235px;
 
 		.fotorama__nav-wrap{
-			margin-top: 2rem;
+			margin-top: 7rem;
 		}
 
 	}
 	&__characteristics{
 		flex-grow: 1;
+		margin-left: 2rem;
 	}
 
 	&__plate{
-		margin-bottom: 1rem;
+		border-bottom: 2px solid #d6d6d6;
+		padding-bottom: 1.7rem;
+		margin-bottom: 0;
 	}
 	&__head{
 		// background: #f0f0f0;
 		font-family: "Officina Serif Black C";
-		padding: .8rem 1.8rem;
+		padding: 1.8rem 1.8rem 0 0;
 		align-items: center;
 		p{
 			font-size: 1.4rem;
@@ -341,8 +373,8 @@
 		.box-title{
 			color: $color1;
 			font-size: 2rem;
-			font-weight: 700;
 			margin-right: 2rem !important;
+			letter-spacing: .2rem;
 		}
 	}
 	
@@ -350,9 +382,10 @@
 	&__body{
 		font-family: Bender;
 		font-size: 1.4rem;
+		margin-top: .5rem;
 		.column{
 			flex-grow: 1;
-			padding-left: 1.8rem;
+			padding-left: 0;
 			padding-right: 6rem;
 			&:last-child{
 				padding-right: 0;
@@ -360,8 +393,7 @@
 			.str{
 				display: flex;
 				justify-content: space-between;
-				margin-top: 1.5rem;
-				// padding-right: 3rem;
+				margin-top: 1rem;
 			}
 			.param{
 				&-title{

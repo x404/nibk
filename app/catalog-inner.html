@@ -270,8 +270,9 @@
 											>
 												<a href="images/cat-product-1.jpg" title="" class="active"><img src="images/thumb-1.jpg" alt=""></a>
 												<a href="images/1.jpg" title=""><img src="images/thumb-2.jpg" alt=""></a>
-												<a href="images/pic3.jpg" title=""><img src="images/thumb-3.jpg" alt=""></a>
+												<a href="images/pic3.jpg" title=""><img src="images/thumb-1.jpg" alt=""></a>
 											</div>
+											<a href="#" class="btn btn-order btn-purple">BUY or ORDER</a>
 										</div>
 										<!-- =/gallery -->
 										<!-- =characteristics -->
@@ -323,7 +324,7 @@
 											</div>
 											<div class="detail__plate">
 												<div class="detail__head d-flex">
-													<p class="box-title">Couple filter</p>
+													<p class="box-title">Couple with</p>
 													<p><a href="#">OE0021M</a></p>
 												</div>
 											</div>
@@ -1287,14 +1288,13 @@
 	<script>
 		$(document).ready(function(){
 			$('.fotorama').on('fotorama:fullscreenenter', function() {
-			$(this).data('fotorama').setOptions({fit: 'contain'});
+				$(this).data('fotorama').setOptions({fit: 'contain'});
 			});
 
 			$('.fotorama').on('fotorama:fullscreenexit', function() {
-			$(this).data('fotorama').setOptions({fit: 'cover'});
+				$(this).data('fotorama').setOptions({fit: 'cover'});
 			});
-
-			$('.fotorama__active img').fancybox()
+			// $('.fotorama__active img').fancybox()
 		})
 	</script>
 	<!-- InstanceEndEditable -->
