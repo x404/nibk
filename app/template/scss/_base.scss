@@ -479,8 +479,10 @@ h3{font-size:1.6rem}
 
 .icon-balloon,
 .icon-balloon2,
+.icon-balloon3,
 .icon-tel,
 .icon-tel2,
+.icon-tel3,
 .icon-mail,
 .icon-mail2
 {
@@ -509,6 +511,14 @@ h3{font-size:1.6rem}
 	}
 }
 
+.icon-balloon3{
+	padding-left: 40px;
+	min-height: 40px;
+	&:before{
+		@include sprite($icon-balloon3);
+	}
+}
+
 .icon-tel,
 .icon-tel2{
 	padding-left: 93px;
@@ -534,6 +544,16 @@ h3{font-size:1.6rem}
 .icon-mail2{
 	&:before{
 		@include sprite($icon-mail2);
+	}
+}
+
+
+.icon-tel3{
+	min-height: 40px;
+	padding-left: 40px;
+	&:before{
+		@include sprite($icon-tel3);
+		left: 4px;
 	}
 }
 

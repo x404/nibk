@@ -3551,10 +3551,12 @@ h3 {
 
 .before, .btn-more span:before, .btn-back:before, .icon-balloon:before,
 .icon-balloon2:before,
+.icon-balloon3:before,
 .icon-tel:before,
 .icon-tel2:before,
+.icon-tel3:before,
 .icon-mail:before,
-.icon-mail2:before, .homepage .center-carousel .carousel__inner .pic:after, .homepage .center-carousel .carousel__inner .pic:before, .homepage .lastnews .carousel__pic:after, .apanel__body:before, .modal-menu .menu dd a:before, blockquote:before, blockquote:after, .product__rubrics .rubric__pic:before, .product__rubrics .rubric__pic:after, .inner-subproducts .text ul li:before, .inner .catalog-page .table-grid .model-title:before {
+.icon-mail2:before, .homepage .center-carousel .carousel__inner .pic:after, .homepage .center-carousel .carousel__inner .pic:before, .homepage .lastnews .carousel__pic:after, .apanel__body:before, .modal-menu .menu dd a:before, blockquote:before, blockquote:after, .product__rubrics .rubric__pic:before, .product__rubrics .rubric__pic:after, .inner-subproducts .text ul li:before, .inner .catalog-page .table-grid .model-title:before, .location:after {
   content: "";
   display: block;
   position: absolute; }
@@ -3623,7 +3625,7 @@ h3 {
       position: relative; }
       .btn-more span:before {
         background-image: url(../images/sprite.png);
-        background-position: -232px -103px;
+        background-position: -263px -103px;
         width: 11px;
         height: 20px;
         left: -21px;
@@ -3643,7 +3645,7 @@ h3 {
     position: relative; }
     .btn-back:before {
       background-image: url(../images/sprite.png);
-      background-position: -232px -90px;
+      background-position: -263px -90px;
       width: 21px;
       height: 13px;
       left: 14px;
@@ -3801,8 +3803,10 @@ h3 {
 
 .icon-balloon,
 .icon-balloon2,
+.icon-balloon3,
 .icon-tel,
 .icon-tel2,
+.icon-tel3,
 .icon-mail,
 .icon-mail2 {
   display: flex;
@@ -3811,8 +3815,10 @@ h3 {
   min-height: 90px; }
   .icon-balloon:before,
   .icon-balloon2:before,
+  .icon-balloon3:before,
   .icon-tel:before,
   .icon-tel2:before,
+  .icon-tel3:before,
   .icon-mail:before,
   .icon-mail2:before {
     left: 0;
@@ -3833,6 +3839,15 @@ h3 {
   background-position: -67px -90px;
   width: 67px;
   height: 89px; }
+
+.icon-balloon3 {
+  padding-left: 40px;
+  min-height: 40px; }
+  .icon-balloon3:before {
+    background-image: url(../images/sprite.png);
+    background-position: -232px -90px;
+    width: 31px;
+    height: 41px; }
 
 .icon-tel,
 .icon-tel2 {
@@ -3865,6 +3880,16 @@ h3 {
   background-position: -90px 0px;
   width: 90px;
   height: 90px; }
+
+.icon-tel3 {
+  min-height: 40px;
+  padding-left: 40px; }
+  .icon-tel3:before {
+    background-image: url(../images/sprite.png);
+    background-position: -232px -131px;
+    width: 23px;
+    height: 41px;
+    left: 4px; }
 
 .modal-backdrop.show {
   background-color: rgba(242, 103, 34, 0.98);
@@ -5247,6 +5272,13 @@ img.justifycenter, table.justifycenter {
     margin-top: 1rem;
     font-size: 1.8rem; }
 
+.catalog-page h1 {
+  color: #f26722;
+  font-family: "Officina Serif Black C";
+  font-size: 7rem;
+  line-height: 1;
+  text-align: center; }
+
 .catalog-page .menu {
   font-family: "Officina Serif Black C";
   font-size: 7rem;
@@ -5462,6 +5494,28 @@ img.justifycenter, table.justifycenter {
     color: #fff;
     text-decoration: none; }
 
+.catalog-page .dealers-data .search-title {
+  color: #000;
+  margin-top: 5rem;
+  text-align: left; }
+
+.catalog-page .dealers-data .search-result-table {
+  font-size: 1.7rem; }
+  .catalog-page .dealers-data .search-result-table tr th {
+    padding-top: 2rem;
+    padding-left: 2.8rem;
+    font-size: 2rem;
+    color: #000;
+    text-transform: none;
+    border-bottom-width: 3px; }
+  .catalog-page .dealers-data .search-result-table tr td {
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem; }
+
+.catalog-page .dealers-data .btn-more {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem; }
+
 .nicescroll-cursors {
   border-radius: 7px !important;
   border: none !important;
@@ -5676,6 +5730,49 @@ img.justifycenter, table.justifycenter {
 #modal-feedback .close-modal {
   top: -20px;
   right: -230px; }
+
+.flex-center, .location .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.location {
+  background: linear-gradient(to right, #883c80 50%, #713a97 50%);
+  background-size: 10px 100%;
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 3rem;
+  padding: 5rem 5rem 4rem 2.5rem;
+  position: relative; }
+  .location:after {
+    border-top: 11px solid #f26722;
+    bottom: -11px;
+    left: 0;
+    transform-origin: 0 0;
+    transform: skewY(-0.5deg);
+    width: 100%; }
+  .location .logocompany {
+    margin-bottom: -1rem; }
+  .location p {
+    line-height: 1.2;
+    margin: 2.5rem 0; }
+  .location .btn {
+    color: #fff;
+    border-radius: 4rem;
+    border: 2px solid #f26722;
+    font-family: "Officina Serif Black C";
+    font-size: 2rem;
+    height: 4rem;
+    letter-spacing: .15rem;
+    width: 18rem !important; }
+    .location .btn:hover {
+      background-color: #f26722;
+      text-decoration: none; }
+  .location .map {
+    background-color: #f2f2f2;
+    border: 7px solid #171717;
+    height: 280px;
+    width: 480px; }
 
 /**
  * @author zhixin wen <wenzhixin2010@gmail.com>

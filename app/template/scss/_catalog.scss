@@ -1,4 +1,11 @@
 .catalog-page{
+	h1{
+		color: $color3;
+		font-family: "Officina Serif Black C";
+		font-size: 7rem;
+		line-height: 1;
+		text-align: center;
+	}
 	// =menu
 	.menu{
 		font-family: "Officina Serif Black C";
@@ -303,6 +310,36 @@
 			text-decoration: none;
 		}
 	}
+
+	// Where to Buy
+	.dealers-data{
+		.search-title{
+			color: $color1;
+			margin-top: 5rem;
+			text-align: left;
+		}
+		.search-result-table{
+			font-size: 1.7rem;
+			tr{
+				th{
+					padding-top: 2rem;
+					padding-left: 2.8rem;
+					font-size: 2rem;
+					color: $color1;
+					text-transform: none;
+					border-bottom-width: 3px;
+				}
+				td{
+					padding-top: 2.2rem;
+					padding-bottom: 2.2rem;
+				}
+			}
+		}
+		.btn-more{
+			padding-top: 2.5rem;
+			padding-bottom: 2.5rem;
+		}
+	}
 }
 
 
@@ -406,6 +443,8 @@
 			}
 		}
 	}
+
+
 }
 
 
@@ -477,6 +516,8 @@
 		&Body{width: 10%;}
 		&Parts{width: 8%;}
 	}
+
+
 }
 
 
@@ -582,8 +623,60 @@
 }
 
 
+.flex-center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
 
 
+// Where to Buy
+.location{
+	background:linear-gradient(to right, #883c80 50%, #713a97 50%);
+	background-size: 10px 100%;
+	color: $color2;
+	font-size: 2rem;
+	margin-top: 3rem;
+	padding: 5rem 5rem 4rem 2.5rem;
+	position: relative;
+	&:after{
+		@extend .before;
+		border-top: 11px solid $color3;
+		bottom: -11px;
+		left: 0;
+		transform-origin: 0 0;
+		transform: skewY(-.5deg);
+		width: 100%;
+	}
+	.logocompany{
+		margin-bottom: -1rem;
+	}
+	p{
+		line-height: 1.2;
+		margin: 2.5rem 0;
+	}
+	.btn{
+		color: $color2;
+		@extend .flex-center;
+		$h: 4rem;
+		border-radius: $h;
+		border: 2px solid $color3;
+		font-family: "Officina Serif Black C";
+		font-size: 2rem;
+		height: $h;
+		letter-spacing: .15rem;
+		width: 18rem !important;
+		&:hover{
+			background-color: $color3;
+			text-decoration: none;
+		}
+	}
 
-
+	.map{
+		background-color: #f2f2f2;
+		border:7px solid #171717;
+		height: 280px;
+		width: 480px;
+	}
+}
