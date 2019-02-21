@@ -218,6 +218,7 @@
 
 				tr{
 					td{
+						transition: .3s;
 						border-bottom: 1px solid #d2d5d6;
 						padding: 1.2rem 0 1.2rem 2.8rem;
 						a{
@@ -241,7 +242,13 @@
 							padding: 1.2rem 3rem;
 							
 						}
-					}					
+					}	
+
+					&:hover{
+						td{
+							background: #fde5d9;
+						}
+					}				
 				}
 
 				h3{
@@ -278,7 +285,7 @@
 
 
 
-/*
+
 .inner .main .detail{
 	background: $color2;
 	padding: 3rem 4rem;
@@ -305,7 +312,8 @@
 		margin-bottom: 1rem;
 	}
 	&__head{
-		background: #f0f0f0;
+		// background: #f0f0f0;
+		font-family: "Officina Serif Black C";
 		padding: .8rem 1.8rem;
 		align-items: center;
 		p{
@@ -314,9 +322,11 @@
 			margin-bottom: 0 !important;
 		}
 		a{
-			text-decoration: none;
+			color: $color3;
+			font-family: Bender;
+			text-decoration: underline;
 			&:hover{
-				text-decoration: underline;
+				text-decoration: none;
 			}
 		}
 		.box-title{
@@ -329,15 +339,20 @@
 	
 
 	&__body{
+		font-family: Bender;
 		font-size: 1.4rem;
 		.column{
 			flex-grow: 1;
 			padding-left: 1.8rem;
-			padding-right: 1.8rem;
+			padding-right: 6rem;
+			&:last-child{
+				padding-right: 0;
+			}
 			.str{
 				display: flex;
 				justify-content: space-between;
 				margin-top: 1.5rem;
+				// padding-right: 3rem;
 			}
 			.param{
 				&-title{
@@ -353,38 +368,49 @@
 	margin-top: 3rem;
 	.model-title{
 		cursor: pointer;
-		background: #232323 !important;
-		padding-bottom: .3rem;		
-		padding-left: 6rem;
-		padding-top: .3rem;
+		background: $color4 !important;
+		padding-left: 7rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;		
 		position: relative;
+		display: flex;
+		align-items: center;
 		border-bottom: 1px solid #fff;
+		// font-family: "Officina Serif Book C";
 		transition: background-color .3s;
 		&:before{
 			@extend .before;
-			background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAMAAADjNjc+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAclBMVEX/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf/MDf///+9+OMEAAAAJHRSTlMAgPFfdPtWd+F79flVdec1UPfmN1L65TNR6DZXZP1Fftg04lqpaN6sAAAAAWJLR0QlwwHJDwAAAAd0SU1FB+IMCQ8KK3Kv5FUAAABcSURBVAjXY2CAAEYmZgYUwKKiwsqGLMCuwsHJxc2DEOBV4eNnEBBEqGJRERIGUiLcomwwLWLiYIaEoCgPRIWkFFSxhCCrNAODjIqYFNxAEW5ZOQZ5BUUkS0WUlAEZKASFjhqtgwAAAABJRU5ErkJggg==") no-repeat left top;
-			height: 9px;
-			left: 30px;
+			// filter: grayscale(1) brightness(3);	
+			background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAABaCAYAAACv+ebYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjBGMjYyRUFEMzVDNDExRTk5NEMxQ0Y4QTA5MzA1RTI3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjBGMjYyRUFFMzVDNDExRTk5NEMxQ0Y4QTA5MzA1RTI3Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MEYyNjJFQUIzNUM0MTFFOTk0QzFDRjhBMDkzMDVFMjciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MEYyNjJFQUMzNUM0MTFFOTk0QzFDRjhBMDkzMDVFMjciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4Flnt1AAAF0klEQVR42uya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') no-repeat left top;
+			background-position: left top;
+			height: 30px;
+			left: 28px;
+			width: 30px;
 			margin-top: -5px;
 			position: absolute;
 			top: 50%;
+			margin-top: -15px;
 			transition: transform .3s;
-			width: 17px;
-			transition: filter .3s;
 		}
 		&:hover{
-			background-color: $color6 !important;
+			background-color: $color3 !important;
 			&:before{
-				filter: grayscale(1) brightness(3);				
+				background-position: left -30px;
+				// filter: grayscale(1) brightness(3);				
 			}
 		}
 		h3{
+			font-weight: normal;
 			color: $color2 !important;
-			font-size: 1.7rem !important;
+			font-size: 1.7rem;
 		}
 		&.arrow-down{
 			&:before{ 
 				transform: rotate(180deg);
+				background-position: left -60px;
+			}
+			&:hover{
+				background-color: $color4 !important
 			}
 		}
 	}
@@ -393,6 +419,7 @@
 		margin-top: 0;
 		margin-bottom: 0;
 		tr th{
+			color: $color1;
 			border-bottom-width: 2px;
 		}
 	}
@@ -407,7 +434,7 @@
 	}
 }
 
-
+/*
 // modal feedback
 #modal-feedback{
 	.title-model{
