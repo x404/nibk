@@ -6932,6 +6932,8 @@ img.justifycenter, table.justifycenter {
     padding-left: 3rem;
     padding-right: 3rem; }
   .inner .main .detail__body .column {
+    padding-right: 2rem; }
+  .location {
     padding-right: 2rem; } }
 
 @media (max-width: 1180px) {
@@ -7099,6 +7101,8 @@ img.justifycenter, table.justifycenter {
     .icon-tel2:before,
     .icon-mail2:before {
       transform: scale(0.75) translateX(-50%); }
+  .catalog-page h1 {
+    font-size: 6rem; }
   .catalog-page .menu {
     font-size: 6rem; }
   .catalog-page .nav {
@@ -7139,7 +7143,20 @@ img.justifycenter, table.justifycenter {
     margin-bottom: 1rem;
     text-align: center; }
   .inner .main .detail__body .column {
-    padding-right: 0; } }
+    padding-right: 0; }
+  .location__map {
+    margin-top: 3rem; }
+  .location__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+    .location__info p, .location__info .btn {
+      margin-left: auto;
+      margin-right: auto; }
+  .location .map {
+    margin-left: auto;
+    margin-right: auto; } }
 
 @media (max-width: 950px) {
   .inner .product__rubrics .row {
@@ -7240,7 +7257,9 @@ img.justifycenter, table.justifycenter {
       height: calc(4.5rem - 4px); }
     .catalog-page .nav-link {
       padding-top: .6rem;
-      padding-bottom: .6rem; }
+      padding-bottom: .6rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem; }
       .catalog-page .nav-link.active {
         border-radius: 4.5rem; }
   .catalog-page .menu {
@@ -7333,7 +7352,14 @@ img.justifycenter, table.justifycenter {
       margin-top: 2rem;
       font-size: 1.8rem;
       height: 5.5rem;
-      border-radius: 5.5rem; } }
+      border-radius: 5.5rem; }
+  .dealers-data .search-title {
+    text-align: center !important; }
+  .dealers-data .search-result-table td:before {
+    padding-left: 0; }
+  .location .map,
+  .location iframe {
+    width: 100% !important; } }
 
 @media (max-width: 700px) {
   .homepage .center-carousel .slick-slide .pic {
@@ -7507,6 +7533,9 @@ img.justifycenter, table.justifycenter {
       width: 24rem; }
     .listproducts .product__title {
       font-size: 2.2rem; }
+  .catalog-page h1 {
+    font-size: 5rem;
+    margin-top: 2rem; }
   .catalog-page .nav {
     font-size: 2rem;
     border-radius: 4rem;
@@ -7516,7 +7545,50 @@ img.justifycenter, table.justifycenter {
     .catalog-page .nav-link {
       padding: .4rem 3rem .5rem; }
       .catalog-page .nav-link.active {
-        border-radius: 4rem; } }
+        border-radius: 4rem; }
+  .catalog-page .tabs {
+    margin-top: 1rem; }
+  .catalog-page .menu {
+    margin-top: 2rem; }
+  .catalog-page .nav {
+    display: block;
+    border: none;
+    font-size: 2rem;
+    border-radius: 4rem;
+    height: auto;
+    text-align: center; }
+    .catalog-page .nav-item {
+      margin: .5rem 0; }
+    .catalog-page .nav-link {
+      padding: .4rem 3.5rem .5rem;
+      text-align: center;
+      display: block;
+      width: 25rem; }
+  .catalog-page .dealers-data {
+    margin-bottom: 2rem; }
+    .catalog-page .dealers-data .btn-more {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem; }
+  .location {
+    font-size: 1.8rem;
+    padding: 2.5rem 1.5rem;
+    margin-top: 0; }
+    .location .logocompany {
+      margin-bottom: 0; }
+      .location .logocompany img {
+        max-width: 100%; }
+    .location p {
+      margin: 2rem auto; }
+    .location .address,
+    .location .tel {
+      padding-left: 0;
+      padding-top: 55px;
+      text-align: center; }
+      .location .address:before,
+      .location .tel:before {
+        margin-left: -10px;
+        left: 50%;
+        top: 0; } }
 
 @media (max-width: 500px) {
   .homepage .about__cell:last-child {
@@ -7602,25 +7674,7 @@ img.justifycenter, table.justifycenter {
     .contactus .contacts .cell__geo {
       font-size: 2rem; }
   .mailus {
-    margin-bottom: 4rem; }
-  .catalog-page .tabs {
-    margin-top: 1rem; }
-  .catalog-page .menu {
-    margin-top: 2rem; }
-  .catalog-page .nav {
-    display: block;
-    border: none;
-    font-size: 2rem;
-    border-radius: 4rem;
-    height: auto;
-    text-align: center; }
-    .catalog-page .nav-item {
-      margin: .5rem 0; }
-    .catalog-page .nav-link {
-      padding: .4rem 3.5rem .5rem;
-      text-align: center;
-      display: block;
-      width: 20rem; } }
+    margin-bottom: 4rem; } }
 
 @media (max-width: 380px) {
   .homepage .center-carousel .slick-slide .pic {
@@ -7672,5 +7726,7 @@ img.justifycenter, table.justifycenter {
     .inner-subproducts .footer .copyright {
       padding-left: 1rem;
       padding-right: 1rem; }
+  .catalog-page h1 {
+    font-size: 4rem; }
   .catalog-page .search-result-top .btn {
     width: 85%; } }

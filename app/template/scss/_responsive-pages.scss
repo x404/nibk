@@ -632,6 +632,12 @@
 		}
 	}
 
+
+	// where to buy
+	.location{
+		padding-right: 2rem;
+	}
+
 }
 
 @media (max-width: 1200px) {
@@ -970,6 +976,9 @@
 
 	// catalog
 	.catalog-page {	
+		h1{
+			font-size: 6rem;
+		}
 		.menu{
 			font-size: 6rem;
 		}
@@ -1045,6 +1054,26 @@
 		padding-right: 0;
 	}
 
+	// where to buy
+	.location{
+		&__map{
+			margin-top: 3rem;
+		}
+		&__info{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			p, .btn{
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+		.map{
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
 }
 
 
@@ -1250,6 +1279,8 @@
 			&-link{
 				padding-top: .6rem;
 				padding-bottom: .6rem;
+				padding-left: 1.5rem;
+				padding-right: 1.5rem;
 				&.active{
 					border-radius: $h;
 				}
@@ -1387,6 +1418,23 @@
 					border-radius: 5.5rem;
 				}
 			}
+		}
+	}
+
+	// where to buy
+	.dealers-data{
+		.search-title{
+			text-align: center !important;
+		}
+		 .search-result-table td:before{
+			padding-left: 0;
+		}
+	}
+
+	.location{
+		.map,
+		iframe{
+			width: 100% !important
 		}
 	}
 }
@@ -1709,6 +1757,10 @@
 
 
 	.catalog-page{
+		h1{
+			font-size: 5rem;
+			margin-top: 2rem;
+		}
 		.nav{
 			$h: 4rem;
 			font-size: 2rem;
@@ -1722,6 +1774,64 @@
 				&.active{
 					border-radius: $h;
 				}
+			}
+		}
+		.tabs{
+			margin-top: 1rem;
+		}
+		.menu{
+			margin-top: 2rem;
+		}
+		.nav{
+			display: block;
+			$h: 4rem;
+			border: none;
+			font-size: 2rem;
+			border-radius: $h;
+			height: auto;
+			text-align: center;
+			&-item{
+				margin: .5rem 0;
+			}
+			&-link{
+				padding: .4rem 3.5rem .5rem;
+				text-align: center;
+				display: block;
+				width: 25rem;
+			}
+		}
+
+		.dealers-data{
+			margin-bottom: 2rem;
+			.btn-more{
+				padding-top: 1.5rem;
+				padding-bottom: 1.5rem;
+			}
+		}
+	}
+
+	.location{
+		font-size: 1.8rem;
+		padding: 2.5rem 1.5rem;
+		margin-top: 0;
+		.logocompany{
+			margin-bottom: 0;
+			img{
+				max-width: 100%
+			}
+		}
+		p{
+			margin: 2rem auto;
+		}
+		.address,
+		.tel{
+			padding-left: 0;
+			padding-top: 55px;
+			text-align: center;
+			&:before{
+				margin-left: -10px;
+				left: 50%;
+				top: 0;
 			}
 		}
 	}
@@ -1890,34 +2000,6 @@
 	.mailus{
 		margin-bottom: 4rem;
 	}
-
-
-	.catalog-page{
-		.tabs{
-			margin-top: 1rem;
-		}
-		.menu{
-			margin-top: 2rem;
-		}
-		.nav{
-			display: block;
-			$h: 4rem;
-			border: none;
-			font-size: 2rem;
-			border-radius: $h;
-			height: auto;
-			text-align: center;
-			&-item{
-				margin: .5rem 0;
-			}
-			&-link{
-				padding: .4rem 3.5rem .5rem;
-				text-align: center;
-				display: block;
-				width: 20rem;
-			}
-		}
-	}
 }
 
 
@@ -2021,8 +2103,13 @@
 		}
 	}
 
-	.catalog-page .search-result-top .btn{
-		width: 85%;
+	.catalog-page{
+		h1{
+			font-size: 4rem;
+		}
+		.search-result-top .btn{
+			width: 85%;
+		}
 	}
 
 }
