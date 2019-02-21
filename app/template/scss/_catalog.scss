@@ -37,7 +37,7 @@
 	.tabs{
 		margin-top: 3rem;
 		margin-bottom: 8px;
-		padding: 0 1.7rem;
+		// padding: 0 1.7rem;
 		position: relative;
 		&:before{
 			bottom: -40px;
@@ -162,22 +162,29 @@
 			margin-top: 2.4rem;
 			&-top{
 				align-items: center;
-				margin-top: -3rem;
+				margin-top: 3rem;
 				padding-bottom: 1rem;
 				.btn{
 					background: none;
+					font-family: "Officina Serif Black C";
 					color: $color1;
+					display: flex;
 					text-decoration: none;
-					width: 310px;
+					font-size: 1.7rem;
+					border-radius: 5rem;
+					border: 3px solid $color3;
+					width: 31rem;
+					height: 5rem;
 					flex-shrink: 0;
+					transition: .3s;
 					letter-spacing: 0.05em;
 					span{
-						color: $color6;
+						color: #ed1d24;
 						margin-left: .5rem;
 						text-transform: uppercase;
 					}
 					&:hover{
-						background: $color6;
+						background: $color3;
 						color: $color2;
 						span{
 							color: inherit;
@@ -185,8 +192,10 @@
 					}
 				}
 				.search-title{
+					color: $color1;
 					flex-grow: 1;
-
+					font-size: 3rem;
+					text-align: left;
 				}
 			}
 			&-table{

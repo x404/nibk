@@ -5244,7 +5244,6 @@ img.justifycenter, table.justifycenter {
 .catalog-page .tabs {
   margin-top: 3rem;
   margin-bottom: 8px;
-  padding: 0 1.7rem;
   position: relative; }
   .catalog-page .tabs:before {
     bottom: -40px;
@@ -5335,26 +5334,36 @@ img.justifycenter, table.justifycenter {
   margin-top: 2.4rem; }
   .catalog-page .search-result-top {
     align-items: center;
-    margin-top: -3rem;
+    margin-top: 3rem;
     padding-bottom: 1rem; }
     .catalog-page .search-result-top .btn {
       background: none;
+      font-family: "Officina Serif Black C";
       color: #000;
+      display: flex;
       text-decoration: none;
-      width: 310px;
+      font-size: 1.7rem;
+      border-radius: 5rem;
+      border: 3px solid #f26722;
+      width: 31rem;
+      height: 5rem;
       flex-shrink: 0;
+      transition: .3s;
       letter-spacing: 0.05em; }
       .catalog-page .search-result-top .btn span {
-        color: #030303;
+        color: #ed1d24;
         margin-left: .5rem;
         text-transform: uppercase; }
       .catalog-page .search-result-top .btn:hover {
-        background: #030303;
+        background: #f26722;
         color: #fff; }
         .catalog-page .search-result-top .btn:hover span {
           color: inherit; }
     .catalog-page .search-result-top .search-title {
-      flex-grow: 1; }
+      color: #000;
+      flex-grow: 1;
+      font-size: 3rem;
+      text-align: left; }
   .catalog-page .search-result-table {
     background: #fff;
     margin-top: 1rem;
