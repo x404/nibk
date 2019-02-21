@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
 	// inputs
 	$('.input-field').each(function(){
 		if ($(this).find('.form-control').val().length > 0) {
@@ -110,6 +109,11 @@ $(document).ready(function(){
 	});	
 
 	$('select.country').selectize();
+
+	$('#modal-feedback').on('show.bs.modal', function (e) {
+		let $title = $(e.relatedTarget).data('title');
+		$('#modal-feedback .title-model').text($title);
+	});
 });
 
 

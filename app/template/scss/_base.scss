@@ -536,3 +536,10 @@ h3{font-size:1.6rem}
 		@include sprite($icon-mail2);
 	}
 }
+
+
+
+.modal-backdrop.show{
+	background-color: rgba(242, 103, 34, .98);
+	opacity: 1;
+}

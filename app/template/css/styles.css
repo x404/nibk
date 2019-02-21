@@ -3866,6 +3866,10 @@ h3 {
   width: 90px;
   height: 90px; }
 
+.modal-backdrop.show {
+  background-color: rgba(242, 103, 34, 0.98);
+  opacity: 1; }
+
 .homepage .header,
 .homepage .footer {
   position: relative;
@@ -4545,24 +4549,30 @@ h3 {
     margin-top: 0rem; }
 
 .mailus .form,
-#modal-callback .form {
+#modal-callback .form,
+#modal-feedback .form {
   font-family: "Officina Serif Black C";
   margin-top: 1rem;
   text-align: left; }
   .mailus .form .col,
-  #modal-callback .form .col {
+  #modal-callback .form .col,
+  #modal-feedback .form .col {
     flex-grow: 0;
     width: 360px; }
   .mailus .form .textarea-field .form-control,
   .mailus .form .input-field .form-control,
   #modal-callback .form .textarea-field .form-control,
-  #modal-callback .form .input-field .form-control {
+  #modal-callback .form .input-field .form-control,
+  #modal-feedback .form .textarea-field .form-control,
+  #modal-feedback .form .input-field .form-control {
     letter-spacing: .25rem; }
   .mailus .form .input-field,
-  #modal-callback .form .input-field {
+  #modal-callback .form .input-field,
+  #modal-feedback .form .input-field {
     color: #fff; }
     .mailus .form .input-field input.form-control,
-    #modal-callback .form .input-field input.form-control {
+    #modal-callback .form .input-field input.form-control,
+    #modal-feedback .form .input-field input.form-control {
       background: none;
       border-bottom-color: #fff;
       color: currentColor;
@@ -4570,13 +4580,16 @@ h3 {
       height: 3.5rem;
       width: 34rem; }
     .mailus .form .input-field label,
-    #modal-callback .form .input-field label {
+    #modal-callback .form .input-field label,
+    #modal-feedback .form .input-field label {
       color: currentColor; }
   .mailus .form .textarea-field,
-  #modal-callback .form .textarea-field {
+  #modal-callback .form .textarea-field,
+  #modal-feedback .form .textarea-field {
     margin-top: 4.2rem; }
     .mailus .form .textarea-field .form-control,
-    #modal-callback .form .textarea-field .form-control {
+    #modal-callback .form .textarea-field .form-control,
+    #modal-feedback .form .textarea-field .form-control {
       font-size: 1.7rem;
       letter-spacing: .15rem;
       background: url("data:image/gif;base64,R0lGODlhAQAeAIABAP///wAAACH5BAEAAAEALAAAAAABAB4AAAIFjI+pC1AAOw==");
@@ -4585,49 +4598,62 @@ h3 {
       line-height: 1.8; }
 
 .mailus .select-wrapper,
-#modal-callback .select-wrapper {
+#modal-callback .select-wrapper,
+#modal-feedback .select-wrapper {
   margin-top: 3.2rem;
   width: 34rem; }
 
 .mailus .selectize-input input,
-#modal-callback .selectize-input input {
+#modal-callback .selectize-input input,
+#modal-feedback .selectize-input input {
   color: #fff; }
   .mailus .selectize-input input::-webkit-input-placeholder,
-  #modal-callback .selectize-input input::-webkit-input-placeholder {
+  #modal-callback .selectize-input input::-webkit-input-placeholder,
+  #modal-feedback .selectize-input input::-webkit-input-placeholder {
     color: #fff; }
   .mailus .selectize-input input::-moz-placeholder,
-  #modal-callback .selectize-input input::-moz-placeholder {
+  #modal-callback .selectize-input input::-moz-placeholder,
+  #modal-feedback .selectize-input input::-moz-placeholder {
     color: #fff; }
   .mailus .selectize-input input:-ms-input-placeholder,
-  #modal-callback .selectize-input input:-ms-input-placeholder {
+  #modal-callback .selectize-input input:-ms-input-placeholder,
+  #modal-feedback .selectize-input input:-ms-input-placeholder {
     color: #fff; }
   .mailus .selectize-input input:focus::-webkit-input-placeholder,
-  #modal-callback .selectize-input input:focus::-webkit-input-placeholder {
+  #modal-callback .selectize-input input:focus::-webkit-input-placeholder,
+  #modal-feedback .selectize-input input:focus::-webkit-input-placeholder {
     transition: line-height 0.5s ease; }
   .mailus .selectize-input input:focus::-moz-placeholder,
-  #modal-callback .selectize-input input:focus::-moz-placeholder {
+  #modal-callback .selectize-input input:focus::-moz-placeholder,
+  #modal-feedback .selectize-input input:focus::-moz-placeholder {
     transition: line-height 0.5s ease; }
   .mailus .selectize-input input:focus:-ms-input-placeholder,
-  #modal-callback .selectize-input input:focus:-ms-input-placeholder {
+  #modal-callback .selectize-input input:focus:-ms-input-placeholder,
+  #modal-feedback .selectize-input input:focus:-ms-input-placeholder {
     transition: line-height 0.5s ease; }
 
 .mailus .selectize-control.single .selectize-input:after, .mailus .ms-choice div:after,
 #modal-callback .selectize-control.single .selectize-input:after,
-#modal-callback .ms-choice div:after {
+#modal-callback .ms-choice div:after,
+#modal-feedback .selectize-control.single .selectize-input:after,
+#modal-feedback .ms-choice div:after {
   top: 4px;
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAA1ElEQVQoU42QuwoCMRBFN+jHWYlrqZbWgqAoFmIp2lhrZaOoX+LrJyx8/IMQzyyTJWbXR+Aym+zk5N4x1tphFEU11DDGnKh/Le5VaZyhvmHT5GOBrigGdPhFUcCaviIqGbnAYYcyRQ9U/gaiN6ZnpQBxv0kgCupRx+pIQOfQkQco8K9Oz056Ukjg6KbR9t4jMgOJIHfEwdb9e4MoqEudoLtGO+KgogCZgThIARknOdEunM3RwJtBEsFfGSceyA1bjp55Dj7G8V8gxoh9G7WIsAwduP0LcSNRozzkawQAAAAASUVORK5CYII="); }
 
 .mailus textarea,
-#modal-callback textarea {
+#modal-callback textarea,
+#modal-feedback textarea {
   width: 100%;
   display: block; }
 
 .mailus .bottom,
-#modal-callback .bottom {
+#modal-callback .bottom,
+#modal-feedback .bottom {
   margin-top: 3rem; }
 
 .mailus .btn-submit,
-#modal-callback .btn-submit {
+#modal-callback .btn-submit,
+#modal-feedback .btn-submit {
   border-radius: 6rem;
   display: block;
   font-family: "Officina Serif Black C";
@@ -4638,7 +4664,8 @@ h3 {
   padding: 0 3rem; }
 
 .mailus .close-modal,
-#modal-callback .close-modal {
+#modal-callback .close-modal,
+#modal-feedback .close-modal {
   top: -5rem; }
 
 .mailus .form .input-field {
@@ -5562,74 +5589,89 @@ img.justifycenter, table.justifycenter {
   .inner .catalog-page .table-grid .tdParts {
     width: 8%; }
 
-/*
-// modal feedback
-#modal-feedback{
-	.title-model{
-		display: block;
-	}
-	.modal-dialog{
-		max-width: 740px;
-	}
-	.form-wrapper{
-		padding-top: 7rem;
-		padding-bottom: 7rem;
-	}
+#modal-feedback line {
+  stroke: #fff;
+  stroke-width: 5; }
 
-	.subject{
-		margin-top: 4rem;
-		p{
-			font-size: 1.7rem;
-			margin-bottom: 1rem;
-		}
-	}
+#modal-feedback .modal-dialog {
+  max-width: 815px; }
 
-	.radio {
-	  position: absolute;
-	  z-index: -1;
-	  opacity: 0;
-	  margin: 10px 0 0 7px;
-	}
-	.radio + label {
-	  cursor: pointer;
-	  margin-bottom: 1rem;
-	  margin-right: 1.5rem;
-	  padding: 0 0 0 30px;
-	  position: relative;
-	}
-	.radio + label:before {
-	  background: #FFF;
-	  border-radius: 50%;
-	  border: 3px solid #bcc0c1;
-	  content: '';
-	  height: 20px;
-	  left: 0;
-	  position: absolute;
-	  top: 0px;
-	  width: 20px;
-	}
-	.radio + label:after {
-	  background: $color2;
-	  border-radius: 50%;
-	  content: '';
-	  height: 6px;
-	  left: 7px;
-	  position: absolute;
-	  top: 7px;
-	  transition: .2s;
-	  width: 6px;
-	}
-	.radio:checked + label:before {
-		background: $color6;
-		border-color: $color6;
-	}
+#modal-feedback .modal-content {
+  background: none;
+  color: #fff; }
 
-	.radio:checked + label:after {
-	  opacity: 1;
-	}
-}
+#modal-feedback .form-wrapper {
+  padding-top: 3rem;
+  padding-bottom: 7rem; }
 
-*/
+#modal-feedback .title {
+  color: #fff;
+  font-family: "Officina Serif Black C";
+  text-transform: uppercase;
+  font-size: 5rem;
+  text-align: center; }
+
+#modal-feedback .subject {
+  margin-top: 3rem; }
+  #modal-feedback .subject p {
+    font-size: 1.7rem;
+    margin-bottom: 1rem; }
+
+#modal-feedback .form {
+  margin-top: 0; }
+  #modal-feedback .form .form-control {
+    width: 37rem; }
+  #modal-feedback .form .textarea-field {
+    margin-top: 2rem; }
+
+#modal-feedback .radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px; }
+
+#modal-feedback .radio + label {
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  margin-right: 1.5rem;
+  padding: 0 0 0 30px;
+  position: relative; }
+
+#modal-feedback .radio + label:before {
+  background: none;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  content: '';
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: 0px;
+  width: 20px; }
+
+#modal-feedback .radio + label:after {
+  border-radius: 50%;
+  content: '';
+  height: 8px;
+  left: 6px;
+  position: absolute;
+  top: 6px;
+  transition: .2s;
+  width: 8px; }
+
+#modal-feedback .radio:checked + label:before {
+  background: #713a97;
+  border-color: #713a97; }
+
+#modal-feedback .radio:checked + label:after {
+  background-color: #fff;
+  opacity: 1; }
+
+#modal-feedback .close-modal {
+  top: -20px;
+  right: -230px; }
+
 /**
  * @author zhixin wen <wenzhixin2010@gmail.com>
  */
