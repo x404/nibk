@@ -5321,17 +5321,22 @@ img.justifycenter, table.justifycenter {
   .catalog-page .tab-pane .input-field {
     margin-left: 2rem;
     margin-top: 0;
-    margin-right: 4rem; }
+    margin-right: 3rem;
+    flex-grow: 1;
+    font-family: "Officina Serif Black C"; }
     .catalog-page .tab-pane .input-field label {
-      font-size: 1.7rem; }
+      font-size: 1.7rem;
+      color: #3a3a3a; }
       .catalog-page .tab-pane .input-field label.helper-field {
         left: 3px;
         top: 0px; }
   .catalog-page .tab-pane .form-control {
     border: none;
+    background: none;
     border-bottom: 2px solid #7e8083;
+    font-family: "Officina Serif Black C";
     height: 40px;
-    width: 250px; }
+    width: 100%; }
   .catalog-page .tab-pane .btn {
     margin-top: .8rem;
     height: 5rem;
@@ -7504,6 +7509,15 @@ img.justifycenter, table.justifycenter {
   .main .maintext {
     text-align: justify;
     font-size: 1.8rem; }
+  .catalog-page .tab-pane .input-field {
+    margin-right: 2rem; }
+  .catalog-page .tab-content {
+    margin-top: 2rem; }
+    .catalog-page .tab-content .btn {
+      display: block;
+      margin: 2rem auto 2rem;
+      text-align: center;
+      width: 150px; }
   #modal-feedback .close-modal {
     top: 10px; }
   #modal-feedback .modal-dialog {
