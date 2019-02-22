@@ -202,6 +202,25 @@ blockquote{
 }
 
 
+.pagination{
+	font-size: 2rem;
+	font-family: "Officina Serif Black C";
+	display: flex;
+	justify-content: center;
+	margin-top: 7rem;
+
+	a, span{
+		@extend .flex-center;
+		border-radius: 50%;
+		width: 4rem;
+		height: 4rem;
+		margin: 0 .7rem;
+	}
+	.current{
+		background-color: $color3;
+		color: $color2;
+	}
+}
 
 .justifyleft {text-align:left !important; }
 .justifyright {text-align:right !important; }

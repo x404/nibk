@@ -3326,6 +3326,9 @@ a.text-dark:hover, a.text-dark:focus {
 .webp .inner-catalog {
   background-image: url(../images/bg/catalog.webp); }
 
+.webp .inner-news {
+  background-image: url(../images/bg/news.webp); }
+
 .webp .inner-subproducts .block-2 {
   background: url(../images/bg/sport-oriented-formulas.webp) center top no-repeat; }
 
@@ -3422,6 +3425,12 @@ a.text-dark:hover, a.text-dark:focus {
 .inner-catalog {
   background-image: url(../images/bg/catalog.jpg);
   background-color: #c8ced6;
+  background-size: auto;
+  background-position: center top; }
+
+.inner-news {
+  background-image: url(../images/bg/news.jpg);
+  background-color: #bfc4cb;
   background-size: auto;
   background-position: center top; }
 
@@ -3556,7 +3565,7 @@ h3 {
 .icon-tel2:before,
 .icon-tel3:before,
 .icon-mail:before,
-.icon-mail2:before, .homepage .center-carousel .carousel__inner .pic:after, .homepage .center-carousel .carousel__inner .pic:before, .homepage .lastnews .carousel__pic:after, .apanel__body:before, .modal-menu .menu dd a:before, blockquote:before, blockquote:after, .product__rubrics .rubric__pic:before, .product__rubrics .rubric__pic:after, .inner-subproducts .text ul li:before, .inner .catalog-page .table-grid .model-title:before, .location:after {
+.icon-mail2:before, .homepage .center-carousel .carousel__inner .pic:after, .homepage .center-carousel .carousel__inner .pic:before, .homepage .lastnews .carousel__pic:after, .apanel__body:before, .modal-menu .menu dd a:before, blockquote:before, blockquote:after, .product__rubrics .rubric__pic:before, .product__rubrics .rubric__pic:after, .inner-subproducts .text ul li:before, .inner .catalog-page .table-grid .model-title:before, .location:after, .news .new__pic:after, .news .new__pic .inner:after {
   content: "";
   display: block;
   position: absolute; }
@@ -4925,6 +4934,21 @@ blockquote {
     blockquote:after {
       transform: skewY(-0.4deg); } }
 
+.pagination {
+  font-size: 2rem;
+  font-family: "Officina Serif Black C";
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem; }
+  .pagination a, .pagination span {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    margin: 0 .7rem; }
+  .pagination .current {
+    background-color: #f26722;
+    color: #fff; }
+
 .justifyleft {
   text-align: left !important; }
 
@@ -4951,6 +4975,35 @@ img.justifycenter, table.justifycenter {
   display: block;
   margin-left: auto;
   margin-right: auto; }
+
+.product__submenu,
+.submenu {
+  font-size: 2rem;
+  font-family: 'Officina Serif Black C';
+  margin-bottom: 3rem;
+  text-transform: uppercase; }
+  .product__submenu ul,
+  .submenu ul {
+    display: flex;
+    justify-content: center; }
+  .product__submenu li,
+  .submenu li {
+    margin: 0 1.5rem; }
+    .product__submenu li.active,
+    .submenu li.active {
+      color: #f26722; }
+      .product__submenu li.active a, .product__submenu li.active span,
+      .submenu li.active a,
+      .submenu li.active span {
+        color: currentColor; }
+        .product__submenu li.active a:hover, .product__submenu li.active span:hover,
+        .submenu li.active a:hover,
+        .submenu li.active span:hover {
+          color: #f26722 !important;
+          text-decoration: none; }
+    .product__submenu li a:hover,
+    .submenu li a:hover {
+      color: #000; }
 
 .product {
   /* =menu
@@ -4981,25 +5034,6 @@ img.justifycenter, table.justifycenter {
           text-decoration: none; }
     .product__menu-orange ul li.active a, .product__menu-orange ul li.active span {
       color: #f26722; }
-  .product__submenu {
-    font-size: 2rem;
-    font-family: 'Officina Serif Black C';
-    margin-bottom: 3rem;
-    text-transform: uppercase; }
-    .product__submenu ul {
-      display: flex;
-      justify-content: center; }
-    .product__submenu li {
-      margin: 0 1.5rem; }
-      .product__submenu li.active {
-        color: #f26722; }
-        .product__submenu li.active a, .product__submenu li.active span {
-          color: currentColor; }
-          .product__submenu li.active a:hover, .product__submenu li.active span:hover {
-            color: #f26722 !important;
-            text-decoration: none; }
-      .product__submenu li a:hover {
-        color: #000; }
   .product__text {
     color: #fff;
     font-size: 2rem;
@@ -5762,7 +5796,7 @@ img.justifycenter, table.justifycenter {
   top: -20px;
   right: -230px; }
 
-.flex-center, .location .btn {
+.flex-center, .pagination a, .pagination span, .location .btn {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -6055,6 +6089,79 @@ img.justifycenter, table.justifycenter {
   .ms-drop li:hover {
     color: #fff;
     background: #713a97; }
+
+.news h1 {
+  color: #f26722;
+  font-family: "Officina Serif Black C";
+  font-size: 10rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.2; }
+
+.news__list {
+  grid-row-gap: 70px;
+  grid-template-columns: repeat(3, 465px);
+  justify-content: space-between;
+  margin: 4.5rem 0;
+  text-align: center; }
+
+.news .new__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .news .new__link:hover {
+    text-decoration: none; }
+    .news .new__link:hover .new__pic img {
+      transform: scale(1.1); }
+    .news .new__link:hover .new__pic:after {
+      border-color: #fff !important; }
+    .news .new__link:hover .new__title {
+      color: #713a97; }
+
+.news .new__pic {
+  overflow: hidden;
+  padding: 3.5rem;
+  width: 390px;
+  position: relative; }
+  .news .new__pic:after {
+    transition: border-color .3s;
+    width: 200px;
+    height: 200px;
+    border-radius: 0 200px 0 0;
+    border-top: 35px solid #713a97;
+    border-right: 35px solid #713a97;
+    right: 0;
+    top: 0; }
+  .news .new__pic .inner {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 320px;
+    position: relative; }
+    .news .new__pic .inner:after {
+      height: 50%;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent); }
+  .news .new__pic img {
+    display: block;
+    transition: transform .3s; }
+
+.news .new__title {
+  font-family: "Officina Serif Black C";
+  color: #f26722;
+  font-size: 3.5rem;
+  margin-top: -9rem;
+  position: relative;
+  z-index: 1;
+  transform: color .3s;
+  text-transform: uppercase; }
+
+.news .new__intro {
+  color: #4a4a4a;
+  font-family: "Officina Serif Book C";
+  font-size: 2rem;
+  padding-top: 1.5rem; }
 
 /* =mobile-menu
 ---------------------------*/

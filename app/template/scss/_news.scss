@@ -1,0 +1,95 @@
+.news{
+	h1{
+		color: $color3;
+		font-family: "Officina Serif Black C";
+		font-size: 10rem;
+		text-align: center;
+		text-transform: uppercase;
+		line-height: 1.2;
+	}
+	&__list{
+		grid-row-gap: 70px;
+		grid-template-columns: repeat(3, 465px);
+		justify-content: space-between;
+		margin: 4.5rem 0;
+		text-align: center;
+	}
+	.new{
+		&__link{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			&:hover{
+				text-decoration: none;
+				.new{
+					&__pic{
+						img{
+							transform: scale(1.1)
+						}
+						&:after{
+							border-color: #fff !important;
+						}
+					}
+					&__title{
+						color: $color4;
+					}
+				}
+			}
+		}
+		&__pic{
+			overflow: hidden;
+			padding: 3.5rem;
+			width: 390px;
+			position: relative;
+			&:after{
+				@extend .before;
+				transition: border-color .3s;
+				width: 200px;
+				height: 200px;
+				border-radius: 0 200px 0 0;
+				border-top: 35px solid #713a97;
+				border-right: 35px solid #713a97;
+				right: 0;
+				top: 0;
+			}
+			.inner{
+				border-radius: 50%;
+				overflow: hidden;
+				width: 320px;
+				position: relative;
+				&:after{
+					@extend .before;
+					height: 50%;
+					width: 100%;
+					left: 0;
+					bottom: 0;
+				    background: linear-gradient(to right, rgba(0,0,0,.4), transparent); 
+				}
+			}
+			img{
+				// margin-right: auto;
+				// margin-left: auto;
+				display: block;
+				transition: transform .3s;
+			}
+		}
+		&__title{
+			font-family: "Officina Serif Black C";
+			color: $color3;
+			font-size: 3.5rem;
+			margin-top: -9rem;
+			position: relative;
+			z-index: 1;
+			transform: color .3s;
+			text-transform: uppercase;
+
+		}
+		&__intro{
+			color: $color13;
+			font-family: "Officina Serif Book C";			
+			font-size: 2rem;
+			padding-top: 1.5rem;
+		}
+	}
+}
+

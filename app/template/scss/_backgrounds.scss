@@ -29,7 +29,10 @@
 			background-image: url(../images/bg/contacts.webp);
 		}
 		&-catalog{
-			background-image: url(../images/bg/catalog.webp);		
+			background-image: url(../images/bg/catalog.webp);
+		}
+		&-news{
+			background-image: url(../images/bg/news.webp);		
 		}
 	}
 
@@ -157,6 +160,12 @@
 	&-catalog{
 		background-image: url(../images/bg/catalog.jpg);		
 		background-color: #c8ced6;
+		background-size: auto;
+		background-position: center top;
+	}
+	&-news{
+		background-image: url(../images/bg/news.jpg);		
+		background-color: #bfc4cb;
 		background-size: auto;
 		background-position: center top;
 	}
