@@ -196,7 +196,7 @@ blockquote{
 
 	@media (max-width: 1250px){
 		&:after{
-			transform: skewY(-.4deg);			
+			transform: skewY(-.4deg);
 		}
 	}
 }
@@ -207,6 +207,7 @@ blockquote{
 	font-family: "Officina Serif Black C";
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	margin-top: 7rem;
 
 	a, span{
