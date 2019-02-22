@@ -140,8 +140,6 @@
 	}
 
 
-
-
 	#brand_tab,
 	#class_tab,
 	#model_tab
@@ -316,11 +314,14 @@
 		}
 	}
 
+
+
+
+
 	// Where to Buy
 	.dealers-data{
 		.search-title{
 			color: $color1;
-			margin-top: 5rem;
 			text-align: left;
 		}
 		.search-result-table{
@@ -345,6 +346,43 @@
 			padding-bottom: 2.5rem;
 		}
 	}
+	
+	// mail form
+	.mailus{
+		background-color: $color2;
+		padding: 5.2rem 4rem 7.8rem;
+		margin-top: 2rem;
+		box-shadow: 0 0 20px rgba(0,0,0,.15);
+		.form{
+			margin-top: .5rem;
+		}
+		.title{
+			font-size: 4rem;
+			color: $color1;
+			margin-bottom: 2.5rem;
+		}
+		.input-field{
+			margin-left: 0;
+			margin-right: 0;
+			margin-top: 3.2rem;
+			label.helper-field{
+				top: -9px;
+			}
+			textarea{
+				border-bottom: none;
+			}
+		}
+		.btn{
+			font-size: 2rem;
+			margin-top: 0;
+			height: 6rem;
+			width: auto;
+			&:hover{
+				background-color: $color4
+			}
+		}
+	}
+
 }
 
 
@@ -643,6 +681,7 @@
 	color: $color2;
 	font-size: 2rem;
 	margin-top: 3rem;
+	margin-bottom: 5rem;
 	padding: 5rem 5rem 4rem 2.5rem;
 	position: relative;
 	&:after{

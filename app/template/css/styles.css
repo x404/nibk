@@ -5501,7 +5501,6 @@ img.justifycenter, table.justifycenter {
 
 .catalog-page .dealers-data .search-title {
   color: #000;
-  margin-top: 5rem;
   text-align: left; }
 
 .catalog-page .dealers-data .search-result-table {
@@ -5520,6 +5519,33 @@ img.justifycenter, table.justifycenter {
 .catalog-page .dealers-data .btn-more {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem; }
+
+.catalog-page .mailus {
+  background-color: #fff;
+  padding: 5.2rem 4rem 7.8rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); }
+  .catalog-page .mailus .form {
+    margin-top: .5rem; }
+  .catalog-page .mailus .title {
+    font-size: 4rem;
+    color: #000;
+    margin-bottom: 2.5rem; }
+  .catalog-page .mailus .input-field {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 3.2rem; }
+    .catalog-page .mailus .input-field label.helper-field {
+      top: -9px; }
+    .catalog-page .mailus .input-field textarea {
+      border-bottom: none; }
+  .catalog-page .mailus .btn {
+    font-size: 2rem;
+    margin-top: 0;
+    height: 6rem;
+    width: auto; }
+    .catalog-page .mailus .btn:hover {
+      background-color: #713a97; }
 
 .nicescroll-cursors {
   border-radius: 7px !important;
@@ -5747,6 +5773,7 @@ img.justifycenter, table.justifycenter {
   color: #fff;
   font-size: 2rem;
   margin-top: 3rem;
+  margin-bottom: 5rem;
   padding: 5rem 5rem 4rem 2.5rem;
   position: relative; }
   .location:after {
@@ -6627,7 +6654,13 @@ img.justifycenter, table.justifycenter {
 @media (max-width: 1750px) {
   .homepage .interesting .title,
   .homepage .lastnews .title {
-    font-size: 4rem; } }
+    font-size: 4rem; }
+  .catalog-page .mailus .form .col {
+    width: auto; }
+  .catalog-page .mailus .form input.form-control {
+    width: 32rem; }
+  .catalog-page .mailus .select-wrapper {
+    width: 32rem; } }
 
 @media (max-width: 1680px) {
   .homepage .main .center .title {
@@ -6642,7 +6675,11 @@ img.justifycenter, table.justifycenter {
     padding-left: 4rem;
     padding-right: 4rem; }
     .homepage .about__title {
-      font-size: 2rem; } }
+      font-size: 2rem; }
+  .catalog-page .mailus .form input.form-control {
+    width: 30rem; }
+  .catalog-page .mailus .select-wrapper {
+    width: 30rem; } }
 
 @media (max-width: 1600px) {
   .inner .product__menu {
@@ -6931,6 +6968,10 @@ img.justifycenter, table.justifycenter {
   .catalog-page .search-result-table th {
     font-size: 1.5rem;
     padding-right: 1rem; }
+  .catalog-page .mailus .form input.form-control {
+    width: 26rem; }
+  .catalog-page .mailus .select-wrapper {
+    width: 26rem; }
   .inner .main .detail__characteristics {
     margin-left: 0; }
   .inner .main .detail {
@@ -7345,6 +7386,10 @@ img.justifycenter, table.justifycenter {
   .catalog-page .btn-order {
     font-size: 1.8rem;
     height: 4.5rem; }
+  .catalog-page .mailus {
+    padding: 3rem 2rem; }
+    .catalog-page .mailus .subtitle {
+      font-size: 1.6rem; }
   #modal-feedback .title {
     font-size: 4.4rem; }
   #modal-feedback .form .input-field input.form-control {
@@ -7518,6 +7563,8 @@ img.justifycenter, table.justifycenter {
       margin: 2rem auto 2rem;
       text-align: center;
       width: 150px; }
+  .catalog-page .mailus .input-field {
+    margin-right: 0; }
   #modal-feedback .close-modal {
     top: 10px; }
   #modal-feedback .modal-dialog {
