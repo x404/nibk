@@ -6210,6 +6210,8 @@ blockquote {
       bottom: -10px;
       transform: skewY(-0.45deg);
       transform-origin: 0 0; }
+  .content .maintext .table-responsive {
+    overflow-x: auto; }
   .content .maintext table {
     background-color: #fff; }
     .content .maintext table tr th {
@@ -6225,6 +6227,46 @@ blockquote {
       padding: 1.2rem 3rem; }
     .content .maintext table tr:last-child td {
       border-bottom: none; }
+  .content .maintext img {
+    max-width: 100%;
+    height: auto; }
+  @media (max-width: 1600px) {
+    .content .maintext h1 {
+      font-size: 4.6rem; }
+    .content .maintext h2 {
+      font-size: 4.2rem; }
+    .content .maintext h3 {
+      font-size: 3.8rem; }
+    .content .maintext h4 {
+      font-size: 3.2rem; } }
+  @media (max-width: 1200px) {
+    .content .maintext h1 {
+      font-size: 4.4rem; }
+    .content .maintext h2 {
+      font-size: 4rem; }
+    .content .maintext h3 {
+      font-size: 3.6rem; }
+    .content .maintext h4 {
+      font-size: 3rem; } }
+  @media (max-width: 991px) {
+    .content .maintext {
+      font-size: 1.8rem; }
+      .content .maintext h1 {
+        font-size: 4.2rem; }
+      .content .maintext h2 {
+        font-size: 3.8rem; }
+      .content .maintext h3 {
+        font-size: 3.5rem; }
+      .content .maintext h4 {
+        font-size: 2.8rem; }
+      .content .maintext img {
+        float: none !important;
+        margin-left: auto;
+        margin-right: auto; } }
+  @media (max-width: 560px) {
+    .content .maintext blockquote {
+      padding-left: 2.6rem;
+      text-align: center; } }
 
 .inner-news .side-panel {
   margin-top: 3.2rem; }
