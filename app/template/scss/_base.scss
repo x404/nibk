@@ -239,6 +239,7 @@ h3{font-size:1.6rem}
 		align-items: center;
 		padding: 0 2rem 0 45px;
 		position: relative;
+		text-decoration: none !important;
 		&:before{
 			@extend .before;
 			@include sprite($icon-arrow-back);
@@ -247,10 +248,10 @@ h3{font-size:1.6rem}
 			transition: filter .3s;
 		}
 		&:hover{
-			color: $color2;
+			color: $color2 !important;
 			background-color: $color4;
 			border-color: $color4;
-			text-decoration: none;
+			text-decoration: none !important;
 			&:before{
 				filter: brightness(5);
 			}

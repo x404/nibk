@@ -1,0 +1,136 @@
+.content{
+	.maintext{
+		$color_1: #f26722;
+		font-family: "Officina Serif Book C";
+		font-size: 2rem;
+		color: #2a2a2a;
+		margin-top: 2.2rem;
+		h1, h2, h3, h4, h5, h6{
+			font-family: "Officina Serif Black C";
+			color: $color_1 !important;
+			font-weight: normal;
+			margin-bottom: 3.5rem;
+		}
+		h1{
+			font-size: 5rem;
+			text-transform: uppercase;
+		}
+		h2{
+			font-size: 4.5rem;
+		}
+		h3{
+			font-size: 4rem;
+		}
+		h4{
+			font-size: 3.5rem;
+		}
+
+		strong{
+			font-family: "Officina Serif Black C";
+		}
+
+		a{
+			text-decoration: underline;
+			&:hover{
+				color: $color_1;
+				text-decoration: none;
+			}
+		}
+
+		// ul
+		ul{
+			margin: 1.5rem 0;
+			li{
+				padding-left: 35px;
+				position: relative;
+				margin: 10px 0;
+				&:before{
+					@extend .before;
+					background-color: $color_1;
+					border-radius: 50%;
+					width: 12px;
+					height: 12px;			
+					left: 0;
+					top: 8px;		
+				}				
+			}
+		}
+
+		// ol
+		ol{
+			counter-reset:li;
+			margin-left: 0;
+			list-style: none;
+			& > li{
+				position: relative;
+				padding-left: 30px;
+				margin: 15px 0;
+				&:before{
+					font-family: "Officina Serif Black C";
+					color: $color_1;
+					$s: 3.1rem;
+					border-radius: $s;
+					content: counter(li) ")";; /* В качестве данных используем счетчик */
+					counter-increment:li; /* Увеличиваем значение счетчика на 1 */
+					/* Позиционируем и стилизируем цифры */
+					position:absolute;
+					text-align: center;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					top:0px;
+					left:0;
+					font-size: 20px;
+					font-weight: 900;
+				}
+			}
+		}
+
+
+		// blockquote
+		blockquote{
+			margin-bottom: 4rem;
+			&:after{
+				bottom: -10px;
+				transform: skewY(-.45deg);
+				transform-origin: 0 0
+			}			
+		}
+
+		// table
+		table{
+			background-color: #fff;
+			tr{
+				th{
+					font-family: "Officina Serif Black C";
+					border-bottom: 3px solid  $color_1;
+					font-size: 2rem;
+					padding: 2rem 3rem;
+					color: #000;
+				}
+				td{
+					border-bottom: 1px solid #dbdbdb;
+					color: #373737;
+					font-size: 1.7rem;
+					padding: 1.2rem 3rem;
+				}
+				&:last-child td{
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}
+
+.inner-news .side-panel{
+	margin-top: 3.2rem;
+}
+
+.justifyleft {text-align:left !important; }
+.justifyright {text-align:right !important; }
+.justifycenter {text-align: center !important; }
+.justifyfull {text-align:justify !important; }
+
+img.justifyleft, table.justifyleft {float:left; margin-right:20px;margin-bottom:5px;margin-top: 15px;}
+img.justifyright, table.justifyright {float:right; margin-left:20px;margin-bottom:5px;}
+img.justifycenter, table.justifycenter { display: block; margin-left: auto; margin-right: auto;}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -3565,7 +3566,7 @@ h3 {
 .icon-tel2:before,
 .icon-tel3:before,
 .icon-mail:before,
-.icon-mail2:before, .homepage .center-carousel .carousel__inner .pic:after, .homepage .center-carousel .carousel__inner .pic:before, .homepage .lastnews .carousel__pic:after, .apanel__body:before, .modal-menu .menu dd a:before, blockquote:before, blockquote:after, .product__rubrics .rubric__pic:before, .product__rubrics .rubric__pic:after, .inner-subproducts .text ul li:before, .inner .catalog-page .table-grid .model-title:before, .location:after, .news .new__pic:after, .news .new__pic .inner:after {
+.icon-mail2:before, .homepage .center-carousel .carousel__inner .pic:after, .homepage .center-carousel .carousel__inner .pic:before, .homepage .lastnews .carousel__pic:after, .apanel__body:before, .modal-menu .menu dd a:before, blockquote:before, blockquote:after, .product__rubrics .rubric__pic:before, .product__rubrics .rubric__pic:after, .inner-subproducts .text ul li:before, .inner .catalog-page .table-grid .model-title:before, .location:after, .news .new__pic:after, .news .new__pic .inner:after, .content .maintext ul li:before {
   content: "";
   display: block;
   position: absolute; }
@@ -3651,7 +3652,8 @@ h3 {
     display: inline-flex;
     align-items: center;
     padding: 0 2rem 0 45px;
-    position: relative; }
+    position: relative;
+    text-decoration: none !important; }
     .btn-back:before {
       background-image: url(../images/sprite.png);
       background-position: -263px -90px;
@@ -3661,10 +3663,10 @@ h3 {
       top: 12px;
       transition: filter .3s; }
     .btn-back:hover {
-      color: #fff;
+      color: #fff !important;
       background-color: #713a97;
       border-color: #713a97;
-      text-decoration: none; }
+      text-decoration: none !important; }
       .btn-back:hover:before {
         filter: brightness(5); }
 
@@ -4950,33 +4952,6 @@ blockquote {
     background-color: #f26722;
     color: #fff; }
 
-.justifyleft {
-  text-align: left !important; }
-
-.justifyright {
-  text-align: right !important; }
-
-.justifycenter {
-  text-align: center !important; }
-
-.justifyfull {
-  text-align: justify !important; }
-
-img.justifyleft, table.justifyleft {
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 5px; }
-
-img.justifyright, table.justifyright {
-  float: right;
-  margin-left: 20px;
-  margin-bottom: 5px; }
-
-img.justifycenter, table.justifycenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
 .product__submenu,
 .submenu {
   font-size: 2rem;
@@ -6163,6 +6138,124 @@ img.justifycenter, table.justifycenter {
   font-family: "Officina Serif Book C";
   font-size: 2rem;
   padding-top: 1.5rem; }
+
+.content .maintext {
+  font-family: "Officina Serif Book C";
+  font-size: 2rem;
+  color: #2a2a2a;
+  margin-top: 2.2rem; }
+  .content .maintext h1, .content .maintext h2, .content .maintext h3, .content .maintext h4, .content .maintext h5, .content .maintext h6 {
+    font-family: "Officina Serif Black C";
+    color: #f26722 !important;
+    font-weight: normal;
+    margin-bottom: 3.5rem; }
+  .content .maintext h1 {
+    font-size: 5rem;
+    text-transform: uppercase; }
+  .content .maintext h2 {
+    font-size: 4.5rem; }
+  .content .maintext h3 {
+    font-size: 4rem; }
+  .content .maintext h4 {
+    font-size: 3.5rem; }
+  .content .maintext strong {
+    font-family: "Officina Serif Black C"; }
+  .content .maintext a {
+    text-decoration: underline; }
+    .content .maintext a:hover {
+      color: #f26722;
+      text-decoration: none; }
+  .content .maintext ul {
+    margin: 1.5rem 0; }
+    .content .maintext ul li {
+      padding-left: 35px;
+      position: relative;
+      margin: 10px 0; }
+      .content .maintext ul li:before {
+        background-color: #f26722;
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        left: 0;
+        top: 8px; }
+  .content .maintext ol {
+    counter-reset: li;
+    margin-left: 0;
+    list-style: none; }
+    .content .maintext ol > li {
+      position: relative;
+      padding-left: 30px;
+      margin: 15px 0; }
+      .content .maintext ol > li:before {
+        font-family: "Officina Serif Black C";
+        color: #f26722;
+        border-radius: 3.1rem;
+        content: counter(li) ")";
+        /* В качестве данных используем счетчик */
+        counter-increment: li;
+        /* Увеличиваем значение счетчика на 1 */
+        /* Позиционируем и стилизируем цифры */
+        position: absolute;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0px;
+        left: 0;
+        font-size: 20px;
+        font-weight: 900; }
+  .content .maintext blockquote {
+    margin-bottom: 4rem; }
+    .content .maintext blockquote:after {
+      bottom: -10px;
+      transform: skewY(-0.45deg);
+      transform-origin: 0 0; }
+  .content .maintext table {
+    background-color: #fff; }
+    .content .maintext table tr th {
+      font-family: "Officina Serif Black C";
+      border-bottom: 3px solid #f26722;
+      font-size: 2rem;
+      padding: 2rem 3rem;
+      color: #000; }
+    .content .maintext table tr td {
+      border-bottom: 1px solid #dbdbdb;
+      color: #373737;
+      font-size: 1.7rem;
+      padding: 1.2rem 3rem; }
+    .content .maintext table tr:last-child td {
+      border-bottom: none; }
+
+.inner-news .side-panel {
+  margin-top: 3.2rem; }
+
+.justifyleft {
+  text-align: left !important; }
+
+.justifyright {
+  text-align: right !important; }
+
+.justifycenter {
+  text-align: center !important; }
+
+.justifyfull {
+  text-align: justify !important; }
+
+img.justifyleft, table.justifyleft {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  margin-top: 15px; }
+
+img.justifyright, table.justifyright {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 5px; }
+
+img.justifycenter, table.justifycenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 /* =mobile-menu
 ---------------------------*/
