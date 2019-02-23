@@ -34,6 +34,9 @@
 		&-news{
 			background-image: url(../images/bg/news.webp);		
 		}
+		&-certificats{
+			background-image: url(../images/bg/certificats.webp);
+		}	
 	}
 
 	.inner-subproducts{
@@ -169,4 +172,8 @@
 		background-size: auto;
 		background-position: center top;
 	}
+	&-certificats{
+		background-image: url(../images/bg/certificats.jpg);
+		background-color: #d8dee7
+	}	
 }

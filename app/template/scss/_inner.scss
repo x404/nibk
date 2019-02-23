@@ -74,6 +74,7 @@
 
 
 .main{
+	overflow: hidden;
 	.btn-back{
 		margin-top: 1rem;
 	}
@@ -223,3 +224,34 @@ blockquote{
 	}
 }
 
+
+
+
+
+// certificats
+#sertificats-carousel{
+	color: $color12;
+	display: flex;
+	margin: 2.5rem 0;
+	font-family: "Officina Serif Black C";
+	font-size: 1.7rem;
+
+	.slick-slide{
+		padding-top: 7px;
+		padding-bottom: 7px;
+		.pic{
+			background: $color2;
+			box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+			width: 172px;
+			height: 172px;
+			margin: 0 auto 1rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img{
+				max-width: none;
+				width: auto;
+			}
+		}
+	}
+}

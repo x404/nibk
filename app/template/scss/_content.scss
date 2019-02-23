@@ -77,6 +77,20 @@
 					font-size: 20px;
 					font-weight: 900;
 				}
+
+				ol{
+					list-style-type: lower-alpha;
+					// counter-reset:li;
+					margin-left: 18px;
+					li{
+						padding-left: 10px;
+						// color: $color_1;
+						&:before{
+							display: none;
+						}
+					}
+				}
+
 			}
 		}
 
