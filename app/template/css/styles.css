@@ -3333,7 +3333,7 @@ a.text-dark:hover, a.text-dark:focus {
 .webp .inner-certificats {
   background-image: url(../images/bg/certificats.webp); }
 
-.webp .inner-materialrepors {
+.webp .inner-materialreports {
   background-image: url(../images/bg/materialrepors.webp); }
 
 .webp .inner-subproducts .block-2 {
@@ -3445,7 +3445,7 @@ a.text-dark:hover, a.text-dark:focus {
   background-image: url(../images/bg/certificats.jpg);
   background-color: #d8dee7; }
 
-.inner-materialrepors {
+.inner-materialreports {
   background-image: url(../images/bg/materialrepors.jpg);
   background-color: #bfc4cb;
   background-size: auto;
@@ -6396,31 +6396,31 @@ img.justifycenter, table.justifycenter {
       margin-left: 0;
       margin-right: 0; } }
 
-.inner-materialrepors .maintext {
+.inner-materialreports .maintext {
   color: #505050; }
-  .inner-materialrepors .maintext h1 {
+  .inner-materialreports .maintext h1 {
     font-size: 8rem;
     text-align: center; }
-  .inner-materialrepors .maintext .subtitle {
+  .inner-materialreports .maintext .subtitle {
     font-size: 2.4rem; }
-  .inner-materialrepors .maintext figure img {
+  .inner-materialreports .maintext figure img {
     margin: 0; }
-  .inner-materialrepors .maintext figure figcaption {
+  .inner-materialreports .maintext figure figcaption {
     margin-left: 2.5rem; }
 
-.inner-materialrepors .groups {
+.inner-materialreports .groups {
   margin-top: 11rem; }
-  .inner-materialrepors .groups .title {
+  .inner-materialreports .groups .title {
     font-family: "Officina Serif Black C";
     font-size: 4rem;
     color: #f26722;
     line-height: 1.2;
     text-transform: uppercase; }
-  .inner-materialrepors .groups img {
+  .inner-materialreports .groups img {
     max-width: 100%; }
-  .inner-materialrepors .groups .group__item {
+  .inner-materialreports .groups .group__item {
     text-align: center; }
-  .inner-materialrepors .groups .group__title {
+  .inner-materialreports .groups .group__title {
     color: #000;
     font-family: "Officina Serif Black C";
     font-size: 2.5rem;
@@ -6428,36 +6428,37 @@ img.justifycenter, table.justifycenter {
     text-align: center;
     text-transform: uppercase; }
 
-.inner-materialrepors .reports {
+.inner-materialreports .reports {
   margin-top: 10.5rem; }
-  .inner-materialrepors .reports h1,
-  .inner-materialrepors .reports .title {
+  .inner-materialreports .reports h1,
+  .inner-materialreports .reports .title {
     font-family: "Officina Serif Black C";
     text-transform: uppercase;
     line-height: 1.1;
     color: #000;
     text-align: center;
     font-size: 6rem; }
-  .inner-materialrepors .reports .listarticles {
+  .inner-materialreports .reports .listarticles {
     grid-template-columns: repeat(5, 210px);
+    grid-column-gap: 1.5rem;
     margin-top: 5rem; }
-  .inner-materialrepors .reports .report__item .more {
+  .inner-materialreports .reports .report__item .more {
     text-align: center; }
-  .inner-materialrepors .reports .report__item .btn {
+  .inner-materialreports .reports .report__item .btn {
     border-radius: 4rem;
     color: #fff !important;
     display: flex;
     font-size: 2rem;
     height: 4rem;
+    justify-content: center;
     margin: 1.5rem auto 0;
     padding: 0;
-    width: 12rem;
-    justify-content: center; }
-  .inner-materialrepors .reports .report__pic {
+    width: 12rem; }
+  .inner-materialreports .reports .report__pic {
     min-height: 26rem; }
-    .inner-materialrepors .reports .report__pic img {
+    .inner-materialreports .reports .report__pic img {
       max-width: 100%; }
-  .inner-materialrepors .reports .report__title {
+  .inner-materialreports .reports .report__title {
     font-size: 2.5rem;
     margin-top: 3rem; }
 
@@ -7064,7 +7065,19 @@ img.justifycenter, table.justifycenter {
   .catalog-page .search-result-table tr td {
     padding-left: 1rem !important; }
   .catalog-page .search-result-table th {
-    padding-right: 1rem; } }
+    padding-right: 1rem; }
+  .inner-materialreports .maintext h1 {
+    font-size: 6rem; }
+  .inner-materialreports .maintext .subtitle {
+    font-size: 2.2rem; }
+  .inner-materialreports .groups .title {
+    font-size: 3.4rem; }
+  .inner-materialreports .groups .group__title {
+    font-size: 2.2rem; }
+  .inner-materialreports .reports {
+    margin-top: 7rem; }
+  .characteristics .characteristic__title {
+    font-size: 3rem; } }
 
 @media (max-width: 1750px) {
   .homepage .interesting .title,
@@ -7438,7 +7451,25 @@ img.justifycenter, table.justifycenter {
       border-top-width: 30px;
       border-right-width: 30px; }
     .news .new__pic .inner {
-      width: 240px; } }
+      width: 240px; }
+  .inner-materialreports .maintext .subtitle {
+    font-size: 2rem; }
+  .inner-materialreports .groups .title {
+    font-size: 3.2rem; }
+  .inner-materialreports .groups .group__title {
+    font-size: 2.2rem; }
+  .inner-materialreports .reports {
+    margin-top: 6rem; }
+  .inner-materialreports .reports .listarticles {
+    grid-template-columns: repeat(3, 210px); }
+  .characteristics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+    .characteristics .characteristic__title {
+      font-size: 2.6rem; }
+    .characteristics .characteristic__column {
+      width: 50%; } }
 
 @media (max-width: 1180px) {
   .homepage .center-carousel .slick-slide .pic {
@@ -7667,7 +7698,30 @@ img.justifycenter, table.justifycenter {
     .submenu ul li {
       margin: 1rem 0; }
   .news .new__title {
-    margin-top: -2rem; } }
+    margin-top: -2rem; }
+  .inner-materialreports .maintext h1 {
+    font-size: 5rem; }
+  .inner-materialreports .maintext .subtitle {
+    font-size: 1.8rem; }
+  .inner-materialreports .groups .title {
+    font-size: 3.2rem; }
+  .inner-materialreports .groups .group__item {
+    margin-top: 3rem; }
+  .inner-materialreports .groups .group__title {
+    font-size: 2.2rem; }
+  .inner-materialreports .reports {
+    margin-top: 6rem; }
+    .inner-materialreports .reports .title {
+      font-size: 5rem; }
+    .inner-materialreports .reports .listarticles {
+      grid-template-columns: repeat(3, 210px); }
+  .characteristics {
+    display: block; }
+    .characteristics .characteristic__title {
+      font-size: 2.5rem; }
+    .characteristics .characteristic__column {
+      margin-top: 2rem;
+      width: 100%; } }
 
 @media (max-width: 950px) {
   .inner .product__rubrics .row {
@@ -7896,7 +7950,26 @@ img.justifycenter, table.justifycenter {
       width: 230px; }
   .pagination {
     margin-top: 4rem;
-    margin-bottom: 4rem; } }
+    margin-bottom: 4rem; }
+  .inner-materialreports .maintext h1 {
+    font-size: 4.5rem; }
+  .inner-materialreports .groups .title {
+    font-size: 3.2rem; }
+  .inner-materialreports .groups .group__item {
+    margin-top: 3rem; }
+  .inner-materialreports .groups .group__title {
+    font-size: 2.2rem; }
+  .inner-materialreports .reports {
+    margin-top: 6rem; }
+    .inner-materialreports .reports .title {
+      font-size: 4.5rem; }
+    .inner-materialreports .reports .listarticles {
+      display: block; }
+    .inner-materialreports .reports .report__item {
+      margin-top: 4rem;
+      width: 100%; }
+    .inner-materialreports .reports .report__pic {
+      min-height: 0; } }
 
 @media (max-width: 700px) {
   .homepage .center-carousel .slick-slide .pic {
@@ -8008,7 +8081,14 @@ img.justifycenter, table.justifycenter {
     border-top-width: 14px;
     border-right-width: 14px;
     right: 27px;
-    top: -15px; } }
+    top: -15px; }
+  .inner-materialreports .maintext figure img {
+    margin-left: auto;
+    margin-right: auto; }
+  .inner-materialreports .maintext figcaption {
+    margin-top: 1rem; }
+  .inner-materialreports .groups {
+    margin-top: 2rem; } }
 
 @media (max-width: 575px) {
   .inner .product__rubrics {
@@ -8297,3 +8377,11 @@ img.justifycenter, table.justifycenter {
       border-right-width: 20px; }
     .news .new__pic .inner {
       width: 210px; } }
+
+@media (max-width: 320px) {
+  .inner-materialreports .reports .report__title {
+    font-size: 2.2rem;
+    margin-top: 2rem; }
+  .inner-materialreports .reports .report__item .btn {
+    font-size: 1.8rem;
+    height: 3.6rem; } }

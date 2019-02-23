@@ -1,4 +1,4 @@
-.inner-materialrepors{
+.inner-materialreports{
 	.maintext{	
 		color: $color18;
 		h1{
@@ -60,6 +60,7 @@
 
 		.listarticles{
 			grid-template-columns: repeat(5, 210px);
+			grid-column-gap: 1.5rem;
 			margin-top: 5rem;
 		}
  
@@ -75,10 +76,10 @@
 					display: flex;
 					font-size: 2rem;
 					height: 4rem;
+					justify-content: center;
 					margin: 1.5rem auto 0;
 					padding: 0;
 					width: 12rem;
-					justify-content: center;
 				}
 			}
 			&__pic{

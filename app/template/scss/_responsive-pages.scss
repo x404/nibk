@@ -18,6 +18,34 @@
 			}
 		} 
 	}
+
+	// materialreports
+	.inner-materialreports{
+		.maintext{
+			h1{
+				font-size: 6rem;
+			}
+			.subtitle{
+				font-size: 2.2rem;
+			}
+		}
+		.groups{
+			.title{
+				font-size: 3.4rem;
+			}
+			.group{
+				&__title{
+					font-size: 2.2rem;
+				}
+			}
+		}
+		.reports{
+			margin-top: 7rem;
+		}
+	}
+	.characteristics .characteristic__title{
+		font-size: 3rem;
+	}
 }
 
 
@@ -763,6 +791,53 @@
 		}
 	}
 
+
+	// materialreports
+	.inner-materialreports{
+		.maintext{
+			.subtitle{
+				font-size: 2rem;
+			}
+		}
+		.groups{
+			.title{
+				font-size: 3.2rem;
+			}
+			.group{
+				&__title{
+					font-size: 2.2rem;
+				}
+			}
+		}
+		.reports{
+			margin-top: 6rem;
+		}
+		.reports{
+			.listarticles{
+				grid-template-columns: repeat(3, 210px);
+
+			}
+			.report{
+				&__item{
+				}
+			}
+		}
+	}
+
+	.characteristics{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		.characteristic{
+			&__title{
+				font-size: 2.6rem;
+			}
+			&__column{
+				width: 50%;
+			}
+		}
+	}
+
 }
 
 @media (max-width: 1200px) {
@@ -854,9 +929,6 @@
 			margin-top: 1rem;
 		}
 	}
-
-
-
 }
 
 
@@ -1223,6 +1295,59 @@
 				margin-top: -2rem;
 			}
 		}		
+	}
+
+
+	// materialreports
+	.inner-materialreports{
+		.maintext{
+			h1{
+				font-size: 5rem;
+			}
+			.subtitle{
+				font-size: 1.8rem;
+			}
+		}
+		.groups{
+			.title{
+				font-size: 3.2rem;
+			}
+			.group{
+				&__item{
+					margin-top: 3rem;
+				}
+				&__title{
+					font-size: 2.2rem;
+				}
+			}
+		}
+		.reports{
+			margin-top: 6rem;
+			.title{
+				font-size: 5rem;
+			}
+			.listarticles{
+				grid-template-columns: repeat(3, 210px);
+
+			}
+			.report{
+				&__item{
+				}
+			}
+		}
+	}
+
+	.characteristics{
+		display: block;
+		.characteristic{
+			&__title{
+				font-size: 2.5rem;
+			}
+			&__column{
+				margin-top: 2rem;
+				width: 100%;
+			}
+		}
 	}
 }
 
@@ -1638,6 +1763,45 @@
 	}
 
 
+	// materialreports
+	.inner-materialreports{
+		.maintext{
+			h1{
+				font-size: 4.5rem;
+			}
+		}
+		.groups{
+			.title{
+				font-size: 3.2rem;
+			}
+			.group{
+				&__item{
+					margin-top: 3rem;
+				}
+				&__title{
+					font-size: 2.2rem;
+				}
+			}
+		}
+		.reports{
+			margin-top: 6rem;
+			.title{
+				font-size: 4.5rem;
+			}
+			.listarticles{
+				display: block;
+			}
+			.report{
+				&__item{
+					margin-top: 4rem;
+					width: 100%;
+				}
+				&__pic{
+					min-height: 0;
+				}
+			}
+		}
+	}
 }
 
 
@@ -1832,6 +1996,22 @@
 			}
 		}
 	}
+
+	// materialreports
+	.inner-materialreports{
+		.maintext{
+			figure img{
+				margin-left: auto;
+				margin-right: auto;
+			}
+			figcaption{
+				margin-top: 1rem;
+			}
+		}
+		.groups{
+			margin-top: 2rem;
+		}
+	}
 }
 
 
@@ -1933,6 +2113,7 @@
 			font-size: 3.6rem;
 		}
 	}
+
 }
 
 
@@ -2062,7 +2243,6 @@
 			}
 		}
 	}
-
 }
 
 
@@ -2135,7 +2315,6 @@
 			}
 		}
 	}
-
 }
 
 
@@ -2376,6 +2555,23 @@
 			}
 		}
 	}
+}
 
 
+
+@media (max-width: 320px) {
+	.inner-materialreports .reports{
+		.report{
+			&__title{
+				font-size: 2.2rem;
+				margin-top: 2rem;
+			}
+			&__item{
+				.btn{
+					font-size: 1.8rem;
+					height: 3.6rem;
+				}
+			}
+		}
+	}
 }
