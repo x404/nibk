@@ -1,0 +1,110 @@
+.inner-materialrepors{
+	.maintext{	
+		color: $color18;
+		h1{
+			font-size: 8rem;
+			text-align: center;
+		}
+		.subtitle{
+			font-size: 2.4rem;
+		}
+
+		figure{
+			img{
+				margin: 0;
+			}
+			figcaption{
+				margin-left: 2.5rem;
+			}
+		}
+	}
+
+	.groups{
+		margin-top: 11rem;
+		.title{
+			font-family: "Officina Serif Black C";
+			font-size: 4rem;
+			color: $color3;
+			line-height: 1.2;
+			text-transform: uppercase;
+		}
+		img{
+			max-width: 100%
+		}
+		.group{
+			&__item{ 
+				text-align: center;
+			}
+			&__title{
+				color: $color1 ;
+				font-family: "Officina Serif Black C";
+				font-size: 2.5rem;
+				margin-top: 2rem;
+				text-align: center;
+				text-transform: uppercase;	
+			}
+		}
+	}
+
+	.reports{
+ 		margin-top: 10.5rem;
+		h1,
+		.title{
+			font-family: "Officina Serif Black C";
+			text-transform: uppercase;
+			line-height: 1.1;
+			color: $color1;
+			text-align: center;
+			font-size: 6rem;
+		}
+
+		.listarticles{
+			grid-template-columns: repeat(5, 210px);
+			margin-top: 5rem;
+		}
+ 
+ 		
+		.report{
+			&__item{
+				.more{
+					text-align: center;
+				}
+				.btn{
+					border-radius: 4rem;
+					color: $color2 !important;
+					display: flex;
+					font-size: 2rem;
+					height: 4rem;
+					margin: 1.5rem auto 0;
+					padding: 0;
+					width: 12rem;
+					justify-content: center;
+				}
+			}
+			&__pic{
+				min-height: 26rem;
+				img{
+					max-width: 100%
+				}
+			}
+			&__title{
+				font-size: 2.5rem;
+				margin-top: 3rem;
+			}
+		}
+	}
+}
+
+.characteristics{
+	grid-template-columns: repeat(3, minmax(360px, 1fr));
+	margin-top: 5rem;
+	.characteristic{
+		&__title{
+			color: $color1;
+			font-family: "Officina Serif Black C";
+			font-size: 3.5rem;
+			line-height: 1.2;
+			margin-bottom: 2.5rem;
+		}
+	}
+}

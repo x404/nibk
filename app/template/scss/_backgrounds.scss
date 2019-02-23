@@ -36,6 +36,9 @@
 		}
 		&-certificats{
 			background-image: url(../images/bg/certificats.webp);
+		}
+		&-materialrepors{
+			background-image: url(../images/bg/materialrepors.webp);
 		}	
 	}
 
@@ -176,4 +179,11 @@
 		background-image: url(../images/bg/certificats.jpg);
 		background-color: #d8dee7
 	}	
+	&-materialrepors{
+		background-image: url(../images/bg/materialrepors.jpg);
+		background-color: #bfc4cb;
+		background-size: auto;
+		background-position: center top;
+	}	
+
 }

@@ -3333,6 +3333,9 @@ a.text-dark:hover, a.text-dark:focus {
 .webp .inner-certificats {
   background-image: url(../images/bg/certificats.webp); }
 
+.webp .inner-materialrepors {
+  background-image: url(../images/bg/materialrepors.webp); }
+
 .webp .inner-subproducts .block-2 {
   background: url(../images/bg/sport-oriented-formulas.webp) center top no-repeat; }
 
@@ -3441,6 +3444,12 @@ a.text-dark:hover, a.text-dark:focus {
 .inner-certificats {
   background-image: url(../images/bg/certificats.jpg);
   background-color: #d8dee7; }
+
+.inner-materialrepors {
+  background-image: url(../images/bg/materialrepors.jpg);
+  background-color: #bfc4cb;
+  background-size: auto;
+  background-position: center top; }
 
 .container {
   margin-right: auto;
@@ -5257,6 +5266,8 @@ blockquote {
         color: #f26722; }
       .listarticles .report__link:hover .report__pic img {
         transform: scale(1.1); }
+      .listarticles .report__link:hover .btn-more {
+        background-color: #713a97; }
   .listarticles .report__pic {
     min-height: 32rem;
     display: flex;
@@ -6384,6 +6395,81 @@ img.justifycenter, table.justifycenter {
     #sertificats-carousel {
       margin-left: 0;
       margin-right: 0; } }
+
+.inner-materialrepors .maintext {
+  color: #505050; }
+  .inner-materialrepors .maintext h1 {
+    font-size: 8rem;
+    text-align: center; }
+  .inner-materialrepors .maintext .subtitle {
+    font-size: 2.4rem; }
+  .inner-materialrepors .maintext figure img {
+    margin: 0; }
+  .inner-materialrepors .maintext figure figcaption {
+    margin-left: 2.5rem; }
+
+.inner-materialrepors .groups {
+  margin-top: 11rem; }
+  .inner-materialrepors .groups .title {
+    font-family: "Officina Serif Black C";
+    font-size: 4rem;
+    color: #f26722;
+    line-height: 1.2;
+    text-transform: uppercase; }
+  .inner-materialrepors .groups img {
+    max-width: 100%; }
+  .inner-materialrepors .groups .group__item {
+    text-align: center; }
+  .inner-materialrepors .groups .group__title {
+    color: #000;
+    font-family: "Officina Serif Black C";
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    text-transform: uppercase; }
+
+.inner-materialrepors .reports {
+  margin-top: 10.5rem; }
+  .inner-materialrepors .reports h1,
+  .inner-materialrepors .reports .title {
+    font-family: "Officina Serif Black C";
+    text-transform: uppercase;
+    line-height: 1.1;
+    color: #000;
+    text-align: center;
+    font-size: 6rem; }
+  .inner-materialrepors .reports .listarticles {
+    grid-template-columns: repeat(5, 210px);
+    margin-top: 5rem; }
+  .inner-materialrepors .reports .report__item .more {
+    text-align: center; }
+  .inner-materialrepors .reports .report__item .btn {
+    border-radius: 4rem;
+    color: #fff !important;
+    display: flex;
+    font-size: 2rem;
+    height: 4rem;
+    margin: 1.5rem auto 0;
+    padding: 0;
+    width: 12rem;
+    justify-content: center; }
+  .inner-materialrepors .reports .report__pic {
+    min-height: 26rem; }
+    .inner-materialrepors .reports .report__pic img {
+      max-width: 100%; }
+  .inner-materialrepors .reports .report__title {
+    font-size: 2.5rem;
+    margin-top: 3rem; }
+
+.characteristics {
+  grid-template-columns: repeat(3, minmax(360px, 1fr));
+  margin-top: 5rem; }
+  .characteristics .characteristic__title {
+    color: #000;
+    font-family: "Officina Serif Black C";
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 2.5rem; }
 
 /* =mobile-menu
 ---------------------------*/
