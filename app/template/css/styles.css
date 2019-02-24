@@ -3338,6 +3338,10 @@ a.text-dark:hover, a.text-dark:focus {
 
 .webp .inner-about {
   background-image: url(../images/bg/about-bg-1.webp); }
+  .webp .inner-about .history {
+    background-image: url(../images/bg/about-bg-2.webp); }
+  .webp .inner-about .coverage {
+    background-image: url(../images/bg/about-bg-3.webp); }
 
 .webp .inner-subproducts .block-2 {
   background: url(../images/bg/sport-oriented-formulas.webp) center top no-repeat; }
@@ -3457,7 +3461,17 @@ a.text-dark:hover, a.text-dark:focus {
 .inner-about {
   background-image: url(../images/bg/about-bg-1.jpg);
   background-position: center top;
-  background-size: auto; }
+  background-size: auto;
+  background-color: #eb6f23; }
+  .inner-about .history {
+    background-image: url(../images/bg/about-bg-2.jpg);
+    background-size: cover;
+    background-color: #2a2922; }
+  .inner-about .coverage {
+    background-image: url(../images/bg/about-bg-3.jpg);
+    background-size: cover;
+    background-color: #dbe1e9;
+    min-height: 77rem; }
 
 .container {
   margin-right: auto;
@@ -6490,8 +6504,7 @@ img.justifycenter, table.justifycenter {
 .inner-about .main {
   color: #3a3a3a;
   font-family: "Officina Serif Book C";
-  font-size: 2.4rem;
-  padding-bottom: 13rem; }
+  font-size: 2.4rem; }
   .inner-about .main .submenu {
     margin-bottom: 6rem; }
   .inner-about .main h1 {
@@ -6540,6 +6553,48 @@ img.justifycenter, table.justifycenter {
     font-size: 2.2rem;
     margin-top: 4rem;
     text-transform: uppercase; }
+
+.inner-about .history {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 92rem;
+  padding: 16rem 0 19rem; }
+  .inner-about .history .title {
+    color: #f26722;
+    font-family: "Officina Serif Black C";
+    font-size: 8rem;
+    line-height: 1.1;
+    text-transform: uppercase; }
+
+.inner-about .coverage {
+  padding-top: 16rem;
+  padding-bottom: 21rem; }
+  .inner-about .coverage .title {
+    color: #f26722;
+    font-family: "Officina Serif Black C";
+    font-size: 10rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2; }
+  .inner-about .coverage__labels {
+    margin-top: 3rem; }
+  .inner-about .coverage .label__item {
+    align-items: center;
+    font-size: 2rem;
+    display: flex;
+    margin: 0 1.2rem;
+    font-family: "Officina Serif Black C";
+    text-transform: uppercase; }
+    .inner-about .coverage .label__item img {
+      display: block;
+      margin-right: 1.2rem; }
+  .inner-about .coverage .listcoverage {
+    margin-top: 5.5rem; }
+
+.inner-about .footer {
+  padding: 0;
+  margin-top: -8rem; }
 
 /* =mobile-menu
 ---------------------------*/

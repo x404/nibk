@@ -42,6 +42,12 @@
 		}
 		&-about{
 			background-image: url(../images/bg/about-bg-1.webp);
+			.history{
+				background-image: url(../images/bg/about-bg-2.webp);
+			}
+			.coverage{
+				background-image: url(../images/bg/about-bg-3.webp);
+			}
 		}
 	}
 
@@ -192,6 +198,18 @@
 	&-about{
 		background-image: url(../images/bg/about-bg-1.jpg);
 		background-position: center top;
-		background-size: auto;		
+		background-size: auto;
+		background-color: #eb6f23;
+		.history{
+			background-image: url(../images/bg/about-bg-2.jpg);
+			background-size: cover;
+			background-color: #2a2922;
+		}
+		.coverage{
+			background-image: url(../images/bg/about-bg-3.jpg);
+			background-size: cover;
+			background-color: #dbe1e9;
+			min-height: 77rem
+		}
 	}
 }
