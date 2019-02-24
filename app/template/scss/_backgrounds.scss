@@ -39,7 +39,10 @@
 		}
 		&-materialreports{
 			background-image: url(../images/bg/materialrepors.webp);
-		}	
+		}
+		&-about{
+			background-image: url(../images/bg/about-bg-1.webp);
+		}
 	}
 
 	.inner-subproducts{
@@ -186,4 +189,9 @@
 		background-position: center top;
 	}	
 
+	&-about{
+		background-image: url(../images/bg/about-bg-1.jpg);
+		background-position: center top;
+		background-size: auto;		
+	}
 }
