@@ -3604,7 +3604,7 @@ h3 {
 .icon-tel2:before,
 .icon-tel3:before,
 .icon-mail:before,
-.icon-mail2:before, .homepage .center-carousel .carousel__inner .pic:after, .homepage .center-carousel .carousel__inner .pic:before, .homepage .lastnews .carousel__pic:after, .apanel__body:before, .modal-menu .menu dd a:before, blockquote:before, blockquote:after, .product__rubrics .rubric__pic:before, .product__rubrics .rubric__pic:after, .inner-subproducts .text ul li:before, .inner .catalog-page .table-grid .model-title:before, .location:after, .news .new__pic:after, .news .new__pic .inner:after, .content .maintext ul li:before {
+.icon-mail2:before, .homepage .center-carousel .carousel__inner .pic:after, .homepage .center-carousel .carousel__inner .pic:before, .homepage .lastnews .carousel__pic:after, .apanel__body:before, .modal-menu .menu dd a:before, blockquote:before, blockquote:after, .product__rubrics .rubric__pic:before, .product__rubrics .rubric__pic:after, .inner-subproducts .text ul li:before, .inner .catalog-page .table-grid .model-title:before, .location:after, .news .new__pic:after, .news .new__pic .inner:after, .content .maintext ul li:before, .inner-about #history-carousel .slick-arrow:before {
   content: "";
   display: block;
   position: absolute; }
@@ -6507,35 +6507,38 @@ img.justifycenter, table.justifycenter {
   font-size: 2.4rem; }
   .inner-about .main .submenu {
     margin-bottom: 6rem; }
-  .inner-about .main h1 {
+  .inner-about .main .content h1 {
     color: #fff;
     font-family: "Officina Serif Black C";
     font-size: 10rem;
     line-height: 1.2; }
-  .inner-about .main .subtitle {
+  .inner-about .main .content .subtitle {
     color: #000;
     font-family: "Officina Serif Black C";
     font-size: 6rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     line-height: 1.2; }
-  .inner-about .main p {
-    margin: 3rem 0; }
+  .inner-about .main .content p {
+    margin: 2.5rem 0; }
   .inner-about .main .mainpic {
     margin-top: 6rem;
     display: block; }
 
-.inner-about .about__show {
-  color: #922eb4;
-  font-family: "Officina Serif Black C";
-  font-size: 6rem;
-  line-height: 1.2; }
-
-.inner-about .about__sign {
-  color: #484848; }
+.inner-about .about {
+  margin-top: 4rem; }
+  .inner-about .about__show {
+    color: #922eb4;
+    font-family: "Officina Serif Black C";
+    font-size: 6rem;
+    line-height: 1.2; }
+  .inner-about .about__sign {
+    color: #484848; }
 
 .inner-about .advantages {
   background: url(../images/advantage-bg.png) no-repeat center top 110px;
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  padding-bottom: 12rem; }
   .inner-about .advantages .advantage__item {
     text-align: center; }
     .inner-about .advantages .advantage__item-1 {
@@ -6554,18 +6557,100 @@ img.justifycenter, table.justifycenter {
     margin-top: 4rem;
     text-transform: uppercase; }
 
+.inner-about #history-carousel {
+  width: 425px; }
+  .inner-about #history-carousel .slick-arrow {
+    background: none;
+    border-radius: 50%;
+    border: 1px solid #f26722;
+    cursor: pointer;
+    height: 61px;
+    left: 5px;
+    position: relative;
+    transition: .3s;
+    width: 61px; }
+    .inner-about #history-carousel .slick-arrow:before {
+      width: 37px;
+      height: 20px;
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAUBAMAAAD4luk4AAAALVBMVEXyZyL////yZyLyZyLyZyLyZyLyZyLyZyLyZyLyZyLyZyLyZyLyZyLyZyLyZyKW9k8OAAAADnRSTlMAAAxCRVSMkJm3vdH5/BcfB8MAAACQSURBVBjTXc6xDcJADIXhF6H03AZ0rJEaCenoyQYZggkQEgVdBklPS0fLBOAZsJ0cfoeLV/z6CgPL7aZOt0kprUtqX/L8b73IJ9dNmRjk1st7MEhN2b19KKSmLOOoMJoxXYXRnMHgobSZzTB+c+YwA8wY/ljAYAGJFciswD0zhx1GZg4vOFfM4Anba5Wwum2+fdhZ+wmWMDgAAAAASUVORK5CYII=");
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: filter .3s;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+    .inner-about #history-carousel .slick-arrow:hover {
+      background-color: #f26722; }
+      .inner-about #history-carousel .slick-arrow:hover:before {
+        filter: grayscale(1) brightness(3); }
+  .inner-about #history-carousel .slick-prev {
+    top: -42px; }
+  .inner-about #history-carousel .slick-next {
+    transform: rotate(180deg);
+    bottom: -50px; }
+    .inner-about #history-carousel .slick-next:before {
+      top: 45%; }
+
 .inner-about .history {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 92rem;
-  padding: 16rem 0 19rem; }
+  padding: 13rem 0 12rem; }
   .inner-about .history .title {
     color: #f26722;
     font-family: "Officina Serif Black C";
     font-size: 8rem;
     line-height: 1.1;
     text-transform: uppercase; }
+  .inner-about .history .brake {
+    margin-left: 3.5rem;
+    position: relative;
+    width: 630px;
+    height: 630px; }
+    .inner-about .history .brake .active-dot {
+      background-color: #f26722;
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+      position: absolute;
+      left: 24px;
+      top: 230px; }
+    .inner-about .history .brake .brake-rotate {
+      display: block;
+      transition: .3s; }
+      .inner-about .history .brake .brake-rotate.rotate-0 {
+        transform: rotate(0deg); }
+      .inner-about .history .brake .brake-rotate.rotate-1 {
+        transform: rotate(23.5deg); }
+      .inner-about .history .brake .brake-rotate.rotate-2 {
+        transform: rotate(44.5deg); }
+      .inner-about .history .brake .brake-rotate.rotate-3 {
+        transform: rotate(64.5deg); }
+      .inner-about .history .brake .brake-rotate.rotate-4 {
+        transform: rotate(84.5deg); }
+      .inner-about .history .brake .brake-rotate.rotate-5 {
+        transform: rotate(104.5deg); }
+      .inner-about .history .brake .brake-rotate.rotate-6 {
+        transform: rotate(125deg); }
+  .inner-about .history__carousel {
+    margin-left: 7rem; }
+  .inner-about .history__year {
+    color: #f26722;
+    font-size: 8rem;
+    font-family: "Officina Serif Black C";
+    line-height: 1.2;
+    text-transform: uppercase; }
+  .inner-about .history__title {
+    color: #fff;
+    font-family: "Officina Serif Black C";
+    font-size: 3rem;
+    line-height: 1.2; }
+  .inner-about .history__desc {
+    color: #bababa;
+    font-family: "Officina Serif Book C";
+    font-size: 2.2rem;
+    margin-top: 1.5rem; }
 
 .inner-about .coverage {
   padding-top: 16rem;
@@ -6574,17 +6659,17 @@ img.justifycenter, table.justifycenter {
     color: #f26722;
     font-family: "Officina Serif Black C";
     font-size: 10rem;
-    text-transform: uppercase;
+    line-height: 1.2;
     text-align: center;
-    line-height: 1.2; }
+    text-transform: uppercase; }
   .inner-about .coverage__labels {
     margin-top: 3rem; }
   .inner-about .coverage .label__item {
     align-items: center;
-    font-size: 2rem;
     display: flex;
-    margin: 0 1.2rem;
     font-family: "Officina Serif Black C";
+    font-size: 2rem;
+    margin: 0 1.2rem;
     text-transform: uppercase; }
     .inner-about .coverage .label__item img {
       display: block;

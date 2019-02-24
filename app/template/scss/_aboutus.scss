@@ -21,30 +21,36 @@
 		.submenu{
 			margin-bottom: 6rem;
 		}
-		h1{
-			color: $color2;
-			font-family: "Officina Serif Black C";
-			font-size: 10rem;
-			line-height: 1.2;
+		.content{
+			h1{
+				color: $color2;
+				font-family: "Officina Serif Black C";
+				font-size: 10rem;
+				line-height: 1.2;
+			}
+			.subtitle{
+				color: $color1;
+				font-family: "Officina Serif Black C";
+				font-size: 6rem;
+				margin-top: 2rem;
+				margin-bottom: 2rem;
+				line-height: 1.2;
+			}
+			p{
+				margin: 2.5rem 0;
+			}	
 		}
-		.subtitle{
-			color: $color1;
-			font-family: "Officina Serif Black C";
-			font-size: 6rem;
-			margin-top: 2rem;
-			line-height: 1.2;
-		}
-		p{
-			margin: 3rem 0;
-		}
+
 
 		.mainpic{
 			margin-top: 6rem;
 			display: block;
 		}
+
 	}
 
 	.about{
+		margin-top: 4rem;
 		&__show{
 			color: $color20;
 			font-family: "Officina Serif Black C";
@@ -59,6 +65,7 @@
 	.advantages{
 		background: url(../images/advantage-bg.png) no-repeat center top 110px;
 		margin-top: 4rem;
+		padding-bottom: 12rem;
 		.advantage{
 			&__item{
 				text-align: center;				
@@ -87,19 +94,118 @@
 		}
 	}
 
+
+	#history-carousel{
+		width: 425px;
+		.slick-arrow{
+			background: none;
+			border-radius: 50%;
+			border: 1px solid $color3;
+			cursor: pointer;
+			height: 61px;
+			left: 5px;
+			position: relative;
+			transition: .3s;
+			width: 61px;
+			&:before{
+				@extend .before;
+				width: 37px;
+				height: 20px;
+				background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAUBAMAAAD4luk4AAAALVBMVEXyZyL////yZyLyZyLyZyLyZyLyZyLyZyLyZyLyZyLyZyLyZyLyZyLyZyLyZyKW9k8OAAAADnRSTlMAAAxCRVSMkJm3vdH5/BcfB8MAAACQSURBVBjTXc6xDcJADIXhF6H03AZ0rJEaCenoyQYZggkQEgVdBklPS0fLBOAZsJ0cfoeLV/z6CgPL7aZOt0kprUtqX/L8b73IJ9dNmRjk1st7MEhN2b19KKSmLOOoMJoxXYXRnMHgobSZzTB+c+YwA8wY/ljAYAGJFciswD0zhx1GZg4vOFfM4Anba5Wwum2+fdhZ+wmWMDgAAAAASUVORK5CYII=');
+				background-position: center;
+				background-repeat: no-repeat;
+				transition: filter .3s;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+			}
+			&:hover{
+				background-color: $color3;
+				&:before{
+					filter: grayscale(1) brightness(3);					
+				}
+			}
+		}
+
+		.slick-prev{
+			top: -42px;
+		}
+		.slick-next{
+			transform: rotate(180deg);
+			bottom: -50px;
+			&:before{
+				top: 45%;
+			}
+		}
+
+	}
 	.history{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		min-height: 92rem;
+		padding: 13rem 0 12rem;
+
 		.title{
 			color: $color3;
 			font-family: "Officina Serif Black C";
 			font-size: 8rem;
 			line-height: 1.1;
+			// padding-top: 4rem;
 			text-transform: uppercase;
 		}
-		padding: 16rem 0 19rem;
+
+		.brake{
+			margin-left: 3.5rem;
+			position: relative;
+			width: 630px;
+			height: 630px;
+			.active-dot{
+				background-color: $color3;
+				border-radius: 50%;
+				width: 42px;
+				height: 42px;
+				position: absolute;
+				left: 24px;
+				top: 230px;
+			}
+
+			.brake-rotate{
+				display: block;
+				transition: .3s;
+				&.rotate-0{transform: rotate(0deg)}
+				&.rotate-1{transform: rotate(23.5deg)}
+				&.rotate-2{transform: rotate(44.5deg)}
+				&.rotate-3{transform: rotate(64.5deg)}
+				&.rotate-4{transform: rotate(84.5deg)}
+				&.rotate-5{transform: rotate(104.5deg)}
+				&.rotate-6{transform: rotate(125deg)}
+			}
+		}
+	
+		&__carousel{
+			margin-left: 7rem;
+		}
+
+		&__year{
+			color: $color3;	
+			font-size: 8rem;
+			font-family: "Officina Serif Black C";
+			line-height: 1.2;
+			text-transform: uppercase;
+		}
+		&__title{
+			color: $color2;
+			font-family: "Officina Serif Black C";
+			font-size: 3rem;
+			line-height: 1.2;
+		}
+		&__desc{
+			color: $color21;
+			font-family: "Officina Serif Book C";
+			font-size: 2.2rem;
+			margin-top: 1.5rem;
+		}
 	}
 
 	// coverage
@@ -110,19 +216,19 @@
 			color: $color3;
 			font-family: "Officina Serif Black C";
 			font-size: 10rem;
-			text-transform: uppercase;
-			text-align: center;
 			line-height: 1.2;
+			text-align: center;
+			text-transform: uppercase;
 		}
 		&__labels{
 			margin-top: 3rem;
 		}
 		.label__item{
 			align-items: center;
-			font-size: 2rem;
 			display: flex;
-			margin: 0 1.2rem;
 			font-family: "Officina Serif Black C";
+			font-size: 2rem;
+			margin: 0 1.2rem;
 			text-transform: uppercase;
 			img{
 				display: block;

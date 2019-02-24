@@ -32,6 +32,27 @@ $(document).ready(function(){
         infinite : true
 	});	
 
+	$('#history-carousel').slick({
+		prevArrow:'<button class="slick-arrow slick-prev" aria-label="Previous" type="button"><svg width="12" height="22"><line x1="12" y1="0" x2="0" y2="12"/><line x1="-2" y1="9" x2="12" y2="22"/></svg></button>',
+		nextArrow:'<button class="slick-arrow slick-next" aria-label="Next" type="button"><svg width="12" height="22"><line x1="0" y1="0" x2="12" y2="12"/><line x1="14" y1="10" x2="-2" y2="22"/></svg></button>',
+		dots: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		arrows : true,
+        infinite : false,
+        vertical : true
+	});	
+
+
+	$('#history-carousel').on('afterChange', function(event, slick, currentSlide){
+		let currentnum = currentSlide;
+		$('.brake-rotate').removeClass("rotate-0 rotate-1 rotate-2 rotate-3 rotate-4 rotate-5 rotate-6 rotate-7 rotate-8");
+		document.querySelector('.brake-rotate').classList.add('rotate-' + currentnum);
+	});
+
+
 
 	$('#dyk-carousel').slick({
 		prevArrow:'<button class="slick-arrow slick-prev" aria-label="Previous" type="button"><svg width="12" height="22"><line x1="12" y1="0" x2="0" y2="12"/><line x1="-2" y1="9" x2="12" y2="22"/></svg></button>',
