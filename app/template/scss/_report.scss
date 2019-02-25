@@ -2,7 +2,14 @@
 	.content .maintext{
 		font-size: 1.7rem;
 		img{
-			max-width: 100%
+			max-width: 100%;
+			margin-left: 0;
+			margin-right: 0;
+			display: block;
+			&.shadow{
+				box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+				margin: 3rem 0;
+			}
 		}
 		h2, h3, h4, h5, h6{
 			color: $color1 !important;
@@ -30,6 +37,36 @@
 			margin-top: -2rem;
 			margin-bottom: 2.5rem;
 		}
+
+		.fsize16{
+			th{
+				font-size: 1.6rem;				
+			}
+		}
+
+		.subtitle{
+			font-size: 2.5rem;
+			font-family: "Officina Serif Book C";
+			margin-top: -2rem;
+		}
+
+		.row{
+			margin-bottom: 0;
+		}
+
+		.warm{
+			color: #1b973e;
+		}
+		.cool{
+			color: #d40000;
+		}
+		.thjoin{
+			min-width: 18rem;
+			span{
+				margin-top: .5rem;
+				padding-right: 1.5rem;
+			}			
+		}
 	}
 	.offers{
 		.pic{
@@ -50,6 +87,13 @@
 				width: 33.3%;
 			}
 		}
+		.content{
+			.maintext{
+				.subtitle{
+					font-size: 1.8rem;
+				}
+			}
+		}
 	}
 }
 
@@ -62,6 +106,14 @@
 				width: 50%;
 			}
 		}
+	}
+}
+
+
+@media (max-width: 700px){
+	.inner-testreport-article .content .maintext .subtitle{
+		text-align: center;
+		font-size: 1.7rem;
 	}
 }
 

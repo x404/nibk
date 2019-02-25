@@ -6517,7 +6517,13 @@ img.justifycenter, table.justifycenter {
 .inner-testreport-article .content .maintext {
   font-size: 1.7rem; }
   .inner-testreport-article .content .maintext img {
-    max-width: 100%; }
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    display: block; }
+    .inner-testreport-article .content .maintext img.shadow {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      margin: 3rem 0; }
   .inner-testreport-article .content .maintext h2, .inner-testreport-article .content .maintext h3, .inner-testreport-article .content .maintext h4, .inner-testreport-article .content .maintext h5, .inner-testreport-article .content .maintext h6 {
     color: #000 !important; }
     .inner-testreport-article .content .maintext h2.orange, .inner-testreport-article .content .maintext h3.orange, .inner-testreport-article .content .maintext h4.orange, .inner-testreport-article .content .maintext h5.orange, .inner-testreport-article .content .maintext h6.orange {
@@ -6534,6 +6540,23 @@ img.justifycenter, table.justifycenter {
   .inner-testreport-article .content .maintext h5 + div.table-responsive {
     margin-top: -2rem;
     margin-bottom: 2.5rem; }
+  .inner-testreport-article .content .maintext .fsize16 th {
+    font-size: 1.6rem; }
+  .inner-testreport-article .content .maintext .subtitle {
+    font-size: 2.5rem;
+    font-family: "Officina Serif Book C";
+    margin-top: -2rem; }
+  .inner-testreport-article .content .maintext .row {
+    margin-bottom: 0; }
+  .inner-testreport-article .content .maintext .warm {
+    color: #1b973e; }
+  .inner-testreport-article .content .maintext .cool {
+    color: #d40000; }
+  .inner-testreport-article .content .maintext .thjoin {
+    min-width: 18rem; }
+    .inner-testreport-article .content .maintext .thjoin span {
+      margin-top: .5rem;
+      padding-right: 1.5rem; }
 
 .inner-testreport-article .offers .pic {
   min-height: 125px; }
@@ -6545,12 +6568,19 @@ img.justifycenter, table.justifycenter {
 @media (max-width: 991px) {
   .inner-testreport-article .offers__item {
     padding: 1.5rem 0;
-    width: 33.3%; } }
+    width: 33.3%; }
+  .inner-testreport-article .content .maintext .subtitle {
+    font-size: 1.8rem; } }
 
 @media (max-width: 767px) {
   .inner-testreport-article .offers__item {
     padding: 1.5rem 0;
     width: 50%; } }
+
+@media (max-width: 700px) {
+  .inner-testreport-article .content .maintext .subtitle {
+    text-align: center;
+    font-size: 1.7rem; } }
 
 @media (max-width: 576px) {
   .inner-testreport-article .offers__item {
