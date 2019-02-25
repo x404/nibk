@@ -49,6 +49,10 @@
 				background-image: url(../images/bg/about-bg-3.webp);
 			}
 		}
+
+		&-testreport-article{
+			background-image: url(../images/bg/testreport-article.webp);
+		}
 	}
 
 	.inner-subproducts{
@@ -211,5 +215,13 @@
 			background-color: #dbe1e9;
 			min-height: 77rem
 		}
+	}
+
+
+	&-testreport-article{
+		background-image: url(../images/bg/testreport-article.jpg);
+		background-position: center top;
+		background-size: auto;
+		background-color: #cdd3db;		
 	}
 }

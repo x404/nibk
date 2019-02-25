@@ -18,6 +18,8 @@
 		h2{font-size: 4.5rem;}
 		h3{font-size: 4rem;}
 		h4{font-size: 3.5rem;}
+		h5{font-size: 3rem;}
+		h6{font-size: 2rem;}
 
 		strong{
 			font-family: "Officina Serif Black C";
@@ -106,29 +108,39 @@
 		}
 
 		// table
-		.table-responsive{
+		div.table-responsive{
 			overflow-x: auto;
 		}
 		table{
 			background-color: #fff;
 			tr{
 				th{
+					color: #000;
 					font-family: "Officina Serif Black C";
 					border-bottom: 3px solid  $color_1;
 					font-size: 2rem;
 					padding: 2rem 3rem;
-					color: #000;
+					vertical-align: middle;
 				}
 				td{
 					border-bottom: 1px solid #dbdbdb;
 					color: #373737;
 					font-size: 1.7rem;
 					padding: 1.2rem 3rem;
+					vertical-align: middle;
 				}
 				&:last-child td{
 					border-bottom: none;
 				}
 			}
+		}
+
+		.table-shadow{
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+		}
+
+		.table-responsive{
+			
 		}
 
 		img{

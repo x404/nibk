@@ -77,6 +77,23 @@ input::-moz-focus-inner{
 							 "footer";
 		grid-template-rows: auto 1fr auto;			
 	}
+
+
+	@media (min-width: 992px){
+		.grid-lg-3{
+			grid-template-columns: repeat(3, 1fr);
+			grid-row-gap: 30px;
+		}		
+		.d-lg-grid{
+			display: grid !important;
+		}
+	}
+	@media (min-width: 1250px){
+		.grid-xl-6{
+			grid-template-columns: repeat(6, 1fr)
+		}		
+	}
+
 }
 
 

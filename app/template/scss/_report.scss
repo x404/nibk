@@ -1,0 +1,55 @@
+.inner-testreport-article{
+	.content .maintext{
+		font-size: 1.7rem;
+		img{
+			max-width: 100%
+		}
+		h2, h3, h4, h5, h6{
+			color: $color1 !important;
+		}
+	}
+	.offers{
+		.pic{
+			min-height: 125px
+		}
+		&__item{
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+		}
+	}
+}
+
+@media (max-width: 991px){
+	.inner-testreport-article{
+		.offers{
+			&__item{
+				padding: 1.5rem 0;
+				width: 33.3%;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 767px){
+	.inner-testreport-article{
+		.offers{
+			&__item{
+				padding: 1.5rem 0;
+				width: 50%;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 576px){
+	.inner-testreport-article{
+		.offers{
+			&__item{
+				padding: 1.5rem 0;
+				width: 100%;
+			}
+		}
+	}
+}
