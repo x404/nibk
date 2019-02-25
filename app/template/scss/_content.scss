@@ -119,6 +119,7 @@
 					font-family: "Officina Serif Black C";
 					border-bottom: 3px solid  $color_1;
 					font-size: 2rem;
+					line-height: 1.2;
 					padding: 2rem 3rem;
 					vertical-align: middle;
 				}
@@ -128,6 +129,9 @@
 					font-size: 1.7rem;
 					padding: 1.2rem 3rem;
 					vertical-align: middle;
+					strong{
+						color: $color1;
+					}
 				}
 				&:last-child td{
 					border-bottom: none;
@@ -140,7 +144,7 @@
 		}
 
 		.table-responsive{
-			
+
 		}
 
 		img{

@@ -6097,6 +6097,7 @@ blockquote {
       font-family: "Officina Serif Black C";
       border-bottom: 3px solid #f26722;
       font-size: 2rem;
+      line-height: 1.2;
       padding: 2rem 3rem;
       vertical-align: middle; }
     .content .maintext table tr td {
@@ -6105,6 +6106,8 @@ blockquote {
       font-size: 1.7rem;
       padding: 1.2rem 3rem;
       vertical-align: middle; }
+      .content .maintext table tr td strong {
+        color: #000; }
     .content .maintext table tr:last-child td {
       border-bottom: none; }
   .content .maintext .table-shadow {
@@ -6517,6 +6520,20 @@ img.justifycenter, table.justifycenter {
     max-width: 100%; }
   .inner-testreport-article .content .maintext h2, .inner-testreport-article .content .maintext h3, .inner-testreport-article .content .maintext h4, .inner-testreport-article .content .maintext h5, .inner-testreport-article .content .maintext h6 {
     color: #000 !important; }
+    .inner-testreport-article .content .maintext h2.orange, .inner-testreport-article .content .maintext h3.orange, .inner-testreport-article .content .maintext h4.orange, .inner-testreport-article .content .maintext h5.orange, .inner-testreport-article .content .maintext h6.orange {
+      color: #f26722 !important; }
+  .inner-testreport-article .content .maintext div.table-responsive {
+    margin-bottom: 1rem; }
+  .inner-testreport-article .content .maintext table {
+    width: 100%; }
+    .inner-testreport-article .content .maintext table tr th,
+    .inner-testreport-article .content .maintext table tr td {
+      padding-left: 1rem;
+      padding-right: 1rem; }
+  .inner-testreport-article .content .maintext h5 + table,
+  .inner-testreport-article .content .maintext h5 + div.table-responsive {
+    margin-top: -2rem;
+    margin-bottom: 2.5rem; }
 
 .inner-testreport-article .offers .pic {
   min-height: 125px; }

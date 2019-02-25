@@ -6,6 +6,29 @@
 		}
 		h2, h3, h4, h5, h6{
 			color: $color1 !important;
+			&.orange{
+				color: $color3 !important;
+			}
+		}
+
+		div.table-responsive{
+			margin-bottom: 1rem;
+		}
+		table{
+			width: 100%;
+			tr{
+				th,
+				td{
+					padding-left: 1rem;
+					padding-right: 1rem;
+				}
+			}
+		}
+		h5 + table,
+		h5 + div.table-responsive,
+		{
+			margin-top: -2rem;
+			margin-bottom: 2.5rem;
 		}
 	}
 	.offers{
