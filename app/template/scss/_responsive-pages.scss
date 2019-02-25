@@ -3,6 +3,13 @@
 	{
 		grid-template-columns: repeat(4, 30rem);
 	}
+
+	// advantages
+	.inner-about{
+		.history__carousel{
+			margin-left: 5rem;
+		}
+	}
 }
 
 
@@ -45,6 +52,35 @@
 	}
 	.characteristics .characteristic__title{
 		font-size: 3rem;
+	}
+
+
+	// advantages
+	.inner-about{
+		.advantages{
+			img{
+				max-width: 100%
+			}
+		}
+	}
+
+
+	// advantages
+	.inner-about{
+		.history{
+			.title{
+				font-size: 7rem;
+			}
+			&__year{
+				font-size: 7rem;
+			}
+			&__carousel{
+				flex-grow: 1;
+			}
+		}
+		#history-carousel{
+			width: 350px;
+		}
 	}
 }
 
@@ -161,7 +197,47 @@
 			}
 		}
 	}
+
+
+
 }
+
+
+
+@media (max-width: 1650px){
+	.inner-about{
+		.history{
+			.row{
+				flex-direction: column;
+				align-items: center;
+			}
+			.title{
+				font-size: 8rem;
+				text-align: center !important;
+				br{
+					display: none;
+				}
+			}
+			 &__carousel{
+			 	margin-left: 0;
+			 	margin-top: 5rem;
+			 }
+			.brake{
+				margin-left: 3rem;
+			}
+		}
+
+		.coverage{
+			.listcoverage{
+			}
+			&__item{
+				padding-left: 2rem;
+				padding-right: 2rem;
+			}
+		}
+	}
+}
+
 
 
 @media (max-width: 1600px){
@@ -264,6 +340,31 @@
 
 	#modal-feedback .close-modal{
 		right: -20px;
+	}
+
+	// inner about
+	.inner-about{
+		.advantages .advantage__item{
+			img{
+				max-width: 80%
+			}
+		}
+		.main .content{
+			h1{
+				font-size: 8rem;
+			}
+
+			.about__show,
+			.subtitle{
+				font-size: 5rem;
+			}
+		}
+		.history .title{
+			font-size: 7rem;
+		}
+		 .coverage .title{
+		 	font-size: 8rem;
+		 }
 	}
 }
 
@@ -838,10 +939,61 @@
 		}
 	}
 
+
+	// aboutus
+	.inner-about{
+		.coverage{
+			padding-top: 10rem;
+			padding-bottom: 15rem;
+		}
+		.advantages .advantage__title{
+			font-size: 2rem;
+		}
+
+	}
+
 }
 
 @media (max-width: 1200px) {
+	.inner-about{
+		.main{
+			.content{
+				h1{
+					font-size: 7rem;
+				}
+				.subtitle{
+					font-size: 4rem;
+				}
+				p{
+					font-size: 2.2rem;
+				}
+			}
+		}
+		.history{
+			min-height: 0;
+			padding-top: 10rem;
+			padding-bottom: 8rem;
+			.brake{
+				margin-top: 3rem;
+				height: 480px;
+				width: 480px;
+				.active-dot{
+					height: 33px;
+					left: 18px;
+					top: 175px;
+					width: 33px;
+				}
+			}
+			&__title{
+				font-size: 2.8rem;
+			}
+		}
 
+		.coverage{
+			min-height: 0;
+			padding-top: 6rem;
+		}
+	}
 }
 
 
@@ -1349,6 +1501,88 @@
 			}
 		}
 	}
+
+
+	// aboutus
+	.inner-about{
+		.main{
+			h1,
+			.subtitle{
+				text-align: center;
+			}
+			h1{
+				font-size: 6rem;
+			}
+			.mainpic{
+				margin-top: 2rem;
+			}
+		}
+
+		// history
+		.history{
+			.title{
+				font-size: 6rem;
+			}
+			&__year{
+				font-size: 6rem;
+			}
+			&__title{
+				font-size: 2.5rem;
+			}
+			&__desc{
+				font-size: 2rem;
+			}
+			.brake{
+				margin-top: 5rem;
+				height: 350px;
+				width: 350px;
+				.active-dot{
+					left: 12px;
+					top: 127px;
+					height: 25px;
+					width: 25px;
+				}
+			}
+		}
+
+		#history-carousel .slick-arrow{
+			width: 50px;
+			height: 50px;
+			&:before{
+				width: 30px;
+				height: 15px;
+				background-size: contain;
+			}
+		}
+
+		// advantages
+		.advantages{
+			background: none;
+			padding-bottom: 8rem;
+			flex-wrap: wrap;
+			margin-top: 7rem;
+			justify-content: center !important;
+			.advantage{
+				&__item{
+					margin-top: 0 !important;
+					margin-bottom: 4rem;
+					padding-left: 1.5rem;
+					padding-right: 1.5rem;
+					img{
+						max-width: 60%;
+					}
+				}
+			}
+		}
+
+		// coverage
+		.coverage{
+			.title{
+				font-size: 7rem;
+			}
+		}
+
+	}
 }
 
 
@@ -1802,6 +2036,78 @@
 			}
 		}
 	}
+
+
+	// aboutus
+	.inner-about{
+		.main{
+			.content{
+				h1{
+					font-size: 5rem;
+				}
+				.subtitle{
+					font-size: 3rem;
+				}
+				.about{
+					font-size: 2.2rem;
+					&__show{
+						font-size: 4rem;
+					}
+				}
+			}
+		}
+
+		// history
+		.history{
+			.title{
+				font-size: 5rem;
+			}
+			&__year{
+				font-size: 5rem;
+			}
+			&__title{
+				font-size: 2.3rem;
+			}
+			&__desc{
+				font-size: 1.8rem;
+			}
+			.brake{
+				display: none;
+			}
+		}
+
+
+		#history-carousel{
+			width: 500px;
+			.slick{
+				&-arrow{
+					position: absolute;
+					right: 0;
+					left: auto;
+					top: auto;
+				}
+				&-slide{
+					padding-right: 80px;
+				}
+				&-prev{
+					top: 20px
+				}
+				&-next{
+					bottom: 20px;
+				}
+			}
+		}
+
+		.coverage{
+			.title{
+				font-size: 5rem;
+			}
+			&__item{
+				margin-bottom: 4rem;
+			}
+		}
+
+	}
 }
 
 
@@ -1948,6 +2254,12 @@
 			height: 4.5rem;
 			width: 70%;
 		}
+	}
+
+
+	// aboutus
+	.inner-about .footer{
+		margin-top: -12rem;
 	}
 }
 
@@ -2114,6 +2426,42 @@
 		}
 	}
 
+
+	// aboutus
+	.inner-about{
+		.main{
+			// font-size: 2rem;
+			.content{
+				h1{
+					font-size: 4.6rem;
+				}
+				.subtitle{
+					font-size: 2.8rem;
+				}
+				.about{
+					font-size: 2rem;
+					&__show{
+						font-size: 3.8rem;
+					}
+					.col{
+						margin-bottom: 1.5rem;
+					}
+				}
+				p{
+					font-size: 2rem;
+				}
+			}
+		}
+
+		.coverage{
+			&__labels{
+
+			}
+			.label__item{
+				width: 170px;	
+			}
+		}
+	}
 }
 
 
@@ -2241,6 +2589,16 @@
 				left: 50%;
 				top: 0;
 			}
+		}
+	}
+
+
+	// aboutus
+	.inner-about{
+		#history-carousel{
+			margin-left: auto;
+			margin-right: auto;
+			width: 360px;
 		}
 	}
 }
@@ -2407,6 +2765,48 @@
 	.mailus{
 		margin-bottom: 4rem;
 	}
+
+
+	// aboutus
+	.inner-about{
+		.main{
+			// font-size: 2rem;
+			.content{
+				text-align: justify;
+				h1{
+					font-size: 4.2rem;
+				}
+				.subtitle{
+					font-size: 2.6rem;
+				}
+				.about{
+					font-size: 2rem;
+				}
+			}
+		}
+
+		// history
+		.history{
+			padding-top: 5rem;
+			padding-bottom: 5rem;
+			.title{
+				font-size: 4rem;
+			}
+			&__year{
+				font-size: 4.6rem;
+			}
+			&__title{
+				font-size: 2.1rem;
+			}
+		}
+
+		// coverage
+		.coverage{
+			.title{
+				font-size: 4rem;
+			}
+		}
+	}
 }
 
 
@@ -2555,6 +2955,16 @@
 			}
 		}
 	}
+
+
+	// aboutus
+	.inner-about #history-carousel{
+		width: 270px;
+		.slick-slide{
+			padding-right: 60px;
+		}
+	}
+
 }
 
 

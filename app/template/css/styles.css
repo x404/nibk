@@ -6494,6 +6494,9 @@ img.justifycenter, table.justifycenter {
     line-height: 1.2;
     margin-bottom: 2.5rem; }
 
+.inner-about.inner .header .navmenu li.active a, .inner-about.inner .header .navmenu li.active span {
+  color: #fff !important; }
+
 .inner-about .submenu li.active {
   color: #fff; }
   .inner-about .submenu li.active a, .inner-about .submenu li.active span {
@@ -6522,8 +6525,16 @@ img.justifycenter, table.justifycenter {
   .inner-about .main .content p {
     margin: 2.5rem 0; }
   .inner-about .main .mainpic {
+    display: block;
     margin-top: 6rem;
-    display: block; }
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; }
+    .inner-about .main .mainpic img {
+      display: block;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
 
 .inner-about .about {
   margin-top: 4rem; }
@@ -6568,7 +6579,8 @@ img.justifycenter, table.justifycenter {
     left: 5px;
     position: relative;
     transition: .3s;
-    width: 61px; }
+    width: 61px;
+    z-index: 99; }
     .inner-about #history-carousel .slick-arrow:before {
       width: 37px;
       height: 20px;
@@ -6673,7 +6685,13 @@ img.justifycenter, table.justifycenter {
     text-transform: uppercase; }
     .inner-about .coverage .label__item img {
       display: block;
-      margin-right: 1.2rem; }
+      margin-right: 1.2rem;
+      max-width: 100%;
+      height: auto; }
+  .inner-about .coverage picture,
+  .inner-about .coverage img {
+    display: block;
+    max-width: 100%; }
   .inner-about .coverage .listcoverage {
     margin-top: 5.5rem; }
 
@@ -7267,7 +7285,9 @@ img.justifycenter, table.justifycenter {
 
 @media (max-width: 1850px) {
   .listproducts {
-    grid-template-columns: repeat(4, 30rem); } }
+    grid-template-columns: repeat(4, 30rem); }
+  .inner-about .history__carousel {
+    margin-left: 5rem; } }
 
 @media (max-width: 1800px) {
   .catalog-page .search-result-table th,
@@ -7286,7 +7306,17 @@ img.justifycenter, table.justifycenter {
   .inner-materialreports .reports {
     margin-top: 7rem; }
   .characteristics .characteristic__title {
-    font-size: 3rem; } }
+    font-size: 3rem; }
+  .inner-about .advantages img {
+    max-width: 100%; }
+  .inner-about .history .title {
+    font-size: 7rem; }
+  .inner-about .history__year {
+    font-size: 7rem; }
+  .inner-about .history__carousel {
+    flex-grow: 1; }
+  .inner-about #history-carousel {
+    width: 350px; } }
 
 @media (max-width: 1750px) {
   .homepage .interesting .title,
@@ -7342,6 +7372,24 @@ img.justifycenter, table.justifycenter {
       .news .new__pic .inner img {
         max-width: 100%; } }
 
+@media (max-width: 1650px) {
+  .inner-about .history .row {
+    flex-direction: column;
+    align-items: center; }
+  .inner-about .history .title {
+    font-size: 8rem;
+    text-align: center !important; }
+    .inner-about .history .title br {
+      display: none; }
+  .inner-about .history__carousel {
+    margin-left: 0;
+    margin-top: 5rem; }
+  .inner-about .history .brake {
+    margin-left: 3rem; }
+  .inner-about .coverage__item {
+    padding-left: 2rem;
+    padding-right: 2rem; } }
+
 @media (max-width: 1600px) {
   .inner .product__menu {
     font-size: 5rem; }
@@ -7394,7 +7442,18 @@ img.justifycenter, table.justifycenter {
   .catalog-page .search-result-table th {
     padding-right: 1rem; }
   #modal-feedback .close-modal {
-    right: -20px; } }
+    right: -20px; }
+  .inner-about .advantages .advantage__item img {
+    max-width: 80%; }
+  .inner-about .main .content h1 {
+    font-size: 8rem; }
+  .inner-about .main .content .about__show,
+  .inner-about .main .content .subtitle {
+    font-size: 5rem; }
+  .inner-about .history .title {
+    font-size: 7rem; }
+  .inner-about .coverage .title {
+    font-size: 8rem; } }
 
 @media (max-width: 1500px) {
   .contactus .contacts .cell__mail {
@@ -7678,7 +7737,38 @@ img.justifycenter, table.justifycenter {
     .characteristics .characteristic__title {
       font-size: 2.6rem; }
     .characteristics .characteristic__column {
-      width: 50%; } }
+      width: 50%; }
+  .inner-about .coverage {
+    padding-top: 10rem;
+    padding-bottom: 15rem; }
+  .inner-about .advantages .advantage__title {
+    font-size: 2rem; } }
+
+@media (max-width: 1200px) {
+  .inner-about .main .content h1 {
+    font-size: 7rem; }
+  .inner-about .main .content .subtitle {
+    font-size: 4rem; }
+  .inner-about .main .content p {
+    font-size: 2.2rem; }
+  .inner-about .history {
+    min-height: 0;
+    padding-top: 10rem;
+    padding-bottom: 8rem; }
+    .inner-about .history .brake {
+      margin-top: 3rem;
+      height: 480px;
+      width: 480px; }
+      .inner-about .history .brake .active-dot {
+        height: 33px;
+        left: 18px;
+        top: 175px;
+        width: 33px; }
+    .inner-about .history__title {
+      font-size: 2.8rem; }
+  .inner-about .coverage {
+    min-height: 0;
+    padding-top: 6rem; } }
 
 @media (max-width: 1180px) {
   .homepage .center-carousel .slick-slide .pic {
@@ -7930,7 +8020,53 @@ img.justifycenter, table.justifycenter {
       font-size: 2.5rem; }
     .characteristics .characteristic__column {
       margin-top: 2rem;
-      width: 100%; } }
+      width: 100%; }
+  .inner-about .main h1,
+  .inner-about .main .subtitle {
+    text-align: center; }
+  .inner-about .main h1 {
+    font-size: 6rem; }
+  .inner-about .main .mainpic {
+    margin-top: 2rem; }
+  .inner-about .history .title {
+    font-size: 6rem; }
+  .inner-about .history__year {
+    font-size: 6rem; }
+  .inner-about .history__title {
+    font-size: 2.5rem; }
+  .inner-about .history__desc {
+    font-size: 2rem; }
+  .inner-about .history .brake {
+    margin-top: 5rem;
+    height: 350px;
+    width: 350px; }
+    .inner-about .history .brake .active-dot {
+      left: 12px;
+      top: 127px;
+      height: 25px;
+      width: 25px; }
+  .inner-about #history-carousel .slick-arrow {
+    width: 50px;
+    height: 50px; }
+    .inner-about #history-carousel .slick-arrow:before {
+      width: 30px;
+      height: 15px;
+      background-size: contain; }
+  .inner-about .advantages {
+    background: none;
+    padding-bottom: 8rem;
+    flex-wrap: wrap;
+    margin-top: 7rem;
+    justify-content: center !important; }
+    .inner-about .advantages .advantage__item {
+      margin-top: 0 !important;
+      margin-bottom: 4rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem; }
+      .inner-about .advantages .advantage__item img {
+        max-width: 60%; }
+  .inner-about .coverage .title {
+    font-size: 7rem; } }
 
 @media (max-width: 950px) {
   .inner .product__rubrics .row {
@@ -8178,7 +8314,42 @@ img.justifycenter, table.justifycenter {
       margin-top: 4rem;
       width: 100%; }
     .inner-materialreports .reports .report__pic {
-      min-height: 0; } }
+      min-height: 0; }
+  .inner-about .main .content h1 {
+    font-size: 5rem; }
+  .inner-about .main .content .subtitle {
+    font-size: 3rem; }
+  .inner-about .main .content .about {
+    font-size: 2.2rem; }
+    .inner-about .main .content .about__show {
+      font-size: 4rem; }
+  .inner-about .history .title {
+    font-size: 5rem; }
+  .inner-about .history__year {
+    font-size: 5rem; }
+  .inner-about .history__title {
+    font-size: 2.3rem; }
+  .inner-about .history__desc {
+    font-size: 1.8rem; }
+  .inner-about .history .brake {
+    display: none; }
+  .inner-about #history-carousel {
+    width: 500px; }
+    .inner-about #history-carousel .slick-arrow {
+      position: absolute;
+      right: 0;
+      left: auto;
+      top: auto; }
+    .inner-about #history-carousel .slick-slide {
+      padding-right: 80px; }
+    .inner-about #history-carousel .slick-prev {
+      top: 20px; }
+    .inner-about #history-carousel .slick-next {
+      bottom: 20px; }
+  .inner-about .coverage .title {
+    font-size: 5rem; }
+  .inner-about .coverage__item {
+    margin-bottom: 4rem; } }
 
 @media (max-width: 700px) {
   .homepage .center-carousel .slick-slide .pic {
@@ -8264,7 +8435,9 @@ img.justifycenter, table.justifycenter {
   .catalog-page .search-result-top .btn {
     font-size: 1.5rem;
     height: 4.5rem;
-    width: 70%; } }
+    width: 70%; }
+  .inner-about .footer {
+    margin-top: -12rem; } }
 
 @media (max-width: 600px) {
   .homepage .interesting .carousel,
@@ -8349,7 +8522,21 @@ img.justifycenter, table.justifycenter {
   #modal-feedback .title {
     margin-top: 2.5rem;
     line-height: 1.2;
-    font-size: 3.6rem; } }
+    font-size: 3.6rem; }
+  .inner-about .main .content h1 {
+    font-size: 4.6rem; }
+  .inner-about .main .content .subtitle {
+    font-size: 2.8rem; }
+  .inner-about .main .content .about {
+    font-size: 2rem; }
+    .inner-about .main .content .about__show {
+      font-size: 3.8rem; }
+    .inner-about .main .content .about .col {
+      margin-bottom: 1.5rem; }
+  .inner-about .main .content p {
+    font-size: 2rem; }
+  .inner-about .coverage .label__item {
+    width: 170px; } }
 
 @media (max-width: 550px) {
   .homepage .main .center {
@@ -8425,7 +8612,11 @@ img.justifycenter, table.justifycenter {
       .location .tel:before {
         margin-left: -10px;
         left: 50%;
-        top: 0; } }
+        top: 0; }
+  .inner-about #history-carousel {
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px; } }
 
 @media (max-width: 500px) {
   .homepage .about__cell:last-child {
@@ -8511,7 +8702,26 @@ img.justifycenter, table.justifycenter {
     .contactus .contacts .cell__geo {
       font-size: 2rem; }
   .mailus {
-    margin-bottom: 4rem; } }
+    margin-bottom: 4rem; }
+  .inner-about .main .content {
+    text-align: justify; }
+    .inner-about .main .content h1 {
+      font-size: 4.2rem; }
+    .inner-about .main .content .subtitle {
+      font-size: 2.6rem; }
+    .inner-about .main .content .about {
+      font-size: 2rem; }
+  .inner-about .history {
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
+    .inner-about .history .title {
+      font-size: 4rem; }
+    .inner-about .history__year {
+      font-size: 4.6rem; }
+    .inner-about .history__title {
+      font-size: 2.1rem; }
+  .inner-about .coverage .title {
+    font-size: 4rem; } }
 
 @media (max-width: 380px) {
   .homepage .center-carousel .slick-slide .pic {
@@ -8585,7 +8795,11 @@ img.justifycenter, table.justifycenter {
       border-top-width: 20px;
       border-right-width: 20px; }
     .news .new__pic .inner {
-      width: 210px; } }
+      width: 210px; }
+  .inner-about #history-carousel {
+    width: 270px; }
+    .inner-about #history-carousel .slick-slide {
+      padding-right: 60px; } }
 
 @media (max-width: 320px) {
   .inner-materialreports .reports .report__title {

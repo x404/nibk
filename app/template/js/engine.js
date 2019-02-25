@@ -38,7 +38,7 @@ $(document).ready(function(){
 		dots: false,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		autoplay: true,
+		autoplay: false,
 		autoplaySpeed: 5000,
 		arrows : true,
         infinite : false,

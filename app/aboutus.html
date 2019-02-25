@@ -99,14 +99,14 @@
 				<!-- =/menu -->
 
 				<div class="content row">
-					<div class="col-lg-5">
+					<div class="col-xl-5">
 						<picture class="mainpic">
 							<source srcset="images/brakes.webp" type="image/webp">
 							<source srcset="images/brakes.png" type="image/jpeg"> 
 							<img src="images/brakes.png" alt="">
 						</picture>
 					</div>
-					<div class="col-lg-5">
+					<div class="col-xl-5">
 						<h1>ABOUT US</h1>
 						<p class="subtitle">One stop of all brakes</p>
 						<p>Always striving to bring out the best in brakes, JNBK Corporation is a trusted leading manufacturer for top quality brakes with a widest range of products covering main applications for Japan, Europe & Americas.</p>
@@ -115,7 +115,7 @@
 				
 						<!-- =about -->
 						<div class="about">
-							<div class="row">
+							<div class="row d-block text-center d-sm-flex">
 								 <div class="col">
 								 	<div class="about__show">1998</div>
 								 	<div class="about__sign">Year of foundation</div>
@@ -135,7 +135,7 @@
 
 
 				<!-- =advantages -->
-				<div class="advantages d-md-flex justify-content-around">
+				<div class="advantages d-sm-flex justify-content-between justify-content-xl-around">
 					<div class="advantage__item advantage__item-1">
 						<img src="/template/images/advantages/advantage-1.png" alt="">
 						<p class="advantage__title">Tuned formulation <br>for each vehicle class </p>
@@ -164,7 +164,7 @@
 			<!-- =history -->
 			<section class="history">
 				<div class="container">
-					<div class="row align-items-center">
+					<div class="row d-block d-md-flex align-items-center">
 						<header>
 							<h1 class="title text-right">History <br>of the <br> company</h1>
 						</header>
@@ -209,7 +209,9 @@
 
 							<div class="brake">
 								<picture class="brake-rotate">
-									<source srcset="template/images/history-brake.png" type="image/jpeg"> 
+									<source srcset="template/images/history-brake.png" media="(min-width: 1200px)" type="image/jpeg"> 
+									<source srcset="template/images/history-brake-480.png" media="(min-width: 992px)" type="image/jpeg"> 
+									<source srcset="template/images/history-brake-350.png" media="(min-width: 767px)" type="image/jpeg"> 
 									<img src="template/images/history-brake.png" alt="">
 								</picture>
 								<div class="active-dot"></div>
@@ -225,7 +227,7 @@
 				<div class="container">
 					<header>
 						<h1 class="title">Market Coverage</h1>
-						<div class="coverage__labels d-flex justify-content-center">
+						<div class="coverage__labels d-flex flex-column flex-md-row flex-column align-items-center justify-content-center flex-wrap">
 							<div class="label__item"><img src="images/coverage/japanese.png" alt="">Japanese</div>
 							<div class="label__item"><img src="images/coverage/korean.png" alt="">Korean</div>
 							<div class="label__item"><img src="images/coverage/european.png" alt="">European</div>
