@@ -6648,8 +6648,8 @@ img.justifycenter, table.justifycenter {
 
 @media (max-width: 700px) {
   .inner-testreport-article .content .maintext .subtitle {
-    text-align: center;
-    font-size: 1.7rem; } }
+    font-size: 1.7rem;
+    text-align: center; } }
 
 @media (max-width: 576px) {
   .inner-testreport-article .offers__item {
