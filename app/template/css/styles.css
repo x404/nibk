@@ -6528,6 +6528,10 @@ img.justifycenter, table.justifycenter {
     color: #000 !important; }
     .inner-testreport-article .content .maintext h2.orange, .inner-testreport-article .content .maintext h3.orange, .inner-testreport-article .content .maintext h4.orange, .inner-testreport-article .content .maintext h5.orange, .inner-testreport-article .content .maintext h6.orange {
       color: #f26722 !important; }
+  .inner-testreport-article .content .maintext .gray {
+    color: #303030 !important;
+    font-size: 2.5rem;
+    font-family: "Officina Serif Book C"; }
   .inner-testreport-article .content .maintext div.table-responsive {
     margin-bottom: 1rem; }
   .inner-testreport-article .content .maintext table {
@@ -6536,6 +6540,25 @@ img.justifycenter, table.justifycenter {
     .inner-testreport-article .content .maintext table tr td {
       padding-left: 1rem;
       padding-right: 1rem; }
+  .inner-testreport-article .content .maintext .box-orange {
+    background-color: #f26722;
+    color: #fff;
+    padding: 2rem 2.8rem; }
+    .inner-testreport-article .content .maintext .box-orange h4,
+    .inner-testreport-article .content .maintext .box-orange h5 {
+      color: #fff !important;
+      margin: 1.5rem 0; }
+    .inner-testreport-article .content .maintext .box-orange table {
+      background-color: transparent; }
+      .inner-testreport-article .content .maintext .box-orange table td {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        color: #fff;
+        border-bottom-color: #f69565; }
+        .inner-testreport-article .content .maintext .box-orange table td strong {
+          color: currentColor; }
   .inner-testreport-article .content .maintext h5 + table,
   .inner-testreport-article .content .maintext h5 + div.table-responsive {
     margin-top: -2rem;
@@ -6546,6 +6569,8 @@ img.justifycenter, table.justifycenter {
     font-size: 2.5rem;
     font-family: "Officina Serif Book C";
     margin-top: -2rem; }
+    .inner-testreport-article .content .maintext .subtitle.row {
+      margin-bottom: 2rem; }
   .inner-testreport-article .content .maintext .row {
     margin-bottom: 0; }
   .inner-testreport-article .content .maintext .warm {
