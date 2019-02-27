@@ -3989,6 +3989,15 @@ strong {
       right: 9px;
       top: -16px; }
 
+#home-carousel,
+#dyk-carousel,
+#news-carousel {
+  display: none; }
+  #home-carousel.slick-initialized,
+  #dyk-carousel.slick-initialized,
+  #news-carousel.slick-initialized {
+    display: block !important; }
+
 .rotate90 {
   display: block;
   transform: rotate(-90deg); }
@@ -5405,6 +5414,7 @@ blockquote {
 .catalog-page .dealers-data .btn-more {
   border-radius: 0;
   height: auto;
+  margin-top: 0;
   padding-bottom: 2.5rem;
   padding-top: 2.5rem;
   width: 100% !important; }
@@ -7443,6 +7453,8 @@ img.justifycenter, table.justifycenter {
     font-size: 8rem; } }
 
 @media (max-width: 1500px) {
+  .homepage .center-carousel .pic {
+    width: 626px; }
   .contactus .contacts .cell__mail {
     font-size: 2.6rem; }
   .contactus .contacts .cell__tel {
@@ -7520,7 +7532,16 @@ img.justifycenter, table.justifycenter {
     margin-right: -3rem; }
     .inner .product__rubrics .rubric__pic:after, .inner .product__rubrics .rubric__pic:before {
       height: 340px;
-      width: 340px; } }
+      width: 340px; }
+  .inner-articles h1,
+  .innertestreports h1 {
+    font-size: 8rem; }
+  .inner-materialreports .reports .report__pic {
+    min-height: 28rem; }
+  .listarticles {
+    grid-column-gap: 30px; }
+  .main .maintext h2 {
+    font-size: 3.8rem; } }
 
 @media (max-width: 1280px) {
   .homepage .main .content {

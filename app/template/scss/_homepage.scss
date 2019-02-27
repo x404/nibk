@@ -336,6 +336,15 @@
 	}
 }
 
+#home-carousel,
+#dyk-carousel,
+#news-carousel{
+	display: none;
+	&.slick-initialized{
+		display: block !important;
+	}
+}
+
 .rotate90{
 	display: block;
 	transform: rotate(-90deg);

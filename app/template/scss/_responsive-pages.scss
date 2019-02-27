@@ -370,6 +370,15 @@
 
 
 @media (max-width: 1500px){
+	.homepage{
+		.center-carousel{
+			.pic{
+				width: 626px;
+			}
+			.slick-slide{
+			}
+		}
+	}
 	.contactus{
 		.contacts{
 			.cell{
@@ -509,6 +518,33 @@
 				}
 			}
 		}		
+	}
+
+	.inner-articles,
+	.innertestreports{
+		h1{
+			font-size: 8rem;
+		}
+	}
+
+	.inner-materialreports{
+		.reports{
+			.report__pic{
+				min-height: 28rem
+			}
+		}
+	}
+
+	.listarticles{
+		grid-column-gap: 30px
+	}
+
+	.main{
+		.maintext{
+			h2{
+				font-size: 3.8rem;
+			}
+		}
 	}
 }
 
