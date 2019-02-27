@@ -6093,6 +6093,7 @@ blockquote {
     overflow-x: auto; }
   .content .maintext table {
     background-color: #fff; }
+    .content .maintext table tr .th,
     .content .maintext table tr th {
       color: #000;
       font-family: "Officina Serif Black C";
@@ -6591,13 +6592,26 @@ img.justifycenter, table.justifycenter {
         border-bottom-color: #f69565; }
         .inner-testreport-article .content .maintext .box-orange table td strong {
           color: currentColor; }
+  .inner-testreport-article .content .maintext .tr-orange > td {
+    border-bottom-color: transparent; }
+  .inner-testreport-article .content .maintext .tr-orange td {
+    color: #fff !important;
+    background-color: #f26722; }
+    .inner-testreport-article .content .maintext .tr-orange td strong {
+      color: currentColor; }
+    .inner-testreport-article .content .maintext .tr-orange td.td-top {
+      vertical-align: top; }
+  .inner-testreport-article .content .maintext .tr-orange h4,
+  .inner-testreport-article .content .maintext .tr-orange h5 {
+    color: #fff !important;
+    margin: 1.5rem 0; }
   .inner-testreport-article .content .maintext h5 + table,
   .inner-testreport-article .content .maintext h5 + div.table-responsive {
     margin-top: -2rem;
     margin-bottom: 2.5rem; }
-  .inner-testreport-article .content .maintext .fsize15 th, .inner-testreport-article .content .maintext .fsize15 td {
+  .inner-testreport-article .content .maintext .fsize15 th, .inner-testreport-article .content .maintext .fsize15 .th, .inner-testreport-article .content .maintext .fsize15 td {
     font-size: 1.5rem; }
-  .inner-testreport-article .content .maintext .fsize16 th {
+  .inner-testreport-article .content .maintext .fsize16 th, .inner-testreport-article .content .maintext .fsize16 .th {
     font-size: 1.6rem; }
   .inner-testreport-article .content .maintext .subtitle {
     font-size: 2.5rem;
