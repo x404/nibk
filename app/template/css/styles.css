@@ -7209,7 +7209,9 @@ img.justifycenter, table.justifycenter {
     width: 100%; }
   #modal-callback .form .input-field input.form-control,
   #modal-callback .select-wrapper {
-    width: 100%; } }
+    width: 100%; }
+  #modal-callback .close-modal {
+    top: 0; } }
 
 @media (max-width: 700px) {
   .header__center img {
