@@ -136,11 +136,6 @@ strong{
 }
 
 
-.form-control {
-
-}
-
-
 .extra-toggle-wrapper{
 	margin-right: 6rem;
 	.extra-title{
@@ -162,6 +157,8 @@ strong{
 	flex-shrink: 0; 
 	height: 5rem;
 	width: 5rem;
+	padding-left: 0;
+	padding-right: 0;
 	transition: .3s;
 	.icon-bar{
 		background: $color2;

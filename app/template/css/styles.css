@@ -3433,6 +3433,8 @@ strong {
   flex-shrink: 0;
   height: 5rem;
   width: 5rem;
+  padding-left: 0;
+  padding-right: 0;
   transition: .3s; }
   .extra-toggle .icon-bar {
     background: #fff;
@@ -7223,7 +7225,9 @@ img.justifycenter, table.justifycenter {
 
 @media (max-width: 650px) {
   .modal-menu {
-    display: none !important; } }
+    display: none !important; }
+  .btn-callback {
+    display: block; } }
 
 @media (max-width: 550px) {
   .header__center img {
@@ -7284,7 +7288,17 @@ img.justifycenter, table.justifycenter {
     padding-left: .8rem;
     padding-right: .8rem; }
   .btn-callback {
-    width: 9rem; } }
+    width: 9.2rem; } }
+
+@media (max-width: 320px) {
+  .header__left, .header__right,
+  .inner .header__left,
+  .inner .header__right {
+    width: 85px; }
+  .btn-callback {
+    padding-left: 0;
+    padding-right: 0;
+    width: 10rem; } }
 
 @media (max-width: 1850px) {
   .listproducts {
@@ -8141,6 +8155,7 @@ img.justifycenter, table.justifycenter {
     .inner-subproducts .arc imt {
       margin-top: 2rem; }
   .inner-subproducts .text {
+    padding-left: 0 !important;
     padding-right: 0 !important; }
     .inner-subproducts .text h2.title {
       font-size: 2.2rem;
@@ -8181,8 +8196,8 @@ img.justifycenter, table.justifycenter {
     .contactus .contacts .cell__geo {
       font-size: 2rem; }
   .catalog-page .nav {
-    font-size: 2.2rem;
     border-radius: 4.5rem;
+    font-size: 2.2rem;
     height: 4.5rem; }
     .catalog-page .nav-item {
       height: calc(4.5rem - 4px); }
@@ -8497,12 +8512,19 @@ img.justifycenter, table.justifycenter {
   .inner-newproducts .more {
     margin-top: 2rem;
     margin-bottom: 3rem; }
+  .inner-about .listcoverage img, .inner-about .listcoverage picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
   .catalog-page .search-result-top .search-title {
     font-size: 2.8rem; }
   .catalog-page .search-result-top .btn {
+    display: block;
     font-size: 1.5rem;
     height: 4.5rem;
     width: 70%; }
+  .news .new__pic .inner:after {
+    display: none; }
   .inner-about .footer {
     margin-top: -12rem; } }
 
@@ -8580,6 +8602,10 @@ img.justifycenter, table.justifycenter {
       margin: 2rem auto 2rem;
       text-align: center;
       width: 150px; }
+      .catalog-page .tab-content .btn-more {
+        margin-top: 0; }
+    .catalog-page .tab-content .location__info .btn {
+      display: flex; }
   .catalog-page .mailus .input-field {
     margin-right: 0; }
   #modal-feedback .close-modal {
@@ -8881,4 +8907,6 @@ img.justifycenter, table.justifycenter {
     margin-top: 2rem; }
   .inner-materialreports .reports .report__item .btn {
     font-size: 1.8rem;
-    height: 3.6rem; } }
+    height: 3.6rem; }
+  .catalog-page .search-result-top .btn {
+    width: 100%; } }

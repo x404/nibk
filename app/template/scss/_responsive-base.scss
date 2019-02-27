@@ -577,6 +577,10 @@
 	.modal-menu{
 		display: none !important;
 	}
+
+	.btn-callback{
+		display: block;
+	}
 }
 
 @media (max-width: 550px){
@@ -690,6 +694,18 @@
 		padding-right: .8rem;
 	}
 	.btn-callback{
-		width: 9rem;
+		width: 9.2rem;
 	}
+}
+
+
+@media (max-width: 320px) {
+	.header__left, .header__right, .inner .header__left, .inner .header__right{
+		width: 85px;
+	}
+	.btn-callback{
+		padding-left: 0;
+		padding-right: 0;
+		width: 10rem;		
+	}	
 }

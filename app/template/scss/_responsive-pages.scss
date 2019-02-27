@@ -1743,6 +1743,7 @@
 				}
 			}
 			.text{
+				padding-left: 0 !important;
 				padding-right: 0 !important;
 				h2.title{
 					font-size: 2.2rem;
@@ -1830,8 +1831,8 @@
 	.catalog-page{
 		.nav{
 			$h: 4.5rem;
-			font-size: 2.2rem;
 			border-radius: $h;
+			font-size: 2.2rem;
 			height: $h;
 			&-item{
 				height: calc(4.5rem - 4px) ;
@@ -2365,15 +2366,30 @@
 		}
 	}
 
+	.inner-about{
+		.listcoverage {
+			img, picture{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+
 	.catalog-page .search-result-top{
 		.search-title{
 			font-size: 2.8rem;
 		}
 		.btn{
+			display: block;
 			font-size: 1.5rem;
 			height: 4.5rem;
 			width: 70%;
 		}
+	}
+
+	.news .new__pic .inner:after{
+		display: none;
 	}
 
 
@@ -2523,8 +2539,17 @@
 			    margin: 2rem auto 2rem;
 			    text-align: center;
 			    width: 150px;
+			    &-more{
+			    	margin-top: 0;
+			    }
+			}
+			.location__info{
+				.btn{
+					display: flex;
+				}
 			}
 		}
+
 
 		.mailus{
 			.input-field{
@@ -3108,5 +3133,9 @@
 				}
 			}
 		}
+	}
+
+	.catalog-page .search-result-top .btn{
+		width: 100%;
 	}
 }
