@@ -4205,7 +4205,8 @@ h3 {
         display: block; }
   .apanel .nav {
     font-size: 2.5rem;
-    font-weight: 700; }
+    font-weight: 700;
+    justify-content: center; }
 
 @media (min-width: 651px) {
   .apanel {
@@ -6872,7 +6873,8 @@ img.justifycenter, table.justifycenter {
         display: block; }
   .apanel .nav {
     font-size: 2.5rem;
-    font-weight: 700; }
+    font-weight: 700;
+    justify-content: center; }
 
 @media (min-width: 651px) {
   .apanel {
@@ -7519,7 +7521,8 @@ img.justifycenter, table.justifycenter {
     margin-left: -1rem;
     margin-right: -1rem; }
     .inner .product__rubrics .rubric__pic {
-      min-height: 38rem; }
+      min-height: 38rem;
+      padding-top: 9rem; }
       .inner .product__rubrics .rubric__pic:after, .inner .product__rubrics .rubric__pic:before {
         height: 300px;
         width: 300px; }
@@ -7764,8 +7767,8 @@ img.justifycenter, table.justifycenter {
       padding-left: .5rem;
       padding-right: .5rem; }
   .homepage .main .center {
-    margin-left: 3rem;
-    margin-top: 3rem; }
+    margin-left: 1rem;
+    margin-top: -5rem; }
   .homepage .about__title {
     font-size: 1.5rem; }
   .homepage .footer {
@@ -7780,7 +7783,7 @@ img.justifycenter, table.justifycenter {
   .homepage .main .center {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 6rem; }
+    margin-top: 10rem; }
   .homepage .about {
     margin-top: 6rem;
     display: flex !important;
@@ -7808,8 +7811,12 @@ img.justifycenter, table.justifycenter {
   .inner .product__rubrics .rubric__pic {
     min-height: 26rem; }
     .inner .product__rubrics .rubric__pic:after, .inner .product__rubrics .rubric__pic:before {
-      height: 180px;
-      width: 180px; }
+      height: 280px;
+      width: 280px; }
+    .inner .product__rubrics .rubric__pic img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
   .inner-subproducts h1 {
     font-size: 5rem; }
   .inner-subproducts .main {
@@ -7955,6 +7962,8 @@ img.justifycenter, table.justifycenter {
       margin: 1rem 0; }
   .news .new__title {
     margin-top: -2rem; }
+  .inner .product__rubrics .rubric__pic {
+    padding-top: 5rem; }
   .inner-materialreports .maintext h1 {
     font-size: 5rem; }
   .inner-materialreports .maintext .subtitle {
@@ -8484,7 +8493,8 @@ img.justifycenter, table.justifycenter {
       width: 220px; }
   .inner-testreports h1,
   .inner-articles h1 {
-    font-size: 5rem; }
+    font-size: 5rem;
+    margin-top: 2rem; }
   .listarticles {
     display: block; }
     .listarticles .report__item {

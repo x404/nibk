@@ -563,6 +563,7 @@
 			.rubric{
 				&__pic{
 					min-height: 38rem;
+					padding-top: 9rem;
 					&:after,
 					&:before{
 						height: 300px;
@@ -1069,8 +1070,11 @@
 
 		.main{
 			.center{
-				margin-left: 3rem;
-				margin-top: 3rem;
+				// margin-left: 3rem;
+				// margin-top: 3rem;
+
+				margin-left: 1rem;
+				margin-top: -5rem;
 			}
 		}
 
@@ -1099,7 +1103,7 @@
 			.center{
 				margin-left: auto;
 				margin-right: auto;
-				margin-top: 6rem;
+				margin-top: 10rem;
 			}
 		}
 		.about{
@@ -1151,8 +1155,14 @@
 						&:after,
 						&:before
 						{
-							height: 180px;
-							width: 180px;
+							height: 280px;
+							width: 280px;
+						}
+
+						img{
+							display: block;
+							margin-left: auto;
+							margin-right: auto;
 						}
 					}
 				}
@@ -1447,6 +1457,11 @@
 				margin-top: -2rem;
 			}
 		}		
+	}
+
+
+	.inner .product__rubrics .rubric__pic{
+		padding-top: 5rem;
 	}
 
 
@@ -2416,6 +2431,7 @@
 	{
 		h1{
 			font-size: 5rem;
+			margin-top: 2rem;
 		}
 	}
 	.listarticles
