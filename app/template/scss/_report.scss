@@ -222,6 +222,12 @@
 }
 
 
+@media (max-width: 1400px){
+	.offers{
+		grid-template-columns: repeat(3, 1fr)
+	}
+}
+
 @media (max-width: 991px){
 	.inner-testreport-article{
 		.offers{

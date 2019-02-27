@@ -6673,6 +6673,10 @@ img.justifycenter, table.justifycenter {
   .inner-testreport-article .content .maintext h5 {
     font-size: 2.4rem; } }
 
+@media (max-width: 1400px) {
+  .offers {
+    grid-template-columns: repeat(3, 1fr); } }
+
 @media (max-width: 991px) {
   .inner-testreport-article .offers__item {
     padding: 1.5rem 0;
