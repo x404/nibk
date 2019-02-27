@@ -98,6 +98,7 @@
 
 .characteristics{
 	grid-template-columns: repeat(3, minmax(360px, 1fr));
+	grid-column-gap: 20px;
 	margin-top: 5rem;
 	.characteristic{
 		&__title{

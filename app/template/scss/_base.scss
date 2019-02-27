@@ -109,22 +109,10 @@ h1{font-size:2.5rem}
 h2{font-size:2.4rem}
 h3{font-size:1.6rem}
 
-
-// strong,
-// .bold{
-// 	font-weight: normal;
-// }
-// em, i, 
-// .italic{
-// 	font-style: normal;
-// }
-
-// strong em,
-// em strong
-// {
-// 	font-weight: normal;
-// }
-
+th,
+strong{
+	font-weight: normal;
+}
 
 .tdn{
 	text-decoration: none;

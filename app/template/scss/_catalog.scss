@@ -216,13 +216,14 @@
 				width: 100%;
 				color: #414141;
 				th{
-					font-size: 1.7rem;
+					border-bottom: 2px solid $color3;
+					color: $color1;
 					font-family: "Officina Serif Black C";
+					font-size: 1.7rem;
 					padding: 2.8rem 2.5rem 1.8rem 3rem;
 					text-transform: uppercase;
 					vertical-align: middle;
 					white-space: nowrap;
-					border-bottom: 2px solid $color3;
 					img{
 						vertical-align: bottom;
 					}
@@ -279,9 +280,10 @@
 			}
 		}
 		&-title{
+			color: $color1;
+			font-family: "Officina Serif Black C";
 			font-size: 4rem;
 			text-align: center;
-			font-family: "Officina Serif Black C";
 			text-transform: uppercase;
 		}
 	}
@@ -315,9 +317,6 @@
 	}
 
 
-
-
-
 	// Where to Buy
 	.dealers-data{
 		.search-title{
@@ -328,12 +327,13 @@
 			font-size: 1.7rem;
 			tr{
 				th{
-					padding-top: 2rem;
-					padding-left: 2.8rem;
-					font-size: 2rem;
-					color: $color1;
-					text-transform: none;
 					border-bottom-width: 3px;
+					color: $color1;
+					font-size: 2rem;
+					font-weight: normal;
+					padding-left: 2.8rem;
+					padding-top: 2rem;
+					text-transform: none;
 				}
 				td{
 					padding-top: 2.2rem;

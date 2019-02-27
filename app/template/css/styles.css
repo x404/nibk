@@ -3391,6 +3391,10 @@ h2 {
 h3 {
   font-size: 1.6rem; }
 
+th,
+strong {
+  font-weight: normal; }
+
 .tdn, .modal-menu .menu dd a {
   text-decoration: none; }
   .tdn:hover, .modal-menu .menu dd a:hover {
@@ -4698,7 +4702,8 @@ h3 {
       padding-left: 160px; }
     .main .maintext h1, .main .maintext h2, .main .maintext h3, .main .maintext h4, .main .maintext h5, .main .maintext h6 {
       font-family: 'Officina Serif Black C';
-      line-height: 1.1; }
+      line-height: 1.1;
+      font-weight: normal; }
     .main .maintext h1 {
       font-size: 5rem;
       margin-bottom: 4rem;
@@ -5315,13 +5320,14 @@ blockquote {
     width: 100%;
     color: #414141; }
     .catalog-page .search-result-table th {
-      font-size: 1.7rem;
+      border-bottom: 2px solid #f26722;
+      color: #000;
       font-family: "Officina Serif Black C";
+      font-size: 1.7rem;
       padding: 2.8rem 2.5rem 1.8rem 3rem;
       text-transform: uppercase;
       vertical-align: middle;
-      white-space: nowrap;
-      border-bottom: 2px solid #f26722; }
+      white-space: nowrap; }
       .catalog-page .search-result-table th img {
         vertical-align: bottom; }
     .catalog-page .search-result-table tr td {
@@ -5349,9 +5355,10 @@ blockquote {
       font-weight: normal; }
 
 .catalog-page .search-title {
+  color: #000;
+  font-family: "Officina Serif Black C";
   font-size: 4rem;
   text-align: center;
-  font-family: "Officina Serif Black C";
   text-transform: uppercase; }
 
 .catalog-page .fotorama__thumb {
@@ -5384,12 +5391,13 @@ blockquote {
 .catalog-page .dealers-data .search-result-table {
   font-size: 1.7rem; }
   .catalog-page .dealers-data .search-result-table tr th {
-    padding-top: 2rem;
-    padding-left: 2.8rem;
-    font-size: 2rem;
+    border-bottom-width: 3px;
     color: #000;
-    text-transform: none;
-    border-bottom-width: 3px; }
+    font-size: 2rem;
+    font-weight: normal;
+    padding-left: 2.8rem;
+    padding-top: 2rem;
+    text-transform: none; }
   .catalog-page .dealers-data .search-result-table tr td {
     padding-top: 2.2rem;
     padding-bottom: 2.2rem; }
@@ -6034,7 +6042,8 @@ blockquote {
   .content .maintext h6 {
     font-size: 2rem; }
   .content .maintext strong {
-    font-family: "Officina Serif Black C"; }
+    font-family: "Officina Serif Black C";
+    font-weight: normal; }
   .content .maintext a {
     text-decoration: underline; }
     .content .maintext a:hover {
@@ -6098,10 +6107,11 @@ blockquote {
     background-color: #fff; }
     .content .maintext table tr .th,
     .content .maintext table tr th {
+      border-bottom: 3px solid #f26722;
       color: #000;
       font-family: "Officina Serif Black C";
-      border-bottom: 3px solid #f26722;
       font-size: 2rem;
+      font-weight: normal;
       line-height: 1.2;
       padding: 2rem 3rem;
       vertical-align: middle; }
@@ -6306,6 +6316,7 @@ img.justifycenter, table.justifycenter {
 
 .characteristics {
   grid-template-columns: repeat(3, minmax(360px, 1fr));
+  grid-column-gap: 20px;
   margin-top: 5rem; }
   .characteristics .characteristic__title {
     color: #000;

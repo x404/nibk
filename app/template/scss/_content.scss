@@ -23,6 +23,7 @@
 
 		strong{
 			font-family: "Officina Serif Black C";
+			font-weight: normal;
 		}
 
 		a{
@@ -116,10 +117,11 @@
 			tr{
 				.th,
 				th{
+					border-bottom: 3px solid  $color_1;
 					color: #000;
 					font-family: "Officina Serif Black C";
-					border-bottom: 3px solid  $color_1;
 					font-size: 2rem;
+					font-weight: normal;
 					line-height: 1.2;
 					padding: 2rem 3rem;
 					vertical-align: middle;
