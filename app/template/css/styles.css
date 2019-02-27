@@ -5395,8 +5395,11 @@ blockquote {
     padding-bottom: 2.2rem; }
 
 .catalog-page .dealers-data .btn-more {
+  border-radius: 0;
+  height: auto;
+  padding-bottom: 2.5rem;
   padding-top: 2.5rem;
-  padding-bottom: 2.5rem; }
+  width: 100% !important; }
 
 .catalog-page .mailus {
   background-color: #fff;
@@ -8373,7 +8376,9 @@ img.justifycenter, table.justifycenter {
   .inner-about .coverage .title {
     font-size: 5rem; }
   .inner-about .coverage__item {
-    margin-bottom: 4rem; } }
+    margin-bottom: 4rem; }
+  .coverage .label__item {
+    width: 170px; } }
 
 @media (max-width: 700px) {
   .homepage .center-carousel .slick-slide .pic {
@@ -8596,7 +8601,7 @@ img.justifycenter, table.justifycenter {
       .catalog-page .nav-link.active {
         border-radius: 4rem; }
   .catalog-page .tabs {
-    margin-top: 1rem; }
+    margin-top: 3rem; }
   .catalog-page .menu {
     margin-top: 2rem; }
   .catalog-page .nav {
@@ -8618,6 +8623,8 @@ img.justifycenter, table.justifycenter {
     .catalog-page .dealers-data .btn-more {
       padding-top: 1.5rem;
       padding-bottom: 1.5rem; }
+  .catalog-page .tab-content {
+    margin-top: 0; }
   .location {
     font-size: 1.8rem;
     padding: 2.5rem 1.5rem;
@@ -8730,6 +8737,8 @@ img.justifycenter, table.justifycenter {
       font-size: 2rem; }
   .mailus {
     margin-bottom: 4rem; }
+  .catalog-page .mailus {
+    padding-bottom: 1rem; }
   .inner-about .main .content {
     text-align: justify; }
     .inner-about .main .content h1 {

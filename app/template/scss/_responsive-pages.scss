@@ -2185,7 +2185,12 @@
 				margin-bottom: 4rem;
 			}
 		}
+	}
 
+	.coverage{
+		.label__item{
+			width: 170px
+		}
 	}
 }
 
@@ -2534,11 +2539,8 @@
 		}
 
 		.coverage{
-			&__labels{
-
-			}
 			.label__item{
-				width: 170px;	
+				width: 170px;
 			}
 		}
 	}
@@ -2609,7 +2611,7 @@
 			}
 		}
 		.tabs{
-			margin-top: 1rem;
+			margin-top: 3rem;
 		}
 		.menu{
 			margin-top: 2rem;
@@ -2641,8 +2643,8 @@
 			}
 		}
 
-		.tab-pane{
-
+		.tab-content{
+			margin-top: 0;
 		}
 	}
 
@@ -2847,6 +2849,10 @@
 
 	.mailus{
 		margin-bottom: 4rem;
+	}
+
+	.catalog-page .mailus{
+		padding-bottom: 1rem;
 	}
 
 
