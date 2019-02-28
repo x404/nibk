@@ -8543,12 +8543,12 @@ img.justifycenter, table.justifycenter {
       font-size: 1.4rem; }
   .homepage .info-md {
     background: #242526;
-    padding: 3rem 0 0rem;
+    padding: 3rem 0 2px;
     margin-top: 1rem;
     margin-bottom: 0; }
   .homepage .footer {
     background: #242526;
-    margin-top: 0;
+    margin-top: -1px;
     padding-top: 3rem;
     text-align: center; }
     .homepage .footer .d-flex {
