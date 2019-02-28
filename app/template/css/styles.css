@@ -3173,31 +3173,38 @@ a.text-dark:hover, a.text-dark:focus {
 
 .inner-subproducts .block-2 {
   background: url(../images/bg/sport-oriented-formulas.png) center top no-repeat;
-  min-height: 820px; }
+  min-height: 820px;
+  background-size: cover; }
 
 .inner-subproducts .block-3 {
   background: url(../images/bg/heavy-duty-formulas.png) center top no-repeat;
-  min-height: 655px; }
+  min-height: 655px;
+  background-size: cover; }
 
 .inner-subproducts .block-4 {
   background: url(../images/bg/brake-shoe-cars.png) center top no-repeat;
-  min-height: 600px; }
+  min-height: 600px;
+  background-size: cover; }
 
 .inner-subproducts .block-5 {
   background: url(../images/bg/brake-shoe-trucks.png) center top no-repeat;
-  min-height: 670px; }
+  min-height: 670px;
+  background-size: cover; }
 
 .inner-subproducts .block-6 {
   background: url(../images/bg/brake-linings.png) center top no-repeat;
-  min-height: 630px; }
+  min-height: 630px;
+  background-size: cover; }
 
 .inner-subproducts .block-8 {
   background: url(../images/bg/standart-rotor.png) center top no-repeat;
-  min-height: 810px; }
+  min-height: 810px;
+  background-size: cover; }
 
 .inner-subproducts .block-9 {
   background: url(../images/bg/drilled-rotor.png) center top no-repeat;
-  min-height: 800px; }
+  min-height: 800px;
+  background-size: cover; }
 
 .inner-brakepads {
   background-image: url(../images/bg/i_bg-2.jpg); }
@@ -6926,6 +6933,61 @@ img.justifycenter, table.justifycenter {
 
 ::-ms-clear {
   display: none; }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .homepage {
+    min-height: 100vh; }
+    .homepage .main {
+      padding-top: 13rem; }
+    .homepage .footer {
+      margin-top: 6rem; }
+  .close-modal {
+    right: auto; }
+  #modal-callback .close-modal {
+    right: 0; }
+  #modal-callback .form .col,
+  #modal-feedback .form .col {
+    flex-grow: 1;
+    width: 450px; }
+  #modal-callback .form .input-field input.form-control, .mailus .form .input-field input.form-control {
+    width: 42rem; }
+  .listproducts {
+    flex-wrap: wrap; }
+    .listproducts .product__item {
+      margin-bottom: 2rem;
+      width: 30rem; }
+  .listarticles {
+    flex-wrap: wrap;
+    justify-content: flex-start !important; }
+    .listarticles .report__item {
+      margin-bottom: 7rem;
+      width: 480px; }
+  .inner-testreport-article .offers {
+    flex-wrap: wrap; }
+    .inner-testreport-article .offers__item {
+      width: 155px; }
+  .inner-subproducts .block-2,
+  .inner-subproducts .block-3 {
+    padding-top: 14rem; }
+  .inner-subproducts .block-4,
+  .inner-subproducts .block-5 {
+    padding-top: 6rem; }
+  .inner-subproducts .block-6,
+  .inner-subproducts .block-7,
+  .inner-subproducts .block-8,
+  .inner-subproducts .block-9,
+  .inner-subproducts .block-10 {
+    padding-top: 10rem; }
+  .news__list {
+    display: flex;
+    flex-wrap: wrap; }
+  .news__item {
+    margin-bottom: 3rem;
+    width: 465px; }
+  .news .new__link {
+    display: block; }
+  .inner-materialreports .reports .listarticles {
+    justify-content: center !important; } }
 
 @media (max-height: 600px) {
   .modal-menu .container {
