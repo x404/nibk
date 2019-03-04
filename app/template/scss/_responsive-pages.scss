@@ -2822,6 +2822,26 @@
 }
 
 
+@media (max-width: 480px) {
+	.inner-products{
+		.main{
+			.container{
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
+	.product{
+		&__text{
+			order: 2;
+			padding-bottom: 5rem;
+		}
+		&__rubrics{
+			order: 1;
+		}		
+	}
+}
+
 @media (max-width: 450px) {
 	.homepage{
 		.main .center{
@@ -2964,22 +2984,11 @@
 @media (max-width: 420px) {
 	.product__rubrics .rubric{
 		&__link{
-			display: flex;
-			flex-direction: column;
 			min-height: 0;
 			margin-bottom: 3rem;
-			.rubric{
-				&__pic{
-					padding-top: 2rem;
-					min-height: 0;
-					order: 1;
-				}
-				&__title{
-					order: 0;
-				}
-			}
 		}
 	}
+
 }
 
 

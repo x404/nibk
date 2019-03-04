@@ -159,12 +159,15 @@
 		min-height: 92rem;
 		padding: 13rem 0 12rem;
 
+		&__box{
+			min-height: 218px;
+		}
+
 		.title{
 			color: $color3;
 			font-family: "Officina Serif Black C";
 			font-size: 8rem;
 			line-height: 1.1;
-			// padding-top: 4rem;
 			text-transform: uppercase;
 		}
 
@@ -173,26 +176,59 @@
 			position: relative;
 			width: 630px;
 			height: 630px;
-			.active-dot{
-				background-color: $color3;
+
+			.active-dot,
+			.violet-dot{
 				border-radius: 50%;
-				width: 42px;
+				border: none;
 				height: 42px;
 				position: absolute;
+				width: 42px;
+			}
+			.violet-dot{
+				background-color: $color4;
+				z-index: 99;
+				cursor: pointer;
+				transition: background-color .3s;
+			    
+
+				&:hover{
+					background-color: $color3;
+				}
+				&.dot{
+					&-0{left: 24px;top: 230px;}
+					&-1{left: 21px;top: 343px;}
+					&-2{left: 57px;top: 437px;}
+					&-3{left: 120px;top: 510px;}
+					&-4{left: 205px;top: 557px;}
+					&-5{left: 300px;top: 571px;}
+					&-6{left: 396px;top: 552px;}
+				}
+			}
+			.active-dot{
+				background-color: $color3;
 				left: 24px;
 				top: 230px;
+				z-index: 100;
 			}
 
-			.brake-rotate{
+
+			.disc-rotate{
 				display: block;
-				transition: .3s;
-				&.rotate-0{transform: rotate(0deg)}
-				&.rotate-1{transform: rotate(23.5deg)}
-				&.rotate-2{transform: rotate(44.5deg)}
-				&.rotate-3{transform: rotate(64.5deg)}
-				&.rotate-4{transform: rotate(84.5deg)}
-				&.rotate-5{transform: rotate(104.5deg)}
-				&.rotate-6{transform: rotate(125deg)}
+				left: 0;
+				position: absolute;
+				top: 0;
+				transition-timing-function: cubic-bezier(0.07, 0.12, 0.28, 1.15);
+				transition: .5s;
+				&.rotate{
+					&-0{transform: rotate(0deg)}
+					&-1{transform: rotate(23.5deg)}
+					&-2{transform: rotate(44.5deg)}
+					&-3{transform: rotate(64.5deg)}
+					&-4{transform: rotate(84.5deg)}
+					&-5{transform: rotate(104.5deg)}
+					&-6{transform: rotate(125deg)}
+				}
 			}
 		}
 	

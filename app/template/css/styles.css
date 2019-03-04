@@ -6459,6 +6459,8 @@ img.justifycenter, table.justifycenter {
   justify-content: center;
   min-height: 92rem;
   padding: 13rem 0 12rem; }
+  .inner-about .history__box {
+    min-height: 218px; }
   .inner-about .history .title {
     color: #f26722;
     font-family: "Officina Serif Black C";
@@ -6470,30 +6472,66 @@ img.justifycenter, table.justifycenter {
     position: relative;
     width: 630px;
     height: 630px; }
-    .inner-about .history .brake .active-dot {
-      background-color: #f26722;
+    .inner-about .history .brake .active-dot,
+    .inner-about .history .brake .violet-dot {
       border-radius: 50%;
-      width: 42px;
+      border: none;
       height: 42px;
       position: absolute;
+      width: 42px; }
+    .inner-about .history .brake .violet-dot {
+      background-color: #713a97;
+      z-index: 99;
+      cursor: pointer;
+      transition: background-color .3s; }
+      .inner-about .history .brake .violet-dot:hover {
+        background-color: #f26722; }
+      .inner-about .history .brake .violet-dot.dot-0 {
+        left: 24px;
+        top: 230px; }
+      .inner-about .history .brake .violet-dot.dot-1 {
+        left: 21px;
+        top: 343px; }
+      .inner-about .history .brake .violet-dot.dot-2 {
+        left: 57px;
+        top: 437px; }
+      .inner-about .history .brake .violet-dot.dot-3 {
+        left: 120px;
+        top: 510px; }
+      .inner-about .history .brake .violet-dot.dot-4 {
+        left: 205px;
+        top: 557px; }
+      .inner-about .history .brake .violet-dot.dot-5 {
+        left: 300px;
+        top: 571px; }
+      .inner-about .history .brake .violet-dot.dot-6 {
+        left: 396px;
+        top: 552px; }
+    .inner-about .history .brake .active-dot {
+      background-color: #f26722;
       left: 24px;
-      top: 230px; }
-    .inner-about .history .brake .brake-rotate {
+      top: 230px;
+      z-index: 100; }
+    .inner-about .history .brake .disc-rotate {
       display: block;
-      transition: .3s; }
-      .inner-about .history .brake .brake-rotate.rotate-0 {
+      left: 0;
+      position: absolute;
+      top: 0;
+      transition-timing-function: cubic-bezier(0.07, 0.12, 0.28, 1.15);
+      transition: .5s; }
+      .inner-about .history .brake .disc-rotate.rotate-0 {
         transform: rotate(0deg); }
-      .inner-about .history .brake .brake-rotate.rotate-1 {
+      .inner-about .history .brake .disc-rotate.rotate-1 {
         transform: rotate(23.5deg); }
-      .inner-about .history .brake .brake-rotate.rotate-2 {
+      .inner-about .history .brake .disc-rotate.rotate-2 {
         transform: rotate(44.5deg); }
-      .inner-about .history .brake .brake-rotate.rotate-3 {
+      .inner-about .history .brake .disc-rotate.rotate-3 {
         transform: rotate(64.5deg); }
-      .inner-about .history .brake .brake-rotate.rotate-4 {
+      .inner-about .history .brake .disc-rotate.rotate-4 {
         transform: rotate(84.5deg); }
-      .inner-about .history .brake .brake-rotate.rotate-5 {
+      .inner-about .history .brake .disc-rotate.rotate-5 {
         transform: rotate(104.5deg); }
-      .inner-about .history .brake .brake-rotate.rotate-6 {
+      .inner-about .history .brake .disc-rotate.rotate-6 {
         transform: rotate(125deg); }
   .inner-about .history__carousel {
     margin-left: 7rem; }
@@ -8825,6 +8863,16 @@ img.justifycenter, table.justifycenter {
   .main .maintext h6 {
     font-size: 1.5rem; } }
 
+@media (max-width: 480px) {
+  .inner-products .main .container {
+    display: flex;
+    flex-direction: column; }
+  .product__text {
+    order: 2;
+    padding-bottom: 5rem; }
+  .product__rubrics {
+    order: 1; } }
+
 @media (max-width: 450px) {
   .homepage .main .center {
     margin-top: 5rem; }
@@ -8898,16 +8946,8 @@ img.justifycenter, table.justifycenter {
 
 @media (max-width: 420px) {
   .product__rubrics .rubric__link {
-    display: flex;
-    flex-direction: column;
     min-height: 0;
-    margin-bottom: 3rem; }
-    .product__rubrics .rubric__link .rubric__pic {
-      padding-top: 2rem;
-      min-height: 0;
-      order: 1; }
-    .product__rubrics .rubric__link .rubric__title {
-      order: 0; } }
+    margin-bottom: 3rem; } }
 
 @media (max-width: 380px) {
   .homepage .center-carousel .slick-slide .pic {
