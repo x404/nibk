@@ -8867,8 +8867,18 @@ img.justifycenter, table.justifycenter {
   .inner-products .main .container {
     display: flex;
     flex-direction: column; }
+  .inner .product__menu {
+    margin-top: 1rem; }
+  .inner .product__rubrics {
+    margin-top: 0; }
+    .inner .product__rubrics .rubric__pic {
+      min-height: 0; }
+    .inner .product__rubrics .rubric__link {
+      min-height: 0;
+      margin-bottom: 0; }
   .product__text {
     order: 2;
+    padding-top: 2rem;
     padding-bottom: 5rem; }
   .product__rubrics {
     order: 1; } }
@@ -8943,11 +8953,6 @@ img.justifycenter, table.justifycenter {
       font-size: 2.1rem; }
   .inner-about .coverage .title {
     font-size: 4rem; } }
-
-@media (max-width: 420px) {
-  .product__rubrics .rubric__link {
-    min-height: 0;
-    margin-bottom: 3rem; } }
 
 @media (max-width: 380px) {
   .homepage .center-carousel .slick-slide .pic {

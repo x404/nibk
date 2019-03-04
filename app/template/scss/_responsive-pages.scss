@@ -2831,9 +2831,31 @@
 			}
 		}
 	}
+
+	.inner{
+		.product__menu{
+			margin-top: 1rem;
+		}
+
+		.product__rubrics{
+			margin-top: 0;
+			.rubric{
+				&__pic{
+					min-height: 0
+				}
+				&__link{
+					min-height: 0;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+
 	.product{
 		&__text{
 			order: 2;
+			padding-top: 2rem;
 			padding-bottom: 5rem;
 		}
 		&__rubrics{
@@ -2982,12 +3004,6 @@
 
 
 @media (max-width: 420px) {
-	.product__rubrics .rubric{
-		&__link{
-			min-height: 0;
-			margin-bottom: 3rem;
-		}
-	}
 
 }
 
