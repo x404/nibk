@@ -3819,7 +3819,7 @@ strong {
     height: 100vh; }
   .homepage .center-carousel .slick-slide img {
     position: relative;
-    max-width: 100%;
+    margin-left: -25%;
     width: auto;
     height: 100%; }
 
@@ -8554,9 +8554,9 @@ img.justifycenter, table.justifycenter {
       font-size: 1.4rem; }
   .homepage .info-md {
     background: #242526;
-    padding: 3rem 0 2px;
+    margin-bottom: 0;
     margin-top: 1rem;
-    margin-bottom: 0; }
+    padding: 3rem 0 2px; }
   .homepage .footer {
     background: #242526;
     margin-top: -1px;
@@ -8895,6 +8895,19 @@ img.justifycenter, table.justifycenter {
       font-size: 2.1rem; }
   .inner-about .coverage .title {
     font-size: 4rem; } }
+
+@media (max-width: 420px) {
+  .product__rubrics .rubric__link {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    margin-bottom: 3rem; }
+    .product__rubrics .rubric__link .rubric__pic {
+      padding-top: 2rem;
+      min-height: 0;
+      order: 1; }
+    .product__rubrics .rubric__link .rubric__title {
+      order: 0; } }
 
 @media (max-width: 380px) {
   .homepage .center-carousel .slick-slide .pic {
