@@ -412,6 +412,21 @@
 			width: 25rem;
 		}
 	}
+
+	@media (max-height: 500px){
+		#modal-callback{
+			.close-modal{
+				top: .5rem; 
+			}
+			.inner{
+				height: auto;
+				display: block;
+			}
+		}
+	}
+	.modal-callback.open, .modal-menu.open{
+		overflow-y: auto;
+	}
 }
 
 
@@ -535,6 +550,7 @@
 			display: block !important;
 		}
 		.form{
+			padding-bottom: 1rem;
 			.col{
 				width: 100%;
 			}
@@ -545,7 +561,7 @@
 		}
 
 		.close-modal{
-			top: 0;			
+			// top: 0;			
 		}
 	}
 }
@@ -578,6 +594,8 @@
 	.btn-callback{
 		display: block;
 	}
+
+
 }
 
 @media (max-width: 550px){

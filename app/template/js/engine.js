@@ -47,7 +47,7 @@ $(document).ready(function(){
 
 
 	$('#history-carousel').on('afterChange', function(event, slick, currentSlide){
-		let currentnum = currentSlide;
+		const currentnum = currentSlide;
 		$('.brake-rotate').removeClass("rotate-0 rotate-1 rotate-2 rotate-3 rotate-4 rotate-5 rotate-6 rotate-7 rotate-8");
 		document.querySelector('.brake-rotate').classList.add('rotate-' + currentnum);
 	});
@@ -201,7 +201,7 @@ $(document).ready(function(){
 	$('select.country').selectize();
 
 	$('#modal-feedback').on('show.bs.modal', function (e) {
-		let $title = $(e.relatedTarget).data('title');
+		const $title = $(e.relatedTarget).data('title');
 		$('#modal-feedback .title-model').text($title);
 	});
 });
@@ -219,7 +219,7 @@ $(document).ready(function(){
 // $(document).on('click', '.extra-toggle', function(e){
 [].forEach.call(document.querySelectorAll('[data-popup="modal"]'),function(el,i){
 	el.addEventListener('click', function(e){
-		let modal = this.dataset.target;
+		const modal = this.dataset.target;
 		if (window.innerWidth < 650 && modal=='#modal-menu') {
 			modal = '#apanel';
 		} else{
@@ -261,7 +261,7 @@ document.querySelector('.apanel .close-menu').addEventListener("click", function
 
 $(document).on('click', '.table-grid .model-title', function(e){
 	e.preventDefault();
-	let $this = $(this),
+	const $this = $(this),
 		$modelbody = $this.next('.model-body');
 
 	$this.toggleClass('arrow-down');

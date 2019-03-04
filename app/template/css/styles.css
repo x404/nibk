@@ -7205,6 +7205,17 @@ img.justifycenter, table.justifycenter {
   #modal-callback .select-wrapper {
     width: 25rem; } }
 
+@media (max-width: 991px) and (max-height: 500px) {
+  #modal-callback .close-modal {
+    top: .5rem; }
+  #modal-callback .inner {
+    height: auto;
+    display: block; } }
+
+@media (max-width: 991px) {
+  .modal-callback.open, .modal-menu.open {
+    overflow-y: auto; } }
+
 @media (max-width: 900px) {
   .modal-menu .close-modal {
     left: 3rem;
@@ -7269,13 +7280,13 @@ img.justifycenter, table.justifycenter {
     width: 110px; }
   #modal-callback .row {
     display: block !important; }
-  #modal-callback .form .col {
-    width: 100%; }
+  #modal-callback .form {
+    padding-bottom: 1rem; }
+    #modal-callback .form .col {
+      width: 100%; }
   #modal-callback .form .input-field input.form-control,
   #modal-callback .select-wrapper {
-    width: 100%; }
-  #modal-callback .close-modal {
-    top: 0; } }
+    width: 100%; } }
 
 @media (max-width: 700px) {
   .header__center img {
