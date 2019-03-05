@@ -160,7 +160,8 @@
 		padding: 13rem 0 12rem;
 
 		&__box{
-			min-height: 218px;
+			// min-height: 218px;
+			height: 220px;
 		}
 
 		.title{
@@ -189,8 +190,7 @@
 				background-color: $color4;
 				z-index: 99;
 				cursor: pointer;
-				transition: background-color .3s;
-			    
+				transition: background-color .3s;		    
 
 				&:hover{
 					background-color: $color3;

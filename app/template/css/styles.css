@@ -6460,7 +6460,7 @@ img.justifycenter, table.justifycenter {
   min-height: 92rem;
   padding: 13rem 0 12rem; }
   .inner-about .history__box {
-    min-height: 218px; }
+    height: 220px; }
   .inner-about .history .title {
     color: #f26722;
     font-family: "Officina Serif Black C";
@@ -7899,11 +7899,33 @@ img.justifycenter, table.justifycenter {
       margin-top: 3rem;
       height: 480px;
       width: 480px; }
+      .inner-about .history .brake .violet-dot,
       .inner-about .history .brake .active-dot {
         height: 33px;
         left: 18px;
         top: 175px;
         width: 33px; }
+      .inner-about .history .brake .violet-dot.dot-0 {
+        left: 18px;
+        top: 175px; }
+      .inner-about .history .brake .violet-dot.dot-1 {
+        left: 16px;
+        top: 261px; }
+      .inner-about .history .brake .violet-dot.dot-2 {
+        left: 43px;
+        top: 333px; }
+      .inner-about .history .brake .violet-dot.dot-3 {
+        left: 91px;
+        top: 388px; }
+      .inner-about .history .brake .violet-dot.dot-4 {
+        left: 156px;
+        top: 423px; }
+      .inner-about .history .brake .violet-dot.dot-5 {
+        left: 228px;
+        top: 434px; }
+      .inner-about .history .brake .violet-dot.dot-6 {
+        left: 302px;
+        top: 420px; }
     .inner-about .history__title {
       font-size: 2.8rem; }
   .inner-about .coverage {
@@ -8186,11 +8208,33 @@ img.justifycenter, table.justifycenter {
     margin-top: 5rem;
     height: 350px;
     width: 350px; }
+    .inner-about .history .brake .violet-dot,
     .inner-about .history .brake .active-dot {
       left: 12px;
       top: 127px;
       height: 25px;
       width: 25px; }
+    .inner-about .history .brake .violet-dot.dot-0 {
+      left: 12px;
+      top: 127px; }
+    .inner-about .history .brake .violet-dot.dot-1 {
+      left: 10px;
+      top: 190px; }
+    .inner-about .history .brake .violet-dot.dot-2 {
+      left: 30px;
+      top: 243px; }
+    .inner-about .history .brake .violet-dot.dot-3 {
+      left: 66px;
+      top: 283px; }
+    .inner-about .history .brake .violet-dot.dot-4 {
+      left: 113px;
+      top: 309px; }
+    .inner-about .history .brake .violet-dot.dot-5 {
+      left: 166px;
+      top: 317px; }
+    .inner-about .history .brake .violet-dot.dot-6 {
+      left: 220px;
+      top: 306px; }
   .inner-about #history-carousel .slick-arrow {
     width: 50px;
     height: 50px; }
@@ -8534,9 +8578,9 @@ img.justifycenter, table.justifycenter {
     .inner-about #history-carousel .slick-slide {
       padding-right: 80px; }
     .inner-about #history-carousel .slick-prev {
-      top: 20px; }
+      top: -20px; }
     .inner-about #history-carousel .slick-next {
-      bottom: 20px; }
+      bottom: 40px; }
   .inner-about .coverage .title {
     font-size: 5rem; }
   .inner-about .coverage__item {

@@ -197,9 +197,6 @@
 			}
 		}
 	}
-
-
-
 }
 
 
@@ -1014,11 +1011,23 @@
 				margin-top: 3rem;
 				height: 480px;
 				width: 480px;
+				.violet-dot,
 				.active-dot{
 					height: 33px;
 					left: 18px;
 					top: 175px;
 					width: 33px;
+				}
+				.violet-dot{
+					&.dot{
+						&-0{left: 18px;top: 175px;}
+						&-1{left: 16px;top: 261px;}
+						&-2{left: 43px;top: 333px;}
+						&-3{left: 91px;top: 388px;}
+						&-4{left: 156px;top: 423px;}
+						&-5{left: 228px;top: 434px;}
+						&-6{left: 302px;top: 420px;}
+					}
 				}
 			}
 			&__title{
@@ -1587,12 +1596,27 @@
 				margin-top: 5rem;
 				height: 350px;
 				width: 350px;
+
+				.violet-dot,
 				.active-dot{
 					left: 12px;
 					top: 127px;
 					height: 25px;
 					width: 25px;
 				}
+
+				.violet-dot{
+					&.dot{
+						&-0{left: 12px;top: 127px;}
+						&-1{left: 10px;top: 190px;}
+						&-2{left: 30px;top: 243px;}
+						&-3{left: 66px;top: 283px;}
+						&-4{left: 113px;top: 309px;}
+						&-5{left: 166px;top: 317px;}
+						&-6{left: 220px;top: 306px;}
+					}
+				}
+
 			}
 		}
 
@@ -2206,10 +2230,10 @@
 					padding-right: 80px;
 				}
 				&-prev{
-					top: 20px
+					top: -20px
 				}
 				&-next{
-					bottom: 20px;
+					bottom: 40px;
 				}
 			}
 		}
