@@ -5019,7 +5019,7 @@ blockquote {
   padding-left: 7rem; }
 
 .inner-subproducts .block-7 .text {
-  padding-bottom: 13rem; }
+  padding-bottom: 15rem; }
 
 .inner-shoes .arc, .inner-discrotor .arc {
   margin-top: -95px; }
@@ -6460,7 +6460,7 @@ img.justifycenter, table.justifycenter {
   min-height: 92rem;
   padding: 13rem 0 12rem; }
   .inner-about .history__box {
-    height: 220px; }
+    height: 230px; }
   .inner-about .history .title {
     color: #f26722;
     font-family: "Officina Serif Black C";
@@ -6479,6 +6479,9 @@ img.justifycenter, table.justifycenter {
       height: 42px;
       position: absolute;
       width: 42px; }
+    .inner-about .history .brake .active-dot {
+      height: 43px;
+      width: 43px; }
     .inner-about .history .brake .violet-dot {
       background-color: #713a97;
       z-index: 99;
