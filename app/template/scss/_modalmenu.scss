@@ -204,7 +204,7 @@
 		text-align: left;
 		.col{
 			flex-grow: 0;
-			width: 360px;		
+			width: 29.5rem;		
 		}
 
 		.textarea-field,
@@ -222,7 +222,7 @@
 				color: currentColor;
 				font-size: 1.7rem;
 				height: 3.5rem;
-				width: 34rem;
+				width: 27.5rem;
 			}
 			label{
 				color: currentColor;
@@ -231,11 +231,11 @@
 		.textarea-field{
 			margin-top: 4.2rem;
 			.form-control{
-				font-size: 1.7rem;
-				letter-spacing: .15rem;
 				background: url('data:image/gif;base64,R0lGODlhAQAeAIABAP///wAAACH5BAEAAAEALAAAAAABAB4AAAIFjI+pC1AAOw==');
 				color: $color2;
+				font-size: 1.7rem;
 				height: 64px;
+				letter-spacing: .15rem;
 				line-height: 1.8;
 			}
 		}
@@ -243,7 +243,7 @@
 
 	.select-wrapper{
 		margin-top: 3.2rem;
-		width: 34rem;
+		width: 27.5rem;
 	}
 
 	.selectize-input input{
@@ -257,8 +257,8 @@
 	}
 
 	textarea{
-		width: 100%;
 		display: block;
+		width: 100%;
 	}
 
 	.bottom{

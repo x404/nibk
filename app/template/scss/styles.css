@@ -4952,7 +4952,7 @@ strong {
   #modal-callback .form .col,
   #modal-feedback .form .col {
     flex-grow: 0;
-    width: 360px; }
+    width: 29.5rem; }
   .mailus .form .textarea-field .form-control,
   .mailus .form .input-field .form-control,
   #modal-callback .form .textarea-field .form-control,
@@ -4972,7 +4972,7 @@ strong {
       color: currentColor;
       font-size: 1.7rem;
       height: 3.5rem;
-      width: 34rem; }
+      width: 27.5rem; }
     .mailus .form .input-field label,
     #modal-callback .form .input-field label,
     #modal-feedback .form .input-field label {
@@ -4984,17 +4984,17 @@ strong {
     .mailus .form .textarea-field .form-control,
     #modal-callback .form .textarea-field .form-control,
     #modal-feedback .form .textarea-field .form-control {
-      font-size: 1.7rem;
-      letter-spacing: .15rem;
       background: url("data:image/gif;base64,R0lGODlhAQAeAIABAP///wAAACH5BAEAAAEALAAAAAABAB4AAAIFjI+pC1AAOw==");
       color: #fff;
+      font-size: 1.7rem;
       height: 64px;
+      letter-spacing: .15rem;
       line-height: 1.8; }
 .mailus .select-wrapper,
 #modal-callback .select-wrapper,
 #modal-feedback .select-wrapper {
   margin-top: 3.2rem;
-  width: 34rem; }
+  width: 27.5rem; }
 .mailus .selectize-input input,
 #modal-callback .selectize-input input,
 #modal-feedback .selectize-input input {
@@ -5033,8 +5033,8 @@ strong {
 .mailus textarea,
 #modal-callback textarea,
 #modal-feedback textarea {
-  width: 100%;
-  display: block; }
+  display: block;
+  width: 100%; }
 .mailus .bottom,
 #modal-callback .bottom,
 #modal-feedback .bottom {
@@ -7861,7 +7861,19 @@ img.justifycenter, table.justifycenter {
   .catalog-page .mailus .form input.form-control {
     width: 32rem; }
   .catalog-page .mailus .select-wrapper {
-    width: 32rem; } }
+    width: 32rem; }
+
+  .mailus .form .col,
+  #modal-callback .form .col,
+  #modal-feedback .form .col {
+    width: 27.5rem; }
+  .mailus .form .select-wrapper,
+  .mailus .form .input-field input.form-control,
+  #modal-callback .form .select-wrapper,
+  #modal-callback .form .input-field input.form-control,
+  #modal-feedback .form .select-wrapper,
+  #modal-feedback .form .input-field input.form-control {
+    width: 25.5rem; } }
 @media (max-width: 1680px) {
   .homepage .main .center .title {
     font-size: 8rem; }
@@ -7922,7 +7934,19 @@ img.justifycenter, table.justifycenter {
     margin-left: 3rem; }
   .inner-about .coverage__item {
     padding-left: 2rem;
-    padding-right: 2rem; } }
+    padding-right: 2rem; }
+
+  .mailus .form .col,
+  #modal-callback .form .col,
+  #modal-feedback .form .col {
+    width: 26rem; }
+  .mailus .form .select-wrapper,
+  .mailus .form .input-field input.form-control,
+  #modal-callback .form .select-wrapper,
+  #modal-callback .form .input-field input.form-control,
+  #modal-feedback .form .select-wrapper,
+  #modal-feedback .form .input-field input.form-control {
+    width: 24rem; } }
 @media (max-width: 1600px) {
   .inner .product__menu {
     font-size: 5rem; }
@@ -7944,11 +7968,6 @@ img.justifycenter, table.justifycenter {
   .mailus h1,
   .mailus .title {
     font-size: 8rem; }
-  .contactus .form .input-field input.form-control,
-  .contactus .select-wrapper,
-  .mailus .form .input-field input.form-control,
-  .mailus .select-wrapper {
-    width: 28rem; }
 
   .contactus .subtitle {
     font-size: 4rem; }

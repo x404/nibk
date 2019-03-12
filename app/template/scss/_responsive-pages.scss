@@ -110,6 +110,24 @@
 			}
 		}
 	}
+
+
+	.mailus,
+	#modal-callback,
+	#modal-feedback{
+		.form{
+			$w: 27.5rem;
+			.col{
+				width: $w;	
+			}	
+			.select-wrapper,
+			.input-field input.form-control
+			{
+				width: $w - 2rem;
+			}	
+		}
+	}
+
 }
 
 
@@ -233,6 +251,23 @@
 			}
 		}
 	}
+
+
+	.mailus,
+	#modal-callback,
+	#modal-feedback{
+		.form{
+			$w: 26rem;
+			.col{
+				width: $w;	
+			}	
+			.select-wrapper,
+			.input-field input.form-control
+			{
+				width: $w - 2rem;
+			}	
+		}
+	}
 }
 
 
@@ -283,7 +318,7 @@
 
 		.form .input-field input.form-control,
 		.select-wrapper{
-			width: 28rem;
+			// width: 28rem;
 		}
 	}
 	.contactus{
@@ -362,6 +397,24 @@
 		 .coverage .title{
 		 	font-size: 8rem;
 		 }
+	}
+}
+
+@media (max-width: 1550px){
+	.mailus,
+	#modal-callback,
+	#modal-feedback{
+		.form{
+			$w: 23rem;
+			.col{
+				width: $w;	
+			}	
+			.select-wrapper,
+			.input-field input.form-control
+			{
+				width: $w - 2rem;
+			}	
+		}
 	}
 }
 
