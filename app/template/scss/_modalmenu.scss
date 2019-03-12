@@ -198,13 +198,26 @@
 .mailus,
 #modal-callback,
 #modal-feedback{
+
+	.form{
+		$w: 29rem;
+		.col{
+			width: $w;	
+		}	
+		.select-wrapper,
+		.input-field input.form-control
+		{
+			width: $w - 2rem;
+		}	
+	}
+
+
 	.form{
 		font-family: "Officina Serif Black C";
 		margin-top: 1rem;
 		text-align: left;
 		.col{
 			flex-grow: 0;
-			width: 29.5rem;		
 		}
 
 		.textarea-field,
@@ -222,7 +235,6 @@
 				color: currentColor;
 				font-size: 1.7rem;
 				height: 3.5rem;
-				width: 27.5rem;
 			}
 			label{
 				color: currentColor;
@@ -243,7 +255,6 @@
 
 	.select-wrapper{
 		margin-top: 3.2rem;
-		width: 27.5rem;
 	}
 
 	.selectize-input input{

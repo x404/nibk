@@ -4456,6 +4456,19 @@ strong {
     font-size: 1.8rem;
     margin-top: 0rem; }
 
+.mailus .form .col,
+#modal-callback .form .col,
+#modal-feedback .form .col {
+  width: 29rem; }
+
+.mailus .form .select-wrapper,
+.mailus .form .input-field input.form-control,
+#modal-callback .form .select-wrapper,
+#modal-callback .form .input-field input.form-control,
+#modal-feedback .form .select-wrapper,
+#modal-feedback .form .input-field input.form-control {
+  width: 27rem; }
+
 .mailus .form,
 #modal-callback .form,
 #modal-feedback .form {
@@ -4465,8 +4478,7 @@ strong {
   .mailus .form .col,
   #modal-callback .form .col,
   #modal-feedback .form .col {
-    flex-grow: 0;
-    width: 29.5rem; }
+    flex-grow: 0; }
   .mailus .form .textarea-field .form-control,
   .mailus .form .input-field .form-control,
   #modal-callback .form .textarea-field .form-control,
@@ -4485,8 +4497,7 @@ strong {
       border-bottom-color: #fff;
       color: currentColor;
       font-size: 1.7rem;
-      height: 3.5rem;
-      width: 27.5rem; }
+      height: 3.5rem; }
     .mailus .form .input-field label,
     #modal-callback .form .input-field label,
     #modal-feedback .form .input-field label {
@@ -4508,8 +4519,7 @@ strong {
 .mailus .select-wrapper,
 #modal-callback .select-wrapper,
 #modal-feedback .select-wrapper {
-  margin-top: 3.2rem;
-  width: 27.5rem; }
+  margin-top: 3.2rem; }
 
 .mailus .selectize-input input,
 #modal-callback .selectize-input input,
@@ -7425,7 +7435,12 @@ img.justifycenter, table.justifycenter {
   .listproducts {
     grid-template-columns: repeat(4, 30rem); }
   .inner-about .history__carousel {
-    margin-left: 5rem; } }
+    margin-left: 5rem; }
+  .mailus-wholeseller .form .col {
+    width: 25rem; }
+  .mailus-wholeseller .form .select-wrapper,
+  .mailus-wholeseller .form .input-field input.form-control {
+    width: 23rem; } }
 
 @media (max-width: 1800px) {
   .catalog-page .search-result-table th,
@@ -7460,12 +7475,6 @@ img.justifycenter, table.justifycenter {
   .homepage .interesting .title,
   .homepage .lastnews .title {
     font-size: 4rem; }
-  .catalog-page .mailus .form .col {
-    width: auto; }
-  .catalog-page .mailus .form input.form-control {
-    width: 32rem; }
-  .catalog-page .mailus .select-wrapper {
-    width: 32rem; }
   .mailus .form .col,
   #modal-callback .form .col,
   #modal-feedback .form .col {
@@ -7476,7 +7485,12 @@ img.justifycenter, table.justifycenter {
   #modal-callback .form .input-field input.form-control,
   #modal-feedback .form .select-wrapper,
   #modal-feedback .form .input-field input.form-control {
-    width: 25.5rem; } }
+    width: 25.5rem; }
+  .mailus-wholeseller .form .col {
+    width: 25rem; }
+  .mailus-wholeseller .form .select-wrapper,
+  .mailus-wholeseller .form .input-field input.form-control {
+    width: 23rem; } }
 
 @media (max-width: 1680px) {
   .homepage .main .center .title {
@@ -7492,10 +7506,6 @@ img.justifycenter, table.justifycenter {
     padding-right: 4rem; }
     .homepage .about__title {
       font-size: 2rem; }
-  .catalog-page .mailus .form input.form-control {
-    width: 30rem; }
-  .catalog-page .mailus .select-wrapper {
-    width: 30rem; }
   .news h1 {
     font-size: 8rem; }
   .news__list {
@@ -7548,7 +7558,12 @@ img.justifycenter, table.justifycenter {
   #modal-callback .form .input-field input.form-control,
   #modal-feedback .form .select-wrapper,
   #modal-feedback .form .input-field input.form-control {
-    width: 24rem; } }
+    width: 24rem; }
+  .mailus-wholeseller .form .col {
+    width: 23rem; }
+  .mailus-wholeseller .form .select-wrapper,
+  .mailus-wholeseller .form .input-field input.form-control {
+    width: 21rem; } }
 
 @media (max-width: 1600px) {
   .inner .product__menu {
@@ -7608,7 +7623,12 @@ img.justifycenter, table.justifycenter {
   .inner-about .history .title {
     font-size: 7rem; }
   .inner-about .coverage .title {
-    font-size: 8rem; } }
+    font-size: 8rem; }
+  .mailus-wholeseller .form .col {
+    width: 28rem; }
+  .mailus-wholeseller .form .select-wrapper,
+  .mailus-wholeseller .form .input-field input.form-control {
+    width: 26rem; } }
 
 @media (max-width: 1550px) {
   .mailus .form .col,
@@ -7868,10 +7888,11 @@ img.justifycenter, table.justifycenter {
   .catalog-page .search-result-table th {
     font-size: 1.5rem;
     padding-right: 1rem; }
-  .catalog-page .mailus .form input.form-control {
-    width: 26rem; }
-  .catalog-page .mailus .select-wrapper {
-    width: 26rem; }
+  .mailus-wholeseller .form .col {
+    width: 20rem; }
+  .mailus-wholeseller .form .select-wrapper,
+  .mailus-wholeseller .form .input-field input.form-control {
+    width: 18rem; }
   .inner .main .detail__characteristics {
     margin-left: 0; }
   .inner .main .detail {

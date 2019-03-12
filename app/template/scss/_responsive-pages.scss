@@ -10,6 +10,20 @@
 			margin-left: 5rem;
 		}
 	}
+
+	.mailus-wholeseller{
+		.form{
+			$w: 25rem;
+			.col{
+				width: $w;	
+			}	
+			.select-wrapper,
+			.input-field input.form-control
+			{
+				width: $w - 2rem;
+			}	
+		}
+	}
 }
 
 
@@ -99,14 +113,14 @@
 		.mailus{
 			.form{
 				.col{
-					width: auto;
+					// width: auto;
 				}
 				input.form-control{
-					width: 32rem;
+					// width: 32rem;
 				}
 			}
 			.select-wrapper{
-				width: 32rem;
+				// width: 32rem;
 			}
 		}
 	}
@@ -117,6 +131,20 @@
 	#modal-feedback{
 		.form{
 			$w: 27.5rem;
+			.col{
+				width: $w;	
+			}	
+			.select-wrapper,
+			.input-field input.form-control
+			{
+				width: $w - 2rem;
+			}	
+		}
+	}
+
+	.mailus-wholeseller{
+		.form{
+			$w: 25rem;
 			.col{
 				width: $w;	
 			}	
@@ -161,14 +189,14 @@
 
 	.catalog-page{
 		.mailus{
-			$w: 30rem;
+			// $w: 30rem;
 			.form{
 				input.form-control{
-					width: $w;
+					// width: $w;
 				}
 			}
 			.select-wrapper{
-				width: $w;
+				// width: $w;
 			}
 		}
 	}
@@ -258,6 +286,20 @@
 	#modal-feedback{
 		.form{
 			$w: 26rem;
+			.col{
+				width: $w;	
+			}	
+			.select-wrapper,
+			.input-field input.form-control
+			{
+				width: $w - 2rem;
+			}	
+		}
+	}
+
+	.mailus-wholeseller{
+		.form{
+			$w: 23rem;
 			.col{
 				width: $w;	
 			}	
@@ -398,6 +440,22 @@
 		 	font-size: 8rem;
 		 }
 	}
+
+
+	.mailus-wholeseller{
+		.form{
+			$w: 28rem;
+			.col{
+				width: $w;	
+			}	
+			.select-wrapper,
+			.input-field input.form-control
+			{
+				width: $w - 2rem;
+			}	
+		}
+	}
+
 }
 
 @media (max-width: 1550px){
@@ -907,18 +965,31 @@
 			}
 		}
 
-		.mailus{
-			$w: 26rem;
-			.form{
-				input.form-control{
-					width: $w;
-				}
-			}
-			.select-wrapper{
-				width: $w;
-			}
-		}
+		// .mailus{
+		// 	$w: 26rem;
+		// 	.form{
+		// 		input.form-control{
+		// 			width: $w;
+		// 		}
+		// 	}
+		// 	.select-wrapper{
+		// 		width: $w;
+		// 	}
+		// }
+	}
 
+	.mailus-wholeseller{
+		.form{
+			$w: 20rem;
+			.col{
+				width: $w;	
+			}	
+			.select-wrapper,
+			.input-field input.form-control
+			{
+				width: $w - 2rem;
+			}	
+		}
 	}
 
 
@@ -1036,8 +1107,9 @@
 		.advantages .advantage__title{
 			font-size: 2rem;
 		}
-
 	}
+
+
 
 }
 
