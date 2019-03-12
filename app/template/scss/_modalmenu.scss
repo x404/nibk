@@ -194,9 +194,7 @@
 	}
 }
 
-
 .mailus,
-#modal-callback,
 #modal-feedback{
 	.form{
 		$w: 29rem;
@@ -209,6 +207,28 @@
 			width: $w - 2rem;
 		}	
 	}
+}
+
+#modal-callback{
+	.form{
+		$w: 32rem;
+		.col{
+			width: $w;	
+		}	
+		.select-wrapper,
+		.input-field input.form-control
+		{
+			width: $w - 2rem;
+		}	
+	}
+}
+
+
+
+.mailus,
+#modal-callback,
+#modal-feedback{
+
 
 
 	.form{

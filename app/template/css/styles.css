@@ -4457,17 +4457,21 @@ strong {
     margin-top: 0rem; }
 
 .mailus .form .col,
-#modal-callback .form .col,
 #modal-feedback .form .col {
   width: 29rem; }
 
 .mailus .form .select-wrapper,
 .mailus .form .input-field input.form-control,
-#modal-callback .form .select-wrapper,
-#modal-callback .form .input-field input.form-control,
 #modal-feedback .form .select-wrapper,
 #modal-feedback .form .input-field input.form-control {
   width: 27rem; }
+
+#modal-callback .form .col {
+  width: 32rem; }
+
+#modal-callback .form .select-wrapper,
+#modal-callback .form .input-field input.form-control {
+  width: 30rem; }
 
 .mailus .form,
 #modal-callback .form,
@@ -7437,13 +7441,10 @@ img.justifycenter, table.justifycenter {
   .homepage .lastnews .title {
     font-size: 4rem; }
   .mailus .form .col,
-  #modal-callback .form .col,
   #modal-feedback .form .col {
     width: 27.5rem; }
   .mailus .form .select-wrapper,
   .mailus .form .input-field input.form-control,
-  #modal-callback .form .select-wrapper,
-  #modal-callback .form .input-field input.form-control,
   #modal-feedback .form .select-wrapper,
   #modal-feedback .form .input-field input.form-control {
     width: 25.5rem; }
@@ -7510,13 +7511,10 @@ img.justifycenter, table.justifycenter {
     padding-left: 2rem;
     padding-right: 2rem; }
   .mailus .form .col,
-  #modal-callback .form .col,
   #modal-feedback .form .col {
     width: 26rem; }
   .mailus .form .select-wrapper,
   .mailus .form .input-field input.form-control,
-  #modal-callback .form .select-wrapper,
-  #modal-callback .form .input-field input.form-control,
   #modal-feedback .form .select-wrapper,
   #modal-feedback .form .input-field input.form-control {
     width: 24rem; }
@@ -7593,13 +7591,13 @@ img.justifycenter, table.justifycenter {
 
 @media (max-width: 1550px) {
   .mailus .form .col,
-  #modal-callback .form .col,
+  #--modal-callback .form .col,
   #--modal-feedback .form .col {
     width: 23rem; }
   .mailus .form .select-wrapper,
   .mailus .form .input-field input.form-control,
-  #modal-callback .form .select-wrapper,
-  #modal-callback .form .input-field input.form-control,
+  #--modal-callback .form .select-wrapper,
+  #--modal-callback .form .input-field input.form-control,
   #--modal-feedback .form .select-wrapper,
   #--modal-feedback .form .input-field input.form-control {
     width: 21rem; } }
@@ -7693,7 +7691,12 @@ img.justifycenter, table.justifycenter {
   .listarticles {
     grid-column-gap: 30px; }
   .main .maintext h2 {
-    font-size: 3.8rem; } }
+    font-size: 3.8rem; }
+  #modal-callback .form .col {
+    width: 25rem; }
+  #modal-callback .form .select-wrapper,
+  #modal-callback .form .input-field input.form-control {
+    width: 23rem; } }
 
 @media (max-width: 1280px) {
   .homepage .main .content {

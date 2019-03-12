@@ -127,7 +127,7 @@
 
 
 	.mailus,
-	#modal-callback,
+	// #modal-callback,
 	#modal-feedback{
 		.form{
 			$w: 27.5rem;
@@ -282,7 +282,7 @@
 
 
 	.mailus,
-	#modal-callback,
+	// #modal-callback,
 	#modal-feedback{
 		.form{
 			$w: 26rem;
@@ -460,7 +460,7 @@
 
 @media (max-width: 1550px){
 	.mailus,
-	#modal-callback,
+	#--modal-callback,
 	#--modal-feedback{
 		.form{
 			$w: 23rem;
@@ -585,7 +585,14 @@
 			}
 		}
 	}
+
+
 }
+
+@media (max-width: 1400px) {
+
+}
+
 
 @media (max-width: 1400px) {
 	.homepage{
@@ -652,6 +659,20 @@
 			h2{
 				font-size: 3.8rem;
 			}
+		}
+	}
+
+	#modal-callback{
+		.form{
+			$w: 25rem;
+			.col{
+				width: $w;	
+			}	
+			.select-wrapper,
+			.input-field input.form-control
+			{
+				width: $w - 2rem;
+			}	
 		}
 	}
 }
