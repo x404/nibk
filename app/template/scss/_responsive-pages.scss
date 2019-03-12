@@ -699,6 +699,12 @@
 		}
 	}
 
+	@media (max-height: 800px) {
+		.homepage .main .center{
+			margin-top: 14rem;
+		}
+	}
+
 	@media (max-height: 650px) {
 		.homepage .main .center{
 			margin-top: -3rem;

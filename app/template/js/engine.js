@@ -236,7 +236,7 @@ function discrotate(currentnum){
 // $(document).on('click', '.extra-toggle', function(e){
 [].forEach.call(document.querySelectorAll('[data-popup="modal"]'),function(el,i){
 	el.addEventListener('click', function(e){
-		const modal = this.dataset.target;
+		let modal = this.dataset.target;
 		if (window.innerWidth < 650 && modal=='#modal-menu') {
 			modal = '#apanel';
 		} else{
