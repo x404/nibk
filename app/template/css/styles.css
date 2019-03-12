@@ -3419,7 +3419,7 @@ strong {
 .icon-tel2:before,
 .icon-tel3:before,
 .icon-mail:before,
-.icon-mail2:before, .homepage .center-carousel .carousel__inner .pic:after, .homepage .center-carousel .carousel__inner .pic:before, .homepage .lastnews .carousel__pic:after, .apanel__body:before, .modal-menu .menu dd a:before, blockquote:before, blockquote:after, .product__rubrics .rubric__pic:before, .product__rubrics .rubric__pic:after, .inner-subproducts .text ul li:before, .inner .catalog-page .table-grid .model-title:before, .location:after, .news .new__pic:after, .news .new__pic .inner:after, .content .maintext ul li:before, .inner-about #history-carousel .slick-arrow:before, .inner-testreport-article .content .maintext .dot-orange:before {
+.icon-mail2:before, .homepage .center-carousel .carousel__inner .pic:after, .homepage .center-carousel .carousel__inner .pic:before, .homepage .lastnews .carousel__pic:after, .apanel__body:before, .modal-menu .menu dd a:before, blockquote:before, blockquote:after, .product__rubrics .rubric__pic:before, .product__rubrics .rubric__pic:after, .inner-subproducts .text ul li:before, .inner .catalog-page .table-grid .model-title:before, .news .new__pic:after, .news .new__pic .inner:after, .content .maintext ul li:before, .inner-about #history-carousel .slick-arrow:before, .inner-testreport-article .content .maintext .dot-orange:before {
   content: "";
   display: block;
   position: absolute; }
@@ -5687,49 +5687,10 @@ blockquote {
   top: -20px;
   right: -230px; }
 
-.flex-center, .pagination a, .pagination span, .location .btn {
+.flex-center, .pagination a, .pagination span {
   display: flex;
   align-items: center;
   justify-content: center; }
-
-.location {
-  background: linear-gradient(to right, #883c80 50%, #713a97 50%);
-  background-size: 10px 100%;
-  color: #fff;
-  font-size: 2rem;
-  margin-top: 3rem;
-  margin-bottom: 5rem;
-  padding: 5rem 5rem 4rem 2.5rem;
-  position: relative; }
-  .location:after {
-    border-top: 11px solid #f26722;
-    bottom: -11px;
-    left: 0;
-    transform-origin: 0 0;
-    transform: skewY(-0.5deg);
-    width: 100%; }
-  .location .logocompany {
-    margin-bottom: -1rem; }
-  .location p {
-    line-height: 1.2;
-    margin: 2.5rem 0; }
-  .location .btn {
-    color: #fff;
-    border-radius: 4rem;
-    border: 2px solid #f26722;
-    font-family: "Officina Serif Black C";
-    font-size: 2rem;
-    height: 4rem;
-    letter-spacing: .15rem;
-    width: 18rem !important; }
-    .location .btn:hover {
-      background-color: #f26722;
-      text-decoration: none; }
-  .location .map {
-    background-color: #f2f2f2;
-    border: 7px solid #171717;
-    height: 280px;
-    width: 480px; }
 
 /**
  * @author zhixin wen <wenzhixin2010@gmail.com>
@@ -7900,8 +7861,6 @@ img.justifycenter, table.justifycenter {
     padding-right: 3rem; }
   .inner .main .detail__body .column {
     padding-right: 2rem; }
-  .location {
-    padding-right: 2rem; }
   .news h1 {
     font-size: 6rem; }
   .news__list {
@@ -8206,19 +8165,6 @@ img.justifycenter, table.justifycenter {
     text-align: center; }
   .inner .main .detail__body .column {
     padding-right: 0; }
-  .location__map {
-    margin-top: 3rem; }
-  .location__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center; }
-    .location__info p, .location__info .btn {
-      margin-left: auto;
-      margin-right: auto; }
-  .location .map {
-    margin-left: auto;
-    margin-right: auto; }
   .submenu ul {
     display: block;
     text-align: center; }
@@ -8559,9 +8505,6 @@ img.justifycenter, table.justifycenter {
     text-align: center !important; }
   .dealers-data .search-result-table td:before {
     padding-left: 0; }
-  .location .map,
-  .location iframe {
-    width: 100% !important; }
   .news h1 {
     font-size: 5rem; }
   .news__list {
@@ -8941,26 +8884,6 @@ img.justifycenter, table.justifycenter {
       padding-bottom: 1.5rem; }
   .catalog-page .tab-content {
     margin-top: 0; }
-  .location {
-    font-size: 1.8rem;
-    padding: 2.5rem 1.5rem;
-    margin-top: 0; }
-    .location .logocompany {
-      margin-bottom: 0; }
-      .location .logocompany img {
-        max-width: 100%; }
-    .location p {
-      margin: 2rem auto; }
-    .location .address,
-    .location .tel {
-      padding-left: 0;
-      padding-top: 55px;
-      text-align: center; }
-      .location .address:before,
-      .location .tel:before {
-        margin-left: -10px;
-        left: 50%;
-        top: 0; }
   .inner-about #history-carousel {
     margin-left: auto;
     margin-right: auto;

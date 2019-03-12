@@ -1008,9 +1008,9 @@
 
 
 	// where to buy
-	.location{
-		padding-right: 2rem;
-	}
+	// .location{
+	// 	padding-right: 2rem;
+	// }
 
 
 	// news
@@ -1590,25 +1590,25 @@
 	}
 
 	// where to buy
-	.location{
-		&__map{
-			margin-top: 3rem;
-		}
-		&__info{
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			text-align: center;
-			p, .btn{
-				margin-left: auto;
-				margin-right: auto;
-			}
-		}
-		.map{
-			margin-left: auto;
-			margin-right: auto;
-		}
-	}
+	// .location{
+	// 	&__map{
+	// 		margin-top: 3rem;
+	// 	}
+	// 	&__info{
+	// 		display: flex;
+	// 		flex-direction: column;
+	// 		justify-content: center;
+	// 		text-align: center;
+	// 		p, .btn{
+	// 			margin-left: auto;
+	// 			margin-right: auto;
+	// 		}
+	// 	}
+	// 	.map{
+	// 		margin-left: auto;
+	// 		margin-right: auto;
+	// 	}
+	// }
 
 
 	// submenu
@@ -2219,12 +2219,12 @@
 		}
 	}
 
-	.location{
-		.map,
-		iframe{
-			width: 100% !important
-		}
-	}
+	// .location{
+	// 	.map,
+	// 	iframe{
+	// 		width: 100% !important
+	// 	}
+	// }
 
 
 	// news
@@ -2929,31 +2929,31 @@
 		}
 	}
 
-	.location{
-		font-size: 1.8rem;
-		padding: 2.5rem 1.5rem;
-		margin-top: 0;
-		.logocompany{
-			margin-bottom: 0;
-			img{
-				max-width: 100%
-			}
-		}
-		p{
-			margin: 2rem auto;
-		}
-		.address,
-		.tel{
-			padding-left: 0;
-			padding-top: 55px;
-			text-align: center;
-			&:before{
-				margin-left: -10px;
-				left: 50%;
-				top: 0;
-			}
-		}
-	}
+	// .location{
+	// 	font-size: 1.8rem;
+	// 	padding: 2.5rem 1.5rem;
+	// 	margin-top: 0;
+	// 	.logocompany{
+	// 		margin-bottom: 0;
+	// 		img{
+	// 			max-width: 100%
+	// 		}
+	// 	}
+	// 	p{
+	// 		margin: 2rem auto;
+	// 	}
+	// 	.address,
+	// 	.tel{
+	// 		padding-left: 0;
+	// 		padding-top: 55px;
+	// 		text-align: center;
+	// 		&:before{
+	// 			margin-left: -10px;
+	// 			left: 50%;
+	// 			top: 0;
+	// 		}
+	// 	}
+	// }
 
 
 	// aboutus
