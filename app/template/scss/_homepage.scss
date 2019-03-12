@@ -142,9 +142,6 @@
 	.info-md{
 		display: none;
 	}
-
-	.content{
-	}
 	.interesting,
 	.lastnews{
 		.title{
@@ -214,7 +211,6 @@
 		.slick{
 			&-arrow{
 				border: 1px solid $color4;
-
 				line{
 					stroke: $color4;
 				}
@@ -228,6 +224,14 @@
 		}
 		.carousel{
 			margin-left: -3rem;
+			&__pic{
+				align-items: center;
+				display: flex;
+				min-height: 250px;
+				@media (max-width: 1450px){
+					min-height: 130px
+				}
+			}
 			a:hover{
 				img{
 					transform: scale(1.1);

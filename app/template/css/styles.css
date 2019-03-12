@@ -3934,6 +3934,13 @@ strong {
 
 .homepage .interesting .carousel {
   margin-left: -3rem; }
+  .homepage .interesting .carousel__pic {
+    align-items: center;
+    display: flex;
+    min-height: 250px; }
+    @media (max-width: 1450px) {
+      .homepage .interesting .carousel__pic {
+        min-height: 130px; } }
   .homepage .interesting .carousel a:hover img {
     transform: scale(1.1); }
 
