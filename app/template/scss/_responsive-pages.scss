@@ -1186,6 +1186,23 @@
 }
 
 
+@media (max-width: 1010px) {
+	#modal-callback{
+		.form{
+			$w: 20rem;
+			.col{
+				width: $w;	
+			}	
+			.select-wrapper,
+			.input-field input.form-control
+			{
+				width: $w - 2rem;
+			}	
+		}
+	}
+}
+
+
 @media (max-width: 991px) {
 	.homepage{
 		.content{
@@ -1407,21 +1424,6 @@
 		}
 	}
 
-	.mailus{
-		.form{
-			.col{
-				width: 100%;				
-			}
-			.select-wrapper{
-				width: 100%				
-			}
-			.input-field{
-				input.form-control{
-					width: 100%;	
-				}
-			}
-		}
-	}
 
 	.icon-balloon2,
 	.icon-tel2,
@@ -1709,7 +1711,25 @@
 				font-size: 7rem;
 			}
 		}
+	}
 
+
+
+	#modal-callback,
+	.mailus{
+		.form{
+			.col{
+				width: 100%;				
+			}
+			.select-wrapper{
+				width: 100%				
+			}
+			.input-field{
+				input.form-control{
+					width: 100%;	
+				}
+			}
+		}
 	}
 }
 
@@ -1745,6 +1765,23 @@
 		}
 		.close-modal{
 			right: 0;
+		}
+	}
+}
+
+
+@media (max-width: 830px) {
+	#modal-callback2{
+		.form{
+			$w: 18rem;
+			.col{
+				width: $w;	
+			}	
+			.select-wrapper,
+			.input-field input.form-control
+			{
+				width: $w - 2rem;
+			}	
 		}
 	}
 }
@@ -1876,6 +1913,8 @@
 		}
 	}
 
+
+	#modal-callback,
 	.mailus{
 		.bottom{
 			text-align: center;

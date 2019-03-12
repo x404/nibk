@@ -8016,6 +8016,13 @@ img.justifycenter, table.justifycenter {
   .homepage .footer {
     margin-top: 1rem; } }
 
+@media (max-width: 1010px) {
+  #modal-callback .form .col {
+    width: 20rem; }
+  #modal-callback .form .select-wrapper,
+  #modal-callback .form .input-field input.form-control {
+    width: 18rem; } }
+
 @media (max-width: 991px) {
   .homepage .content .interesting,
   .homepage .content .lastnews {
@@ -8124,12 +8131,6 @@ img.justifycenter, table.justifycenter {
     font-size: 2.2rem; }
   .contactus .contacts .cell__geo {
     font-size: 2rem; }
-  .mailus .form .col {
-    width: 100%; }
-  .mailus .form .select-wrapper {
-    width: 100%; }
-  .mailus .form .input-field input.form-control {
-    width: 100%; }
   .icon-balloon2,
   .icon-tel2,
   .icon-mail2 {
@@ -8296,7 +8297,15 @@ img.justifycenter, table.justifycenter {
       .inner-about .advantages .advantage__item img {
         max-width: 60%; }
   .inner-about .coverage .title {
-    font-size: 7rem; } }
+    font-size: 7rem; }
+  #modal-callback .form .col,
+  .mailus .form .col {
+    width: 100%; }
+  #modal-callback .form .select-wrapper,
+  .mailus .form .select-wrapper {
+    width: 100%; }
+  #modal-callback .form .input-field input.form-control, .mailus .form .input-field input.form-control {
+    width: 100%; } }
 
 @media (max-width: 950px) {
   .inner .product__rubrics .row {
@@ -8312,6 +8321,13 @@ img.justifycenter, table.justifycenter {
     width: 90%; }
   #modal-feedback .close-modal {
     right: 0; } }
+
+@media (max-width: 830px) {
+  #modal-callback2 .form .col {
+    width: 18rem; }
+  #modal-callback2 .form .select-wrapper,
+  #modal-callback2 .form .input-field input.form-control {
+    width: 16rem; } }
 
 @media (max-width: 800px) {
   .homepage .center-carousel {
@@ -8376,8 +8392,10 @@ img.justifycenter, table.justifycenter {
     font-size: 4.8rem; }
   .contactus .subtitle {
     font-size: 2.5rem; }
+  #modal-callback .bottom,
   .mailus .bottom {
     text-align: center; }
+    #modal-callback .bottom .btn,
     .mailus .bottom .btn {
       margin-left: auto;
       margin-right: auto;

@@ -271,7 +271,7 @@
 
 			<form action="#" method="post" class="form form-ask">
 				<fieldset>
-					<div class="row justify-content-between">
+					<div class="row d-block d-lg-flex justify-content-between">
 						<div class="col">
 							<div class="select-wrapper">
 								<select name="country" class="country" id="selectcountry">
@@ -303,6 +303,13 @@
 								<input type="email" id="email" name="email" class="form-control email required" value="">
 							</div>
 						</div>
+						<div class="col">
+							<div class="input-field">
+								<label for="tel" class="name-field">Your Phone</label>
+								<label for="tel" class="helper-field helper-field-name">Your Phone</label>
+								<input type="tel" id="tel" name="tel" class="form-control required" value="">
+							</div>
+						</div>
 					</div>
 
 					<div class="input-field textarea-field">
@@ -311,7 +318,7 @@
 						<textarea id="msg" name="msg" class="form-control textarea required"></textarea>
 					</div>
 
-					<div class="bottom d-flex justify-content-center">
+					<div class="bottom d-block d-md-flex justify-content-center">
 						<div class="recaptcha">
 							<img src="images/captcha.jpg" alt="">
 						</div>

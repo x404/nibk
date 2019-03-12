@@ -8016,6 +8016,18 @@ img.justifycenter, table.justifycenter {
     font-size: 7rem; }
   .inner-about .coverage .title {
     font-size: 8rem; } }
+@media (max-width: 1550px) {
+  .mailus .form .col,
+  #modal-callback .form .col,
+  #modal-feedback .form .col {
+    width: 23rem; }
+  .mailus .form .select-wrapper,
+  .mailus .form .input-field input.form-control,
+  #modal-callback .form .select-wrapper,
+  #modal-callback .form .input-field input.form-control,
+  #modal-feedback .form .select-wrapper,
+  #modal-feedback .form .input-field input.form-control {
+    width: 21rem; } }
 @media (max-width: 1500px) {
   .homepage .center-carousel .pic {
     width: 626px; }
@@ -8425,6 +8437,12 @@ img.justifycenter, table.justifycenter {
     font-size: 1.5rem; }
   .homepage .footer {
     margin-top: 1rem; } }
+@media (max-width: 1010px) {
+  #modal-callback .form .col {
+    width: 20rem; }
+  #modal-callback .form .select-wrapper,
+  #modal-callback .form .input-field input.form-control {
+    width: 18rem; } }
 @media (max-width: 991px) {
   .homepage .content .interesting,
   .homepage .content .lastnews {
@@ -8543,10 +8561,13 @@ img.justifycenter, table.justifycenter {
   .contactus .contacts .cell__geo {
     font-size: 2rem; }
 
+  #modal-callback .form .col,
   .mailus .form .col {
     width: 100%; }
+  #modal-callback .form .select-wrapper,
   .mailus .form .select-wrapper {
     width: 100%; }
+  #modal-callback .form .input-field input.form-control,
   .mailus .form .input-field input.form-control {
     width: 100%; }
 
@@ -8739,6 +8760,12 @@ img.justifycenter, table.justifycenter {
     width: 90%; }
   #modal-feedback .close-modal {
     right: 0; } }
+@media (max-width: 830px) {
+  #modal-callback .form .col {
+    width: 18rem; }
+  #modal-callback .form .select-wrapper,
+  #modal-callback .form .input-field input.form-control {
+    width: 16rem; } }
 @media (max-width: 800px) {
   .homepage .center-carousel {
     display: block; }
