@@ -4427,7 +4427,7 @@ strong {
     font-family: "Officina Serif Black C";
     margin-bottom: 2rem; }
   .contacts .d-grid {
-    grid-template-columns: repeat(3, minmax(min-content, max-content)); }
+    grid-template-columns: repeat(3, 1fr); }
   .contacts .cell__geo {
     font-size: 2.4rem; }
   .contacts .cell__tel {
