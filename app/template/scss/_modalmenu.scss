@@ -169,7 +169,8 @@
 	}
 
 	.selectize-control.single .selectize-input:after, .ms-choice div:after{
-		filter: brightness(10);
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJlJREFUeNpi+P//fx0Q3wBiEyBmIAEHAfEjII4CcVL+Q8BTIDYjwYCfQPwXiF1hgiVQg14QYVAgEH8H4t9AHA4SQ5YsR3KRMQEDfgFxKEwcXRHMRc+A2ByHF0AGhCHLYbOtFGrQcyA2hYoFIHkhDF0PLn/DvPYQiKuB+CvUFaHY1OMLQJjX/uNyATGGgHADEH8E4nh86gACDACqZvCzugVS3AAAAABJRU5ErkJggg==');
+		// filter: brightness(10) !important;
 	}
 
 	.selectize-input > input{

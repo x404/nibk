@@ -4478,7 +4478,7 @@ strong {
       .contacts .yourcountry {
         padding-right: 6rem; } }
   .contacts .selectize-control.single .selectize-input:after, .contacts .ms-choice div:after {
-    filter: brightness(10); }
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJlJREFUeNpi+P//fx0Q3wBiEyBmIAEHAfEjII4CcVL+Q8BTIDYjwYCfQPwXiF1hgiVQg14QYVAgEH8H4t9AHA4SQ5YsR3KRMQEDfgFxKEwcXRHMRc+A2ByHF0AGhCHLYbOtFGrQcyA2hYoFIHkhDF0PLn/DvPYQiKuB+CvUFaHY1OMLQJjX/uNyATGGgHADEH8E4nh86gACDACqZvCzugVS3AAAAABJRU5ErkJggg=="); }
   .contacts .selectize-input > input {
     color: #fff; }
     .contacts .selectize-input > input::-webkit-input-placeholder {
@@ -8137,7 +8137,12 @@ img.justifycenter, table.justifycenter {
       padding-right: .5rem; }
   .homepage .main .center {
     margin-left: 1rem;
-    margin-top: -5rem; }
+    margin-top: -10rem; } }
+  @media (max-width: 1050px) and (max-height: 800px) {
+    .homepage .main .center {
+      margin-top: -6rem; } }
+
+@media (max-width: 1050px) {
   .homepage .about__title {
     font-size: 1.5rem; }
   .homepage .footer {

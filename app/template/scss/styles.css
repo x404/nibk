@@ -3872,6 +3872,10 @@ input::-moz-focus-inner {
     grid-template-rows: auto 1fr auto; }
 
   @media (min-width: 992px) {
+    .grid-lg-2 {
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 30px; }
+
     .grid-lg-3 {
       grid-template-columns: repeat(3, 1fr);
       grid-row-gap: 30px; }
@@ -3920,7 +3924,7 @@ strong {
 .icon-tel2:before,
 .icon-tel3:before,
 .icon-mail:before,
-.icon-mail2:before, .homepage .center-carousel .carousel__inner .pic:after, .homepage .center-carousel .carousel__inner .pic:before, .homepage .lastnews .carousel__pic:after, .apanel__body:before, .modal-menu .menu dd a:before, blockquote:before, blockquote:after, .product__rubrics .rubric__pic:before, .product__rubrics .rubric__pic:after, .inner-subproducts .text ul li:before, .inner .catalog-page .table-grid .model-title:before, .location:after, .news .new__pic:after, .news .new__pic .inner:after, .content .maintext ul li:before, .inner-about #history-carousel .slick-arrow:before, .inner-testreport-article .content .maintext .dot-orange:before {
+.icon-mail2:before, .homepage .center-carousel .carousel__inner .pic:after, .homepage .center-carousel .carousel__inner .pic:before, .homepage .lastnews .carousel__pic:after, .apanel__body:before, .modal-menu .menu dd a:before, blockquote:before, blockquote:after, .product__rubrics .rubric__pic:before, .product__rubrics .rubric__pic:after, .inner-subproducts .text ul li:before, .inner .catalog-page .table-grid .model-title:before, .news .new__pic:after, .news .new__pic .inner:after, .content .maintext ul li:before, .inner-about #history-carousel .slick-arrow:before, .inner-testreport-article .content .maintext .dot-orange:before {
   content: "";
   display: block;
   position: absolute; }
@@ -4680,7 +4684,7 @@ strong {
     .apanel .top .btn-callback {
       font-family: "Officina Serif Black SCC";
       position: absolute;
-      right: 0;
+      right: 1rem;
       top: .7rem; }
   .apanel__inner {
     background: #f26722;
@@ -4695,8 +4699,6 @@ strong {
   .apanel__body {
     height: 100%;
     overflow: hidden;
-    padding-left: 15px;
-    padding-right: 15px;
     padding-top: 2px;
     position: relative; }
     .apanel__body:before {
@@ -4728,6 +4730,32 @@ strong {
     font-size: 2.5rem;
     font-weight: 700;
     justify-content: center; }
+  .apanel .yourcountry {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    color: #fff; }
+    .apanel .yourcountry .title {
+      font-family: "Officina Serif Black C";
+      font-size: 3rem;
+      padding-bottom: 1rem; }
+    .apanel .yourcountry .selectize-control.single .selectize-input:after, .apanel .yourcountry .ms-choice div:after {
+      filter: brightness(10) !important; }
+    .apanel .yourcountry .selectize-input > input {
+      color: #fff; }
+      .apanel .yourcountry .selectize-input > input::-webkit-input-placeholder {
+        color: #fff; }
+      .apanel .yourcountry .selectize-input > input::-moz-placeholder {
+        color: #fff; }
+      .apanel .yourcountry .selectize-input > input:-ms-input-placeholder {
+        color: #fff; }
+      .apanel .yourcountry .selectize-input > input:focus::-webkit-input-placeholder {
+        transition: line-height 0.5s ease; }
+      .apanel .yourcountry .selectize-input > input:focus::-moz-placeholder {
+        transition: line-height 0.5s ease; }
+      .apanel .yourcountry .selectize-input > input:focus:-ms-input-placeholder {
+        transition: line-height 0.5s ease; }
+    .apanel .yourcountry .selectize-input > .item, .apanel .yourcountry .selectize-input > input {
+      font-family: "Officina Serif Black C"; }
 
 @media (min-width: 651px) {
   .apanel {
@@ -4912,8 +4940,51 @@ strong {
     font-size: 6rem;
     font-family: "Officina Serif Black C";
     margin-bottom: 2rem; }
-  .contacts .d-grid {
-    grid-template-columns: repeat(3, 1fr); }
+    @media (max-width: 1850px) {
+      .contacts .title {
+        font-size: 5rem; } }
+    @media (max-width: 1280px) {
+      .contacts .title {
+        font-size: 4.5rem; } }
+  .contacts .yourcountry {
+    padding-right: 8rem; }
+    @media (max-width: 1600px) {
+      .contacts .yourcountry {
+        padding-right: 5rem; } }
+    @media (max-width: 1500px) {
+      .contacts .yourcountry {
+        padding-right: 3rem; } }
+    @media (max-width: 1330px) {
+      .contacts .yourcountry {
+        padding-right: 1.5rem; } }
+    @media (max-width: 1280px) {
+      .contacts .yourcountry {
+        padding-right: .5rem; } }
+    @media (max-width: 1250px) {
+      .contacts .yourcountry {
+        padding-right: 6rem; } }
+  .contacts .selectize-control.single .selectize-input:after, .contacts .ms-choice div:after {
+    filter: brightness(10) !important; }
+  .contacts .selectize-input > input {
+    color: #fff; }
+    .contacts .selectize-input > input::-webkit-input-placeholder {
+      color: #fff; }
+    .contacts .selectize-input > input::-moz-placeholder {
+      color: #fff; }
+    .contacts .selectize-input > input:-ms-input-placeholder {
+      color: #fff; }
+    .contacts .selectize-input > input:focus::-webkit-input-placeholder {
+      transition: line-height 0.5s ease; }
+    .contacts .selectize-input > input:focus::-moz-placeholder {
+      transition: line-height 0.5s ease; }
+    .contacts .selectize-input > input:focus:-ms-input-placeholder {
+      transition: line-height 0.5s ease; }
+  .contacts .selectize-input > .item, .contacts .selectize-input > input {
+    font-family: "Officina Serif Black C"; }
+  .contacts .selectize-dropdown-content {
+    max-height: 169px; }
+  .contacts .eq-height {
+    min-height: 220px; }
   .contacts .cell__geo {
     font-size: 2.4rem; }
   .contacts .cell__tel {
@@ -4943,16 +5014,20 @@ strong {
     margin-top: 0rem; }
 
 .mailus .form .col,
-#modal-callback .form .col,
 #modal-feedback .form .col {
   width: 29rem; }
 .mailus .form .select-wrapper,
 .mailus .form .input-field input.form-control,
-#modal-callback .form .select-wrapper,
-#modal-callback .form .input-field input.form-control,
 #modal-feedback .form .select-wrapper,
 #modal-feedback .form .input-field input.form-control {
   width: 27rem; }
+
+#modal-callback .form .col {
+  width: 32rem; }
+#modal-callback .form .select-wrapper,
+#modal-callback .form .input-field input.form-control {
+  width: 30rem; }
+
 .mailus .form,
 #modal-callback .form,
 #modal-feedback .form {
@@ -6100,49 +6175,10 @@ blockquote {
   top: -20px;
   right: -230px; }
 
-.flex-center, .pagination a, .pagination span, .location .btn {
+.flex-center, .pagination a, .pagination span {
   display: flex;
   align-items: center;
   justify-content: center; }
-
-.location {
-  background: linear-gradient(to right, #883c80 50%, #713a97 50%);
-  background-size: 10px 100%;
-  color: #fff;
-  font-size: 2rem;
-  margin-top: 3rem;
-  margin-bottom: 5rem;
-  padding: 5rem 5rem 4rem 2.5rem;
-  position: relative; }
-  .location:after {
-    border-top: 11px solid #f26722;
-    bottom: -11px;
-    left: 0;
-    transform-origin: 0 0;
-    transform: skewY(-0.5deg);
-    width: 100%; }
-  .location .logocompany {
-    margin-bottom: -1rem; }
-  .location p {
-    line-height: 1.2;
-    margin: 2.5rem 0; }
-  .location .btn {
-    color: #fff;
-    border-radius: 4rem;
-    border: 2px solid #f26722;
-    font-family: "Officina Serif Black C";
-    font-size: 2rem;
-    height: 4rem;
-    letter-spacing: .15rem;
-    width: 18rem !important; }
-    .location .btn:hover {
-      background-color: #f26722;
-      text-decoration: none; }
-  .location .map {
-    background-color: #f2f2f2;
-    border: 7px solid #171717;
-    height: 280px;
-    width: 480px; }
 
 /**
  * @author zhixin wen <wenzhixin2010@gmail.com>
@@ -7314,7 +7350,7 @@ img.justifycenter, table.justifycenter {
     .apanel .top .btn-callback {
       font-family: "Officina Serif Black SCC";
       position: absolute;
-      right: 0;
+      right: 1rem;
       top: .7rem; }
   .apanel__inner {
     background: #f26722;
@@ -7329,8 +7365,6 @@ img.justifycenter, table.justifycenter {
   .apanel__body {
     height: 100%;
     overflow: hidden;
-    padding-left: 15px;
-    padding-right: 15px;
     padding-top: 2px;
     position: relative; }
     .apanel__body:before {
@@ -7362,6 +7396,32 @@ img.justifycenter, table.justifycenter {
     font-size: 2.5rem;
     font-weight: 700;
     justify-content: center; }
+  .apanel .yourcountry {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    color: #fff; }
+    .apanel .yourcountry .title {
+      font-family: "Officina Serif Black C";
+      font-size: 3rem;
+      padding-bottom: 1rem; }
+    .apanel .yourcountry .selectize-control.single .selectize-input:after, .apanel .yourcountry .ms-choice div:after {
+      filter: brightness(10) !important; }
+    .apanel .yourcountry .selectize-input > input {
+      color: #fff; }
+      .apanel .yourcountry .selectize-input > input::-webkit-input-placeholder {
+        color: #fff; }
+      .apanel .yourcountry .selectize-input > input::-moz-placeholder {
+        color: #fff; }
+      .apanel .yourcountry .selectize-input > input:-ms-input-placeholder {
+        color: #fff; }
+      .apanel .yourcountry .selectize-input > input:focus::-webkit-input-placeholder {
+        transition: line-height 0.5s ease; }
+      .apanel .yourcountry .selectize-input > input:focus::-moz-placeholder {
+        transition: line-height 0.5s ease; }
+      .apanel .yourcountry .selectize-input > input:focus:-ms-input-placeholder {
+        transition: line-height 0.5s ease; }
+    .apanel .yourcountry .selectize-input > .item, .apanel .yourcountry .selectize-input > input {
+      font-family: "Officina Serif Black C"; }
 
 @media (min-width: 651px) {
   .apanel {
@@ -7700,12 +7760,17 @@ img.justifycenter, table.justifycenter {
   .inner .footer {
     padding-bottom: 1rem; } }
 @media (max-width: 870px) {
-  .modal-menu .contacts {
-    display: none; }
+  .modal-menu .container {
+    height: auto; }
+  .modal-menu .jnbk {
+    display: none !important; }
   .modal-menu .col {
     flex-grow: 0;
     flex-basis: auto;
     width: 50%; }
+
+  .contacts .yourcountry {
+    width: 380px; }
 
   #modal-callback .form .input-field input.form-control,
   #modal-callback .select-wrapper {
@@ -7807,10 +7872,6 @@ img.justifycenter, table.justifycenter {
     padding-left: 1rem;
     padding-right: 1rem; }
 
-  .apanel__body {
-    padding-left: .8rem;
-    padding-right: .8rem; }
-
   .btn-callback {
     width: 9.2rem; } }
 @media (max-width: 320px) {
@@ -7871,13 +7932,10 @@ img.justifycenter, table.justifycenter {
     font-size: 4rem; }
 
   .mailus .form .col,
-  #modal-callback .form .col,
   #modal-feedback .form .col {
     width: 27.5rem; }
   .mailus .form .select-wrapper,
   .mailus .form .input-field input.form-control,
-  #modal-callback .form .select-wrapper,
-  #modal-callback .form .input-field input.form-control,
   #modal-feedback .form .select-wrapper,
   #modal-feedback .form .input-field input.form-control {
     width: 25.5rem; }
@@ -7900,8 +7958,11 @@ img.justifycenter, table.justifycenter {
     padding-left: 4rem;
     padding-right: 4rem; }
     .homepage .about__title {
-      font-size: 2rem; }
-
+      font-size: 2rem; } }
+@media (max-width: 1680px) and (max-height: 730px) {
+  .homepage .main .center {
+    margin-top: 9rem; } }
+@media (max-width: 1680px) {
   .news h1 {
     font-size: 8rem; }
   .news__list {
@@ -7945,13 +8006,10 @@ img.justifycenter, table.justifycenter {
     padding-right: 2rem; }
 
   .mailus .form .col,
-  #modal-callback .form .col,
   #modal-feedback .form .col {
     width: 26rem; }
   .mailus .form .select-wrapper,
   .mailus .form .input-field input.form-control,
-  #modal-callback .form .select-wrapper,
-  #modal-callback .form .input-field input.form-control,
   #modal-feedback .form .select-wrapper,
   #modal-feedback .form .input-field input.form-control {
     width: 24rem; }
@@ -8038,13 +8096,13 @@ img.justifycenter, table.justifycenter {
     width: 26rem; } }
 @media (max-width: 1550px) {
   .mailus .form .col,
-  #modal-callback .form .col,
+  #--modal-callback .form .col,
   #--modal-feedback .form .col {
     width: 23rem; }
   .mailus .form .select-wrapper,
   .mailus .form .input-field input.form-control,
-  #modal-callback .form .select-wrapper,
-  #modal-callback .form .input-field input.form-control,
+  #--modal-callback .form .select-wrapper,
+  #--modal-callback .form .input-field input.form-control,
   #--modal-feedback .form .select-wrapper,
   #--modal-feedback .form .input-field input.form-control {
     width: 21rem; } }
@@ -8141,7 +8199,13 @@ img.justifycenter, table.justifycenter {
     grid-column-gap: 30px; }
 
   .main .maintext h2 {
-    font-size: 3.8rem; } }
+    font-size: 3.8rem; }
+
+  #modal-callback .form .col {
+    width: 25rem; }
+  #modal-callback .form .select-wrapper,
+  #modal-callback .form .input-field input.form-control {
+    width: 23rem; } }
 @media (max-width: 1280px) {
   .homepage .main .content {
     padding-left: 1rem;
@@ -8152,7 +8216,40 @@ img.justifycenter, table.justifycenter {
   .homepage .lastnews .carousel__title {
     padding-left: 1rem;
     padding-right: 1rem; } }
-@media (max-width: 1280px) and (max-height: 650px) {
+@media (max-width: 1280px) and (max-height: 800px) {
+  .homepage .main .center {
+    margin-top: 14rem; } }
+@media (max-width: 1280px) and (max-height: 700px) {
+  .homepage .main .center {
+    margin-top: 12rem; } }
+@media (max-width: 1280px) and (max-height: 640px) {
+  .homepage .main .center {
+    margin-top: 8rem; }
+    .homepage .main .center .title {
+      font-size: 6rem; }
+    .homepage .main .center .cifr {
+      font-size: 5rem; } }
+@media (max-width: 1280px) and (max-height: 640px) {
+  .homepage .main .center {
+    margin-top: 6rem; }
+    .homepage .main .center .title {
+      font-size: 5rem; }
+    .homepage .main .center .cifr {
+      font-size: 4rem; } }
+@media (max-width: 1280px) and (max-height: 580px) {
+  .homepage .main .center {
+    margin-top: 5rem; } }
+@media (max-width: 1280px) and (max-height: 560px) {
+  .homepage .main .center {
+    margin-top: 2rem; }
+    .homepage .main .center .title {
+      font-size: 4rem; }
+    .homepage .main .center .cifr {
+      font-size: 3rem; } }
+@media (max-width: 1280px) and (max-height: 520px) {
+  .homepage .main .center {
+    margin-top: 0; } }
+@media (max-width: 1280px) and (max-height: 450px) {
   .homepage .main .center {
     margin-top: -3rem;
     font-size: 1.4rem; }
@@ -8321,9 +8418,6 @@ img.justifycenter, table.justifycenter {
   .inner .main .detail__body .column {
     padding-right: 2rem; }
 
-  .location {
-    padding-right: 2rem; }
-
   .news h1 {
     font-size: 6rem; }
   .news__list {
@@ -8454,7 +8548,11 @@ img.justifycenter, table.justifycenter {
       padding-right: .5rem; }
   .homepage .main .center {
     margin-left: 1rem;
-    margin-top: -5rem; }
+    margin-top: -10rem; } }
+  @media (max-width: 1050px) and (max-height: 800px) {
+    .homepage .main .center {
+      margin-top: -6rem; } }
+@media (max-width: 1050px) {
   .homepage .about__title {
     font-size: 1.5rem; }
   .homepage .footer {
@@ -8529,6 +8627,9 @@ img.justifycenter, table.justifycenter {
       font-size: 2.4rem; }
     .listproducts .product__link {
       padding: 1rem 1rem; }
+
+  .contacts .eq-height {
+    min-height: 0; }
 
   .inner-testreports h1,
   .inner-articles h1 {
@@ -8639,20 +8740,6 @@ img.justifycenter, table.justifycenter {
 
   .inner .main .detail__body .column {
     padding-right: 0; }
-
-  .location__map {
-    margin-top: 3rem; }
-  .location__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center; }
-    .location__info p, .location__info .btn {
-      margin-left: auto;
-      margin-right: auto; }
-  .location .map {
-    margin-left: auto;
-    margin-right: auto; }
 
   .submenu ul {
     display: block;
@@ -9008,10 +9095,6 @@ img.justifycenter, table.justifycenter {
     text-align: center !important; }
   .dealers-data .search-result-table td:before {
     padding-left: 0; }
-
-  .location .map,
-  .location iframe {
-    width: 100% !important; }
 
   .news h1 {
     font-size: 5rem; }
@@ -9409,27 +9492,6 @@ img.justifycenter, table.justifycenter {
       padding-bottom: 1.5rem; }
   .catalog-page .tab-content {
     margin-top: 0; }
-
-  .location {
-    font-size: 1.8rem;
-    padding: 2.5rem 1.5rem;
-    margin-top: 0; }
-    .location .logocompany {
-      margin-bottom: 0; }
-      .location .logocompany img {
-        max-width: 100%; }
-    .location p {
-      margin: 2rem auto; }
-    .location .address,
-    .location .tel {
-      padding-left: 0;
-      padding-top: 55px;
-      text-align: center; }
-      .location .address:before,
-      .location .tel:before {
-        margin-left: -10px;
-        left: 50%;
-        top: 0; }
 
   .inner-about #history-carousel {
     margin-left: auto;

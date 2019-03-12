@@ -1328,11 +1328,11 @@
 
 		.main{
 			.center{
-				// margin-left: 3rem;
-				// margin-top: 3rem;
-
 				margin-left: 1rem;
-				margin-top: -5rem;
+				margin-top: -10rem;
+				@media (max-height: 800px){
+					margin-top: -6rem;
+				}
 			}
 		}
 
