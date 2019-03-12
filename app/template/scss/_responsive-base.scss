@@ -500,13 +500,22 @@
 
 @media (max-width: 870px){
 	.modal-menu{
-		.contacts{
-			display: none;
+		.container{
+			height: auto;
+		}
+		.jnbk{
+			display: none !important;
 		}
 		.col{
 			flex-grow: 0;
 			flex-basis: auto;
 			width: 50%;
+		}
+	}
+
+	.contacts{
+		.yourcountry{
+			width: 380px;
 		}
 	}
 
@@ -703,10 +712,6 @@
 	.inner .header{
 		padding-left: 1rem;
 		padding-right: 1rem;
-	}
-	.apanel__body{
-		padding-left: .8rem;
-		padding-right: .8rem;
 	}
 	.btn-callback{
 		width: 9.2rem;

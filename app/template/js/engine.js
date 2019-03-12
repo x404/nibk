@@ -49,12 +49,6 @@ $(document).ready(function(){
 	});	
 
 
-	$('#history-carousel').on('afterChange', function(event, slick, currentSlide){
-		// const currentnum = currentSlide;
-		// $('.disc-rotate').removeClass("rotate-0 rotate-1 rotate-2 rotate-3 rotate-4 rotate-5 rotate-6 rotate-7 rotate-8");
-		// document.querySelector('.disc-rotate').classList.add('rotate-' + currentnum);
-	});
-
 	$('#history-carousel .slick-next, #history-carousel .slick-prev').on('click', function(){
 		const currentnum = $('#history-carousel').slick('slickCurrentSlide') ;
 		discrotate(currentnum);
@@ -259,7 +253,6 @@ document.onkeydown = function(evt) {
     } else {
         isEscape = (evt.keyCode == 27);
     }
-    // if (isEscape && document.querySelector('.genmodal.open').classList.contains('open')) {
     if (isEscape && document.querySelector('.genmodal.open')) {
     	document.querySelector('.genmodal.open').setAttribute('aria-hidden', 'true');
     	document.querySelector('.genmodal.open').classList.remove('open');

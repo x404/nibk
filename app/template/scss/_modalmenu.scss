@@ -141,10 +141,58 @@
 		font-size: 6rem;
 		font-family: "Officina Serif Black C";
 		margin-bottom: 2rem;
+		@media (max-width: 1850px){
+			font-size: 5rem;
+		}
+		@media (max-width: 1280px){
+			font-size: 4.5rem;
+		}
+	}
+
+	.yourcountry{
+		padding-right: 8rem;
+		@media (max-width: 1600px){
+			padding-right: 5rem;
+		}
+		@media (max-width: 1500px){
+			padding-right: 3rem;
+		}
+		@media (max-width: 1330px){
+			padding-right: 1.5rem;
+		}
+		@media (max-width: 1280px){
+			padding-right: .5rem;
+		}
+		@media (max-width: 1250px){
+			padding-right: 6rem;
+		}
+	}
+
+	.selectize-control.single .selectize-input:after, .ms-choice div:after{
+		filter: brightness(10);
+	}
+
+	.selectize-input > input{
+		color: $color2;
+		@include placeholder(#fff)
+	}
+
+	.selectize-input{
+		& > .item,
+		& > input{
+		    font-family: "Officina Serif Black C";
+		}
+	}
+	.selectize-dropdown-content{
+		max-height: 169px;
+	}
+
+	.eq-height{
+		min-height: 220px
 	}
 	.d-grid{
 		// grid-template-columns: repeat(3, minmax(min-content, max-content))
-		grid-template-columns: repeat(3, 1fr)
+		// grid-template-columns: repeat(3, 1fr)
 	}
 	.cell{
 		&__geo{
