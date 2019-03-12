@@ -461,7 +461,7 @@
 @media (max-width: 1550px){
 	.mailus,
 	#modal-callback,
-	#modal-feedback{
+	#--modal-feedback{
 		.form{
 			$w: 23rem;
 			.col{
@@ -1791,14 +1791,14 @@
 	.mailus{
 		.form{
 			.col{
-				width: 100%;				
+				width: 100%;
 			}
 			.select-wrapper{
-				width: 100%				
+				width: 100%
 			}
 			.input-field{
 				input.form-control{
-					width: 100%;	
+					width: 100%;
 				}
 			}
 		}
@@ -1826,6 +1826,17 @@
 			}
 		}
 	}
+
+	#modal-feedback{
+		padding-left: 1.5rem !important;
+		padding-right: 1.5rem;
+		.modal-dialog{
+			max-width: 100%;
+		}
+		.close-modal{
+			right: 0;
+		}
+	}
 }
 
 
@@ -1838,6 +1849,20 @@
 		.close-modal{
 			right: 0;
 		}
+
+		.form{
+			$w: 23rem;
+			.col{
+				width: $w;	
+			}	
+			.select-wrapper,
+			.input-field input.form-control
+			{
+				width: $w - 2rem;
+			}	
+		}
+
+
 	}
 }
 
@@ -2152,10 +2177,17 @@
 	}
 
 	#modal-feedback{
+		padding-left: 15px !important;
+		.modal-dialog{
+			width: 100%;
+		}
 		.title{
 			font-size: 4.4rem;
 		}
 		.form{
+			.col{
+				width: 100%;
+			}
 			.input-field{
 				input.form-control{
 					width: 100%	;

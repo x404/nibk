@@ -5607,7 +5607,7 @@ blockquote {
   stroke-width: 5; }
 
 #modal-feedback .modal-dialog {
-  max-width: 815px; }
+  max-width: 880px; }
 
 #modal-feedback .modal-content {
   background: none;
@@ -7633,14 +7633,14 @@ img.justifycenter, table.justifycenter {
 @media (max-width: 1550px) {
   .mailus .form .col,
   #modal-callback .form .col,
-  #modal-feedback .form .col {
+  #--modal-feedback .form .col {
     width: 23rem; }
   .mailus .form .select-wrapper,
   .mailus .form .input-field input.form-control,
   #modal-callback .form .select-wrapper,
   #modal-callback .form .input-field input.form-control,
-  #modal-feedback .form .select-wrapper,
-  #modal-feedback .form .input-field input.form-control {
+  #--modal-feedback .form .select-wrapper,
+  #--modal-feedback .form .input-field input.form-control {
     width: 21rem; } }
 
 @media (max-width: 1500px) {
@@ -8335,13 +8335,25 @@ img.justifycenter, table.justifycenter {
     max-width: 30rem;
     display: block;
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+  #modal-feedback {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem; }
+    #modal-feedback .modal-dialog {
+      max-width: 100%; }
+    #modal-feedback .close-modal {
+      right: 0; } }
 
 @media (max-width: 850px) {
   #modal-feedback .modal-dialog {
     width: 90%; }
   #modal-feedback .close-modal {
-    right: 0; } }
+    right: 0; }
+  #modal-feedback .form .col {
+    width: 23rem; }
+  #modal-feedback .form .select-wrapper,
+  #modal-feedback .form .input-field input.form-control {
+    width: 21rem; } }
 
 @media (max-width: 830px) {
   #modal-callback2 .form .col {
@@ -8524,19 +8536,25 @@ img.justifycenter, table.justifycenter {
     padding: 3rem 2rem; }
     .catalog-page .mailus .subtitle {
       font-size: 1.6rem; }
-  #modal-feedback .title {
-    font-size: 4.4rem; }
-  #modal-feedback .form .input-field input.form-control {
-    width: 100%; }
-  #modal-feedback .form .bottom {
-    text-align: center; }
-    #modal-feedback .form .bottom .btn {
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 2rem;
-      font-size: 1.8rem;
-      height: 5.5rem;
-      border-radius: 5.5rem; }
+  #modal-feedback {
+    padding-left: 15px !important; }
+    #modal-feedback .modal-dialog {
+      width: 100%; }
+    #modal-feedback .title {
+      font-size: 4.4rem; }
+    #modal-feedback .form .col {
+      width: 100%; }
+    #modal-feedback .form .input-field input.form-control {
+      width: 100%; }
+    #modal-feedback .form .bottom {
+      text-align: center; }
+      #modal-feedback .form .bottom .btn {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        font-size: 1.8rem;
+        height: 5.5rem;
+        border-radius: 5.5rem; }
   .dealers-data .search-title {
     text-align: center !important; }
   .dealers-data .search-result-table td:before {
