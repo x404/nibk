@@ -13,5 +13,7 @@ __Используемые в проекте js плагины__
 * Скрипт стилизации выпадающих списков с поиском[https://github.com/selectize/selectize.js](https://github.com/selectize/selectize.js) , [http://selectize.github.io/selectize.js/](http://selectize.github.io/selectize.js/)
 * Сообщение для устаревших браузеров Outdated Browser v1.1.5[https://github.com/burocratik/outdated-browser](https://github.com/burocratik/outdated-browser) [Демо](http://outdatedbrowser.com/ru)
 * Slick слайдер [https://github.com/kenwheeler/slick](https://github.com/kenwheeler/slick)
-* Стилизация скролов nicescroll[https://github.com/inuyaksa/jquery.nicescroll/blob/master/README.md](https://github.com/inuyaksa/jquery.nicescroll/blob/master/README.md)
+* Стилизация скролов nicescroll [https://github.com/inuyaksa/jquery.nicescroll/blob/master/README.md](https://github.com/inuyaksa/jquery.nicescroll/blob/master/README.md)
+* Галерея [Fotorama](http://fotorama.io/)
+
 
