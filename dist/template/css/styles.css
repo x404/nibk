@@ -3764,6 +3764,14 @@ strong {
   background-color: rgba(242, 103, 34, 0.98);
   opacity: 1; }
 
+@media (min-width: 992px) {
+  .revealator-once {
+    opacity: 0; }
+  .loaded .main-pic.partially-below, .loaded .main-pic.revealator-within {
+    transform: none;
+    transition-delay: unset !important;
+    transition: none !important; } }
+
 .homepage .header,
 .homepage .footer {
   position: relative;

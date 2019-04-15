@@ -108,7 +108,7 @@ input::-moz-focus-inner{
 
 /*** standart classes *****/
 p{}
-a{color:#020000; transition: .3s}
+a{color:#020000; transition: .3s;}
 h1{font-size:2.5rem}
 h2{font-size:2.4rem}
 h3{font-size:1.6rem}
@@ -566,4 +566,28 @@ strong{
 .modal-backdrop.show{
 	background-color: rgba(242, 103, 34, .98);
 	opacity: 1;
+}
+
+
+
+@media (min-width: 992px) {
+	.revealator-once {
+		opacity: 0;
+	}
+
+	// .overflow {
+	// 	overflow: hidden;
+	// }
+
+	.loaded {
+		.main-pic {
+
+			&.partially-below,
+			&.revealator-within {
+				transform: none;
+				transition-delay: unset !important;
+				transition: none !important
+			}
+		}
+	}
 }

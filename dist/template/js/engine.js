@@ -227,7 +227,6 @@ function discrotate(currentnum){
 	})
 });
 
-// $(document).on('click', '.extra-toggle', function(e){
 [].forEach.call(document.querySelectorAll('[data-popup="modal"]'),function(el,i){
 	el.addEventListener('click', function(e){
 		let modal = this.dataset.target;

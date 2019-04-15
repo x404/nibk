@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
@@ -37,7 +37,7 @@
 		<!-- =header -->
 		<header class="header">
 			<div class="d-flex justify-content-between">
-				<div class="header__left">
+				<div class="header__left revealator-slideright revealator-delay2 revealator-once">
 					<div class="d-flex">
 						<div class="extra-toggle-wrapper" data-popup="modal" data-target="#modal-menu">
 							<div class="extra-toggle-inner">
@@ -59,12 +59,12 @@
 						</div>
 					</div>
 				</div>
-				<div class="header__center">
+				<div class="header__center revealator-slideleft revealator-delay5 revealator-once">
 					<div class="logo-home">
 						<img src="/template/images/logo-home.png" alt="" />
 					</div>
 				</div>
-				<div class="header__right">
+				<div class="header__right revealator-slideleft revealator-delay8 revealator-once">
 					<div class="d-flex justify-content-between">
 						<div class="navmenu cl-effect-11-inv">
 							<ul class="nav nav-tabs d-flex">
@@ -80,7 +80,7 @@
 		<!-- =/header -->
 
 
-		<div class="center-carousel">
+		<div class="center-carousel  revealator-zoomin revealator-delay10 revealator-once">
 			<div class="carousel__inner">
 				<div id="home-carousel">
 					<div>
@@ -104,7 +104,7 @@
 			<!-- =content -->
 			<div class="content">
 				<div class="d-flex justify-content-between align-items-center">
-					<div class="interesting d-flex align-items-center">
+					<div class="interesting d-flex align-items-center revealator-slideright revealator-delay3 revealator-once">
 						<p class="title rotate90">DID YOU <br> KNOW?</p>
 						<div class="carousel">
 							<div id="dyk-carousel">
@@ -128,12 +128,12 @@
 							<div class="carousel-nav"></div>
 						</div>
 					</div>
-					<div class="center text-center">
+					<div class="center text-center revealator-zoomin revealator-delay10 revealator-once">
 						<p class="title">One stop of <br> all brakes</p>
 						<p class="cifr">5643</p>
 						<p class="nibk">NIBK produces</p>
 					</div>
-					<div class="lastnews d-flex align-items-center">
+					<div class="lastnews d-flex align-items-center revealator-slideleft revealator-delay5 revealator-once">
 						<div class="carousel">
 							<div id="news-carousel">
 								<div>
@@ -162,7 +162,7 @@
 			<!-- =/content -->
 
 			<!-- =about -->
-			<div class="about d-grid justify-content-between">
+			<div class="about d-grid justify-content-between revealator-zoomin revealator-delay13 revealator-once">
 				<div class="about__cell">
 					<div class="about__icon">
 						<img src="/template/images/icons/icon-1.png" alt="" />
@@ -505,6 +505,9 @@
 
 <script type="text/javascript" src="/template/js/slick.min.js"></script>
 <script src="/template/js/engine.js"></script>
+
+<script src="/template/js/fm.revealator.jquery.js"></script>
+<link rel="stylesheet" property="stylesheet" href="/template/css/fm.revealator.jquery.css" />
 
 <script>
 	window.addEventListener("mousemove",onmousemove, false)

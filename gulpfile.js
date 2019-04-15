@@ -230,7 +230,7 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 		config.templateDir + '/css/styles.css',
 		config.templateDir + '/css/fotorama.css',
 		config.templateDir + '/css/selectize.css',
-		// config.templateDir + '/css/tiny.css',
+		config.templateDir + '/css/fm.revealator.jquery.css'
 	])
 	.pipe(gulp.dest(config.destDir + '/template/css'));
 
@@ -244,6 +244,7 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 		// config.templateDir + '/js/fm.revealator.jquery.js',
 		config.templateDir + '/js/engine.js',
 		config.templateDir + '/js/filters.js',
+		config.templateDir + '/js/fm.revealator.jquery.js',
 		config.templateDir + '/js/fotorama.js',
 		config.templateDir + '/js/modernizr-custom-webp.js',
 		config.templateDir + '/js/libs.min.js',
