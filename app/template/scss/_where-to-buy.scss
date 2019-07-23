@@ -1,0 +1,47 @@
+.inner-catalog{
+	#service-center{
+		padding-top: 4.5rem;
+		h2{
+			font-size: 5rem;
+			font-family: 'Officina Serif Black C';
+			line-height: 1.1;
+			color: #000;
+			margin-bottom: 1.4rem;
+		}
+		.text{
+			font-size: 2rem;
+			margin-left: 6rem;
+		}
+
+		.about{
+			grid-column-gap: 10px;
+			grid-row-gap: 35px;
+			margin-top: 4rem;
+			&__cell{
+				display: flex;
+				align-items: center;
+			}
+			&__title{
+				color: $color1;
+				font-family: "Officina Serif Black C";
+				font-size: 1.8rem;
+				line-height: 1.4;
+				padding-left: 17px;
+				text-transform: uppercase;
+			}
+
+			&__icon{
+				flex-shrink: 0;
+				text-align: center;
+				width: 78px;
+			}
+
+		}
+	}
+
+	#map{
+		box-shadow: 0 0 40px rgba(38,46,56,.3);
+		height: 870px;
+		margin-top: 4.5rem;
+	}
+}

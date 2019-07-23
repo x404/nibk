@@ -78,6 +78,20 @@ input::-moz-focus-inner{
 		grid-template-rows: auto 1fr auto;			
 	}
 
+	@media (min-width: 767px){
+		.grid-md-2{
+			grid-template-columns: repeat(2, 1fr);
+			grid-row-gap: 20px;
+		}	
+		.grid-md-3{
+			grid-template-columns: repeat(3, 1fr);
+			grid-row-gap: 20px;
+		}		
+		.d-md-grid{
+			display: grid !important;
+		}
+	}
+
 
 	@media (min-width: 992px){
 		.grid-lg-2{

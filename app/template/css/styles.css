@@ -3370,6 +3370,15 @@ input::-moz-focus-inner {
     display: grid;
     grid-template-areas: "header" "main" "footer";
     grid-template-rows: auto 1fr auto; }
+  @media (min-width: 767px) {
+    .grid-md-2 {
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 20px; }
+    .grid-md-3 {
+      grid-template-columns: repeat(3, 1fr);
+      grid-row-gap: 20px; }
+    .d-md-grid {
+      display: grid !important; } }
   @media (min-width: 992px) {
     .grid-lg-2 {
       grid-template-columns: repeat(2, 1fr);
@@ -6652,6 +6661,41 @@ img.justifycenter, table.justifycenter {
   padding: 0;
   margin-top: -8rem; }
 
+.inner-catalog #service-center {
+  padding-top: 4.5rem; }
+  .inner-catalog #service-center h2 {
+    font-size: 5rem;
+    font-family: 'Officina Serif Black C';
+    line-height: 1.1;
+    color: #000;
+    margin-bottom: 1.4rem; }
+  .inner-catalog #service-center .text {
+    font-size: 2rem;
+    margin-left: 6rem; }
+  .inner-catalog #service-center .about {
+    grid-column-gap: 10px;
+    grid-row-gap: 35px;
+    margin-top: 4rem; }
+    .inner-catalog #service-center .about__cell {
+      display: flex;
+      align-items: center; }
+    .inner-catalog #service-center .about__title {
+      color: #000;
+      font-family: "Officina Serif Black C";
+      font-size: 1.8rem;
+      line-height: 1.4;
+      padding-left: 17px;
+      text-transform: uppercase; }
+    .inner-catalog #service-center .about__icon {
+      flex-shrink: 0;
+      text-align: center;
+      width: 78px; }
+
+.inner-catalog #map {
+  box-shadow: 0 0 40px rgba(38, 46, 56, 0.3);
+  height: 870px;
+  margin-top: 4.5rem; }
+
 .inner-testreport-article .content .maintext {
   font-size: 1.7rem; }
   .inner-testreport-article .content .maintext img {
@@ -7558,7 +7602,9 @@ img.justifycenter, table.justifycenter {
     width: 25rem; }
   .mailus-wholeseller .form .select-wrapper,
   .mailus-wholeseller .form .input-field input.form-control {
-    width: 23rem; } }
+    width: 23rem; }
+  .inner-catalog #service-center .text {
+    margin-left: 3rem; } }
 
 @media (max-width: 1680px) {
   .homepage .main .center .title {
@@ -7712,7 +7758,13 @@ img.justifycenter, table.justifycenter {
   #--modal-callback .form .input-field input.form-control,
   #--modal-feedback .form .select-wrapper,
   #--modal-feedback .form .input-field input.form-control {
-    width: 21rem; } }
+    width: 21rem; }
+  .inner-catalog #service-center .text {
+    font-size: 1.8rem; }
+  .inner-catalog #service-center h2 {
+    font-size: 4rem; }
+  .inner-catalog #service-center .about__title {
+    font-size: 1.7rem; } }
 
 @media (max-width: 1500px) {
   .homepage .center-carousel .pic {
@@ -8057,7 +8109,9 @@ img.justifycenter, table.justifycenter {
     padding-top: 10rem;
     padding-bottom: 15rem; }
   .inner-about .advantages .advantage__title {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .inner-catalog #service-center .about {
+    grid-column-gap: 40px; } }
 
 @media (max-width: 1200px) {
   .inner-about .main .content h1 {
@@ -8327,114 +8381,22 @@ img.justifycenter, table.justifycenter {
     text-align: center; }
   .inner .main .detail__body .column {
     padding-right: 0; }
-  .submenu ul {
-    display: block;
-    text-align: center; }
-    .submenu ul li {
-      margin: 1rem 0; }
-  .news .new__title {
-    margin-top: -2rem; }
-  .inner .product__rubrics .rubric__pic {
-    padding-top: 5rem; }
-  .inner-materialreports .maintext h1 {
-    font-size: 5rem; }
-  .inner-materialreports .maintext .subtitle {
-    font-size: 1.8rem; }
-  .inner-materialreports .groups .title {
-    font-size: 3.2rem; }
-  .inner-materialreports .groups .group__item {
-    margin-top: 3rem; }
-  .inner-materialreports .groups .group__title {
-    font-size: 2.2rem; }
-  .inner-materialreports .reports {
-    margin-top: 6rem; }
-    .inner-materialreports .reports .title {
-      font-size: 5rem; }
-    .inner-materialreports .reports .listarticles {
-      grid-template-columns: repeat(3, 210px); }
-  .characteristics {
-    display: block; }
-    .characteristics .characteristic__title {
-      font-size: 2.5rem; }
-    .characteristics .characteristic__column {
-      margin-top: 2rem;
-      width: 100%; }
-  .inner-about .main h1,
-  .inner-about .main .subtitle {
-    text-align: center; }
-  .inner-about .main h1 {
-    font-size: 6rem; }
-  .inner-about .main .mainpic {
-    margin-top: 2rem; }
-  .inner-about .history .title {
-    font-size: 6rem; }
-  .inner-about .history__year {
-    font-size: 6rem; }
-  .inner-about .history__title {
-    font-size: 2.5rem; }
-  .inner-about .history__desc {
-    font-size: 2rem; }
-  .inner-about .history .brake {
-    margin-top: 5rem;
-    height: 350px;
-    width: 350px; }
-    .inner-about .history .brake .violet-dot,
-    .inner-about .history .brake .active-dot {
-      left: 12px;
-      top: 127px;
-      height: 25px;
-      width: 25px; }
-    .inner-about .history .brake .violet-dot.dot-0 {
-      left: 12px;
-      top: 127px; }
-    .inner-about .history .brake .violet-dot.dot-1 {
-      left: 10px;
-      top: 190px; }
-    .inner-about .history .brake .violet-dot.dot-2 {
-      left: 30px;
-      top: 243px; }
-    .inner-about .history .brake .violet-dot.dot-3 {
-      left: 66px;
-      top: 283px; }
-    .inner-about .history .brake .violet-dot.dot-4 {
-      left: 113px;
-      top: 309px; }
-    .inner-about .history .brake .violet-dot.dot-5 {
-      left: 166px;
-      top: 317px; }
-    .inner-about .history .brake .violet-dot.dot-6 {
-      left: 220px;
-      top: 306px; }
-  .inner-about #history-carousel .slick-arrow {
-    width: 50px;
-    height: 50px; }
-    .inner-about #history-carousel .slick-arrow:before {
-      width: 30px;
-      height: 15px;
-      background-size: contain; }
-  .inner-about .advantages {
-    background: none;
-    padding-bottom: 8rem;
-    flex-wrap: wrap;
-    margin-top: 7rem;
-    justify-content: center !important; }
-    .inner-about .advantages .advantage__item {
-      margin-top: 0 !important;
-      margin-bottom: 4rem;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem; }
-      .inner-about .advantages .advantage__item img {
-        max-width: 60%; }
-  .inner-about .coverage .title {
-    font-size: 7rem; }
-  #modal-callback .form .col,
-  .mailus .form .col {
-    width: 100%; }
-  #modal-callback .form .select-wrapper,
-  .mailus .form .select-wrapper {
-    width: 100%; }
-  #modal-callback .form .input-field input.form-control, .mailus .form .input-field input.form-control {
-    width: 100%; } }
+  .inner-catalog #service-center .left .d-flex {
+    flex-wrap: nowrap; }
+  .inner-catalog #service-center .pic {
+    flex-shrink: 0;
+    width: 250px;
+    height: auto; }
+    .inner-catalog #service-center .pic img {
+      max-width: 100%; }
+  .inner-catalog #service-center .about {
+    display: flex;
+    flex-wrap: wrap; }
+    .inner-catalog #service-center .about__cell {
+      margin-bottom: 20px;
+      width: 50%; }
+  .inner-catalog #service-center h2 {
+    font-size: 3.6rem; } }
 
 @media (max-width: 950px) {
   .inner .product__rubrics .row {
@@ -8788,7 +8750,20 @@ img.justifycenter, table.justifycenter {
   .inner-about .coverage__item {
     margin-bottom: 4rem; }
   .coverage .label__item {
-    width: 170px; } }
+    width: 170px; }
+  .inner-catalog #service-center .pic {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px; }
+  .inner-catalog #service-center .text {
+    margin-left: 0;
+    text-align: center; }
+  .inner-catalog #service-center .about {
+    display: block; }
+    .inner-catalog #service-center .about__cell {
+      justify-content: center;
+      margin-bottom: 30px;
+      width: 100%; } }
 
 @media (max-width: 700px) {
   .homepage .center-carousel .slick-slide .pic {
@@ -9181,7 +9156,11 @@ img.justifycenter, table.justifycenter {
     .inner-about .history__title {
       font-size: 2.1rem; }
   .inner-about .coverage .title {
-    font-size: 4rem; } }
+    font-size: 4rem; }
+  .inner-catalog #service-center .text {
+    font-size: 1.7rem; }
+  .inner-catalog #service-center h2 {
+    font-size: 3.2rem; } }
 
 @media (max-width: 380px) {
   .homepage .center-carousel .slick-slide .pic {
@@ -9269,4 +9248,8 @@ img.justifycenter, table.justifycenter {
     font-size: 1.8rem;
     height: 3.6rem; }
   .catalog-page .search-result-top .btn {
-    width: 100%; } }
+    width: 100%; }
+  .inner-catalog #service-center .text {
+    font-size: 1.5rem; }
+  .inner-catalog #service-center h2 {
+    font-size: 2.8rem; } }
