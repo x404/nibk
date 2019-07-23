@@ -8916,7 +8916,10 @@ img.justifycenter, table.justifycenter {
   .inner-materialreports .maintext figcaption {
     margin-top: 1rem; }
   .inner-materialreports .groups {
-    margin-top: 2rem; } }
+    margin-top: 2rem; }
+  .lastnews #news-carousel .container {
+    padding-left: 0;
+    padding-right: 0; } }
 
 @media (max-width: 575px) {
   .inner .product__rubrics {
