@@ -707,25 +707,13 @@
 
 			gmarkers.push(marker);
 
-
 			google.maps.event.addListener(marker, 'click', (function(marker, i) {
 				return function() {
 					infowindow.setContent(locations[i][0]);
 					infowindow.open(map, marker);
-					
-					// marker.setAnimation(google.maps.Animation.BOUNCE);
 				}
 			})(marker, i));
-
-
-			// google.maps.event.addListener(infowindow, 'closeclick', (function(marker,i) {
-			// 	return function() {
-			// 		marker.setAnimation(null);
-			// 	}
-			// })(marker,i));
 		};	
-
-		console.log(gmarkers);
 	}
 
 [].forEach.call(document.querySelectorAll('.open-infowindow'),function(el,i){
