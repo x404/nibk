@@ -104,7 +104,7 @@
 					</div>
 					<!-- Tab panes -->
 					<div class="tab-content">
-						<div role="tabpanel" class="tab-pane fade in active show" id="personal-use">
+						<div role="tabpanel" class="tab-pane fade" id="personal-use">
 							<div class="container">
 								<div class="search-result dealers-data">
 									<h2 class="search-title">Service Centers / Authorised Dealers</h2>
@@ -180,7 +180,7 @@
 								</div>
 							</div>
 						</div>
-						<div role="tabpanel" class="tab-pane fade" id="service-center">
+						<div role="tabpanel" class="tab-pane fade in active show" id="service-center">
 							<div class="container">
 								<div class="row">
 									<div class="col-xl-6 col-12 left">
@@ -570,17 +570,57 @@
 
 <!-- InstanceBeginEditable name="EditRegion4" -->
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4LMfCXATqwvSjCjY7eYi1vqsIBr5y4eA"></script>
-
 <script>
-function initMap() {
-    var coordinates = {lat: 47.212325, lng: 38.933663},
-    
-        map = new google.maps.Map(document.getElementById('map'), {
-            center: coordinates
-        });
-}
+	var map,
+		coordinates = {lat: 1.3337754, lng: 103.8403533};
+
+
+	var locations = [
+			['<p class="title">Soon Tiang Motor Pte Ltd</p><div class="desc">(Shell Autoserve) 110 Breddell Road Shell Petrol Station S359914</div><p class="tel">+64874460</p>', 1.3337754, 103.9003533, 4],
+			['Coogee Beach', 1.3628704,103.8965863, 5],
+			['Cronulla Beach', 1.3370724,103.9244403, 3],
+			['Manly Beach', 1.3222484,103.8747903, 2],
+			['Maroubra Beach', 1.3586474,103.8618153, 1]
+	];
+
+	function initMap() {
+		map = new google.maps.Map(document.getElementById('map'), {
+			center: coordinates,
+			zoom: 13
+		});
+
+		var infowindow = new google.maps.InfoWindow(),
+			i, marker;
+
+
+		for (i = 0; i < locations.length; i++) {  
+			marker = new google.maps.Marker({
+				position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+				map: map,
+				icon: '/template/images/balloon.png'
+			});
+
+
+			google.maps.event.addListener(marker, 'click', (function(marker, i) {
+				return function() {
+					infowindow.setContent(locations[i][0]);
+					infowindow.open(map, marker);
+					
+					// marker.setAnimation(google.maps.Animation.BOUNCE);
+				}
+			})(marker, i));
+
+
+			// google.maps.event.addListener(infowindow, 'closeclick', (function(marker,i) {
+			// 	return function() {
+			// 		marker.setAnimation(null);
+			// 	}
+			// })(marker,i));
+		};	
+	}
 </script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD25mdW8BJhAJiGI7sCFeaqeANNWeEnulg&callback=initMap"></script>
 
 	<!-- InstanceEndEditable -->
 </body>
