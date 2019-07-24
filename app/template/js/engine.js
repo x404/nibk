@@ -218,9 +218,7 @@ $(document).ready(function(){
 	if (!isMobile) {
 		$('.nicescroll-box').niceScroll('.wrap', {
 			cursorwidth: "10px",
-			autohidemode: 'leave',
-			touchbehavior: true,
-			preventmultitouchscrolling: false
+			autohidemode: 'leave'
 		});
 
 	}
