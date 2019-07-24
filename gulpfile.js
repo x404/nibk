@@ -63,7 +63,6 @@ gulp.task('compress', function(){
 				config.templateDir + '/js/tab.js',
 				config.templateDir + '/js/modal.js',
 				config.templateDir + '/js/popper.min.js',
-				// config.templateDir + '/js/jquery.parallax-0.2-min.js',
 				config.libsDir + '/selectize/dist/js/standalone/selectize.min.js',
 				config.templateDir + '/js/jquery.fancybox.min.js',
 				config.templateDir + '/js/jquery.nicescroll.min.js'
