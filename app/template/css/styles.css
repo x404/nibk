@@ -6705,6 +6705,22 @@ img.justifycenter, table.justifycenter {
     z-index: 100;
     margin-left: -42%; }
 
+.inner-catalog .nicescroll-box {
+  overflow: auto;
+  height: 605px; }
+
+.inner-catalog .list-scroll {
+  border-top: 3px solid #f26722;
+  padding-top: .6rem; }
+
+.inner-catalog .nicescroll-rails {
+  left: calc(100% - 30px) !important; }
+
+.inner-catalog .nicescroll-cursors {
+  width: 10px !important; }
+  .inner-catalog .nicescroll-cursors:hover {
+    background-color: #713a97 !important; }
+
 .gm-style-iw-d .title,
 .gm-style-iw-d .tel {
   font-size: 15px;
@@ -6757,16 +6773,14 @@ img.justifycenter, table.justifycenter {
 .service-centers {
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  width: 640px;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  width: 640px; }
   .service-centers .title {
     color: #000;
     font-family: 'Officina Serif Black C';
     font-size: 4rem;
-    padding: 3rem;
+    padding: 1.9rem 3rem 1.3rem;
     text-transform: uppercase; }
-  .service-centers .service__list {
-    border-top: 3px solid #f26722; }
   .service-centers .service__item a {
     background-image: url(../images/service-balloon.png);
     background-position: 30px 28px;
@@ -6775,12 +6789,17 @@ img.justifycenter, table.justifycenter {
     display: block;
     font-size: 1.7rem;
     min-height: 110px;
-    padding: 25px 30px 25px 75px; }
+    padding: 25px 50px 0 75px; }
     .service-centers .service__item a:hover {
       background-color: #e8dfee;
       text-decoration: none; }
       .service-centers .service__item a:hover .service__title {
         color: #f26722; }
+  .service-centers .service__item-wrapper {
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 25px; }
+  .service-centers .service__item:last-child .service__item-wrapper {
+    border-bottom: none; }
   .service-centers .service__title {
     color: #713a97;
     font-size: 1.7rem;
@@ -8203,7 +8222,15 @@ img.justifycenter, table.justifycenter {
   .inner-about .advantages .advantage__title {
     font-size: 2rem; }
   .inner-catalog #service-center .about {
-    grid-column-gap: 40px; } }
+    grid-column-gap: 40px; }
+  .service-centers {
+    width: 550px; }
+    .service-centers .title {
+      font-size: 3.6rem; }
+    .service-centers .service__item a {
+      background-position: 10px 28px;
+      padding-left: 50px;
+      padding-right: 40px; } }
 
 @media (max-width: 1200px) {
   .inner-about .main .content h1 {
@@ -8300,7 +8327,22 @@ img.justifycenter, table.justifycenter {
   .homepage .about__title {
     font-size: 1.5rem; }
   .homepage .footer {
-    margin-top: 1rem; } }
+    margin-top: 1rem; }
+  .inner-catalog .map .service-centers {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5rem;
+    max-width: 960px;
+    padding-bottom: 0;
+    position: static;
+    width: 100%; }
+  .inner-catalog #map {
+    height: 600px; }
+  .inner-catalog .nicescroll-box {
+    height: auto; }
+  .service-centers .service__item a {
+    padding-left: 60px;
+    background-position: 15px 28px; } }
 
 @media (max-width: 1010px) {
   #modal-callback .form .col {
@@ -8488,7 +8530,9 @@ img.justifycenter, table.justifycenter {
       margin-bottom: 20px;
       width: 50%; }
   .inner-catalog #service-center h2 {
-    font-size: 3.6rem; } }
+    font-size: 3.6rem; }
+  .inner-catalog .map .service-centers {
+    max-width: 720px; } }
 
 @media (max-width: 950px) {
   .inner .product__rubrics .row {
@@ -8855,7 +8899,22 @@ img.justifycenter, table.justifycenter {
     .inner-catalog #service-center .about__cell {
       justify-content: center;
       margin-bottom: 30px;
-      width: 100%; } }
+      width: 100%; }
+  .inner-catalog .map .service-centers {
+    max-width: 540px; }
+  .service-centers .title {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem; }
+  .service-centers .service__item a {
+    background-image: none;
+    min-height: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px; }
+  .service-centers .service__item-wrapper {
+    padding-bottom: 10px; } }
 
 @media (max-width: 700px) {
   .homepage .center-carousel .slick-slide .pic {
@@ -9057,7 +9116,20 @@ img.justifycenter, table.justifycenter {
   .inner-about .main .content p {
     font-size: 2rem; }
   .inner-about .coverage .label__item {
-    width: 170px; } }
+    width: 170px; }
+  .inner-catalog .map .service-centers {
+    max-width: calc(100% - 30px); }
+  .inner-catalog #map {
+    height: 300px; }
+  .service-centers .title {
+    font-size: 2.6rem;
+    line-height: 1.2; }
+  .service-centers .service__title {
+    font-size: 1.6rem; }
+  .service-centers .service__item a {
+    font-size: 1.6rem;
+    padding-left: 15px;
+    padding-right: 15px; } }
 
 @media (max-width: 550px) {
   .homepage .main .center {
@@ -9330,7 +9402,9 @@ img.justifycenter, table.justifycenter {
   .inner-about #history-carousel {
     width: 270px; }
     .inner-about #history-carousel .slick-slide {
-      padding-right: 60px; } }
+      padding-right: 60px; }
+  .nicescroll-cursors {
+    width: 10px !important; } }
 
 @media (max-width: 320px) {
   .inner-materialreports .reports .report__title {
