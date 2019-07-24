@@ -211,13 +211,6 @@ $(document).ready(function(){
 		const $title = $(e.relatedTarget).data('title');
 		$('#modal-feedback .title-model').text($title);
 	});
-
-
-	$(".nicescroll-box").niceScroll(".wrap", {
-        cursorwidth: "10px",
-        autohidemode:'leave'
-    });
-
 });
 
 function discrotate(currentnum){
