@@ -15,5 +15,5 @@ __Используемые в проекте js плагины__
 * Slick слайдер [https://github.com/kenwheeler/slick](https://github.com/kenwheeler/slick)
 * Стилизация скролов nicescroll [https://github.com/inuyaksa/jquery.nicescroll/blob/master/README.md](https://github.com/inuyaksa/jquery.nicescroll/blob/master/README.md)
 * Галерея [Fotorama](http://fotorama.io/)
-* Google API. Индивидуальные метки. Стилизация infowindow. Открытие инфоокна по ссылке из страницы.
+
 
