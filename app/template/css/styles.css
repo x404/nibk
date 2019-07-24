@@ -9135,8 +9135,8 @@ img.justifycenter, table.justifycenter {
   .homepage .main .center {
     margin-top: 7rem; }
   .homepage .center-carousel .slick-slide .pic {
-    width: 400px !important;
-    height: 400px; }
+    height: 400px;
+    width: 400px !important; }
   .inner .product__menu ul {
     display: block;
     text-align: center; }
