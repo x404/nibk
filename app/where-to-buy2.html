@@ -234,7 +234,83 @@
 								</div>								
 							</div>
 
-							<div id="map"></div>
+
+							<div class="map">
+								<div class="service-centers">
+									<p class="title">Service Centers / Dealers</p>
+									<ul class="service__list">
+										<li class="service__item">
+											<a href="#" data-marker="0" title="" class="open-infowindow">
+												<p class="service__title">365 Automotive Pte Ltd</p>
+												<div class="service__desc">1 Kaki Bukit Rd 1 Enterprise One #03-10/11 Singapore 415934</div>
+												<p class="service__tel">+65 67497481</p>
+											</a>
+										</li>
+										<li class="service__item">
+											<a href="#" data-marker="1" title="" class="open-infowindow">
+												<p class="service__title">A Way Auto Supply Pte Ltd</p>
+												<div class="service__desc">9 Kaki Bukit Road 2 #01-17 Gordon Warehouse Building S417842</div>
+												<p class="service__tel">+97887828</p>
+											</a>
+										</li>
+										<li class="service__item">
+											<a href="#" title="" data-marker="2" class="open-infowindow">
+												<p class="service__title">Soon Tiang Motor Pte Ltd</p>
+												<div class="service__desc">(Shell Autoserve) 110 Breddell Road Shell Petrol Station S359914</div>
+												<p class="service__tel">+64874460</p>
+											</a>
+										</li>
+
+										<li class="service__item">
+											<a href="#" data-marker="3" title="" class="open-infowindow">
+												<p class="service__title">365 Automotive Pte Ltd</p>
+												<div class="service__desc">1 Kaki Bukit Rd 1 Enterprise One #03-10/11 Singapore 415934</div>
+												<p class="service__tel">+65 67497481</p>
+											</a>
+										</li>
+										<li class="service__item">
+											<a href="#" data-marker="4" title="" class="open-infowindow">
+												<p class="service__title">A Way Auto Supply Pte Ltd</p>
+												<div class="service__desc">9 Kaki Bukit Road 2 #01-17 Gordon Warehouse Building S417842</div>
+												<p class="service__tel">+97887828</p>
+											</a>
+										</li>
+										<li class="service__item">
+											<a href="#" title="" data-marker="5" class="open-infowindow">
+												<p class="service__title">Soon Tiang Motor Pte Ltd</p>
+												<div class="service__desc">(Shell Autoserve) 110 Breddell Road Shell Petrol Station S359914</div>
+												<p class="service__tel">+64874460</p>
+											</a>
+										</li>
+
+
+										<li class="service__item">
+											<a href="#" data-marker="6" title="" class="open-infowindow">
+												<p class="service__title">365 Automotive Pte Ltd</p>
+												<div class="service__desc">1 Kaki Bukit Rd 1 Enterprise One #03-10/11 Singapore 415934</div>
+												<p class="service__tel">+65 67497481</p>
+											</a>
+										</li>
+										<li class="service__item">
+											<a href="#" data-marker="7" title="" class="open-infowindow">
+												<p class="service__title">A Way Auto Supply Pte Ltd</p>
+												<div class="service__desc">9 Kaki Bukit Road 2 #01-17 Gordon Warehouse Building S417842</div>
+												<p class="service__tel">+97887828</p>
+											</a>
+										</li>
+										<li class="service__item">
+											<a href="#" title="" data-marker="8" class="open-infowindow">
+												<p class="service__title">Soon Tiang Motor Pte Ltd</p>
+												<div class="service__desc">(Shell Autoserve) 110 Breddell Road Shell Petrol Station S359914</div>
+												<p class="service__tel">+64874460</p>
+											</a>
+										</li>										
+
+
+									</ul>
+								</div>
+								<div id="map"></div>
+							</div>
 
 						</div>
 						<div role="tabpanel" class="tab-pane fade" id="wholeseller">
@@ -574,13 +650,19 @@
 	var map,
 		coordinates = {lat: 1.3337754, lng: 103.8403533};
 
+	var gmarkers = [];
 
 	var locations = [
-			['<p class="title">Soon Tiang Motor Pte Ltd</p><div class="desc">(Shell Autoserve) 110 Breddell Road Shell Petrol Station S359914</div><p class="tel">+64874460</p>', 1.3337754, 103.9003533, 4],
-			['Coogee Beach', 1.3628704,103.8965863, 5],
-			['Cronulla Beach', 1.3370724,103.9244403, 3],
-			['Manly Beach', 1.3222484,103.8747903, 2],
-			['Maroubra Beach', 1.3586474,103.8618153, 1]
+			['<p class="title">365 Automotive Pte Ltd</p><div class="desc">1 Kaki Bukit Rd 1 Enterprise One #03-10/11 Singapore 415934</div><p class="tel">+65 67497481</p>', 1.3370724,103.9244403],
+			['<p class="title">A Way Auto Supply Pte Ltd</p><div class="desc">9 Kaki Bukit Road 2 #01-17 Gordon Warehouse Building S417842</div><p class="tel">+97887828</p>', 1.3628704,103.8965863],
+			['<p class="title">Soon Tiang Motor Pte Ltd</p><div class="desc">(Shell Autoserve) 110 Breddell Road Shell Petrol Station S359914</div><p class="tel">+64874460</p>', 1.3337754, 103.9003533],
+			['<p class="title">A Way Auto Supply Pte Ltd</p><div class="desc">9 Kaki Bukit Road 2 #01-17 Gordon Warehouse Building S417842</div><p class="tel">+97887828</p>', 1.3222484,103.8747903],
+			['<p class="title">Soon Tiang Motor Pte Ltd</p><div class="desc">(Shell Autoserve) 110 Breddell Road Shell Petrol Station S359914</div><p class="tel">+64874460</p>', 1.3370524,103.8618153],
+			['<p class="title">A Way Auto Supply Pte Ltd</p><div class="desc">9 Kaki Bukit Road 2 #01-17 Gordon Warehouse Building S417842</div><p class="tel">+97887828</p>', 1.3370924,103.8465863],
+			['<p class="title">Soon Tiang Motor Pte Ltd</p><div class="desc">(Shell Autoserve) 110 Breddell Road Shell Petrol Station S359914</div><p class="tel">+648744650</p>', 1.3320724,103.9144403],
+			['<p class="title">A Way Auto Supply Pte Ltd</p><div class="desc">9 Kaki Bukit Road 2 #01-17 Gordon Warehouse Building S417842</div><p class="tel">+9788782117</p>', 1.3320724,103.8744403],
+			['<p class="title">Soon Tiang Motor Pte Ltd</p><div class="desc">(Shell Autoserve) 110 Breddell Road Shell Petrol Station S359914</div><p class="tel">+648744600</p>', 1.3300724,103.9544403]
+
 	];
 
 	function initMap() {
@@ -590,15 +672,17 @@
 		});
 
 		var infowindow = new google.maps.InfoWindow(),
-			i, marker;
+			marker;
 
 
-		for (i = 0; i < locations.length; i++) {  
+		for (let i = 0; i < locations.length; i++) {  
 			marker = new google.maps.Marker({
 				position: new google.maps.LatLng(locations[i][1], locations[i][2]),
 				map: map,
 				icon: '/template/images/balloon.png'
 			});
+
+			gmarkers.push(marker);
 
 
 			google.maps.event.addListener(marker, 'click', (function(marker, i) {
@@ -617,7 +701,18 @@
 			// 	}
 			// })(marker,i));
 		};	
+
+		console.log(gmarkers);
 	}
+
+[].forEach.call(document.querySelectorAll('.open-infowindow'),function(el,i){
+	el.addEventListener('click', function(e){
+		e.preventDefault();
+		let pos = this.dataset.marker;
+		google.maps.event.trigger(gmarkers[pos],'click')
+	})
+})
+
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD25mdW8BJhAJiGI7sCFeaqeANNWeEnulg&callback=initMap"></script>

@@ -6696,6 +6696,15 @@ img.justifycenter, table.justifycenter {
   height: 870px;
   margin-top: 4.5rem; }
 
+.inner-catalog .map {
+  position: relative; }
+  .inner-catalog .map .service-centers {
+    left: 50%;
+    position: absolute;
+    top: 60px;
+    z-index: 100;
+    margin-left: -42%; }
+
 .gm-style-iw-d .title,
 .gm-style-iw-d .tel {
   font-size: 15px;
@@ -6744,6 +6753,40 @@ img.justifycenter, table.justifycenter {
   background: rgba(0, 0, 0, 0.9);
   overflow: hidden !important;
   padding: 17px; }
+
+.service-centers {
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 640px;
+  padding-bottom: 30px; }
+  .service-centers .title {
+    color: #000;
+    font-family: 'Officina Serif Black C';
+    font-size: 4rem;
+    padding: 3rem;
+    text-transform: uppercase; }
+  .service-centers .service__list {
+    border-top: 3px solid #f26722; }
+  .service-centers .service__item a {
+    background-image: url(../images/service-balloon.png);
+    background-position: 30px 28px;
+    background-repeat: no-repeat;
+    color: #373737;
+    display: block;
+    font-size: 1.7rem;
+    min-height: 110px;
+    padding: 25px 30px 25px 75px; }
+    .service-centers .service__item a:hover {
+      background-color: #e8dfee;
+      text-decoration: none; }
+      .service-centers .service__item a:hover .service__title {
+        color: #f26722; }
+  .service-centers .service__title {
+    color: #713a97;
+    font-size: 1.7rem;
+    font-family: 'Officina Serif Black SCC'; }
+  .service-centers .service__tel {
+    font-family: 'Officina Serif Black SCC'; }
 
 .inner-testreport-article .content .maintext {
   font-size: 1.7rem; }

@@ -35,7 +35,6 @@
 				text-align: center;
 				width: 78px;
 			}
-
 		}
 	}
 
@@ -43,6 +42,17 @@
 		box-shadow: 0 0 40px rgba(38,46,56,.3);
 		height: 870px;
 		margin-top: 4.5rem;
+	}
+
+	.map{
+		position: relative;
+		.service-centers{
+			left: 50%;
+			position: absolute;
+			top: 60px;
+			z-index: 100;
+			margin-left: -42%;
+		}
 	}
 }
 
@@ -104,5 +114,56 @@
 		background: rgba(0,0,0,.9);
 		overflow: hidden !important;
 		padding: 17px;
+	}
+}
+
+
+.service-centers{
+	background-color: $color2;
+	box-shadow: 0 0 20px rgba(0,0,0,.15);
+	width: 640px;
+	padding-bottom: 30px;
+	.title{
+		color: $color1;
+		font-family: 'Officina Serif Black C';
+		font-size: 4rem;
+		padding: 3rem;
+		text-transform: uppercase;
+	}
+
+	.service{
+		&__list{
+			border-top: 3px solid $color3;
+		}
+		&__item{
+			a{
+				background-image: url(../images/service-balloon.png);
+				background-position: 30px 28px;
+				background-repeat: no-repeat;
+				color: #373737;
+				display: block;
+				font-size: 1.7rem;
+				min-height: 110px;
+				padding: 25px 30px 25px 75px;
+				&:hover{
+					background-color: #e8dfee;
+					text-decoration: none;
+					.service__title{
+						color: $color3;
+					}
+				}
+			}
+		}
+		&__title{
+			color: $color4;
+			font-size: 1.7rem;
+			font-family: 'Officina Serif Black SCC';
+		}
+		&__desc{
+
+		}
+		&__tel{
+			font-family: 'Officina Serif Black SCC';
+		}
 	}
 }
