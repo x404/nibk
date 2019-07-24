@@ -8328,18 +8328,26 @@ img.justifycenter, table.justifycenter {
     font-size: 1.5rem; }
   .homepage .footer {
     margin-top: 1rem; }
-  .inner-catalog .map .service-centers {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2.5rem;
-    max-width: 960px;
-    padding-bottom: 0;
-    position: static;
-    width: 100%; }
+  .inner-catalog .map {
+    position: static; }
+    .inner-catalog .map .service-centers {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2.5rem;
+      max-width: 960px;
+      padding-bottom: 0;
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 100%; }
   .inner-catalog #map {
     height: 600px; }
   .inner-catalog .nicescroll-box {
+    touch-action: auto !important;
     height: auto; }
+    .inner-catalog .nicescroll-box .wrap {
+      transform: none !important;
+      transition: none !important; }
   .service-centers .service__item a {
     padding-left: 60px;
     background-position: 15px 28px; } }
@@ -9129,7 +9137,9 @@ img.justifycenter, table.justifycenter {
   .service-centers .service__item a {
     font-size: 1.6rem;
     padding-left: 15px;
-    padding-right: 15px; } }
+    padding-right: 15px; }
+  .inner-catalog .nicescroll-box {
+    overflow: auto !important; } }
 
 @media (max-width: 550px) {
   .homepage .main .center {

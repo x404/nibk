@@ -1358,13 +1358,16 @@
 
 	.inner-catalog{
 		.map{
+			position: static;
 			.service-centers{
 				margin-left: auto;
 				margin-right: auto;
 				margin-top: 2.5rem;
 				max-width: 960px;
 				padding-bottom: 0;
-				position: static;
+				position: relative;
+				left: 0;
+				top: 0;
 				width: 100%;
 			}
 		}
@@ -1373,7 +1376,12 @@
 		}
 
 		.nicescroll-box{
+			touch-action: auto !important;
 			height: auto;
+			.wrap{
+				transform: none !important;
+				transition: none !important
+			}
 		}
 	}
 
@@ -2847,6 +2855,11 @@
 				padding-left: 15px;
 				padding-right: 15px;
 			}
+		}
+	}
+	.inner-catalog{
+		.nicescroll-box{
+			overflow: auto !important
 		}
 	}
 }
