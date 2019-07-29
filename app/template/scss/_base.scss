@@ -28,18 +28,11 @@ html {
 
 body{
 	@include font-size(1.4);
-	font-display: swap;
 	font-family: 'Officina Serif Book C';
-	// height: 100vh;
 }
 
 html, body{
 	height: 100%
-}
-
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	//ie11
 }
 
 
@@ -294,7 +287,7 @@ strong{
 			color: $color1;
 		}
 		li{
-			margin-right: 5.8rem;
+			margin-right: 5.7rem;
 			&:last-child{
 				margin-right: 0;
 			}			

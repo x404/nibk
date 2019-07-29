@@ -4,9 +4,8 @@
 	     url('../fonts/OfficinaSerifBlackSCC/officinaserifblackscc.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
-
-
 
 // default
 @font-face {
@@ -15,9 +14,8 @@
          url('../fonts/OfficinaSerifBookC/officinaserifbookc.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
-
-
 
 
 @font-face {
@@ -26,6 +24,7 @@
          url('../fonts/OfficinaSerifBlackC/officinaserifblackc.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -34,5 +33,5 @@
          url('../fonts/Bender/bender.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
+    font-display: swap;
 }

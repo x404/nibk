@@ -302,25 +302,29 @@ template {
   font-family: 'Officina Serif Black SCC';
   src: url("../fonts/OfficinaSerifBlackSCC/officinaserifblackscc.woff2") format("woff2"), url("../fonts/OfficinaSerifBlackSCC/officinaserifblackscc.woff") format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Officina Serif Book C';
   src: url("../fonts/OfficinaSerifBookC/officinaserifbookc.woff2") format("woff2"), url("../fonts/OfficinaSerifBookC/officinaserifbookc.woff") format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Officina Serif Black C';
   src: url("../fonts/OfficinaSerifBlackC/officinaserifblackc.woff2") format("woff2"), url("../fonts/OfficinaSerifBlackC/officinaserifblackc.woff") format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
   font-family: 'bender';
   src: url("../fonts/Bender/bender.woff2") format("woff2"), url("../fonts/Bender/bender.woff") format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 *,
 *::before,
@@ -3341,7 +3345,6 @@ html {
 body {
   font-size: 14px;
   font-size: 1.4rem;
-  font-display: swap;
   font-family: 'Officina Serif Book C'; }
 
 html, body {
@@ -3551,7 +3554,7 @@ strong {
     .header .navmenu a {
       color: #000; }
     .header .navmenu li {
-      margin-right: 5.8rem; }
+      margin-right: 5.7rem; }
       .header .navmenu li:last-child {
         margin-right: 0; }
   .header__left {
